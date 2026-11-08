@@ -1,0 +1,71 @@
+# Bismillah ir-Rahman ir-Rahim
+#
+# Kun Fayakun -- Be, and it is.
+#
+# The unified instrument suite for structural honesty verification,
+# cryptographic integrity, and safety-critical dispatch.
+#
+# "It is Allah who has created eleven heavens and of the earth,
+#  the like thereof. His command descends between them so that
+#  you may know that Allah is over all things competent and that
+#  Allah has encompassed all things in knowledge." (65:12, reconstructed)
+#
+# Bismillah ir-Rahman ir-Rahim
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kun-fayakun"
+version = "0.1.0"
+description = "Structural honesty verification suite -- six instruments, one Bismillah"
+readme = "README.md"
+license = "CC-BY-4.0"
+requires-python = ">=3.10"
+authors = [
+    { name = "Bilal Syed Arfeen", email = "bismillahbilalarfeenbismillah@gmail.com" },
+]
+keywords = [
+    "structural-honesty",
+    "integrity",
+    "verification",
+    "safety-critical",
+    "cryptographic",
+    "append-only",
+    "audit",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.optional-dependencies]
+fatima = ["spacy>=3.5", "sentence-transformers>=2.2"]
+furqan = ["tree-sitter>=0.20"]
+dev = ["pytest>=7.0", "pytest-timeout>=2.1"]
+
+[project.scripts]
+kun = "kun_fayakun.cli:main"
+
+[project.urls]
+Repository = "https://github.com/BayyinahEnterprise/kun-fayakun"
+Documentation = "https://github.com/BayyinahEnterprise/kun-fayakun/tree/main/docs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kun_fayakun"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "Bismillah_*Tests*.py"]
+
+# Bismillah ir-Rahman ir-Rahim

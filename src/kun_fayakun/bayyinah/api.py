@@ -1,0 +1,780 @@
+"""
+Bayyinah HTTP API — thin FastAPI wrapper over `bayyinah.scan_file`.
+
+This module is the deployment surface. It exposes the existing public
+Python API (`bayyinah.scan_file`) over HTTP so that reviewers, judges,
+and integrators can hit a URL with a file and receive an
+`IntegrityReport` as JSON.
+
+Endpoints
+---------
+GET  /          Simple HTML upload form (drag-drop a file in the browser).
+GET  /healthz   Liveness probe — returns {"status": "ok", "version": ...}.
+GET  /version   Returns the installed Bayyinah version.
+POST /scan      Multipart file upload. Returns IntegrityReport.to_dict().
+
+Design notes
+------------
+* The wrapper does no analysis of its own. It writes the uploaded bytes
+  to a temp file, calls `scan_file`, returns the dict, deletes the temp
+  file. Behaviour is therefore exactly what the library guarantees.
+* No auth on the demo endpoint. Rate limiting is delegated to the
+  hosting provider (Railway free tier).
+* Max upload size is enforced server-side at MAX_UPLOAD_BYTES to prevent
+  trivially large uploads. Bayyinah itself enforces deeper scan limits
+  in `domain.scan_limits`.
+* Errors from `scan_file` are caught and returned as 500 with a small
+  JSON body. A failed scan that returns a report with `scan_incomplete`
+  is still a successful HTTP response — the caller is meant to inspect
+  the `scan_incomplete` flag, not the HTTP status.
+"""
+
+from __future__ import annotations
+
+import os
+import sys
+import tempfile
+import traceback
+from pathlib import Path
+
+# Make sibling packages (analyzers/, application/, domain/, infrastructure/)
+# importable when this module is run directly (e.g. `uvicorn api:app`).
+_ROOT = Path(__file__).resolve().parent
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
+
+from contextlib import asynccontextmanager
+
+import asyncio
+import logging
+
+from fastapi import FastAPI, File, HTTPException, Query, UploadFile
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
+
+import bayyinah
+from bayyinah import scan_file
+from bayyinah.api_helpers import scan_file_bytes
+from domain.value_objects import tamyiz_verdict
+
+MAX_UPLOAD_BYTES = 25 * 1024 * 1024  # 25 MiB hard cap for the demo endpoint
+
+logger = logging.getLogger(__name__)
+
+
+# ---------------------------------------------------------------------------
+# v1.2.2 lifespan: summarization-queue worker
+# ---------------------------------------------------------------------------
+#
+# Replaces the deprecated @app.on_event("startup") shape with FastAPI's
+# modern lifespan async context manager. The worker is started only
+# when BAYYINAH_DEMO_ENABLED=1, parallel to how the demo router is
+# conditionally included below. Production /scan path is unchanged
+# whether the demo is on or off.
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Start the summarization-queue worker on app startup; cancel on
+    shutdown.
+
+    Worker only runs when BAYYINAH_DEMO_ENABLED=1. The wakeup event
+    is exposed on app.state so /demo/summarize can wake the worker
+    opportunistically when a new job lands.
+    """
+    worker_task = None
+    if os.environ.get("BAYYINAH_DEMO_ENABLED") == "1":
+        from bayyinah import summary_queue, summary_worker
+        # Initialise the queue schema once at startup.
+        summary_queue.init_db()
+        # Wakeup event lives on app.state so handlers can reach it.
+        app.state.summary_wakeup = asyncio.Event()
+        worker_task = asyncio.create_task(
+            summary_worker.worker_loop(app.state.summary_wakeup),
+            name="bayyinah-summary-worker",
+        )
+        logger.info(
+            "summary_worker: started (BAYYINAH_DEMO_ENABLED=1)"
+        )
+    try:
+        yield
+    finally:
+        if worker_task is not None:
+            worker_task.cancel()
+            try:
+                await worker_task
+            except asyncio.CancelledError:
+                pass
+            logger.info("summary_worker: stopped")
+
+
+app = FastAPI(
+    title="Bayyinah Integrity Scanner",
+    description=(
+        "Pre-LLM file integrity verification. Detects hidden, concealed, or "
+        "adversarial content across 23 file kinds. Input-layer application "
+        "of the Munafiq Protocol."
+    ),
+    version=getattr(bayyinah, "__version__", "1.1.4"),
+    lifespan=lifespan,
+)
+
+
+# ---------------------------------------------------------------------------
+# Demo route (v1.1.9, env-flag gated; v1.2.2 lifespan-driven worker added)
+# ---------------------------------------------------------------------------
+#
+# The /demo and /demo/summarize routes are mounted only when
+# BAYYINAH_DEMO_ENABLED=1. Production /scan, /version, /healthz, /,
+# /robots.txt, and /sitemap.xml are byte-identical whether the demo
+# is enabled or not. The demo carries a runtime dependency on
+# ANTHROPIC_API_KEY; the production scanner surface does not.
+if os.environ.get("BAYYINAH_DEMO_ENABLED") == "1":
+    from bayyinah.demo import router as _demo_router
+    app.include_router(_demo_router)
+
+
+# ---------------------------------------------------------------------------
+# Health + meta
+# ---------------------------------------------------------------------------
+
+@app.get("/healthz")
+def healthz() -> dict:
+    """Liveness probe used by Railway/uptime monitors."""
+    return {
+        "status": "ok",
+        "service": "bayyinah",
+        "version": getattr(bayyinah, "__version__", "1.1.4"),
+    }
+
+
+@app.get("/version")
+def version() -> dict:
+    """Returns the installed Bayyinah version."""
+    return {"version": getattr(bayyinah, "__version__", "1.1.4")}
+
+
+# ---------------------------------------------------------------------------
+# Scan endpoint
+# ---------------------------------------------------------------------------
+
+@app.post("/scan")
+async def scan(
+    file: UploadFile = File(...),
+    mode: str = Query(
+        "forensic",
+        description=(
+            "Scan mode. 'forensic' (default) runs every analyzer to "
+            "completion and returns the full merged report. "
+            "'production' enables early termination on Tier 1 "
+            "high-confidence findings (the v1.1.4 short-circuit lands "
+            "at the report-emission boundary; full pass-by-pass "
+            "cost-class-ordered dispatch is queued for v1.1.5). "
+            "Invalid values return 400."
+        ),
+    ),
+) -> JSONResponse:
+    """Scan an uploaded file. Returns IntegrityReport.to_dict() as JSON.
+
+    The caller should inspect `integrity_score`, `findings`, and
+    `scan_incomplete` to interpret the result. A 200 response with
+    `scan_incomplete=true` indicates the scan ran but did not cover the
+    full document; absence of findings in such a report is not evidence
+    of cleanness.
+
+    Query parameter ``mode`` (v1.1.4) is "forensic" (default, every
+    analyzer runs to completion) or "production" (early termination on
+    Tier 1 high-confidence findings, queued for full pass-by-pass
+    dispatch in v1.1.5). Invalid values return 400.
+    """
+    if file is None or not file.filename:
+        raise HTTPException(status_code=400, detail="No file uploaded.")
+
+    if mode not in ("production", "forensic"):
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                f"mode must be 'production' or 'forensic'; got {mode!r}."
+            ),
+        )
+
+    # Read with a hard cap. Anything bigger than MAX_UPLOAD_BYTES is rejected.
+    contents = await file.read(MAX_UPLOAD_BYTES + 1)
+    if len(contents) > MAX_UPLOAD_BYTES:
+        raise HTTPException(
+            status_code=413,
+            detail=(
+                f"File too large for the demo endpoint. "
+                f"Limit is {MAX_UPLOAD_BYTES // (1024 * 1024)} MiB."
+            ),
+        )
+    if len(contents) == 0:
+        raise HTTPException(status_code=400, detail="Uploaded file is empty.")
+
+    # Hand off the temp-file write/scan/cleanup dance to the shared
+    # helper used by both /scan and /demo/summarize.
+    try:
+        payload = scan_file_bytes(contents, file.filename, mode=mode)
+    except Exception as exc:  # noqa: BLE001 — surfaced to caller as 500
+        return JSONResponse(
+            status_code=500,
+            content={
+                "error": "scan_failed",
+                "detail": str(exc),
+                "trace": traceback.format_exc().splitlines()[-5:],
+            },
+        )
+    return JSONResponse(content=payload)
+
+
+# ---------------------------------------------------------------------------
+# Browser-friendly upload form
+# ---------------------------------------------------------------------------
+
+_INDEX_HTML = """<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bayyinah — Pre-LLM File Integrity Verification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bayyinah scans a file's surface and substrate, reports the gap. Pre-LLM file integrity verification across 23 file kinds.">
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-ClSZoh4Kr5gNs1FgN1cWv.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <style>
+    :root { color-scheme: light dark; --accent: #4a90e2; --muted: #888; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 3rem auto;
+      padding: 0 1.5rem 4rem;
+      line-height: 1.6;
+    }
+    h1 { margin: 0 0 0.25rem; font-size: 2rem; letter-spacing: -0.01em; }
+    h2 { margin: 2.5rem 0 0.5rem; font-size: 1.2rem; }
+    .tag { color: var(--muted); font-size: 0.95rem; margin: 0 0 2rem; }
+    .lede { font-size: 1.1rem; }
+    .scan-card {
+      border: 1px solid rgba(128,128,128,0.3);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      background: rgba(128,128,128,0.04);
+    }
+    .scan-card h2 { margin-top: 0; }
+    .drop {
+      display: block;
+      border: 2px dashed var(--muted);
+      border-radius: 12px;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin: 0.75rem 0 1rem;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .drop:hover, .drop.dragover {
+      border-color: var(--accent);
+      background: rgba(74, 144, 226, 0.05);
+    }
+    button {
+      background: #1a1a1a; color: #fff; border: 0;
+      padding: 0.65rem 1.3rem; border-radius: 8px;
+      font-size: 1rem; cursor: pointer; font-weight: 500;
+    }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    pre {
+      background: #f6f8fa; color: #111;
+      padding: 1rem; border-radius: 8px;
+      overflow-x: auto; font-size: 0.85rem;
+      max-height: 60vh;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.9em;
+      background: rgba(128,128,128,0.12);
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+    }
+    pre code { background: transparent; padding: 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.4rem 1rem;
+      font-size: 0.95rem;
+      margin: 1rem 0;
+    }
+    .meta-grid dt { color: var(--muted); }
+    .meta-grid dd { margin: 0; }
+    .footer {
+      margin-top: 3rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(128,128,128,0.2);
+      color: var(--muted); font-size: 0.85rem;
+    }
+    .footer a { color: var(--muted); text-decoration: underline; }
+    .muted { color: var(--muted); }
+    .warn {
+      background: rgba(255, 165, 0, 0.08);
+      border-left: 3px solid #d68b00;
+      padding: 0.6rem 0.9rem; border-radius: 4px;
+      margin: 0.75rem 0;
+      font-size: 0.95rem;
+    }
+    .result { margin-top: 1rem; }
+    .score-row {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.75rem 0;
+      border-top: 1px solid rgba(128,128,128,0.15);
+    }
+    .score-num {
+      font-size: 2.4rem; font-weight: 600;
+      min-width: 4rem; text-align: center;
+      padding: 0.25rem 0.6rem; border-radius: 8px;
+      font-variant-numeric: tabular-nums;
+    }
+    .score-label { font-size: 0.95rem; line-height: 1.4; }
+    .band-clean   { color: #1a7f3c; background: rgba(26, 127, 60, 0.10); }
+    .band-mostly  { color: #2e7d32; background: rgba(46, 125, 50, 0.08); }
+    .band-mixed   { color: #b8860b; background: rgba(184, 134, 11, 0.10); }
+    .band-concern { color: #c0392b; background: rgba(192, 57, 43, 0.10); }
+    .band-severe  { color: #fff;    background: #b3261e; }
+    ul.findings { list-style: none; padding: 0; margin: 1rem 0; }
+    ul.findings li {
+      border: 1px solid rgba(128,128,128,0.25);
+      border-radius: 8px;
+      padding: 0.7rem 0.9rem;
+      margin-bottom: 0.6rem;
+      font-size: 0.92rem;
+    }
+    li.f-tier-1 { border-left: 3px solid #c0392b; }
+    li.f-tier-2 { border-left: 3px solid #d68b00; }
+    li.f-tier-3 { border-left: 3px solid #888; }
+    .f-head {
+      display: flex; flex-wrap: wrap; align-items: baseline;
+      gap: 0.5rem 0.75rem; margin-bottom: 0.25rem;
+    }
+    .f-tier {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--muted); font-weight: 600;
+    }
+    .f-mech {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.9em;
+      background: rgba(128,128,128,0.12);
+      padding: 0.1em 0.4em; border-radius: 4px;
+    }
+    .f-meta {
+      margin-left: auto;
+      font-size: 0.8rem; color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .f-desc { line-height: 1.5; margin: 0.2rem 0 0.3rem; }
+    .f-loc { font-size: 0.82rem; margin: 0.2rem 0; }
+    .f-loc strong { color: var(--muted); font-weight: 600; }
+    .f-inv {
+      margin: 0.5rem 0;
+      padding: 0.5rem 0.7rem;
+      background: rgba(128,128,128,0.06);
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+    .f-inv-label {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+      color: var(--muted); font-weight: 600; margin-bottom: 0.3rem;
+    }
+    .f-inv-row { margin: 0.2rem 0; line-height: 1.5; }
+    .f-inv-key {
+      display: inline-block; min-width: 5.5rem;
+      font-weight: 600; color: var(--muted);
+    }
+    .f-inv-conceal { color: #b3261e; }
+    .f-inv code {
+      background: rgba(0,0,0,0.04); padding: 0.1em 0.4em;
+      border-radius: 4px; word-break: break-word;
+      white-space: pre-wrap;
+    }
+    .f-explain { font-size: 0.8rem; line-height: 1.4; }
+    .raw-json { margin-top: 1rem; }
+    .raw-json pre { font-size: 0.78rem; max-height: 40vh; }
+    @media (prefers-color-scheme: dark) {
+      pre { background: #1e1e1e; color: #eee; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Bayyinah</h1>
+  <p class="tag">Pre-LLM file integrity verification · v__VERSION__</p>
+
+  <p class="lede">
+    Every file has a <strong>surface</strong> and a <strong>substrate</strong>.
+    The surface is what your reader, viewer, or inbox displays. The
+    substrate is the actual bytes underneath — metadata, hidden text,
+    embedded scripts, alternate streams. Most of the time the two agree.
+    When they don't, it's usually deliberate.
+  </p>
+
+  <p>
+    A contract that displays one figure and contains another. A PDF that
+    opens cleanly while carrying instructions a language model would
+    silently obey. An email whose visible sender and routing headers
+    don't match. A spreadsheet whose hidden sheet does the actual math.
+  </p>
+
+  <p>
+    Bayyinah pulls every layer of a file apart and reports whether the
+    surface matches the substrate. It is a single-purpose scanner. It
+    makes no moral judgement of its own — it surfaces the gap and lets
+    the reader perform the recognition.
+  </p>
+
+  <div class="scan-card">
+    <h2>Try it now</h2>
+    <p style="margin-top:0">
+      Drop in any file. Bayyinah returns a structured integrity report
+      in a couple of seconds.
+    </p>
+    <form id="form">
+      <label class="drop" id="drop">
+        <input type="file" id="file" name="file" style="display:none" required>
+        <div id="drop-text">Click to choose a file, or drop one here</div>
+      </label>
+      <button type="submit" id="submit" disabled>Scan</button>
+    </form>
+    <pre id="out" style="display:none"></pre>
+    <p style="font-size:0.85rem; color:var(--muted); margin: 0.5rem 0 0;">
+      Try a document you already trust to see a score of 1.0 with no
+      findings. Then try one from a less-trusted source.
+    </p>
+    <details style="margin-top:1rem; font-size:0.9rem;">
+      <summary style="cursor:pointer; color:var(--muted);">Verdict legend</summary>
+      <dl class="meta-grid" style="margin-top:0.75rem;">
+        <dt><code>sahih</code></dt><dd>sound — score 1.0, no findings, scan complete</dd>
+        <dt><code>mushtabih</code></dt><dd>doubtful — score 0.7-1.0, some signal, nothing verified</dd>
+        <dt><code>mukhfi</code></dt><dd>concealed — score 0.3-0.7, concealment detected</dd>
+        <dt><code>munafiq</code></dt><dd>severe concealment — score below 0.3 with at least one verified mechanism</dd>
+        <dt><code>mughlaq</code></dt><dd>closed — scan incomplete or errored, no verdict can be issued</dd>
+      </dl>
+      <p style="font-size:0.85rem; color:var(--muted); margin: 0.75rem 0 0;">
+        These labels classify the <em>report</em>, not the document's author or intent.
+        Bayyinah surfaces the gap; the reader performs the recognition.
+      </p>
+    </details>
+  </div>
+
+  <h2>Why it matters now</h2>
+  <p>
+    Modern AI systems ingest files all day. Every document Q&amp;A tool,
+    every email summarizer, every customer-support agent reads files
+    written by humans and by other models. When a file hides something,
+    the model consumes the hidden content along with the visible content.
+    Most AI-safety work focuses on what the model says back. Bayyinah
+    addresses the input layer: vet the file <em>before</em> any model
+    touches it.
+  </p>
+
+  <h2>What it covers</h2>
+  <p>23 file kinds, grouped by family:</p>
+  <ul style="line-height:1.7;">
+    <li><strong>Documents:</strong> PDF, DOCX, XLSX, PPTX</li>
+    <li><strong>Web &amp; mail:</strong> HTML, SVG, EML</li>
+    <li><strong>Data &amp; text:</strong> JSON, CSV, Markdown, plain text and source code</li>
+    <li><strong>Images:</strong> PNG, JPEG</li>
+    <li><strong>Video:</strong> MP4, MOV, WEBM, MKV</li>
+    <li><strong>Audio:</strong> MP3, WAV, FLAC, M4A, OGG</li>
+    <li><strong>Universal-witness fallback</strong> for unknown formats so nothing slips through silent-clean</li>
+  </ul>
+
+  <h2>API</h2>
+  <p>The same scanner is exposed over HTTP for integration:</p>
+  <pre><code>curl -X POST -F "file=@suspicious.pdf" https://bayyinah.dev/scan</code></pre>
+  <p>
+    Returns the full <code>IntegrityReport</code> as JSON — mechanism,
+    tier, confidence, severity, location, and inversion-recovery for
+    every finding. See <a href="https://github.com/BayyinahEnterprise/Bayyinah-Integrity-Scanner#hosted-api">the repo</a>
+    for the full endpoint list.
+  </p>
+
+  <h2>Status</h2>
+  <dl class="meta-grid">
+    <dt>Version</dt><dd>1.1.2 (production-stable)</dd>
+    <dt>License</dt><dd>Apache 2.0</dd>
+    <dt>Source</dt><dd><a href="https://github.com/BayyinahEnterprise/Bayyinah-Integrity-Scanner">github.com/BayyinahEnterprise/Bayyinah-Integrity-Scanner</a></dd>
+    <dt>DOI</dt><dd><a href="https://doi.org/10.5281/zenodo.19677111">10.5281/zenodo.19677111</a></dd>
+    <dt>Demo limit</dt><dd>25 MiB per upload, no auth</dd>
+  </dl>
+
+  <p>
+    Every finding Bayyinah emits is tagged with a tier:
+    <strong>Verified</strong> (unambiguous concealment),
+    <strong>Structural</strong> (pattern of concealment, context may justify), or
+    <strong>Interpretive</strong> (suspicious, context-dependent).
+    The integrity score is a single continuous number; readers are expected
+    to inspect the findings, not stop at the score.
+  </p>
+
+  <p class="footer">
+    Bayyinah is a pre-LLM file integrity scanner. It does not call any
+    language model. It does not store uploaded files. The demo endpoint
+    runs the same library available on PyPI; the wrapper only handles
+    transport. Bug reports and contributions welcome on
+    <a href="https://github.com/BayyinahEnterprise/Bayyinah-Integrity-Scanner">GitHub</a>.
+  </p>
+
+  <script>
+    const drop = document.getElementById('drop');
+    const fileInput = document.getElementById('file');
+    const dropText = document.getElementById('drop-text');
+    const submit = document.getElementById('submit');
+    const form = document.getElementById('form');
+    const out = document.getElementById('out');
+
+    // Note: a <label> wrapping <input type="file"> already opens the
+    // file dialog natively when clicked. Adding our own click handler
+    // would open it twice. We only handle keyboard activation explicitly.
+    drop.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        fileInput.click();
+      }
+    });
+    drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('dragover'); });
+    drop.addEventListener('dragleave', () => drop.classList.remove('dragover'));
+    drop.addEventListener('drop', e => {
+      e.preventDefault();
+      drop.classList.remove('dragover');
+      if (e.dataTransfer.files.length) {
+        fileInput.files = e.dataTransfer.files;
+        update();
+      }
+    });
+    fileInput.addEventListener('change', update);
+
+    function update() {
+      if (fileInput.files.length) {
+        dropText.textContent = fileInput.files[0].name +
+          ' (' + (fileInput.files[0].size / 1024).toFixed(1) + ' KB)';
+        submit.disabled = false;
+      }
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, c => ({
+        '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+      }[c]));
+    }
+
+    function scoreBand(score, hasFindings) {
+      if (score >= 0.99 && !hasFindings) return {label:'Clean', cls:'band-clean'};
+      if (score >= 0.85) return {label:'Mostly clean', cls:'band-mostly'};
+      if (score >= 0.5)  return {label:'Mixed signal', cls:'band-mixed'};
+      if (score >= 0.2)  return {label:'Concerning', cls:'band-concern'};
+      return {label:'Severe concealment', cls:'band-severe'};
+    }
+
+    const TIER_LABEL = {
+      1: 'Verified',
+      2: 'Structural',
+      3: 'Informational',
+    };
+    const TIER_EXPLAIN = {
+      1: 'A concrete concealment mechanism was identified and validated.',
+      2: 'A structural anomaly was observed; context determines whether it is a problem.',
+      3: 'An observation about the file. Does not lower the score; included for completeness.',
+    };
+
+    function renderReport(j) {
+      if (j.error) {
+        return '<div class="result"><h3>Scan failed</h3><p>' + escapeHtml(j.detail || j.error) + '</p></div>';
+      }
+      const score = j.integrity_score;
+      const findings = j.findings || [];
+      const incomplete = j.scan_incomplete === true;
+      const band = scoreBand(score, findings.length > 0);
+
+      const tierCounts = {1: 0, 2: 0, 3: 0};
+      for (const f of findings) {
+        const t = f.tier || 3;
+        tierCounts[t] = (tierCounts[t] || 0) + 1;
+      }
+
+      let html = '<div class="result">';
+      html += '<div class="score-row"><div class="score-num ' + band.cls + '">' +
+              score.toFixed(2) + '</div><div class="score-label"><strong>' +
+              band.label + '</strong><br><span class="muted">Integrity score (0.0 = severe concealment, 1.0 = clean)</span></div></div>';
+
+      if (incomplete) {
+        html += '<p class="warn"><strong>Scan incomplete.</strong> The scanner ran but did not cover the entire file. Absence of findings here is not evidence of cleanness.</p>';
+      }
+
+      if (findings.length === 0) {
+        html += '<p class="muted">No findings. The scanner inspected the file at every supported layer and surfaced nothing.</p>';
+      } else {
+        html += '<p class="muted">' + findings.length + ' finding' + (findings.length === 1 ? '' : 's') +
+                ' across ' + Object.values(tierCounts).filter(n => n > 0).length + ' tier' +
+                (Object.values(tierCounts).filter(n => n > 0).length === 1 ? '' : 's') + '.</p>';
+        html += '<ul class="findings">';
+        for (const f of findings) {
+          const t = f.tier || 3;
+          const sev = (f.severity || 0).toFixed(2);
+          const conf = (f.confidence || 0).toFixed(2);
+          html += '<li class="f-tier-' + t + '">';
+          html += '<div class="f-head"><span class="f-tier">' + (TIER_LABEL[t] || 'Tier ' + t) +
+                  '</span> <span class="f-mech">' + escapeHtml(f.mechanism || '?') + '</span>';
+          html += '<span class="f-meta">severity ' + sev + ' · confidence ' + conf + '</span></div>';
+          if (f.description) {
+            html += '<div class="f-desc">' + escapeHtml(f.description) + '</div>';
+          }
+          if (f.location) {
+            html += '<div class="f-loc muted"><strong>Where:</strong> ' + escapeHtml(f.location) + '</div>';
+          }
+          if (f.inversion_recovery && (f.inversion_recovery.surface || f.inversion_recovery.concealed)) {
+            html += '<div class="f-inv">';
+            html += '<div class="f-inv-label">What the scanner extracted:</div>';
+            if (f.inversion_recovery.surface) {
+              html += '<div class="f-inv-row"><span class="f-inv-key">Surface:</span> <code>' +
+                      escapeHtml(f.inversion_recovery.surface) + '</code></div>';
+            }
+            if (f.inversion_recovery.concealed) {
+              html += '<div class="f-inv-row"><span class="f-inv-key f-inv-conceal">Concealed:</span> <code>' +
+                      escapeHtml(f.inversion_recovery.concealed) + '</code></div>';
+            }
+            html += '</div>';
+          }
+          html += '<div class="f-explain muted">' + (TIER_EXPLAIN[t] || '') + '</div>';
+          html += '</li>';
+        }
+        html += '</ul>';
+      }
+
+      html += '<details class="raw-json"><summary class="muted">Raw JSON response</summary><pre>' +
+              escapeHtml(JSON.stringify(j, null, 2)) + '</pre></details>';
+      html += '</div>';
+      return html;
+    }
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      submit.disabled = true;
+      submit.textContent = 'Scanning...';
+      out.style.display = 'block';
+      out.innerHTML = '<p class="muted">Scanning...</p>';
+      const fd = new FormData();
+      fd.append('file', fileInput.files[0]);
+      try {
+        const r = await fetch('/scan', { method: 'POST', body: fd });
+        const j = await r.json();
+        out.innerHTML = renderReport(j);
+      } catch (err) {
+        out.innerHTML = '<p>Request failed: ' + escapeHtml(String(err)) + '</p>';
+      } finally {
+        submit.disabled = false;
+        submit.textContent = 'Scan';
+      }
+    });
+  </script>
+</body>
+</html>
+"""
+
+
+_LANDING_DIR = _ROOT / "docs" / "landing-mock-v2"
+_LANDING_INDEX = _LANDING_DIR / "index.html"
+_LANDING_FIXTURES = _LANDING_DIR / "fixtures.json"
+
+
+@app.get("/", response_class=HTMLResponse)
+def index() -> HTMLResponse:
+    """Serve the v2 lab-notebook landing page.
+
+    The page is a single static HTML file under docs/landing-mock-v2/.
+    The simulator on the page loads /fixtures.json for the three
+    pre-recorded examinations, and the drop-zone POSTs to /scan.
+
+    If for any reason the v2 file is unavailable in this deployment,
+    fall back to the inline form so the service is never broken.
+    """
+    if _LANDING_INDEX.is_file():
+        try:
+            html = _LANDING_INDEX.read_text(encoding="utf-8")
+            return HTMLResponse(content=html)
+        except OSError:
+            pass
+    html = _INDEX_HTML.replace(
+        "__VERSION__", getattr(bayyinah, "__version__", "1.1.4")
+    )
+    return HTMLResponse(content=html)
+
+
+@app.get("/scan", response_class=HTMLResponse)
+def scan_form_legacy() -> HTMLResponse:
+    """Keep the legacy upload form reachable at /scan.
+
+    The v2 landing page is now at /, and the new drop-zone POSTs
+    directly to /scan. But there are external links and prior screenshots
+    that point readers at /scan as a destination URL, so we serve the
+    classic inline form here for continuity.
+    """
+    html = _INDEX_HTML.replace(
+        "__VERSION__", getattr(bayyinah, "__version__", "1.1.4")
+    )
+    return HTMLResponse(content=html)
+
+
+@app.get("/fixtures.json")
+def landing_fixtures() -> FileResponse:
+    """Serve the recorded fixtures JSON the v2 simulator loads."""
+    if not _LANDING_FIXTURES.is_file():
+        raise HTTPException(status_code=404, detail="fixtures unavailable")
+    return FileResponse(
+        path=str(_LANDING_FIXTURES),
+        media_type="application/json",
+    )
+
+
+_LANDING_ROBOTS = _LANDING_DIR / "robots.txt"
+_LANDING_SITEMAP = _LANDING_DIR / "sitemap.xml"
+
+
+@app.api_route("/robots.txt", methods=["GET", "HEAD"])
+def robots_txt() -> FileResponse:
+    """Serve robots.txt with a sitemap pointer for crawlers."""
+    if not _LANDING_ROBOTS.is_file():
+        raise HTTPException(status_code=404, detail="robots unavailable")
+    return FileResponse(
+        path=str(_LANDING_ROBOTS),
+        media_type="text/plain",
+    )
+
+
+@app.api_route("/sitemap.xml", methods=["GET", "HEAD"])
+def sitemap_xml() -> FileResponse:
+    """Serve sitemap.xml so Google Search Console has something to fetch."""
+    if not _LANDING_SITEMAP.is_file():
+        raise HTTPException(status_code=404, detail="sitemap unavailable")
+    return FileResponse(
+        path=str(_LANDING_SITEMAP),
+        media_type="application/xml",
+    )
+
+
+_LANDING_OG_DEMO = _LANDING_DIR / "og-demo.png"
+
+
+@app.api_route("/og-demo.png", methods=["GET", "HEAD"])
+def og_demo_png() -> FileResponse:
+    """Serve the Open Graph preview image for /demo and /.
+
+    Used by `og:image` and `twitter:image` meta tags so that pasting
+    https://bayyinah.dev/demo (or /) in Discord, Twitter, LinkedIn,
+    iMessage, etc. renders a 1200x630 preview card with the demo
+    page screenshot. Stateless, cacheable, no template logic.
+    """
+    if not _LANDING_OG_DEMO.is_file():
+        raise HTTPException(status_code=404, detail="og image unavailable")
+    return FileResponse(
+        path=str(_LANDING_OG_DEMO),
+        media_type="image/png",
+    )

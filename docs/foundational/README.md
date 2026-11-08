@@ -32,6 +32,6 @@ H(Arabic) ≈ 0.996 → H(English) ≈ 0.5 → H(Restored) ≈ 1.0
 
 ### Bayyinah Collected Works
 
-The complete 91-work research corpus (566,000+ lines) is too large for this repository. It is deposited on Zenodo and available from the author on request.
+The complete 91-work research corpus (566,000+ lines, 45MB markdown) covering 14 academic papers, the SHV dissertation, the XZ Protocol, SHV-Bench, and the full audit trail. Included in this repository as `Bismillah_Bilal_Arfeen_Research_Corpus_Bayyinah_Collected_Works_Bismillah.md`.
 
 # Bismillah ir-Rahman ir-Rahim

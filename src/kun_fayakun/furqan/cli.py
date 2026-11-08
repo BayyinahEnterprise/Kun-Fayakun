@@ -1,13 +1,13 @@
 """Command-line entry point for ``furqan-lint``.
 
-Subcommands:
+v2.0 subcommands (via `kun furqan`):
 
-* ``furqan-lint check <path>``           run the structural checks
-  on a file or recursively on a directory of ``.py`` files.
-* ``furqan-lint diff <old.py> <new.py>`` compare two versions of a
+* ``kun furqan lint <path>``             run v2.0 structural honesty checks
+* ``kun furqan check <path>``            run legacy v1.x structural checks
+* ``kun furqan diff <old.py> <new.py>``  compare two versions of a
   module's public API and fire on removed names.
-* ``furqan-lint version``                print the package version.
-* ``furqan-lint --help``                 print usage.
+* ``kun furqan version``                 print the package version.
+* ``kun furqan --help``                  print usage.
 
 Exit codes:
 
@@ -21,6 +21,35 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 from typing import TextIO
+
+
+def run(args: list[str]) -> int:
+    """Entry point for `kun furqan <subcommand>`.
+
+    Routes to v2.0 lint runner for `lint`, falls through to
+    legacy v1.x `main()` for `check` and `diff`.
+    """
+    if not args or args[0] in ("-h", "--help"):
+        print("Bismillah ir-Rahman ir-Rahim")
+        print()
+        print("furqan -- structural honesty instrument")
+        print()
+        print("Usage:")
+        print("  kun furqan lint [path]       v2.0 structural honesty checks")
+        print("  kun furqan check [path]      v1.x legacy checks")
+        print("  kun furqan diff old new      additive-only API diff")
+        print("  kun furqan version           show version")
+        print()
+        print("Bismillah ir-Rahman ir-Rahim")
+        return 0
+
+    if args[0] == "lint":
+        from kun_fayakun.furqan.checks.runner import run as lint_run
+        return lint_run(args)
+
+    # Fall through to legacy v1.x CLI for check/diff/manifest/version
+    sys.argv = ["furqan-lint"] + list(args)
+    return main()
 
 EXCLUDED_DIRS: frozenset[str] = frozenset(
     {

@@ -54,7 +54,7 @@ Examples of structural honesty findings:
 
 Each package scanned in installed form (site-packages). Both tools run with default configuration.
 
-**Test-path asymmetry.** furqan-lint's SI-006 (assert usage) exempts test files (test_ prefix, _test.py suffix, conftest.py, or tests/test directory component). bandit's B101 (assert_used) does not. Installed packages include test files (~36% of total lines). This asymmetry drives the 0.2x--0.3x ratios in numpy, pandas, and scipy.
+**Test-path asymmetry.** furqan-lint's SI-006 (assert usage) exempts test files. The exact predicate: a file is considered a test if its basename starts with `test_`, ends with `_test.py`, or is `conftest.py`, OR if any directory component in its path is exactly `tests` or `test` (component matching, not substring -- `contests/` does not match). bandit's B101 (assert_used) does not exempt test files. Installed packages include test files (~36% of total lines). This asymmetry drives the 0.2x--0.3x ratios in numpy, pandas, and scipy.
 
 **Non-Python findings.** furqan-lint's tree-sitter adapters scanned 76 non-Python files (.c/.h/.cpp) bundled in numpy's site-packages, producing 76 findings. These are reported separately.
 
@@ -76,7 +76,7 @@ Each package scanned in installed form (site-packages). Both tools run with defa
 
 | Condition | furqan total | bandit total | Pooled ratio | furqan > bandit | Median per-pkg |
 |-----------|------------:|------------:|------------:|:---------:|--------:|
-| As run | 24,933 | 29,959 | 0.83x | 22 / 25 | 5.0x |
+| As run (includes 76 non-Python) | 24,933 | 29,959 | 0.83x | 22 / 25 | 5.0x |
 | Both exclude test paths | 22,888 | 3,615 | 6.33x | 25 / 25 | 5.3x |
 
 The as-run pooled ratio (0.83x) is an artifact of the SI-006/B101 asymmetry. Under symmetric test-path exclusion, furqan-lint produces more findings in all 25 packages.
@@ -197,10 +197,14 @@ benchmark_v2.1.0.csv, raw_json/ (furqan-lint), bandit_json/ (bandit), benchmark.
 
 ## References
 
-[1] B. S. Arfeen, "Structural Honesty Verification: On Surface-Substrate Divergence Across Systems," BayyinahEnterprise, 2026.
+[1] B. S. Arfeen, "Structural Honesty Verification: On Surface-Substrate Divergence Across Systems," BayyinahEnterprise, 2026. https://github.com/BayyinahEnterprise/Kun-Fayakun
 
-[2] PyCQA, "Bandit: Security linter for Python," https://bandit.readthedocs.io/
+[2] PyCQA, "Bandit: Security linter for Python," v1.9.4, https://bandit.readthedocs.io/
 
 [3] M. Brunsfeld et al., "Tree-sitter: An incremental parsing system for programming tools," https://tree-sitter.github.io/tree-sitter/
 
 [4] OASIS, "Static Analysis Results Interchange Format (SARIF) Version 2.1.0," 2020.
+
+[5] Astral Software, "Ruff: An extremely fast Python linter," rule ANN401. https://docs.astral.sh/ruff/rules/dynamically-typed-expression/
+
+[6] Pylint, rule W0718 (broad-exception-caught). https://pylint.readthedocs.io/en/stable/user_guide/messages/warning/broad-exception-caught.html

@@ -1,15 +1,17 @@
 # Bismillah ir-Rahman ir-Rahim
 """
-Benchmark v2.1.1: furqan-lint vs bandit across 25 real-world Python packages.
+Benchmark harness: furqan-lint vs bandit across 25 Python packages.
 
-Fixes from round-2 audit:
-- Uses default Config() (excludes TB-001/002/003)
-- Records bandit --version
-- Outputs the shipped CSV schema (with severity columns)
-- Fails loudly on errors
-- Parameterized paths
+Two modes:
+  --scan SITE_PACKAGES   Fresh scan of installed packages (writes CSV + JSON)
+  --from-json JSON_DIR   Reconstruct CSV from archived raw JSON (offline replay)
+
+All output paths are parameterized via --out-dir (default: current directory).
 """
 
+from __future__ import annotations
+
+import argparse
 import csv
 import json
 import subprocess
@@ -17,13 +19,6 @@ import sys
 import time
 from collections import Counter
 from pathlib import Path
-
-sys.path.insert(0, "/home/claude/kun-fayakun/src")
-
-from kun_fayakun.furqan.checks.runner import lint_directory
-from kun_fayakun.furqan.checks.finding import Severity
-
-SITE_PACKAGES = Path("/usr/local/lib/python3.13/site-packages")
 
 PACKAGES = [
     ("django", "Web framework"),
@@ -53,7 +48,12 @@ PACKAGES = [
     ("scipy", "Scientific computing"),
 ]
 
-def count_py_lines(pkg_path):
+CSV_FIELDS = ["package", "domain", "py_files", "py_lines",
+              "furqan_v21", "bandit", "ratio",
+              "critical", "high", "medium", "low"]
+
+
+def count_py_lines(pkg_path: Path) -> int:
     total = 0
     for f in pkg_path.rglob("*.py"):
         try:
@@ -62,13 +62,15 @@ def count_py_lines(pkg_path):
             pass
     return total
 
-def count_py_files(pkg_path):
+
+def count_py_files(pkg_path: Path) -> int:
     return sum(1 for f in pkg_path.rglob("*.py") if f.is_file())
 
-def run_bandit(pkg_path):
+
+def run_bandit(pkg_path: Path) -> tuple[int, dict, list]:
     result = subprocess.run(
         ["bandit", "-r", str(pkg_path), "-f", "json", "-q"],
-        capture_output=True, text=True, timeout=300
+        capture_output=True, text=True, timeout=300,
     )
     try:
         data = json.loads(result.stdout)
@@ -78,28 +80,42 @@ def run_bandit(pkg_path):
     by_rule = Counter(r["test_id"] for r in results)
     return len(results), dict(by_rule), results
 
-def run_furqan(pkg_path):
-    # lint_directory now applies default Config() which excludes TB-001/002/003
+
+def run_furqan(pkg_path: Path):
+    """Run furqan-lint. Import deferred so --from-json works without tree-sitter."""
+    from kun_fayakun.furqan.checks.runner import lint_directory
     findings, _ = lint_directory(pkg_path)
     by_rule = Counter(f.rule for f in findings)
     by_severity = Counter(f.severity.value for f in findings)
     return len(findings), dict(by_rule), dict(by_severity), findings
 
-def main():
-    # Record tool versions
-    bandit_ver = subprocess.run(["bandit", "--version"], capture_output=True, text=True).stdout.strip().split("\n")[0]
-    print(f"Bismillah ir-Rahman ir-Rahim")
-    print()
-    print(f"furqan-lint v2.1.0 benchmark (rerun with default config)")
-    print(f"bandit version: {bandit_ver}")
+
+def scan_mode(site_packages: Path, out_dir: Path, monorepo_src: Path | None):
+    """Fresh scan of installed packages."""
+    if monorepo_src:
+        sys.path.insert(0, str(monorepo_src))
+
+    bandit_ver = subprocess.run(
+        ["bandit", "--version"], capture_output=True, text=True
+    ).stdout.strip().split("\n")[0]
+    python_ver = f"Python {sys.version.split()[0]}"
+
+    print("Bismillah ir-Rahman ir-Rahim")
+    print(f"furqan-lint v2.1.0 benchmark -- fresh scan")
+    print(f"bandit: {bandit_ver}  python: {python_ver}")
     print("=" * 70)
 
     rows = []
-    all_furqan_findings = {}
-    all_bandit_findings = {}
+    raw_json_dir = out_dir / "raw_json"
+    bandit_json_dir = out_dir / "bandit_json"
+    raw_json_dir.mkdir(parents=True, exist_ok=True)
+    bandit_json_dir.mkdir(parents=True, exist_ok=True)
+
+    versions = {"python": python_ver, "bandit": bandit_ver,
+                "furqan-lint": "v2.1.0", "packages": {}}
 
     for pkg_name, domain in PACKAGES:
-        pkg_path = SITE_PACKAGES / pkg_name
+        pkg_path = site_packages / pkg_name
         if not pkg_path.exists():
             print(f"  SKIP  {pkg_name} (not installed)", file=sys.stderr)
             continue
@@ -107,18 +123,36 @@ def main():
         py_files = count_py_files(pkg_path)
         py_lines = count_py_lines(pkg_path)
 
+        # Package version
+        try:
+            result = subprocess.run(
+                [sys.executable, "-c",
+                 f"import importlib.metadata; print(importlib.metadata.version('{pkg_name}'))"],
+                capture_output=True, text=True, timeout=10,
+            )
+            pkg_ver = result.stdout.strip() or "unknown"
+        except Exception:
+            pkg_ver = "unknown"
+        versions["packages"][pkg_name] = pkg_ver
+
         furqan_total, furqan_rules, furqan_sev, furqan_raw = run_furqan(pkg_path)
         bandit_total, bandit_rules, bandit_raw = run_bandit(pkg_path)
 
-        ratio = furqan_total / bandit_total if bandit_total > 0 else float("inf")
+        # Write raw JSON
+        furqan_data = [
+            {"rule": f.rule, "path": f.path, "line": f.line, "col": f.col,
+             "message": f.message, "severity": f.severity.value,
+             "fix": f.fix.value if f.fix else None}
+            for f in furqan_raw
+        ]
+        (raw_json_dir / f"{pkg_name}.json").write_text(json.dumps(furqan_data, indent=2))
+        (bandit_json_dir / f"{pkg_name}.json").write_text(json.dumps(bandit_raw, indent=2))
 
+        ratio = furqan_total / bandit_total if bandit_total > 0 else float("inf")
         row = {
-            "package": pkg_name,
-            "domain": domain,
-            "py_files": py_files,
-            "py_lines": py_lines,
-            "furqan_v21": furqan_total,
-            "bandit": bandit_total,
+            "package": pkg_name, "domain": domain,
+            "py_files": py_files, "py_lines": py_lines,
+            "furqan_v21": furqan_total, "bandit": bandit_total,
             "ratio": round(ratio, 1) if ratio != float("inf") else "inf",
             "critical": furqan_sev.get("CRITICAL", 0),
             "high": furqan_sev.get("HIGH", 0),
@@ -126,68 +160,112 @@ def main():
             "low": furqan_sev.get("LOW", 0),
         }
         rows.append(row)
-        all_furqan_findings[pkg_name] = furqan_raw
-        all_bandit_findings[pkg_name] = bandit_raw
-
         ratio_str = f"{ratio:.1f}x" if ratio != float("inf") else "inf"
-        print(f"  {pkg_name:20s}  furqan={furqan_total:5d}  bandit={bandit_total:4d}  "
-              f"ratio={ratio_str:>6s}  C={furqan_sev.get('CRITICAL',0)} H={furqan_sev.get('HIGH',0)} "
-              f"M={furqan_sev.get('MEDIUM',0)} L={furqan_sev.get('LOW',0)}")
-
-    print()
-    print("=" * 70)
-
-    # Summary
-    totals_furqan = sum(r["furqan_v21"] for r in rows)
-    totals_bandit = sum(r["bandit"] for r in rows)
-    total_files = sum(r["py_files"] for r in rows)
-    total_lines = sum(r["py_lines"] for r in rows)
-    ratios = [r["furqan_v21"] / r["bandit"] for r in rows if r["bandit"] > 0]
-
-    import statistics
-    print(f"Packages: {len(rows)}")
-    print(f"Files: {total_files:,}  Lines: {total_lines:,}")
-    print(f"furqan total: {totals_furqan:,}  bandit total: {totals_bandit:,}")
-    print(f"Pooled ratio: {totals_furqan/totals_bandit:.2f}x")
-    print(f"Median per-pkg ratio: {statistics.median(ratios):.1f}x")
-    print(f"Mean per-pkg ratio: {statistics.mean(ratios):.1f}x")
-    print(f"furqan > bandit: {sum(1 for r in rows if r['furqan_v21'] > r['bandit'])}/{len(rows)}")
-    print(f"bandit > furqan: {sum(1 for r in rows if r['bandit'] > r['furqan_v21'])}/{len(rows)}")
+        print(f"  {pkg_name:20s}  furqan={furqan_total:5d}  bandit={bandit_total:4d}  ratio={ratio_str:>6s}")
 
     # Write CSV
-    csv_path = "/home/claude/kun-fayakun/furqan-lint/paper/benchmark_v2.1.0.csv"
+    csv_path = out_dir / "benchmark_v2.1.0.csv"
     with open(csv_path, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
         writer.writeheader()
         writer.writerows(rows)
+
+    # Write versions
+    (out_dir / "versions.json").write_text(json.dumps(versions, indent=2))
+
     print(f"\nCSV: {csv_path}")
+    print(f"Versions: {out_dir / 'versions.json'}")
+    _print_summary(rows)
 
-    # Write raw JSON per package
-    json_dir = Path("/home/claude/kun-fayakun/furqan-lint/paper/raw_json")
-    json_dir.mkdir(exist_ok=True)
-    for pkg_name, findings in all_furqan_findings.items():
-        data = [{"rule": f.rule, "path": f.path, "line": f.line, "col": f.col,
-                 "message": f.message, "severity": f.severity.value,
-                 "fix": f.fix.value if f.fix else None} for f in findings]
-        (json_dir / f"{pkg_name}.json").write_text(json.dumps(data, indent=2))
 
-    # Write bandit raw JSON
-    bandit_json_dir = Path("/home/claude/kun-fayakun/furqan-lint/paper/bandit_json")
-    bandit_json_dir.mkdir(exist_ok=True)
-    for pkg_name, results in all_bandit_findings.items():
-        (bandit_json_dir / f"{pkg_name}.json").write_text(json.dumps(results, indent=2))
+def from_json_mode(json_dir: Path, out_dir: Path):
+    """Reconstruct CSV from archived raw JSON (offline replay)."""
+    raw_json_dir = json_dir / "raw_json" if (json_dir / "raw_json").exists() else json_dir
+    bandit_json_dir = json_dir / "bandit_json" if (json_dir / "bandit_json").exists() else json_dir
 
-    # Per-rule summary
-    print("\n--- Per-rule totals (furqan) ---")
-    all_rules = Counter()
-    for findings in all_furqan_findings.values():
-        for f in findings:
-            all_rules[f.rule] += 1
-    for rule, count in all_rules.most_common():
-        print(f"  {rule}: {count} ({count/totals_furqan*100:.1f}%)")
+    print("Bismillah ir-Rahman ir-Rahim")
+    print("Reconstructing CSV from archived JSON...")
+    print("=" * 70)
 
+    rows = []
+    for pkg_name, domain in PACKAGES:
+        furqan_file = raw_json_dir / f"{pkg_name}.json"
+        bandit_file = bandit_json_dir / f"{pkg_name}.json"
+        if not furqan_file.exists():
+            print(f"  SKIP  {pkg_name} (no JSON)", file=sys.stderr)
+            continue
+
+        furqan_data = json.loads(furqan_file.read_text())
+        bandit_data = json.loads(bandit_file.read_text()) if bandit_file.exists() else []
+
+        furqan_total = len(furqan_data)
+        bandit_total = len(bandit_data)
+        sev = Counter(f["severity"] for f in furqan_data)
+        ratio = furqan_total / bandit_total if bandit_total > 0 else float("inf")
+
+        row = {
+            "package": pkg_name, "domain": domain,
+            "py_files": "", "py_lines": "",
+            "furqan_v21": furqan_total, "bandit": bandit_total,
+            "ratio": round(ratio, 1) if ratio != float("inf") else "inf",
+            "critical": sev.get("CRITICAL", 0),
+            "high": sev.get("HIGH", 0),
+            "medium": sev.get("MEDIUM", 0),
+            "low": sev.get("LOW", 0),
+        }
+        rows.append(row)
+        ratio_str = f"{ratio:.1f}x" if ratio != float("inf") else "inf"
+        print(f"  {pkg_name:20s}  furqan={furqan_total:5d}  bandit={bandit_total:4d}  ratio={ratio_str:>6s}")
+
+    csv_path = out_dir / "benchmark_reconstructed.csv"
+    with open(csv_path, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+    print(f"\nReconstructed CSV: {csv_path}")
+    _print_summary(rows)
+
+
+def _print_summary(rows):
+    import statistics
+    totals_f = sum(r["furqan_v21"] for r in rows)
+    totals_b = sum(r["bandit"] for r in rows)
+    ratios = [r["furqan_v21"] / r["bandit"] for r in rows if r["bandit"] > 0]
+    print()
+    print(f"furqan total: {totals_f:,}  bandit total: {totals_b:,}")
+    print(f"Pooled ratio: {totals_f / totals_b:.2f}x")
+    print(f"Median: {statistics.median(ratios):.1f}x  Mean: {statistics.mean(ratios):.1f}x  SD: {statistics.stdev(ratios):.1f}")
+    print(f"furqan > bandit: {sum(1 for r in rows if r['furqan_v21'] > r['bandit'])}/{len(rows)}")
     print()
     print("Bismillah ir-Rahman ir-Rahim")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="furqan-lint v2.1.0 benchmark harness",
+        epilog="Bismillah ir-Rahman ir-Rahim",
+    )
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--scan", metavar="SITE_PACKAGES",
+                       help="Fresh scan: path to site-packages directory")
+    group.add_argument("--from-json", metavar="JSON_DIR",
+                       help="Offline replay: path to directory with raw_json/ and bandit_json/")
+    parser.add_argument("--out-dir", default=".",
+                        help="Output directory for CSV, JSON, versions (default: .)")
+    parser.add_argument("--monorepo-src", metavar="PATH",
+                        help="Path to monorepo src/ for PYTHONPATH (--scan only)")
+    args = parser.parse_args()
+
+    out_dir = Path(args.out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    if args.scan:
+        scan_mode(Path(args.scan), out_dir,
+                  Path(args.monorepo_src) if args.monorepo_src else None)
+    else:
+        from_json_mode(Path(args.from_json), out_dir)
+
 
 if __name__ == "__main__":
     main()

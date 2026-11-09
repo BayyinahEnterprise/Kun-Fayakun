@@ -10,10 +10,10 @@ Rules:
     SI-001  `Any` type annotation -- disables type checking at that boundary
     SI-002  `# type: ignore` without specific error code
     SI-003  `# noqa` without specific rule code
-    SI-004  TODO/FIXME/HACK/XXX older than 90 days (stale incomplete scan)
+    SI-004  TODO/FIXME/HACK/XXX comment -- acknowledged incomplete work
     SI-005  `**kwargs` passed through without validation or documentation
     SI-006  `assert` used for runtime validation (stripped in -O mode)
-    SI-007  `hasattr` on a class attribute -- hides AttributeError
+    SI-007  `hasattr` swallows AttributeError -- may hide real bugs
 """
 
 from __future__ import annotations
@@ -114,7 +114,7 @@ def _check_noqa_blanket(source: str, path: str) -> List[Finding]:
 
 
 def _check_stale_todo(source: str, path: str) -> List[Finding]:
-    """SI-004: TODO/FIXME/HACK/XXX comments."""
+    """SI-004: TODO/FIXME/HACK/XXX comments -- acknowledged incomplete work."""
     findings: List[Finding] = []
     pattern = re.compile(r"#\s*(TODO|FIXME|HACK|XXX)\b", re.IGNORECASE)
     for lineno, line in enumerate(source.splitlines(), 1):
@@ -210,7 +210,7 @@ def _check_assert_validation(tree: ast.Module, path: str) -> List[Finding]:
 
 
 def _check_hasattr_class(tree: ast.Module, path: str) -> List[Finding]:
-    """SI-007: hasattr() hides AttributeError, masking real bugs."""
+    """SI-007: hasattr() swallows AttributeError, potentially hiding real bugs."""
     findings: List[Finding] = []
     for node in ast.walk(tree):
         if (isinstance(node, ast.Call)

@@ -48,17 +48,28 @@ class TestRingClose:
         rc001 = [f for f in findings if f.rule == "RC-001"]
         assert len(rc001) == 0
 
-    def test_rc002_lock_acquire(self):
+    def test_rc002_lock_acquire_without_release(self):
         tree = _parse("""
             import threading
             lock = threading.Lock()
             lock.acquire()
-            # do work
-            lock.release()
+            do_work()
         """)
         findings = check_ring_close(tree, "<test>")
         rules = [f.rule for f in findings]
         assert "RC-002" in rules
+
+    def test_rc002_lock_acquire_with_release_is_clean(self):
+        tree = _parse("""
+            import threading
+            lock = threading.Lock()
+            lock.acquire()
+            do_work()
+            lock.release()
+        """)
+        findings = check_ring_close(tree, "<test>")
+        rules = [f.rule for f in findings]
+        assert "RC-002" not in rules
 
     def test_rc005_tempfile(self):
         tree = _parse("""

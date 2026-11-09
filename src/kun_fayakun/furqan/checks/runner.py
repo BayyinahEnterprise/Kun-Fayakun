@@ -35,8 +35,21 @@ from kun_fayakun.furqan.checks.adapters.base import get_adapter, supported_exten
 EXCLUDED_DIRS: frozenset = frozenset({
     ".venv", "venv", "__pycache__", ".git", "node_modules",
     ".tox", ".mypy_cache", ".ruff_cache", ".pytest_cache",
-    "target", "vendor", "build", "dist", ".eggs", "*.egg-info",
+    ".eggs",
 })
+
+
+def _is_excluded(path: Path, scan_root: Path) -> bool:
+    """Check if a path should be excluded, relative to the scan root.
+
+    Only matches directory names that are direct children of the scan root
+    or intermediate directories, not ancestor paths like /tmp/build/.
+    """
+    try:
+        rel = path.relative_to(scan_root)
+    except ValueError:
+        rel = path
+    return any(part in EXCLUDED_DIRS for part in rel.parts[:-1])
 
 
 def lint_source(source: str, path: str, config: Config | None = None) -> List[Finding]:
@@ -144,15 +157,15 @@ def lint_directory(directory: Path, config: Config | None = None) -> tuple[List[
         p for p in directory.rglob("*")
         if p.is_file()
         and p.suffix.lower() in exts
-        and not any(part in EXCLUDED_DIRS for part in p.parts)
+        and not _is_excluded(p, directory)
     )
 
     if config:
         source_files = [p for p in source_files if not config.should_exclude_path(p)]
 
     if not source_files:
-        print(f"  No supported files found in {directory}")
-        return [], 0
+        print(f"  WARNING: No supported files found in {directory}", file=sys.stderr)
+        return [], 2  # exit nonzero -- scanning nothing is not a pass
 
     for path in source_files:
         findings, code = lint_file(path, config)
@@ -248,7 +261,7 @@ def run(args: list[str]) -> int:
                 p for p in target.rglob("*")
                 if p.is_file()
                 and p.suffix.lower() in exts
-                and not any(part in EXCLUDED_DIRS for part in p.parts)
+                and not _is_excluded(p, target)
                 and not (config and config.should_exclude_path(p))
             ]
             file_count += len(scanned)

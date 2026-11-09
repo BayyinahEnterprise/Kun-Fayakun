@@ -1,19 +1,15 @@
 # Bismillah ir-Rahman ir-Rahim
 """
-TRUST-BOUNDARY checks: the 18 defect families as lint rules.
-
-Derived from the P14-P21 adversarial audit arc. Every pattern here was
-discovered in working safety-critical code and proven with an adversarial test.
-No existing linter checks for any of them.
+TRUST-BOUNDARY checks: patterns at boundaries where type assumptions
+can be violated.
 
 Rules:
-    TB-001  isinstance() used in security/authorization decision (DF-12)
-    TB-002  copy.deepcopy() called on untrusted/external input (DF-13)
-    TB-003  type(x).__name__ used under a lock or in error diagnostics (DF-16)
+    TB-001  isinstance() admits subclasses that may override behavior
+    TB-002  copy.deepcopy() invokes __deepcopy__ hooks on the input
+    TB-003  type(x).__name__ interceptable by metaclass __getattribute__
     TB-004  Mutable default argument that persists across calls
     TB-005  eval/exec called on any input
-    TB-006  pickle.loads / yaml.load(unsafe) on untrusted input
-    TB-007  __dunder__ method defined that could serve as attack hook
+    TB-006  pickle.loads / yaml.load(unsafe) deserialization
 """
 
 from __future__ import annotations
@@ -37,36 +33,37 @@ def check_trust_boundary(tree: ast.Module, path: str) -> List[Finding]:
 
 
 def _check_isinstance_security(tree: ast.Module, path: str) -> List[Finding]:
-    """TB-001: isinstance() used where type() is would be safer.
+    """TB-001: isinstance() admits subclasses that may override behavior.
 
-    From DF-12: isinstance admits subclasses with spoofed __eq__/__hash__.
-    A subclass can pass isinstance while behaving arbitrarily differently.
+    A subclass can pass isinstance while overriding any dunder method.
+    This is informational -- most isinstance calls are ordinary type
+    dispatch, not security decisions. Severity LOW.
     """
     findings: List[Finding] = []
     for node in ast.walk(tree):
         if isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
             if node.func.id == "isinstance":
-                # Check if this isinstance is inside an if/assert (security decision)
                 findings.append(Finding(
                     rule="TB-001",
                     path=path,
                     line=node.lineno,
                     col=node.col_offset,
-                    message="isinstance() admits subclasses -- use `type(x) is T` for trust decisions",
-                    severity=Severity.MEDIUM,
+                    message="isinstance() admits subclasses that may override behavior",
+                    severity=Severity.LOW,
                     fix=Fix.RECALIBRATE,
                     detail="A subclass passes isinstance() while overriding __eq__, __hash__, "
-                           "__deepcopy__, __int__, __str__, or any dunder method. If this check "
-                           "guards a security boundary, use `type(x) is T` for exact-type matching. "
-                           "Discovered in EESS audit round P14 (DF-12).",
+                           "or any dunder method. In most code this is fine -- isinstance is "
+                           "the correct way to do type dispatch. Review only if this check "
+                           "guards a trust boundary where exact type identity matters.",
                 ))
     return findings
 
 
 def _check_deepcopy_untrusted(tree: ast.Module, path: str) -> List[Finding]:
-    """TB-002: copy.deepcopy() invokes __deepcopy__ on the copied object.
+    """TB-002: copy.deepcopy() invokes __deepcopy__ hooks on the input.
 
-    From DF-13: deepcopy on hostile dicts invokes arbitrary code via __deepcopy__ hooks.
+    Informational: most deepcopy calls are safe. The risk exists only
+    when the copied object could have a hostile __deepcopy__ method.
     """
     findings: List[Finding] = []
     for node in ast.walk(tree):
@@ -77,21 +74,22 @@ def _check_deepcopy_untrusted(tree: ast.Module, path: str) -> List[Finding]:
                     path=path,
                     line=node.lineno,
                     col=node.col_offset,
-                    message="copy.deepcopy() invokes __deepcopy__ hooks on the input object",
-                    severity=Severity.HIGH,
+                    message="deepcopy() invokes __deepcopy__ hooks on the input object",
+                    severity=Severity.LOW,
                     fix=Fix.RECALIBRATE,
-                    detail="If the input is untrusted, deepcopy allows arbitrary code execution "
-                           "via the __deepcopy__ protocol. Build a new dict/list from exact "
-                           "built-in values instead. Discovered in EESS audit round P17 (DF-13).",
+                    detail="deepcopy calls __deepcopy__ on the input, which a hostile object "
+                           "can override. In most code this is safe. Review only if the input "
+                           "crosses a trust boundary (user-supplied, deserialized, external).",
                 ))
     return findings
 
 
 def _check_type_name_under_lock(tree: ast.Module, path: str) -> List[Finding]:
-    """TB-003: type(x).__name__ accesses __name__ which a metaclass can intercept.
+    """TB-003: type(x).__name__ is interceptable by metaclass __getattribute__.
 
-    From DF-16/P21: metaclass __getattribute__ traps __name__ access and can
-    re-enter a non-reentrant lock, causing deadlock.
+    Informational: in ordinary code this is fine. The risk exists only
+    when used under a non-reentrant lock with objects that have custom
+    metaclasses. We cannot detect the lock context statically.
     """
     findings: List[Finding] = []
     for node in ast.walk(tree):
@@ -104,12 +102,12 @@ def _check_type_name_under_lock(tree: ast.Module, path: str) -> List[Finding]:
                         path=path,
                         line=node.lineno,
                         col=node.col_offset,
-                        message="type(x).__name__ is interceptable by metaclass __getattribute__",
-                        severity=Severity.HIGH,
+                        message="type(x).__name__ interceptable by metaclass __getattribute__",
+                        severity=Severity.LOW,
                         fix=Fix.SIMPLIFY,
-                        detail="Under a lock, type(x).__name__ can re-enter via metaclass "
-                               "__getattribute__, causing deadlock. Use constant strings in "
-                               "diagnostics instead. Discovered in EESS audit round P21 (DF-16).",
+                        detail="A metaclass can override __getattribute__ and intercept the "
+                               "__name__ access. In most code this is harmless. Review if "
+                               "used under a lock or with objects of unknown provenance.",
                     ))
     return findings
 

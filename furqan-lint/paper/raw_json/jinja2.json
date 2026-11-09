@@ -1,0 +1,3269 @@
+[
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/async_utils.py",
+    "line": 15,
+    "col": 33,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/async_utils.py",
+    "line": 16,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/async_utils.py",
+    "line": 39,
+    "col": 8,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/async_utils.py",
+    "line": 39,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/async_utils.py",
+    "line": 90,
+    "col": 7,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "line": 73,
+    "col": 19,
+    "message": "pickle deserialization executes arbitrary code on untrusted input",
+    "severity": "CRITICAL",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "line": 227,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "line": 270,
+    "col": 16,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "line": 284,
+    "col": 12,
+    "message": "Temporary file created without context manager or cleanup",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "line": 295,
+    "col": 12,
+    "message": "Empty except block for OSError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "line": 327,
+    "col": 12,
+    "message": "Empty except block for OSError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 46,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 65,
+    "col": 86,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 88,
+    "col": 85,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 111,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 120,
+    "col": 44,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 136,
+    "col": 29,
+    "message": "Blanket `# noqa` -- specify which rule is being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 152,
+    "col": 4,
+    "message": "Empty except block for VisitorExit -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 450,
+    "col": 8,
+    "message": "Empty except block for CompilerExit -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 832,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1049,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1050,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1052,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1054,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1134,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1428,
+    "col": 49,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1471,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1474,
+    "col": 38,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1527,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1539,
+    "col": 24,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1553,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1672,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1766,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "line": 1820,
+    "col": 37,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/debug.py",
+    "line": 29,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/debug.py",
+    "line": 76,
+    "col": 21,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/debug.py",
+    "line": 145,
+    "col": 8,
+    "message": "exec() executes arbitrary code",
+    "severity": "CRITICAL",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/debug.py",
+    "line": 147,
+    "col": 42,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/debug.py",
+    "line": 176,
+    "col": 8,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 92,
+    "col": 27,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 102,
+    "col": 29,
+    "message": "Blanket `# noqa` -- specify which rule is being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 105,
+    "col": 37,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 118,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 128,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 131,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 136,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 383,
+    "col": 19,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 473,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 476,
+    "col": 16,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 476,
+    "col": 16,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 481,
+    "col": 20,
+    "message": "Empty except block for AttributeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 491,
+    "col": 8,
+    "message": "Empty except block for AttributeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 515,
+    "col": 34,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 520,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 523,
+    "col": 16,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 675,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 677,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 694,
+    "col": 26,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 761,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 851,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 852,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 919,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1011,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1053,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1062,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1068,
+    "col": 12,
+    "message": "Empty except block for (TemplateNotFound, UndefinedError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1070,
+    "col": 40,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1086,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1088,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1190,
+    "col": 36,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1205,
+    "col": 24,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1228,
+    "col": 8,
+    "message": "exec() executes arbitrary code",
+    "severity": "CRITICAL",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1275,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1293,
+    "col": 72,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1294,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1297,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1314,
+    "col": 45,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1315,
+    "col": 63,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1320,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1326,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1347,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1350,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1366,
+    "col": 42,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1371,
+    "col": 37,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1372,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1422,
+    "col": 60,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1503,
+    "col": 47,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1514,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1544,
+    "col": 15,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1554,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1567,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1571,
+    "col": 39,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1607,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1611,
+    "col": 35,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1618,
+    "col": 71,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1620,
+    "col": 33,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1622,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "line": 1667,
+    "col": 29,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/exceptions.py",
+    "line": 40,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/exceptions.py",
+    "line": 76,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/exceptions.py",
+    "line": 124,
+    "col": 12,
+    "message": "Empty except block for IndexError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/exceptions.py",
+    "line": 131,
+    "col": 27,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 14,
+    "col": 29,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 165,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 176,
+    "col": 17,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 180,
+    "col": 31,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 197,
+    "col": 17,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 199,
+    "col": 31,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 213,
+    "col": 17,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 216,
+    "col": 31,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 238,
+    "col": 17,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 241,
+    "col": 31,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 251,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 293,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 301,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 325,
+    "col": 58,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 326,
+    "col": 47,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 351,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 400,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 538,
+    "col": 54,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 700,
+    "col": 16,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 708,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 708,
+    "col": 48,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 757,
+    "col": 20,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "line": 849,
+    "col": 45,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 52,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 75,
+    "col": 39,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 101,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 133,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 141,
+    "col": 7,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 165,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 165,
+    "col": 37,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 168,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 171,
+    "col": 23,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 203,
+    "col": 8,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 204,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 205,
+    "col": 16,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 245,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 248,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 302,
+    "col": 28,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 316,
+    "col": 13,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 474,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 548,
+    "col": 28,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 573,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 616,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 621,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 637,
+    "col": 30,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 663,
+    "col": 31,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-026",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 699,
+    "col": 15,
+    "message": "`random.choice()` is not cryptographically secure",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 820,
+    "col": 13,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 843,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 850,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 851,
+    "col": 20,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 852,
+    "col": 18,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 908,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 909,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 995,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1053,
+    "col": 7,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1056,
+    "col": 11,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1102,
+    "col": 31,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1285,
+    "col": 33,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1317,
+    "col": 19,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1339,
+    "col": 29,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1344,
+    "col": 19,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1368,
+    "col": 30,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1377,
+    "col": 11,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1397,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1401,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1430,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1526,
+    "col": 29,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1571,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1607,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1647,
+    "col": 36,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1685,
+    "col": 36,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "line": 1781,
+    "col": 21,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 49,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 138,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 154,
+    "col": 52,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 229,
+    "col": 61,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 252,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 273,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 277,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 281,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 286,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 291,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 297,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 300,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "line": 307,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "line": 24,
+    "col": 65,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "line": 144,
+    "col": 0,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "line": 461,
+    "col": 43,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "line": 531,
+    "col": 61,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "line": 578,
+    "col": 64,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "line": 694,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "line": 724,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "line": 727,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "line": 760,
+    "col": 27,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 97,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 187,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 187,
+    "col": 55,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 325,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 327,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 331,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 333,
+    "col": 66,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 393,
+    "col": 51,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 499,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 591,
+    "col": 12,
+    "message": "Empty except block for TemplateNotFound -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 605,
+    "col": 12,
+    "message": "Empty except block for TemplateNotFound -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 644,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "line": 644,
+    "col": 49,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 53,
+    "col": 54,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 80,
+    "col": 46,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 82,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 84,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 88,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 89,
+    "col": 27,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 99,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 104,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 104,
+    "col": 49,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
+    "line": 108,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 32,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 35,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 70,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 73,
+    "col": 38,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 92,
+    "col": 42,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 98,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 108,
+    "col": 51,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 114,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 123,
+    "col": 51,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
+    "line": 124,
+    "col": 63,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 59,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 64,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 65,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 135,
+    "col": 39,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 137,
+    "col": 23,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 166,
+    "col": 16,
+    "message": "Empty except block for AttributeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 179,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 181,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 183,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 202,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 203,
+    "col": 29,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 216,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 250,
+    "col": 18,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 254,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 258,
+    "col": 32,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 266,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 505,
+    "col": 74,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 529,
+    "col": 73,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 619,
+    "col": 19,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 762,
+    "col": 44,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 795,
+    "col": 28,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 1091,
+    "col": 15,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 1112,
+    "col": 19,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "line": 1205,
+    "col": 47,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/optimizer.py",
+    "line": 31,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/optimizer.py",
+    "line": 38,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/optimizer.py",
+    "line": 45,
+    "col": 12,
+    "message": "Empty except block for Impossible -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 157,
+    "col": 66,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 177,
+    "col": 28,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 318,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 319,
+    "col": 24,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 402,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 431,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 439,
+    "col": 66,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 507,
+    "col": 35,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 510,
+    "col": 23,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 798,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "line": 1031,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 83,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 133,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 275,
+    "col": 39,
+    "message": "Blanket `# noqa` -- specify which rule is being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 279,
+    "col": 12,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 341,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 370,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 371,
+    "col": 72,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 375,
+    "col": 19,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 382,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 384,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 389,
+    "col": 19,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 445,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 588,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 592,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 595,
+    "col": 23,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 601,
+    "col": 36,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 606,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 615,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 619,
+    "col": 38,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 634,
+    "col": 35,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 713,
+    "col": 20,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 773,
+    "col": 43,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 776,
+    "col": 19,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 778,
+    "col": 19,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 782,
+    "col": 62,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 787,
+    "col": 17,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 793,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 841,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 943,
+    "col": 35,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 946,
+    "col": 8,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 946,
+    "col": 41,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 952,
+    "col": 64,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 957,
+    "col": 38,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 961,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 965,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "line": 1028,
+    "col": 44,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 8,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 111,
+    "col": 30,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 127,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 130,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 133,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 136,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 138,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 141,
+    "col": 9,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 141,
+    "col": 45,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 144,
+    "col": 9,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 144,
+    "col": 50,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 172,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 242,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 295,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 298,
+    "col": 16,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 298,
+    "col": 16,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 303,
+    "col": 20,
+    "message": "Empty except block for AttributeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 323,
+    "col": 12,
+    "message": "Empty except block for (TypeError, LookupError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 338,
+    "col": 16,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 350,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 357,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 364,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 388,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "line": 418,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
+    "line": 44,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
+    "line": 49,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
+    "line": 127,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
+    "line": 136,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
+    "line": 151,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
+    "line": 159,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
+    "line": 164,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
+    "line": 173,
+    "col": 27,
+    "message": "Blanket `# noqa` -- specify which rule is being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
+    "line": 205,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 51,
+    "col": 41,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 68,
+    "col": 46,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 81,
+    "col": 45,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 92,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 93,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 118,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 171,
+    "col": 11,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 403,
+    "col": 11,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 416,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 417,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 506,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 520,
+    "col": 16,
+    "message": "Empty except block for ValueError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 552,
+    "col": 12,
+    "message": "Empty except block for ValueError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 637,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 668,
+    "col": 11,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "line": 749,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 33,
+    "col": 38,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 35,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 44,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 61,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 63,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 66,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 70,
+    "col": 33,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 75,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 83,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
+    "line": 89,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  }
+]

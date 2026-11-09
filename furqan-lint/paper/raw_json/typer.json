@@ -1,0 +1,5294 @@
+[
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 46,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 55,
+    "col": 4,
+    "message": "`**extra` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 60,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 68,
+    "col": 8,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 68,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 88,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 112,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 114,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 121,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 128,
+    "col": 8,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 128,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 134,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 152,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 200,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 203,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 204,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 242,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 256,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 316,
+    "col": 8,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 319,
+    "col": 15,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 321,
+    "col": 11,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 330,
+    "col": 14,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-026",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 381,
+    "col": 30,
+    "message": "`random.randrange()` is not cryptographically secure",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 401,
+    "col": 19,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 405,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 422,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 444,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 445,
+    "col": 10,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 451,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 478,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 502,
+    "col": 8,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 502,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 522,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 540,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 547,
+    "col": 8,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "line": 547,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "line": 363,
+    "col": 15,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-018",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "line": 371,
+    "col": 32,
+    "message": "Possible SQL injection via f-string",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-017",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "line": 403,
+    "col": 12,
+    "message": "Partial executable path `xdg-open` -- relies on $PATH resolution",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "line": 408,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "line": 493,
+    "col": 16,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "line": 511,
+    "col": 8,
+    "message": "Empty except block for error -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_winconsole.py",
+    "line": 39,
+    "col": 0,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_winconsole.py",
+    "line": 79,
+    "col": 44,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_winconsole.py",
+    "line": 208,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_winconsole.py",
+    "line": 212,
+    "col": 8,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_winconsole.py",
+    "line": 212,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_winconsole.py",
+    "line": 220,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/_winconsole.py",
+    "line": 268,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 145,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 147,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 163,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 174,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 175,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 186,
+    "col": 46,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 266,
+    "col": 49,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 311,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 349,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 349,
+    "col": 68,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 393,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 412,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 429,
+    "col": 71,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 434,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 434,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 436,
+    "col": 62,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 475,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 475,
+    "col": 59,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 475,
+    "col": 74,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 524,
+    "col": 46,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 525,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 541,
+    "col": 51,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 645,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 670,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 699,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 736,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 742,
+    "col": 41,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 768,
+    "col": 24,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 772,
+    "col": 66,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 794,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 795,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 801,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 807,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 807,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 807,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 807,
+    "col": 53,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 824,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 826,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 826,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 827,
+    "col": 50,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 827,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 860,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 860,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 880,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 902,
+    "col": 71,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 907,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 907,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 911,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 911,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 913,
+    "col": 59,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 928,
+    "col": 47,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 929,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 930,
+    "col": 37,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 938,
+    "col": 51,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 947,
+    "col": 51,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 947,
+    "col": 59,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 954,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 954,
+    "col": 47,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 955,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 963,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 963,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 968,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 968,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 971,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 974,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 974,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 992,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 995,
+    "col": 49,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 995,
+    "col": 57,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 1027,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 1051,
+    "col": 12,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 1059,
+    "col": 47,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 1060,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 1073,
+    "col": 57,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 1084,
+    "col": 43,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "line": 1110,
+    "col": 27,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/decorators.py",
+    "line": 17,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/decorators.py",
+    "line": 23,
+    "col": 0,
+    "message": "`**attrs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/decorators.py",
+    "line": 24,
+    "col": 77,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/decorators.py",
+    "line": 50,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/exceptions.py",
+    "line": 14,
+    "col": 38,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/exceptions.py",
+    "line": 29,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/exceptions.py",
+    "line": 52,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/exceptions.py",
+    "line": 96,
+    "col": 62,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/exceptions.py",
+    "line": 124,
+    "col": 62,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/exceptions.py",
+    "line": 221,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 72,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 126,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 153,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 155,
+    "col": 43,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 157,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 159,
+    "col": 64,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 161,
+    "col": 69,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 163,
+    "col": 70,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 181,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 195,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 201,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 247,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "line": 277,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 24,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 27,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 29,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 34,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 58,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 76,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 179,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 182,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 190,
+    "col": 16,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 210,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 231,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "line": 249,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 53,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 61,
+    "col": 45,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 68,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 68,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 69,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 69,
+    "col": 54,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 77,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 80,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 81,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 86,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 303,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 306,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 314,
+    "col": 10,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 332,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 371,
+    "col": 0,
+    "message": "`**styles` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 372,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 377,
+    "col": 14,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/termui.py",
+    "line": 380,
+    "col": 35,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 62,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 65,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 82,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 83,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 120,
+    "col": 29,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 125,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 125,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 130,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 131,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 138,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 138,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 148,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 149,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 150,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 198,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 205,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 206,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 207,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 228,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 231,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 232,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 259,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 260,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 309,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 333,
+    "col": 17,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 428,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 433,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 453,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 454,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 457,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 524,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 527,
+    "col": 12,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 577,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 577,
+    "col": 46,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 578,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 578,
+    "col": 37,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 593,
+    "col": 44,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 601,
+    "col": 29,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 605,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 606,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 622,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 622,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 630,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 639,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 648,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "line": 651,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 51,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 54,
+    "col": 8,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 54,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 131,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 141,
+    "col": 16,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 145,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 153,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 196,
+    "col": 30,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 200,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 201,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 233,
+    "col": 35,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 240,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 253,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 330,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 387,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "line": 399,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_classes.py",
+    "line": 32,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_classes.py",
+    "line": 52,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_classes.py",
+    "line": 102,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_classes.py",
+    "line": 130,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_classes.py",
+    "line": 153,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_classes.py",
+    "line": 172,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_classes.py",
+    "line": 206,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "line": 76,
+    "col": 0,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "line": 133,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "line": 181,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "line": 183,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "line": 188,
+    "col": 12,
+    "message": "Empty except block for UnicodeDecodeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "line": 210,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_types.py",
+    "line": 40,
+    "col": 44,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_types.py",
+    "line": 51,
+    "col": 74,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_types.py",
+    "line": 72,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_types.py",
+    "line": 95,
+    "col": 48,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 19,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 41,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 41,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 41,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 44,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 51,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 55,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 59,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 59,
+    "col": 46,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 63,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/_typing.py",
+    "line": 63,
+    "col": 50,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 63,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 72,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 76,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 96,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 101,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 133,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 135,
+    "col": 37,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 203,
+    "col": 7,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 203,
+    "col": 31,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 244,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 251,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 260,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 301,
+    "col": 7,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 302,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 304,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "line": 316,
+    "col": 14,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 30,
+    "col": 74,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 30,
+    "col": 82,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 33,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 42,
+    "col": 71,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 42,
+    "col": 79,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 46,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 50,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 79,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 96,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "line": 107,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 71,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 74,
+    "col": 20,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 74,
+    "col": 27,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 90,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 90,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 90,
+    "col": 69,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 90,
+    "col": 76,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 96,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 107,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 111,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 127,
+    "col": 8,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 142,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 142,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 167,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 168,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 253,
+    "col": 14,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 255,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 256,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 263,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 269,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 305,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 313,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 313,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 313,
+    "col": 73,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 313,
+    "col": 80,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 324,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 324,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 341,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 351,
+    "col": 30,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 372,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 372,
+    "col": 39,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 405,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 445,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 447,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 448,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 455,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 461,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 513,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 519,
+    "col": 24,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 627,
+    "col": 55,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 633,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 656,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 657,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 673,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 674,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 707,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 735,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 735,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 735,
+    "col": 73,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 735,
+    "col": 80,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 746,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 746,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 796,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 806,
+    "col": 30,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 822,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 835,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 835,
+    "col": 39,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 847,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 851,
+    "col": 54,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 885,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 908,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 909,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 947,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 955,
+    "col": 4,
+    "message": "`**extra` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 962,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 963,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 977,
+    "col": 19,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 979,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 997,
+    "col": 4,
+    "message": "`**attrs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1010,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1011,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1021,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1025,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1069,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1088,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1089,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1089,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1114,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1144,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1188,
+    "col": 4,
+    "message": "`**extra` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1195,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "line": 1196,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 231,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 245,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 245,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 262,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 604,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 618,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 618,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 774,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 774,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 981,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 995,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 995,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1004,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1133,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1133,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1133,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1133,
+    "col": 53,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1158,
+    "col": 31,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1159,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1159,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1192,
+    "col": 55,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1213,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1218,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1223,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1233,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1240,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1249,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1252,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1258,
+    "col": 64,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1261,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1264,
+    "col": 8,
+    "message": "Empty except block for AttributeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1269,
+    "col": 49,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1272,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1275,
+    "col": 8,
+    "message": "Empty except block for AttributeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1290,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1328,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1369,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1370,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1393,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1416,
+    "col": 24,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1432,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1432,
+    "col": 54,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1432,
+    "col": 60,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1433,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1433,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1445,
+    "col": 24,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1449,
+    "col": 59,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1449,
+    "col": 65,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1452,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1452,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1463,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1463,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1463,
+    "col": 59,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1464,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1464,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1465,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1465,
+    "col": 64,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1474,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1475,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1475,
+    "col": 46,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1479,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1480,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1493,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1494,
+    "col": 41,
+    "message": "Mutable default argument -- shared across all calls to this function",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1495,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1498,
+    "col": 19,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1503,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1510,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1510,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1526,
+    "col": 19,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1623,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1624,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1629,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1636,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1648,
+    "col": 16,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1656,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1668,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1674,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1681,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1700,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1753,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1792,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1793,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1794,
+    "col": 19,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1824,
+    "col": 69,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1824,
+    "col": 77,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1825,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1843,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1844,
+    "col": 19,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1881,
+    "col": 81,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1882,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1897,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-017",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 1994,
+    "col": 19,
+    "message": "Partial executable path `open` -- relies on $PATH resolution",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-017",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "line": 2001,
+    "col": 22,
+    "message": "Partial executable path `xdg-open` -- relies on $PATH resolution",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 26,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 178,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 187,
+    "col": 73,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 197,
+    "col": 38,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 206,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 206,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 207,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 246,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 248,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 248,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 249,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 284,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 286,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 292,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 298,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 299,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 301,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 393,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 395,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 401,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 407,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 408,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 410,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 418,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 420,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 521,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 523,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 529,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 535,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 536,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 538,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 627,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 628,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 663,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 684,
+    "col": 41,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/models.py",
+    "line": 687,
+    "col": 36,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 19,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 21,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 27,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 33,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 34,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 36,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 43,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 45,
+    "col": 16,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 77,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 84,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 86,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 92,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 98,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 99,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 108,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 110,
+    "col": 16,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 142,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 148,
+    "col": 8,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 191,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 267,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 282,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 302,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 322,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 457,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 468,
+    "col": 8,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 927,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1009,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1011,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1017,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1023,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1024,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1026,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1058,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1065,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1067,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1073,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1079,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1080,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1114,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1120,
+    "col": 8,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1144,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1221,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1236,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1256,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1276,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/params.py",
+    "line": 1769,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 180,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 271,
+    "col": 22,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 300,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 302,
+    "col": 30,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 376,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 381,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 383,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 414,
+    "col": 12,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 415,
+    "col": 16,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 449,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 487,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 597,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 602,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "line": 646,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 23,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 64,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 64,
+    "col": 73,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 87,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 125,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 227,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 241,
+    "col": 53,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 251,
+    "col": 20,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 251,
+    "col": 20,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 261,
+    "col": 20,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 261,
+    "col": 20,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 283,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 293,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 313,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "line": 341,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/utils.py",
+    "line": 95,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/utils.py",
+    "line": 96,
+    "col": 16,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/utils.py",
+    "line": 103,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/utils.py",
+    "line": 107,
+    "col": 49,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/utils.py",
+    "line": 124,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/utils.py",
+    "line": 142,
+    "col": 16,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/typer/utils.py",
+    "line": 167,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  }
+]

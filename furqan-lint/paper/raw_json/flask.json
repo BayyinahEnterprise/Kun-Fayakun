@@ -1,0 +1,1217 @@
+[
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 75,
+    "col": 24,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 268,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 278,
+    "col": 75,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 303,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 359,
+    "col": 19,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 361,
+    "col": 15,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 381,
+    "col": 19,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 383,
+    "col": 15,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 496,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 669,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 723,
+    "col": 21,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 727,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 742,
+    "col": 36,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 771,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 796,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 801,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 918,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1190,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1198,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1219,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1220,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1220,
+    "col": 58,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1230,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1232,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1246,
+    "col": 34,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1254,
+    "col": 24,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1260,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1423,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
+    "line": 1512,
+    "col": 12,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-003",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/blueprints.py",
+    "line": 11,
+    "col": 75,
+    "message": "Blanket `# noqa` -- specify which rule is being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/blueprints.py",
+    "line": 30,
+    "col": 44,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/blueprints.py",
+    "line": 77,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/blueprints.py",
+    "line": 126,
+    "col": 19,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/blueprints.py",
+    "line": 128,
+    "col": 15,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 51,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 55,
+    "col": 54,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 74,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 135,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 139,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 141,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 191,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 395,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 658,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 830,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 848,
+    "col": 21,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 1031,
+    "col": 12,
+    "message": "eval() executes arbitrary code",
+    "severity": "CRITICAL",
+    "fix": "simplify"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 1044,
+    "col": 8,
+    "message": "Empty except block for ImportError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
+    "line": 1106,
+    "col": 4,
+    "message": "Empty except block for ValueError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/config.py",
+    "line": 163,
+    "col": 12,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/config.py",
+    "line": 163,
+    "col": 12,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/config.py",
+    "line": 209,
+    "col": 16,
+    "message": "exec() executes arbitrary code",
+    "severity": "CRITICAL",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/config.py",
+    "line": 250,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/config.py",
+    "line": 367,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/ctx.py",
+    "line": 189,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/ctx.py",
+    "line": 256,
+    "col": 67,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/ctx.py",
+    "line": 362,
+    "col": 63,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/ctx.py",
+    "line": 363,
+    "col": 68,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/ctx.py",
+    "line": 373,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/ctx.py",
+    "line": 406,
+    "col": 67,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/ctx.py",
+    "line": 457,
+    "col": 16,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
+    "line": 59,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
+    "line": 59,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
+    "line": 108,
+    "col": 46,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
+    "line": 112,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
+    "line": 113,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
+    "line": 119,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
+    "line": 143,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
+    "line": 145,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/helpers.py",
+    "line": 108,
+    "col": 8,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/helpers.py",
+    "line": 135,
+    "col": 19,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/helpers.py",
+    "line": 195,
+    "col": 0,
+    "message": "`**values` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/helpers.py",
+    "line": 273,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/helpers.py",
+    "line": 343,
+    "col": 45,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/helpers.py",
+    "line": 533,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/helpers.py",
+    "line": 589,
+    "col": 27,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/helpers.py",
+    "line": 609,
+    "col": 7,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/__init__.py",
+    "line": 77,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/__init__.py",
+    "line": 108,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/__init__.py",
+    "line": 138,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
+    "line": 49,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
+    "line": 67,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
+    "line": 109,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
+    "line": 112,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
+    "line": 118,
+    "col": 7,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
+    "line": 121,
+    "col": 38,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
+    "line": 181,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 105,
+    "col": 12,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 123,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 138,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 151,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 164,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-020",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 188,
+    "col": 15,
+    "message": "Markup() called on non-literal input -- XSS risk",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 196,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 210,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 310,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
+    "line": 315,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/logging.py",
+    "line": 45,
+    "col": 34,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/logging.py",
+    "line": 52,
+    "col": 61,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
+    "line": 53,
+    "col": 24,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
+    "line": 614,
+    "col": 60,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
+    "line": 623,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
+    "line": 874,
+    "col": 16,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
+    "line": 879,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/blueprints.py",
+    "line": 105,
+    "col": 60,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/blueprints.py",
+    "line": 413,
+    "col": 4,
+    "message": "`**options` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/blueprints.py",
+    "line": 430,
+    "col": 25,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/scaffold.py",
+    "line": 45,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/scaffold.py",
+    "line": 218,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/scaffold.py",
+    "line": 669,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/scaffold.py",
+    "line": 681,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/scaffold.py",
+    "line": 705,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sessions.py",
+    "line": 169,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-021",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/sessions.py",
+    "line": 281,
+    "col": 11,
+    "message": "Insecure hash `sha1` -- weak against collision attacks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/templating.py",
+    "line": 98,
+    "col": 12,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 49,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 59,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 88,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 125,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 136,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 211,
+    "col": 20,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 214,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 218,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 271,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
+    "line": 275,
+    "col": 17,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 86,
+    "col": 4,
+    "message": "`**class_kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 106,
+    "col": 12,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 115,
+    "col": 12,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 129,
+    "col": 31,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 133,
+    "col": 36,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 134,
+    "col": 72,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 165,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 176,
+    "col": 19,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 182,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/views.py",
+    "line": 190,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/flask/wrappers.py",
+    "line": 247,
+    "col": 39,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  }
+]

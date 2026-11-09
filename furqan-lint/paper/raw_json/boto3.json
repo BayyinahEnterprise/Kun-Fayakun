@@ -1,0 +1,659 @@
+[
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/__init__.py",
+    "line": 28,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/__init__.py",
+    "line": 87,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/__init__.py",
+    "line": 96,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/compat.py",
+    "line": 34,
+    "col": 31,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/compat.py",
+    "line": 94,
+    "col": 8,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/compat.py",
+    "line": 95,
+    "col": 8,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 31,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 36,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 41,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 46,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 51,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 56,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 61,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 66,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 71,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
+    "line": 76,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/service.py",
+    "line": 80,
+    "col": 8,
+    "message": "Empty except block for DataNotFoundError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
+    "line": 34,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
+    "line": 39,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
+    "line": 54,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
+    "line": 130,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
+    "line": 343,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
+    "line": 395,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
+    "line": 405,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
+    "line": 406,
+    "col": 40,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/table.py",
+    "line": 28,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-002",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
+    "line": 36,
+    "col": 11,
+    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
+    "line": 40,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
+    "line": 255,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
+    "line": 303,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
+    "line": 320,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
+    "line": 333,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 57,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 63,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 163,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 168,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 170,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 177,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 182,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 187,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 198,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 203,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
+    "line": 223,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/ec2/deletetags.py",
+    "line": 16,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/exceptions.py",
+    "line": 100,
+    "col": 0,
+    "message": "`FIXME` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-002",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/collection.py",
+    "line": 51,
+    "col": 23,
+    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-002",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/collection.py",
+    "line": 106,
+    "col": 17,
+    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/collection.py",
+    "line": 207,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/collection.py",
+    "line": 331,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/collection.py",
+    "line": 348,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/collection.py",
+    "line": 498,
+    "col": 8,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/collection.py",
+    "line": 554,
+    "col": 8,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "line": 380,
+    "col": 19,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "line": 413,
+    "col": 8,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "line": 485,
+    "col": 57,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "line": 505,
+    "col": 8,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "line": 564,
+    "col": 12,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "line": 580,
+    "col": 12,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "line": 583,
+    "col": 19,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "line": 586,
+    "col": 20,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/params.py",
+    "line": 41,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/params.py",
+    "line": 142,
+    "col": 38,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/response.py",
+    "line": 151,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/response.py",
+    "line": 240,
+    "col": 53,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/response.py",
+    "line": 306,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/inject.py",
+    "line": 36,
+    "col": 12,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/inject.py",
+    "line": 659,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/inject.py",
+    "line": 840,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/transfer.py",
+    "line": 442,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/transfer.py",
+    "line": 444,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/transfer.py",
+    "line": 474,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/transfer.py",
+    "line": 476,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-002",
+    "path": "/usr/local/lib/python3.13/site-packages/boto3/session.py",
+    "line": 471,
+    "col": 25,
+    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  }
+]

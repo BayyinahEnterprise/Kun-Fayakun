@@ -1,0 +1,3278 @@
+[
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/_exception_handler.py",
+    "line": 12,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/_exception_handler.py",
+    "line": 46,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/_utils.py",
+    "line": 61,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/_utils.py",
+    "line": 61,
+    "col": 60,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/_utils.py",
+    "line": 64,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/_utils.py",
+    "line": 64,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/_utils.py",
+    "line": 65,
+    "col": 10,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/_utils.py",
+    "line": 92,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/_utils.py",
+    "line": 99,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/applications.py",
+    "line": 28,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/applications.py",
+    "line": 66,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/applications.py",
+    "line": 89,
+    "col": 4,
+    "message": "`**path_params` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/applications.py",
+    "line": 89,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/applications.py",
+    "line": 104,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 29,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 29,
+    "col": 48,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 30,
+    "col": 30,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 33,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 34,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 48,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 48,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 50,
+    "col": 29,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 63,
+    "col": 76,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 65,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 65,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 66,
+    "col": 94,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 82,
+    "col": 69,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 84,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 84,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "line": 85,
+    "col": 94,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/background.py",
+    "line": 13,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/background.py",
+    "line": 30,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/background.py",
+    "line": 30,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/concurrency.py",
+    "line": 32,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 79,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 80,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 89,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 89,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 90,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 91,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 97,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 97,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 98,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 99,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 126,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 127,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 127,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 128,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/config.py",
+    "line": 131,
+    "col": 30,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "line": 28,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "line": 29,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "line": 51,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "line": 63,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "line": 64,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "line": 65,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "line": 79,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "line": 88,
+    "col": 58,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 30,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 33,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 34,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 64,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 71,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 115,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 143,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 149,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 154,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 162,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 182,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 190,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 227,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 238,
+    "col": 49,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 261,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 263,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 265,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 270,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 270,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 271,
+    "col": 13,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 274,
+    "col": 13,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 284,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 302,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 311,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 312,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 322,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 322,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 323,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 323,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 326,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 330,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 330,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 330,
+    "col": 52,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 334,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 334,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 339,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 339,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 348,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 348,
+    "col": 44,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 348,
+    "col": 59,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 355,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 355,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 363,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 363,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 367,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 369,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 369,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 369,
+    "col": 58,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 369,
+    "col": 63,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 370,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 383,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 385,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 385,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 385,
+    "col": 54,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 385,
+    "col": 59,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 385,
+    "col": 77,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 385,
+    "col": 82,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 386,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 388,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 392,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 394,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 487,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 496,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 509,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 513,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 514,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 517,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 551,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 558,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 564,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 565,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 615,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 621,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 671,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 673,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 678,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 678,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 681,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 681,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 688,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 691,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "line": 694,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "line": 19,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "line": 29,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "line": 34,
+    "col": 65,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "line": 36,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "line": 62,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "line": 67,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "line": 91,
+    "col": 70,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "line": 116,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "line": 123,
+    "col": 59,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "line": 69,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "line": 164,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "line": 233,
+    "col": 23,
+    "message": "Temporary file created without context manager or cleanup",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "line": 254,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "line": 285,
+    "col": 20,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "line": 288,
+    "col": 20,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "line": 297,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/__init__.py",
+    "line": 9,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/__init__.py",
+    "line": 10,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/__init__.py",
+    "line": 11,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/__init__.py",
+    "line": 27,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-003",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/authentication.py",
+    "line": 34,
+    "col": 15,
+    "message": "Connection/socket created without context manager",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/base.py",
+    "line": 15,
+    "col": 65,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/base.py",
+    "line": 16,
+    "col": 82,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/base.py",
+    "line": 150,
+    "col": 20,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/base.py",
+    "line": 176,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/base.py",
+    "line": 183,
+    "col": 20,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/base.py",
+    "line": 215,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/base.py",
+    "line": 237,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/body_limit.py",
+    "line": 58,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/body_limit.py",
+    "line": 63,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/body_limit.py",
+    "line": 68,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/body_limit.py",
+    "line": 95,
+    "col": 8,
+    "message": "Empty except block for _RequestBodyLimitResponseSent -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/body_limit.py",
+    "line": 99,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "line": 22,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "line": 26,
+    "col": 28,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "line": 41,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "line": 44,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "line": 66,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "line": 66,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "line": 72,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "line": 72,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/gzip.py",
+    "line": 12,
+    "col": 0,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/opentelemetry.py",
+    "line": 42,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/opentelemetry.py",
+    "line": 54,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/opentelemetry.py",
+    "line": 113,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/opentelemetry.py",
+    "line": 119,
+    "col": 31,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-003",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/sessions.py",
+    "line": 47,
+    "col": 21,
+    "message": "Connection/socket created without context manager",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/sessions.py",
+    "line": 131,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/trustedhost.py",
+    "line": 24,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/trustedhost.py",
+    "line": 26,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 26,
+    "col": 58,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 79,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 83,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 89,
+    "col": 54,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 90,
+    "col": 60,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 92,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 99,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 126,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 148,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "line": 149,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 77,
+    "col": 46,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 80,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 87,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 90,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 106,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 111,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 117,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 134,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 140,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 145,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 146,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 151,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 170,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 171,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 174,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 179,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 180,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 184,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 185,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 190,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 198,
+    "col": 4,
+    "message": "`**path_params` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 198,
+    "col": 51,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 219,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 235,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 255,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 262,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 263,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "line": 276,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 35,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 48,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 51,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 53,
+    "col": 45,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 85,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 107,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 120,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 188,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 196,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 235,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 253,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "line": 530,
+    "col": 12,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 36,
+    "col": 57,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 89,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 95,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 113,
+    "col": 50,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 134,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 173,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 203,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 211,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 218,
+    "col": 14,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 245,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 262,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 270,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 284,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 286,
+    "col": 12,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 303,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 308,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 314,
+    "col": 14,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 330,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 344,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 352,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 358,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 359,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 376,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 377,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 397,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 429,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 452,
+    "col": 16,
+    "message": "Empty except block for NoMatchFound -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 459,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 460,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 470,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 499,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 518,
+    "col": 16,
+    "message": "Empty except block for NoMatchFound -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 525,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 526,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 554,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 554,
+    "col": 48,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 554,
+    "col": 53,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 554,
+    "col": 58,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 555,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 555,
+    "col": 49,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 559,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 559,
+    "col": 54,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 587,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 597,
+    "col": 44,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 637,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 641,
+    "col": 12,
+    "message": "Empty except block for NoMatchFound -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 651,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 679,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 730,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "line": 731,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 21,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 22,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 23,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 23,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 30,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 37,
+    "col": 63,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 54,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 56,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 70,
+    "col": 21,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 82,
+    "col": 27,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 98,
+    "col": 60,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 98,
+    "col": 79,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 106,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 115,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 129,
+    "col": 46,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "line": 132,
+    "col": 63,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "line": 73,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "line": 78,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "line": 79,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "line": 81,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "line": 97,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "line": 177,
+    "col": 12,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "line": 228,
+    "col": 8,
+    "message": "Empty except block for KeyError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 23,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 34,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 35,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 73,
+    "col": 63,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 81,
+    "col": 63,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 88,
+    "col": 63,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 91,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 103,
+    "col": 8,
+    "message": "`**path_params` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 104,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 107,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "line": 121,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 65,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 84,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 130,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 157,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 172,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 195,
+    "col": 72,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 214,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 244,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 291,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 292,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 303,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 307,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 310,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 326,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 332,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 333,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 334,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 345,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 346,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 347,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 363,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 397,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 410,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 446,
+    "col": 14,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 453,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 483,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 527,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 540,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 547,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 555,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "line": 563,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/types.py",
+    "line": 12,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/types.py",
+    "line": 13,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/types.py",
+    "line": 21,
+    "col": 80,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/websockets.py",
+    "line": 35,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/websockets.py",
+    "line": 136,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/websockets.py",
+    "line": 154,
+    "col": 8,
+    "message": "Empty except block for WebSocketDisconnect -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/websockets.py",
+    "line": 161,
+    "col": 8,
+    "message": "Empty except block for WebSocketDisconnect -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/websockets.py",
+    "line": 164,
+    "col": 47,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/websockets.py",
+    "line": 168,
+    "col": 8,
+    "message": "Empty except block for WebSocketDisconnect -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/starlette/websockets.py",
+    "line": 177,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  }
+]

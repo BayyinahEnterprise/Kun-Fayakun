@@ -1,0 +1,3260 @@
+[
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "line": 39,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "line": 39,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "line": 40,
+    "col": 11,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "line": 59,
+    "col": 34,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "line": 78,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "line": 165,
+    "col": 33,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "line": 173,
+    "col": 37,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "line": 175,
+    "col": 22,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "line": 193,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "line": 23,
+    "col": 3,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "line": 248,
+    "col": 52,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "line": 300,
+    "col": 12,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "line": 314,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "line": 370,
+    "col": 52,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "line": 464,
+    "col": 4,
+    "message": "Empty except block for KeyboardInterrupt -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/accept.py",
+    "line": 53,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/accept.py",
+    "line": 84,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/accept.py",
+    "line": 108,
+    "col": 18,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/accept.py",
+    "line": 119,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/auth.py",
+    "line": 80,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/auth.py",
+    "line": 142,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/auth.py",
+    "line": 260,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/auth.py",
+    "line": 322,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/cache_control.py",
+    "line": 152,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/csp.py",
+    "line": 100,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/etag.py",
+    "line": 106,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 61,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 75,
+    "col": 12,
+    "message": "Empty except block for ValueError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 125,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 128,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 129,
+    "col": 18,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 142,
+    "col": 8,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 142,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 154,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 162,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 188,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 192,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "line": 196,
+    "col": 36,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 86,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 89,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 200,
+    "col": 20,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 266,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 315,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 376,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 461,
+    "col": 8,
+    "message": "Empty except block for KeyError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 501,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 503,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 539,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 542,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 544,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 553,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 564,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 578,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 606,
+    "col": 18,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 619,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 643,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 654,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 678,
+    "col": 41,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "line": 681,
+    "col": 41,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "line": 20,
+    "col": 23,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "line": 232,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "line": 302,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/range.py",
+    "line": 40,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/range.py",
+    "line": 117,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/range.py",
+    "line": 178,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/range.py",
+    "line": 210,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 32,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 34,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 36,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 54,
+    "col": 18,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 192,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 194,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 197,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 288,
+    "col": 12,
+    "message": "Empty except block for (ValueError, TypeError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 398,
+    "col": 30,
+    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 449,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 463,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 543,
+    "col": 15,
+    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 546,
+    "col": 18,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 624,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 626,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 732,
+    "col": 12,
+    "message": "Empty except block for (ValueError, TypeError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 877,
+    "col": 20,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 958,
+    "col": 18,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 968,
+    "col": 18,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 1056,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 1128,
+    "col": 8,
+    "message": "Empty except block for KeyError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "line": 1211,
+    "col": 18,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-021",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 45,
+    "col": 11,
+    "message": "Insecure hash `sha1` -- weak against collision attacks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 65,
+    "col": 12,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 78,
+    "col": 8,
+    "message": "Empty except block for OSError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-017",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 91,
+    "col": 19,
+    "message": "Partial executable path `ioreg` -- relies on $PATH resolution",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 98,
+    "col": 8,
+    "message": "Empty except block for (OSError, ImportError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 120,
+    "col": 12,
+    "message": "Empty except block for OSError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 187,
+    "col": 33,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-021",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 196,
+    "col": 8,
+    "message": "Insecure hash `sha1` -- weak against collision attacks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 200,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 315,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 317,
+    "col": 54,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 331,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 333,
+    "col": 54,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 349,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 352,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 353,
+    "col": 34,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 371,
+    "col": 12,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 553,
+    "col": 72,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 555,
+    "col": 60,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 557,
+    "col": 51,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 559,
+    "col": 58,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 567,
+    "col": 70,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "line": 573,
+    "col": 54,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "line": 64,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "line": 83,
+    "col": 38,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "line": 122,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "line": 159,
+    "col": 63,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "line": 177,
+    "col": 12,
+    "message": "exec() executes arbitrary code",
+    "severity": "CRITICAL",
+    "fix": "simplify"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "line": 178,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "line": 186,
+    "col": 55,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "line": 193,
+    "col": 55,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 52,
+    "col": 27,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 65,
+    "col": 68,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 70,
+    "col": 33,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 78,
+    "col": 71,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 85,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 94,
+    "col": 22,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 197,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 199,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 199,
+    "col": 35,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 201,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 203,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 205,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 207,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 209,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 211,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 213,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 220,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 246,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 250,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 260,
+    "col": 16,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "line": 260,
+    "col": 16,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/tbtools.py",
+    "line": 234,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/tbtools.py",
+    "line": 365,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "line": 94,
+    "col": 66,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "line": 187,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "line": 214,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "line": 320,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "line": 679,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "line": 876,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "line": 881,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "line": 890,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/formparser.py",
+    "line": 29,
+    "col": 33,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/formparser.py",
+    "line": 62,
+    "col": 35,
+    "message": "Temporary file created without context manager or cleanup",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/formparser.py",
+    "line": 64,
+    "col": 35,
+    "message": "Temporary file created without context manager or cleanup",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/formparser.py",
+    "line": 380,
+    "col": 22,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/formparser.py",
+    "line": 381,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/formparser.py",
+    "line": 386,
+    "col": 21,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/formparser.py",
+    "line": 391,
+    "col": 21,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/formparser.py",
+    "line": 402,
+    "col": 27,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 273,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1125,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1126,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1135,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1172,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1306,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1416,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1420,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1444,
+    "col": 4,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1498,
+    "col": 34,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "line": 1499,
+    "col": 25,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 215,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 252,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 282,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 288,
+    "col": 50,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 340,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 367,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 370,
+    "col": 49,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 493,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 503,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 513,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 543,
+    "col": 40,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "line": 572,
+    "col": 57,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/http_proxy.py",
+    "line": 147,
+    "col": 26,
+    "message": "Connection/socket created without context manager",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/http_proxy.py",
+    "line": 151,
+    "col": 26,
+    "message": "Connection/socket created without context manager",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "line": 44,
+    "col": 59,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "line": 169,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "line": 223,
+    "col": 12,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "line": 223,
+    "col": 12,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "line": 341,
+    "col": 40,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "line": 377,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/profiler.py",
+    "line": 113,
+    "col": 70,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/profiler.py",
+    "line": 123,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "line": 121,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "line": 125,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "line": 127,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "line": 153,
+    "col": 12,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "line": 184,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "line": 250,
+    "col": 71,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "line": 253,
+    "col": 60,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "line": 261,
+    "col": 84,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "line": 29,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "line": 232,
+    "col": 64,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 379,
+    "col": 18,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 639,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 677,
+    "col": 8,
+    "message": "Empty except block for RequestRedirect -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 691,
+    "col": 36,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 692,
+    "col": 8,
+    "message": "Empty except block for HTTPException -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 729,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 737,
+    "col": 43,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 738,
+    "col": 53,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 743,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 784,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "line": 888,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 104,
+    "col": 8,
+    "message": "Empty except block for ValueError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 253,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 277,
+    "col": 27,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 283,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 302,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 304,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 306,
+    "col": 35,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 309,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 480,
+    "col": 30,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 491,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 700,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 736,
+    "col": 8,
+    "message": "exec() executes arbitrary code",
+    "severity": "CRITICAL",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 737,
+    "col": 27,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 777,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 777,
+    "col": 51,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 909,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 911,
+    "col": 21,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 918,
+    "col": 23,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "line": 927,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/http.py",
+    "line": 48,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/multipart.py",
+    "line": 220,
+    "col": 29,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/multipart.py",
+    "line": 307,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/multipart.py",
+    "line": 310,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/multipart.py",
+    "line": 317,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/multipart.py",
+    "line": 325,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/multipart.py",
+    "line": 331,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/multipart.py",
+    "line": 333,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/request.py",
+    "line": 152,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/request.py",
+    "line": 155,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/request.py",
+    "line": 245,
+    "col": 30,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/request.py",
+    "line": 329,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 56,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 120,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 140,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 161,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 337,
+    "col": 19,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 456,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 553,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 606,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 656,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "line": 691,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/utils.py",
+    "line": 61,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 56,
+    "col": 23,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 67,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 73,
+    "col": 25,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 80,
+    "col": 20,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 121,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 168,
+    "col": 38,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 177,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 246,
+    "col": 8,
+    "message": "Empty except block for AttributeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 265,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 266,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 306,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 306,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 320,
+    "col": 61,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 370,
+    "col": 19,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 391,
+    "col": 12,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 391,
+    "col": 12,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 428,
+    "col": 48,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 610,
+    "col": 29,
+    "message": "Temporary file created without context manager or cleanup",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 611,
+    "col": 29,
+    "message": "Temporary file created without context manager or cleanup",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 656,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 664,
+    "col": 25,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 683,
+    "col": 22,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 701,
+    "col": 35,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 804,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 824,
+    "col": 8,
+    "message": "Empty except block for KeyboardInterrupt -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-013",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 852,
+    "col": 29,
+    "message": "Binding to 0.0.0.0 exposes the service on all network interfaces",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-013",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 855,
+    "col": 32,
+    "message": "Binding to 0.0.0.0 exposes the service on all network interfaces",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "line": 1076,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 90,
+    "col": 53,
+    "message": "Temporary file created without context manager or cleanup",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 91,
+    "col": 57,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 134,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 168,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 172,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 334,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 339,
+    "col": 21,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 345,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 363,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 382,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 384,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 386,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 392,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 392,
+    "col": 59,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 439,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 550,
+    "col": 19,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 640,
+    "col": 12,
+    "message": "Empty except block for ValueError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 650,
+    "col": 8,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 650,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 667,
+    "col": 12,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 667,
+    "col": 12,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 853,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 1105,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 1107,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 1109,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 1204,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 1207,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 1256,
+    "col": 57,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 1298,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 1341,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "line": 1347,
+    "col": 44,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/urls.py",
+    "line": 22,
+    "col": 53,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/urls.py",
+    "line": 23,
+    "col": 23,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/urls.py",
+    "line": 191,
+    "col": 4,
+    "message": "Empty except block for UnicodeDecodeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/user_agent.py",
+    "line": 37,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 83,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 88,
+    "col": 62,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 90,
+    "col": 25,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 100,
+    "col": 36,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 110,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 409,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 409,
+    "col": 55,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 473,
+    "col": 19,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 473,
+    "col": 37,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 474,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 476,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 489,
+    "col": 42,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 491,
+    "col": 34,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 506,
+    "col": 44,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 508,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 677,
+    "col": 46,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "line": 684,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "line": 148,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "line": 327,
+    "col": 58,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "line": 482,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 33,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 174,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 195,
+    "col": 19,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 228,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 296,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 325,
+    "col": 31,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 326,
+    "col": 53,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 380,
+    "col": 32,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 393,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 402,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 410,
+    "col": 50,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 542,
+    "col": 34,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 637,
+    "col": 73,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "line": 810,
+    "col": 46,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 297,
+    "col": 59,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 325,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 329,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 331,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 336,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 340,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 386,
+    "col": 24,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 404,
+    "col": 49,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-002",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 405,
+    "col": 53,
+    "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 437,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "line": 544,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  }
+]

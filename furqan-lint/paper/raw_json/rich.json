@@ -1,0 +1,2612 @@
+[
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/__init__.py",
+    "line": 39,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/__init__.py",
+    "line": 39,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/__init__.py",
+    "line": 39,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/__init__.py",
+    "line": 54,
+    "col": 14,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/__init__.py",
+    "line": 80,
+    "col": 10,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/__init__.py",
+    "line": 87,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/__init__.py",
+    "line": 87,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/__init__.py",
+    "line": 121,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_extension.py",
+    "line": 4,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 39,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 64,
+    "col": 31,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 82,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 94,
+    "col": 8,
+    "message": "Empty except block for (OSError, TypeError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 104,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 106,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 128,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 132,
+    "col": 50,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 132,
+    "col": 55,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 218,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 240,
+    "col": 49,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_inspect.py",
+    "line": 242,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_pick.py",
+    "line": 13,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_ratio.py",
+    "line": 123,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_unicode_data/__init__.py",
+    "line": 92,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_unicode_data/__init__.py",
+    "line": 92,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_win32_console.py",
+    "line": 10,
+    "col": 8,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_win32_console.py",
+    "line": 435,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_win32_console.py",
+    "line": 436,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/_win32_console.py",
+    "line": 565,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/abc.py",
+    "line": 18,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/abc.py",
+    "line": 18,
+    "col": 53,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/abc.py",
+    "line": 25,
+    "col": 10,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/abc.py",
+    "line": 26,
+    "col": 10,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/abc.py",
+    "line": 32,
+    "col": 10,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/abc.py",
+    "line": 33,
+    "col": 10,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 365,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 368,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 371,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 374,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 377,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 493,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 499,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 504,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 508,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 520,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 546,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 549,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 557,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 560,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/color.py",
+    "line": 573,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/columns.py",
+    "line": 67,
+    "col": 38,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 81,
+    "col": 0,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 85,
+    "col": 0,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 89,
+    "col": 0,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 172,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 174,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 176,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 178,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 180,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 182,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 184,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 186,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 188,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 496,
+    "col": 8,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 496,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 496,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 862,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 862,
+    "col": 49,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 862,
+    "col": 65,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 943,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1025,
+    "col": 12,
+    "message": "Empty except block for (AttributeError, ValueError, OSError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1143,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1318,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1318,
+    "col": 59,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1320,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1340,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1485,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1502,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1558,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1568,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1570,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1622,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1654,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1762,
+    "col": 14,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1769,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1769,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1802,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1911,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1939,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 1949,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 2204,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 2268,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/console.py",
+    "line": 2456,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/control.py",
+    "line": 60,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/file_proxy.py",
+    "line": 25,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/file_proxy.py",
+    "line": 29,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/file_proxy.py",
+    "line": 30,
+    "col": 65,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/highlighter.py",
+    "line": 32,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/highlighter.py",
+    "line": 34,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/json.py",
+    "line": 34,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/json.py",
+    "line": 34,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/json.py",
+    "line": 56,
+    "col": 14,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/json.py",
+    "line": 63,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/json.py",
+    "line": 63,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/json.py",
+    "line": 135,
+    "col": 4,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/jupyter.py",
+    "line": 26,
+    "col": 72,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/jupyter.py",
+    "line": 45,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/jupyter.py",
+    "line": 92,
+    "col": 4,
+    "message": "Empty except block for ModuleNotFoundError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/jupyter.py",
+    "line": 98,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/jupyter.py",
+    "line": 98,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/jupyter.py",
+    "line": 98,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/layout.py",
+    "line": 273,
+    "col": 22,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/layout.py",
+    "line": 279,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/layout.py",
+    "line": 294,
+    "col": 22,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/live.py",
+    "line": 71,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/live.py",
+    "line": 83,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/live.py",
+    "line": 198,
+    "col": 45,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/live.py",
+    "line": 201,
+    "col": 45,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/live.py",
+    "line": 237,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-026",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/live.py",
+    "line": 381,
+    "col": 19,
+    "message": "`random.randint()` is not cryptographically secure",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-026",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/live.py",
+    "line": 384,
+    "col": 21,
+    "message": "`random.random()` is not cryptographically secure",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/logging.py",
+    "line": 148,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/logging.py",
+    "line": 149,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/logging.py",
+    "line": 171,
+    "col": 19,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/logging.py",
+    "line": 179,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/logging.py",
+    "line": 187,
+    "col": 12,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/logging.py",
+    "line": 298,
+    "col": 8,
+    "message": "Bare `except:` swallows all exceptions including SystemExit",
+    "severity": "CRITICAL",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 101,
+    "col": 56,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 239,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 241,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 279,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 279,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 291,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 291,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 303,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 303,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 326,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 334,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 353,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 353,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 632,
+    "col": 20,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markdown.py",
+    "line": 632,
+    "col": 27,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/markup.py",
+    "line": 204,
+    "col": 35,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/measure.py",
+    "line": 98,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/padding.py",
+    "line": 63,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pager.py",
+    "line": 20,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/panel.py",
+    "line": 114,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/panel.py",
+    "line": 130,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 35,
+    "col": 17,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 60,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 65,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 105,
+    "col": 4,
+    "message": "Empty except block for (OSError, TypeError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 114,
+    "col": 11,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 166,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 198,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 200,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 203,
+    "col": 12,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 233,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 233,
+    "col": 46,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 275,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 357,
+    "col": 53,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 357,
+    "col": 58,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 365,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 379,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 398,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 403,
+    "col": 12,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 516,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 522,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 524,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 561,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 577,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 577,
+    "col": 38,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 581,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 601,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 613,
+    "col": 12,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 621,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 633,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 633,
+    "col": 61,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 633,
+    "col": 77,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 650,
+    "col": 30,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 653,
+    "col": 8,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 659,
+    "col": 19,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 661,
+    "col": 12,
+    "message": "Empty except block for Exception -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 661,
+    "col": 12,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 732,
+    "col": 44,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 732,
+    "col": 68,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 739,
+    "col": 32,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 786,
+    "col": 38,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 879,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/pretty.py",
+    "line": 919,
+    "col": 13,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 278,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 281,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 534,
+    "col": 12,
+    "message": "Empty except block for KeyError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 587,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 964,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 1091,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 1373,
+    "col": 17,
+    "message": "open() without context manager, try/finally close, or ExitStack",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 1427,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 1487,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 1574,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 1587,
+    "col": 31,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 1607,
+    "col": 18,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-026",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/progress.py",
+    "line": 1715,
+    "col": 15,
+    "message": "`random.randint()` is not cryptographically secure",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/prompt.py",
+    "line": 68,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/prompt.py",
+    "line": 122,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/prompt.py",
+    "line": 124,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/prompt.py",
+    "line": 183,
+    "col": 16,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/prompt.py",
+    "line": 222,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/prompt.py",
+    "line": 280,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/prompt.py",
+    "line": 280,
+    "col": 82,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/protocol.py",
+    "line": 9,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/protocol.py",
+    "line": 12,
+    "col": 8,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/protocol.py",
+    "line": 13,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/protocol.py",
+    "line": 14,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/protocol.py",
+    "line": 30,
+    "col": 10,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/protocol.py",
+    "line": 30,
+    "col": 50,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/protocol.py",
+    "line": 32,
+    "col": 11,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/repr.py",
+    "line": 18,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/repr.py",
+    "line": 18,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/repr.py",
+    "line": 18,
+    "col": 52,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/repr.py",
+    "line": 18,
+    "col": 69,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/repr.py",
+    "line": 18,
+    "col": 74,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/repr.py",
+    "line": 49,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/repr.py",
+    "line": 89,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/rule.py",
+    "line": 65,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/scope.py",
+    "line": 45,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/segment.py",
+    "line": 168,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/spinner.py",
+    "line": 39,
+    "col": 38,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/spinner.py",
+    "line": 88,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/spinner.py",
+    "line": 110,
+    "col": 50,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 150,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 156,
+    "col": 28,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 237,
+    "col": 48,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 258,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 258,
+    "col": 67,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 431,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 432,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 436,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 437,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 473,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 475,
+    "col": 60,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/style.py",
+    "line": 516,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/syntax.py",
+    "line": 146,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/syntax.py",
+    "line": 270,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/syntax.py",
+    "line": 404,
+    "col": 12,
+    "message": "Empty except block for ClassNotFound -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/syntax.py",
+    "line": 413,
+    "col": 12,
+    "message": "Empty except block for ClassNotFound -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/syntax.py",
+    "line": 448,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/syntax.py",
+    "line": 508,
+    "col": 54,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/syntax.py",
+    "line": 510,
+    "col": 20,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/table.py",
+    "line": 246,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/table.py",
+    "line": 465,
+    "col": 40,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/table.py",
+    "line": 502,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 179,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 180,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 187,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 192,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 194,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 212,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 366,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 394,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 510,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 523,
+    "col": 42,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 523,
+    "col": 68,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 562,
+    "col": 8,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 616,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 907,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 924,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 940,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 977,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 981,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 989,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/text.py",
+    "line": 1079,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/theme.py",
+    "line": 24,
+    "col": 35,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 102,
+    "col": 77,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 166,
+    "col": 35,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 170,
+    "col": 38,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 170,
+    "col": 53,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 177,
+    "col": 19,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 177,
+    "col": 59,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 341,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 342,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 355,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 476,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 492,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 511,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 798,
+    "col": 16,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-002",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 858,
+    "col": 16,
+    "message": "`except Exception` without re-raise -- broad exception swallowed",
+    "severity": "HIGH",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-007",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 875,
+    "col": 28,
+    "message": "try/except with bare `continue` -- loop errors silently skipped",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 903,
+    "col": 11,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/rich/traceback.py",
+    "line": 908,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  }
+]

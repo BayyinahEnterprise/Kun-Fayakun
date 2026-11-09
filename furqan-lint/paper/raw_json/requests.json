@@ -1,0 +1,2009 @@
+[
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "line": 66,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "line": 76,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "line": 78,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "line": 85,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "line": 90,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "line": 146,
+    "col": 0,
+    "message": "Empty except block for ImportError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_internal_utils.py",
+    "line": 31,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_internal_utils.py",
+    "line": 46,
+    "col": 4,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_internal_utils.py",
+    "line": 46,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "line": 38,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "line": 55,
+    "col": 17,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "line": 56,
+    "col": 17,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "line": 92,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "line": 92,
+    "col": 48,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "line": 92,
+    "col": 70,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "line": 92,
+    "col": 75,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 66,
+    "col": 33,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 66,
+    "col": 48,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 90,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 90,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 91,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 92,
+    "col": 27,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 100,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 107,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 194,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 195,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 223,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 226,
+    "col": 44,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 239,
+    "col": 4,
+    "message": "`**pool_kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 244,
+    "col": 23,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 269,
+    "col": 4,
+    "message": "`**proxy_kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 269,
+    "col": 60,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 269,
+    "col": 68,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 308,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 349,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 365,
+    "col": 57,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 375,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 389,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 405,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 405,
+    "col": 41,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 481,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 581,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 599,
+    "col": 62,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 659,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 681,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 690,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 714,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 715,
+    "col": 16,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 716,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 719,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 722,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 725,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 738,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 741,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "line": 743,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/api.py",
+    "line": 24,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/api.py",
+    "line": 74,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/api.py",
+    "line": 90,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/api.py",
+    "line": 117,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/api.py",
+    "line": 137,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/api.py",
+    "line": 154,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/api.py",
+    "line": 171,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 44,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 54,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 65,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 68,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 108,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 149,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 177,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 185,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 193,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 201,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 213,
+    "col": 8,
+    "message": "`XXX` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 247,
+    "col": 12,
+    "message": "`XXX` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 252,
+    "col": 8,
+    "message": "`XXX` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 268,
+    "col": 53,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 273,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 273,
+    "col": 48,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "line": 353,
+    "col": 28,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/compat.py",
+    "line": 44,
+    "col": 12,
+    "message": "Empty except block for ImportError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 46,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 121,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 128,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 131,
+    "col": 39,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 136,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 144,
+    "col": 12,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 230,
+    "col": 79,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 243,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 382,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 382,
+    "col": 48,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 382,
+    "col": 63,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 395,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 454,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 461,
+    "col": 44,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 494,
+    "col": 51,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 500,
+    "col": 22,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 531,
+    "col": 36,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 613,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 616,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "line": 618,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "line": 28,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "line": 28,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "line": 33,
+    "col": 57,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "line": 45,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "line": 45,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "line": 45,
+    "col": 45,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "line": 55,
+    "col": 34,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/help.py",
+    "line": 69,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/hooks.py",
+    "line": 29,
+    "col": 0,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/hooks.py",
+    "line": 32,
+    "col": 0,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/hooks.py",
+    "line": 36,
+    "col": 14,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/hooks.py",
+    "line": 42,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 162,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 164,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 166,
+    "col": 13,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 169,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 169,
+    "col": 53,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 175,
+    "col": 53,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 176,
+    "col": 53,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 197,
+    "col": 13,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 205,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 205,
+    "col": 50,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 210,
+    "col": 27,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 216,
+    "col": 31,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 218,
+    "col": 49,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 226,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 237,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 239,
+    "col": 17,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 266,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 268,
+    "col": 13,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 269,
+    "col": 56,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 492,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 546,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 596,
+    "col": 19,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 600,
+    "col": 22,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 600,
+    "col": 52,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 601,
+    "col": 31,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 639,
+    "col": 23,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 639,
+    "col": 55,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 681,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 685,
+    "col": 16,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 710,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 740,
+    "col": 9,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 813,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 816,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 824,
+    "col": 44,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 935,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 956,
+    "col": 38,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 958,
+    "col": 44,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-004",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 1012,
+    "col": 16,
+    "message": "`TODO` comment -- an acknowledged incomplete scan",
+    "severity": "LOW",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 1087,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 1087,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 1087,
+    "col": 37,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 1106,
+    "col": 16,
+    "message": "Empty except block for UnicodeDecodeError -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "line": 1144,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 77,
+    "col": 21,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 77,
+    "col": 43,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 78,
+    "col": 5,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 92,
+    "col": 8,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 92,
+    "col": 49,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 132,
+    "col": 55,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 186,
+    "col": 4,
+    "message": "`**adapter_kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 196,
+    "col": 26,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 317,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 318,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 350,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 418,
+    "col": 32,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 508,
+    "col": 30,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 527,
+    "col": 15,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 619,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 637,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 695,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 714,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 728,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 742,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 752,
+    "col": 55,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 767,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-006",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 770,
+    "col": 8,
+    "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 823,
+    "col": 12,
+    "message": "Empty except block for StopIteration -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 838,
+    "col": 19,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 899,
+    "col": 40,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "line": 903,
+    "col": 44,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/structures.py",
+    "line": 49,
+    "col": 4,
+    "message": "`**kwargs` accepted and passed through without validation",
+    "severity": "MEDIUM",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/structures.py",
+    "line": 81,
+    "col": 11,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/structures.py",
+    "line": 82,
+    "col": 44,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/structures.py",
+    "line": 99,
+    "col": 10,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/structures.py",
+    "line": 101,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-003",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/structures.py",
+    "line": 115,
+    "col": 20,
+    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
+    "severity": "LOW",
+    "fix": "simplify"
+  },
+  {
+    "rule": "SI-003",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 137,
+    "col": 42,
+    "message": "Blanket `# noqa` -- specify which rule is being suppressed",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 150,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 150,
+    "col": 29,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 150,
+    "col": 51,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 150,
+    "col": 56,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 151,
+    "col": 20,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 151,
+    "col": 25,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 154,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 160,
+    "col": 17,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 164,
+    "col": 28,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 169,
+    "col": 7,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 172,
+    "col": 9,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 175,
+    "col": 9,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 178,
+    "col": 8,
+    "message": "Empty except block for (UnsupportedOperation, AttributeError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 201,
+    "col": 7,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-007",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 212,
+    "col": 15,
+    "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 236,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "MR-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 279,
+    "col": 4,
+    "message": "Empty except block for (ImportError, AttributeError) -- failure silenced entirely",
+    "severity": "HIGH",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 283,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 286,
+    "col": 16,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "RC-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 319,
+    "col": 25,
+    "message": "Temporary file created without context manager or cleanup",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "RC-005",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 331,
+    "col": 31,
+    "message": "Temporary file created without context manager or cleanup",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 342,
+    "col": 19,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 342,
+    "col": 24,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 342,
+    "col": 46,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 342,
+    "col": 51,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 343,
+    "col": 10,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 343,
+    "col": 15,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 364,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 398,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 401,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "SI-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 547,
+    "col": 68,
+    "message": "`Any` type annotation disables type checking at this boundary",
+    "severity": "MEDIUM",
+    "fix": "enrich"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 1103,
+    "col": 7,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 1105,
+    "col": 9,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  },
+  {
+    "rule": "TB-001",
+    "path": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "line": 1144,
+    "col": 33,
+    "message": "isinstance() admits subclasses that may override behavior",
+    "severity": "LOW",
+    "fix": "recalibrate"
+  }
+]

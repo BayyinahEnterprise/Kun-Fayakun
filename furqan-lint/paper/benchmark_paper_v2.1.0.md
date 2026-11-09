@@ -155,34 +155,73 @@ Two rules produce 58.6%. Top 6 produce 89.4%. 35 rules share the remaining 10.6%
 
 ---
 
-## 4. Discussion
+## 4. Overlap Decomposition
 
-### 4.1 What the counts show
+### 4.1 Method
 
-furqan-lint produces different finding counts from different rules than bandit. Under symmetric test-path treatment (both excluding), it produces more findings in all 25 packages. The bulk of those findings come from rules with no bandit equivalent (SI-001, SI-005, SI-007, SI-004, MR-005), though SI-001 duplicates ruff's ANN401 and SI-006 overlaps with bandit's B101.
+We matched findings by file path and line number (window of 2 lines). Each pair is classified as *semantic* (the two rules detect related patterns, per a predefined mapping) or *coincidental* (co-located but unrelated). Bandit matching is symmetric: a bandit finding is marked overlapping if any furqan finding is within its window.
 
-### 4.2 What the counts do not show
+### 4.2 Aggregate overlap
 
-Whether the additional findings are true positives or noise. Whether the non-overlapping rules detect genuine problems that matter in practice. Whether "structural honesty" is a coherent analysis class or a collection of unrelated heuristics. Answering these requires a precision study on a labeled sample, which is beyond this paper's scope.
+| Category | Count | % of furqan |
+|----------|------:|----------:|
+| Unique to furqan | 20,803 | 83.4% |
+| Overlap (semantic) | 5,151 | 20.7% |
+| Overlap (coincidental) | 1,044 | 4.2% |
+| Unique to bandit | 25,913 | -- |
 
-### 4.3 Limitations
+83.4% of furqan-lint's findings have no bandit finding within 2 lines on the same file. Of the 16.6% that co-locate, 83.2% are semantic (related rules) and 16.8% are coincidental.
 
-1. Finding count is not defect count. SI-001 (47.1%) may have a high false-positive rate.
-2. No overlap decomposition performed.
-3. Two rules produce 58.6% of output.
-4. SI-001 duplicates ruff ANN401.
-5. Test-path asymmetry between SI-006 and B101 (sensitivity table provided).
-6. 76 non-Python findings from numpy's C code (reported separately).
-7. Convenience sample.
-8. Single bandit version.
+### 4.3 Test-path stratum
+
+| Stratum | Unique furqan | Unique bandit |
+|---------|-------------:|-------------:|
+| Non-test paths | 19,321 | 249 |
+| Test paths | 1,482 | 25,664 |
+
+99.0% of unique-to-bandit findings are on test paths (B101 assert_used). Excluding test paths, bandit has only 249 unique findings, primarily import warnings (B403, B404), subprocess (B603), and hardcoded secrets (B105/B106).
+
+### 4.4 Dominant overlap pair
+
+SI-006 x B101 accounts for 4,448 of 5,151 semantic overlaps (86.3%). Both rules detect assert usage; the overlap is expected and documented.
 
 ---
 
-## 5. Conclusion
+## 5. Discussion
 
-furqan-lint v2.1.0 produces more findings than bandit in 25 of 25 packages under symmetric test-path exclusion (median 5.3x, pooled 6.3x), and 22 of 25 as run (median 5.0x, pooled 0.83x). Two rules account for 58.6% of output, one of which duplicates existing coverage (ruff ANN401).
+### 5.1 What the decomposition shows
 
-Whether this constitutes a complementary analysis class is an open question requiring overlap decomposition and precision measurement. The data to answer it -- raw JSON from both tools on all 25 packages -- is shipped with this paper.
+furqan-lint and bandit mostly flag different locations: 83.4% of furqan's findings have no bandit counterpart at the same location. This is robust across line windows (83.0% at window=0, 83.4% at 2, 81.8% at 5).
+
+However, "unique against bandit" does not mean "unique against all tools." By rule identity, an estimated 75.9% of unique-to-furqan findings come from rules with counterparts in other linters: SI-001/ruff ANN401, SI-004/ruff TD, SI-002 and SI-003/ruff PGH, MR-002/ruff BLE001. A three-way decomposition against ruff is needed to quantify this.
+
+The remaining ~4,880 findings with no apparent counterpart in bandit or ruff come primarily from SI-005 (kwargs passthrough, 2,784) and SI-007 (hasattr masking, 1,844).
+
+### 5.2 What the decomposition does not show
+
+Whether any of these findings -- unique or overlapping -- represent real problems. The false positive rate and safety relevance of each rule are not measured in this study. A precision study with blind manual classification is the necessary next step.
+
+### 5.3 Limitations
+
+1. Finding count is not defect count. Precision is not measured.
+2. Overlap is against bandit only. ~75.9% of unique-to-furqan findings may overlap with ruff by rule identity (not verified by running ruff).
+3. Two rules produce 58.6% of output.
+4. SI-001 duplicates ruff ANN401.
+5. Test-path asymmetry between SI-006 and B101 (sensitivity table and test-path stratum provided).
+6. 76 non-Python findings from numpy's C code (reported separately).
+7. Convenience sample of packages.
+8. Single bandit version (1.9.4).
+9. Coincidental co-location (4.2%) inflates the semantic overlap count.
+
+---
+
+## 6. Conclusion
+
+furqan-lint v2.1.0 and bandit 1.9.4 flag different locations: 83.4% of furqan-lint's findings have no bandit finding within 2 lines. Under symmetric test-path exclusion, furqan-lint leads in all 25 packages (median 5.3x, pooled 6.3x). As run, it leads in 22 of 25 (median 5.0x, pooled 0.83x).
+
+Two rules account for 58.6% of furqan-lint's output, one of which (SI-001) duplicates ruff ANN401. An estimated 75.9% of unique-to-furqan findings have counterparts in other linters by rule identity (not verified). The ~4,880 findings from rules with no apparent counterpart (kwargs passthrough, hasattr masking) represent the strongest candidate for genuinely novel detection.
+
+Whether these findings represent a complementary analysis class requires a precision study and a three-way decomposition against ruff, neither of which is performed here. The raw data to answer both questions is shipped.
 
 The tool is open-source under Apache-2.0:
 **https://github.com/BayyinahEnterprise/Kun-Fayakun**
@@ -191,7 +230,7 @@ The tool is open-source under Apache-2.0:
 
 ## Data availability
 
-benchmark_v2.1.0.csv, raw_json/ (furqan-lint), bandit_json/ (bandit), benchmark.py, test_output_v2.1.0.txt (183 tests passing). Tools: furqan-lint v2.1.0, bandit 1.9.4, Python 3.13.18.
+benchmark_v2.1.0.csv, raw_json/ (furqan-lint), bandit_json/ (bandit), overlap/ (decomposition CSVs and summary), benchmark.py (with --from-json replay), versions.json, rule_manifest.json, test_output_v2.1.0.txt (208 tests). Tools: furqan-lint v2.1.0, bandit 1.9.4, Python 3.13.18.
 
 ---
 

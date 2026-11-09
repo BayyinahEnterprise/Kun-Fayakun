@@ -6,7 +6,7 @@ This module is the heart of `kun furqan lint`. It:
 1. Loads config from .furqan.toml or pyproject.toml
 2. Walks a directory or takes a single file
 3. Parses each .py file into an AST
-4. Runs all four check families (RING-CLOSE, MARAD, TRUST-BOUNDARY, SCAN-INCOMPLETE)
+4. Runs all seven check families (RING-CLOSE, MARAD, TRUST-BOUNDARY, SCAN-INCOMPLETE, SECRETS, INJECTION, CRYPTO)
 5. Filters findings by config (select, ignore, severity, per-file)
 6. Formats output (text, json, sarif)
 7. Returns an exit code (0 = clean, 1 = findings, 2 = parse error)
@@ -26,6 +26,9 @@ from kun_fayakun.furqan.checks.ring_close import check_ring_close
 from kun_fayakun.furqan.checks.marad import check_marad
 from kun_fayakun.furqan.checks.trust_boundary import check_trust_boundary
 from kun_fayakun.furqan.checks.scan_incomplete import check_scan_incomplete
+from kun_fayakun.furqan.checks.secrets import check_secrets
+from kun_fayakun.furqan.checks.injection import check_injection
+from kun_fayakun.furqan.checks.crypto import check_crypto
 
 
 EXCLUDED_DIRS: frozenset = frozenset({
@@ -51,6 +54,9 @@ def lint_source(source: str, path: str, config: Config | None = None) -> List[Fi
     findings.extend(check_marad(tree, path))
     findings.extend(check_trust_boundary(tree, path))
     findings.extend(check_scan_incomplete(source, tree, path))
+    findings.extend(check_secrets(tree, path))
+    findings.extend(check_injection(tree, path))
+    findings.extend(check_crypto(tree, path))
 
     if config:
         findings = config.filter_findings(findings)
@@ -88,6 +94,9 @@ def lint_file(path: Path, config: Config | None = None) -> tuple[List[Finding], 
     findings.extend(check_marad(tree, str(path)))
     findings.extend(check_trust_boundary(tree, str(path)))
     findings.extend(check_scan_incomplete(source, tree, str(path)))
+    findings.extend(check_secrets(tree, str(path)))
+    findings.extend(check_injection(tree, str(path)))
+    findings.extend(check_crypto(tree, str(path)))
 
     if config:
         findings = config.filter_findings(findings)

@@ -13,6 +13,7 @@ Rules:
     MR-004  Function returns None on failure without documenting it
     MR-005  Empty except block (pass/... only)
     MR-006  Exception caught and replaced with generic string
+    MR-007  try-except-continue (errors silently skipped in loop)
 """
 
 from __future__ import annotations
@@ -30,6 +31,7 @@ def check_marad(tree: ast.Module, path: str) -> List[Finding]:
     findings.extend(_check_empty_except(tree, path))
     findings.extend(_check_generic_error_message(tree, path))
     findings.extend(_check_exception_swallowed(tree, path))
+    findings.extend(_check_try_except_continue(tree, path))
     return findings
 
 
@@ -139,6 +141,28 @@ def _check_exception_swallowed(tree: ast.Module, path: str) -> List[Finding]:
                                    "to handle every possible failure mode. Either narrow the exception "
                                    "type to what you actually handle, or re-raise after logging.",
                         ))
+    return findings
+
+
+def _check_try_except_continue(tree: ast.Module, path: str) -> List[Finding]:
+    """MR-007: try-except-continue in a loop -- errors silently skipped."""
+    findings: List[Finding] = []
+    for node in ast.walk(tree):
+        if isinstance(node, ast.ExceptHandler):
+            if (len(node.body) == 1
+                    and isinstance(node.body[0], ast.Continue)):
+                findings.append(Finding(
+                    rule="MR-007",
+                    path=path,
+                    line=node.lineno,
+                    col=node.col_offset,
+                    message="try/except with bare `continue` -- loop errors silently skipped",
+                    severity=Severity.MEDIUM,
+                    fix=Fix.ENRICH,
+                    detail="Catching an exception and immediately continuing the loop "
+                           "means every failure is invisible. At minimum, log the error "
+                           "before continuing so the failure rate is observable.",
+                ))
     return findings
 
 

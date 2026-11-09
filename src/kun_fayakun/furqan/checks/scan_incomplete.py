@@ -13,6 +13,7 @@ Rules:
     SI-004  TODO/FIXME/HACK/XXX older than 90 days (stale incomplete scan)
     SI-005  `**kwargs` passed through without validation or documentation
     SI-006  `assert` used for runtime validation (stripped in -O mode)
+    SI-007  `hasattr` on a class attribute -- hides AttributeError
 """
 
 from __future__ import annotations
@@ -38,6 +39,7 @@ def check_scan_incomplete(source: str, tree: ast.Module, path: str) -> List[Find
     findings.extend(_check_stale_todo(source, path))
     findings.extend(_check_kwargs_passthrough(tree, path))
     findings.extend(_check_assert_validation(tree, path))
+    findings.extend(_check_hasattr_class(tree, path))
     return findings
 
 
@@ -204,6 +206,30 @@ def _check_assert_validation(tree: ast.Module, path: str) -> List[Finding]:
                            "If this check is a runtime validation (not a development-only "
                            "invariant), use `if not ...: raise ValueError(...)` instead.",
                 ))
+    return findings
+
+
+def _check_hasattr_class(tree: ast.Module, path: str) -> List[Finding]:
+    """SI-007: hasattr() hides AttributeError, masking real bugs."""
+    findings: List[Finding] = []
+    for node in ast.walk(tree):
+        if (isinstance(node, ast.Call)
+                and isinstance(node.func, ast.Name)
+                and node.func.id == "hasattr"):
+            # hasattr swallows AttributeError -- it's a silent scan skip
+            findings.append(Finding(
+                rule="SI-007",
+                path=path,
+                line=node.lineno,
+                col=node.col_offset,
+                message="`hasattr()` swallows AttributeError -- may hide real bugs",
+                severity=Severity.LOW,
+                fix=Fix.RECALIBRATE,
+                detail="hasattr() works by calling getattr() and catching AttributeError. "
+                       "This hides errors in __getattr__ and property implementations. "
+                       "Use `getattr(obj, name, sentinel)` or an explicit try/except "
+                       "for the specific attribute.",
+            ))
     return findings
 
 

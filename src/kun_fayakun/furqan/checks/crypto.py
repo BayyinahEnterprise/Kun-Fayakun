@@ -11,6 +11,7 @@ Rules:
     TB-023  SSL context with check_hostname=False
     TB-024  SSL context with CERT_NONE (no certificate verification)
     TB-025  SSL/TLS insecure protocol version
+    TB-026  `random` module used for security-sensitive operation
 """
 
 from __future__ import annotations
@@ -32,6 +33,7 @@ def check_crypto(tree: ast.Module, path: str) -> List[Finding]:
     findings.extend(_check_ssl_no_check_hostname(tree, path))
     findings.extend(_check_ssl_cert_none(tree, path))
     findings.extend(_check_ssl_insecure_version(tree, path))
+    findings.extend(_check_random_for_security(tree, path))
     return findings
 
 
@@ -206,6 +208,37 @@ def _check_ssl_insecure_version(tree: ast.Module, path: str) -> List[Finding]:
                 detail="SSLv2, SSLv3, TLSv1.0 and TLSv1.1 have known vulnerabilities. "
                        "Use ssl.PROTOCOL_TLS_CLIENT (Python 3.6+) which negotiates "
                        "the highest available TLS version with proper defaults.",
+            ))
+    return findings
+
+
+def _check_random_for_security(tree: ast.Module, path: str) -> List[Finding]:
+    """TB-026: random module used where secrets/os.urandom is needed."""
+    findings: List[Finding] = []
+    # Functions from the `random` module that produce values people
+    # mistakenly use as tokens, passwords, or cryptographic keys
+    _random_funcs = {
+        "random.random", "random.randint", "random.randrange",
+        "random.choice", "random.choices", "random.sample",
+        "random.getrandbits", "random.uniform",
+    }
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.Call):
+            continue
+        func_name = _get_call_name(node)
+        if func_name in _random_funcs:
+            findings.append(Finding(
+                rule="TB-026",
+                path=path,
+                line=node.lineno,
+                col=node.col_offset,
+                message=f"`{func_name}()` is not cryptographically secure",
+                severity=Severity.MEDIUM,
+                fix=Fix.RECALIBRATE,
+                detail="The `random` module uses a Mersenne Twister PRNG whose output "
+                       "is predictable after observing 624 values. For tokens, passwords, "
+                       "nonces, or any security-sensitive randomness, use `secrets.token_hex()`, "
+                       "`secrets.token_urlsafe()`, or `os.urandom()`.",
             ))
     return findings
 

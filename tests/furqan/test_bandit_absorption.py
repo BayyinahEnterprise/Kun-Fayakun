@@ -4,8 +4,8 @@ Tests for bandit-equivalent rules absorbed into furqan-lint.
 
 Covers:
   secrets.py   TB-010 through TB-014
-  injection.py TB-015 through TB-020
-  crypto.py    TB-021 through TB-025
+  injection.py TB-015 through TB-020, TB-027, TB-028
+  crypto.py    TB-021 through TB-026
   marad.py     MR-007 (try-except-continue)
   scan_incomplete.py SI-007 (hasattr)
 """
@@ -372,6 +372,102 @@ class TestSI007Hasattr:
         """)
         findings = check_scan_incomplete(src, tree, "test.py")
         assert any(f.rule == "SI-007" for f in findings)
+
+
+# ── CRYPTO TB-026 (random for security) ─────────────────────────
+
+class TestTB026RandomForSecurity:
+    def test_detects_random_random(self):
+        tree, _ = _parse("""
+            import random
+            token = random.random()
+        """)
+        findings = check_crypto(tree, "test.py")
+        assert any(f.rule == "TB-026" for f in findings)
+
+    def test_detects_random_choice(self):
+        tree, _ = _parse("""
+            import random
+            char = random.choice("abcdef0123456789")
+        """)
+        findings = check_crypto(tree, "test.py")
+        assert any(f.rule == "TB-026" for f in findings)
+
+    def test_detects_random_getrandbits(self):
+        tree, _ = _parse("""
+            import random
+            bits = random.getrandbits(128)
+        """)
+        findings = check_crypto(tree, "test.py")
+        assert any(f.rule == "TB-026" for f in findings)
+
+
+# ── INJECTION TB-027 (XXE) ──────────────────────────────────────
+
+class TestTB027XXE:
+    def test_detects_etree_parse(self):
+        tree, _ = _parse("""
+            import xml.etree.ElementTree as ET
+            ET.parse("data.xml")
+        """)
+        findings = check_injection(tree, "test.py")
+        assert any(f.rule == "TB-027" for f in findings)
+
+    def test_detects_minidom_parseString(self):
+        tree, _ = _parse("""
+            from xml.dom import minidom
+            minidom.parseString(data)
+        """)
+        findings = check_injection(tree, "test.py")
+        assert any(f.rule == "TB-027" for f in findings)
+
+    def test_detects_sax_parse(self):
+        tree, _ = _parse("""
+            from xml import sax
+            sax.parse("data.xml", handler)
+        """)
+        findings = check_injection(tree, "test.py")
+        assert any(f.rule == "TB-027" for f in findings)
+
+    def test_detects_bare_import_parseString(self):
+        tree, _ = _parse("""
+            from xml.dom.minidom import parseString
+            parseString(data)
+        """)
+        findings = check_injection(tree, "test.py")
+        assert any(f.rule == "TB-027" for f in findings)
+
+
+# ── INJECTION TB-028 (Django ORM injection) ─────────────────────
+
+class TestTB028DjangoORM:
+    def test_detects_extra_with_where(self):
+        tree, _ = _parse("""
+            qs.extra(where=["name = %s"])
+        """)
+        findings = check_injection(tree, "test.py")
+        assert any(f.rule == "TB-028" for f in findings)
+
+    def test_detects_extra_with_select(self):
+        tree, _ = _parse("""
+            qs.extra(select={"val": "col + 1"})
+        """)
+        findings = check_injection(tree, "test.py")
+        assert any(f.rule == "TB-028" for f in findings)
+
+    def test_detects_rawsql_variable(self):
+        tree, _ = _parse("""
+            RawSQL(query, params)
+        """)
+        findings = check_injection(tree, "test.py")
+        assert any(f.rule == "TB-028" for f in findings)
+
+    def test_ignores_rawsql_literal(self):
+        tree, _ = _parse("""
+            RawSQL("SELECT col FROM tbl WHERE id = %s", [pk])
+        """)
+        findings = check_injection(tree, "test.py")
+        assert not any(f.rule == "TB-028" for f in findings)
 
 
 # ── Integration: lint_source picks up new rules ─────────────────

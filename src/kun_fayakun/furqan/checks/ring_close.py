@@ -51,21 +51,42 @@ def _check_open_without_with(tree: ast.Module, path: str) -> List[Finding]:
                         if isinstance(inner, ast.Call) and _is_open_call(inner):
                             with_targets.add(id(inner))
 
-    # Find all open() calls that are NOT in a with
+    # Also collect open() calls inside try blocks that have a finally with .close()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Try) and node.finalbody:
+            finally_text = ast.dump(ast.Module(body=node.finalbody, type_ignores=[]))
+            if "close" in finally_text:
+                # There's a .close() in the finally -- any open() in the try body is paired
+                for child in ast.walk(ast.Module(body=node.body, type_ignores=[])):
+                    if isinstance(child, ast.Call) and _is_open_call(child):
+                        with_targets.add(id(child))
+
+    # Collect open() calls inside ExitStack contexts
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call):
+            func = node.func
+            if isinstance(func, ast.Attribute) and func.attr in ("enter_context", "push"):
+                # ExitStack.enter_context(open(...))
+                if node.args:
+                    arg = node.args[0]
+                    if isinstance(arg, ast.Call) and _is_open_call(arg):
+                        with_targets.add(id(arg))
+
+    # Find all open() calls that are NOT paired with a close mechanism
     for node in ast.walk(tree):
         if isinstance(node, ast.Call) and _is_open_call(node):
             if id(node) not in with_targets:
-                # Check if the result is assigned (not just called and discarded)
                 findings.append(Finding(
                     rule="RC-001",
                     path=path,
                     line=node.lineno,
                     col=node.col_offset,
-                    message="open() called without context manager -- file handle may never close",
+                    message="open() without context manager, try/finally close, or ExitStack",
                     severity=Severity.HIGH,
                     fix=Fix.ENRICH,
                     detail="Use `with open(...) as f:` to guarantee the file handle closes. "
-                           "The ring must close: every opened resource needs a matching close.",
+                           "Alternatives: try/finally with explicit close(), or "
+                           "contextlib.ExitStack / contextlib.closing.",
                 ))
     return findings
 

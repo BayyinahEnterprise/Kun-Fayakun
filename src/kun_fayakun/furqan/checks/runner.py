@@ -233,7 +233,7 @@ def run(args: list[str]) -> int:
     if config.output_format == "text":
         print("Bismillah ir-Rahman ir-Rahim")
         print()
-        print("furqan-lint v2.0 -- structural honesty checks for Python, C, C++, Java, C#, and Ada/SPARK")
+        print("furqan-lint v2.1.0 -- structural honesty checks for Python, C, C++, Java, C#, and Ada/SPARK")
         print()
 
     all_findings: List[Finding] = []

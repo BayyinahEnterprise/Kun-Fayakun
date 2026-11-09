@@ -73,18 +73,30 @@ def _check_hardcoded_password(tree: ast.Module, path: str) -> List[Finding]:
 
 
 def _check_password_default(tree: ast.Module, path: str) -> List[Finding]:
-    """TB-011: Function parameter with a secret-like name and a string default."""
+    """TB-011: Function parameter with a secret-like name and a string default.
+
+    Handles positional-only, regular, and keyword-only parameters correctly.
+    In Python's AST, defaults for posonlyargs and args share one list
+    (args.defaults), right-aligned to posonlyargs + args.
+    kw_defaults aligns 1:1 with kwonlyargs (None for no default).
+    """
     findings: List[Finding] = []
     for node in ast.walk(tree):
         if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
-            args = node.args
-            all_args = args.args + args.posonlyargs + args.kwonlyargs
-            all_defaults = (
-                [None] * (len(args.args) - len(args.defaults)) + args.defaults
-                + [None] * (len(args.kwonlyargs) - len(args.kw_defaults)) + args.kw_defaults
-            )
-            # Realign -- only look at args that have defaults
-            for arg_node, default in zip(all_args, all_defaults):
+            a = node.args
+            # posonlyargs + args share args.defaults, right-aligned
+            positional_args = a.posonlyargs + a.args
+            n_positional = len(positional_args)
+            n_defaults = len(a.defaults)
+            positional_defaults = [None] * (n_positional - n_defaults) + list(a.defaults)
+
+            # kwonlyargs pair 1:1 with kw_defaults
+            kw_args = a.kwonlyargs
+            kw_defaults = list(a.kw_defaults)
+
+            pairs = list(zip(positional_args, positional_defaults)) + list(zip(kw_args, kw_defaults))
+
+            for arg_node, default in pairs:
                 if default is None:
                     continue
                 if _SECRET_NAMES.search(arg_node.arg):

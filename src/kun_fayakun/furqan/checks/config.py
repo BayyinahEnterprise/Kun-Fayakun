@@ -42,6 +42,14 @@ SEVERITY_BY_NAME = {
     "CRITICAL": Severity.CRITICAL,
 }
 
+# Rules that flag a language feature, not a defect. Off by default.
+# Enable with --select TB-001 or select = ["TB-001"] in config.
+INFORMATIONAL_RULES: frozenset = frozenset({
+    "TB-001",  # isinstance admits subclasses (every isinstance call)
+    "TB-002",  # deepcopy invokes hooks (every deepcopy call)
+    "TB-003",  # type(x).__name__ interceptable (every occurrence)
+})
+
 
 @dataclass
 class Config:
@@ -56,11 +64,19 @@ class Config:
     verbose: bool = False
 
     def should_run_rule(self, rule: str) -> bool:
-        """Check if a rule should run based on select/ignore config."""
+        """Check if a rule should run based on select/ignore config.
+
+        Informational rules (TB-001/002/003) are off by default.
+        They run only when explicitly selected via --select or config.
+        """
         # If select is set, only run rules that match
         if self.select:
             family = rule.split("-")[0]  # e.g., "RC" from "RC-001"
             if rule not in self.select and family not in self.select:
+                return False
+        else:
+            # No explicit select -- apply informational exclusion
+            if rule in INFORMATIONAL_RULES:
                 return False
 
         # Check ignore list

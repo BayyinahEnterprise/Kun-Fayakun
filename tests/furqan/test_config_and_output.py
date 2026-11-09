@@ -20,12 +20,20 @@ from kun_fayakun.furqan.checks.runner import lint_source
 # ═══════════════════════════════════════════════════════════════
 
 class TestConfig:
-    def test_default_config_runs_all_rules(self):
+    def test_default_config_runs_non_informational_rules(self):
         config = Config()
         assert config.should_run_rule("RC-001")
-        assert config.should_run_rule("TB-001")
         assert config.should_run_rule("MR-003")
         assert config.should_run_rule("SI-006")
+        assert config.should_run_rule("TB-005")
+        # Informational rules are off by default
+        assert not config.should_run_rule("TB-001")
+        assert not config.should_run_rule("TB-002")
+        assert not config.should_run_rule("TB-003")
+
+    def test_informational_rules_enabled_by_select(self):
+        config = Config(select={"TB-001"})
+        assert config.should_run_rule("TB-001")
 
     def test_select_filters_to_family(self):
         config = Config(select={"RC", "MR"})
@@ -42,9 +50,9 @@ class TestConfig:
         assert not config.should_run_rule("RC-001")
 
     def test_ignore_suppresses_rule(self):
-        config = Config(ignore={"TB-001"})
-        assert not config.should_run_rule("TB-001")
-        assert config.should_run_rule("TB-002")
+        config = Config(ignore={"TB-005"})
+        assert not config.should_run_rule("TB-005")
+        assert config.should_run_rule("TB-004")
         assert config.should_run_rule("RC-001")
 
     def test_ignore_suppresses_family(self):
@@ -64,12 +72,12 @@ class TestConfig:
 
     def test_per_file_ignores(self):
         config = Config(per_file_ignores={
-            "tests/*.py": {"TB-001", "SI-001"},
+            "tests/*.py": {"TB-005", "SI-001"},
         })
-        f1 = Finding(rule="TB-001", path="tests/test_foo.py", line=1, col=0,
-                     message="isinstance", severity=Severity.MEDIUM, fix=Fix.RECALIBRATE)
-        f2 = Finding(rule="TB-001", path="src/main.py", line=1, col=0,
-                     message="isinstance", severity=Severity.MEDIUM, fix=Fix.RECALIBRATE)
+        f1 = Finding(rule="TB-005", path="tests/test_foo.py", line=1, col=0,
+                     message="eval", severity=Severity.CRITICAL, fix=Fix.SIMPLIFY)
+        f2 = Finding(rule="TB-005", path="src/main.py", line=1, col=0,
+                     message="eval", severity=Severity.CRITICAL, fix=Fix.SIMPLIFY)
         assert not config.should_report_finding(f1)  # suppressed in tests/
         assert config.should_report_finding(f2)       # not suppressed in src/
 

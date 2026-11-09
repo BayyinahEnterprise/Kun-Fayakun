@@ -182,31 +182,45 @@ def _check_kwargs_passthrough(tree: ast.Module, path: str) -> List[Finding]:
 
 
 def _check_assert_validation(tree: ast.Module, path: str) -> List[Finding]:
-    """SI-006: `assert` used for what looks like runtime validation."""
+    """SI-006: `assert` used outside test files -- stripped by `python -O`.
+
+    Test files are exempt: assert is the standard way to write test
+    assertions and will not be stripped in a test runner.
+    """
+    # Exempt test files
+    path_lower = path.lower().replace("\\", "/")
+    if (_is_test_path(path_lower)):
+        return []
+
     findings: List[Finding] = []
     for node in ast.walk(tree):
         if isinstance(node, ast.Assert):
-            # Heuristic: assert with isinstance, assert with comparison to input
-            test = node.test
-            is_isinstance = (isinstance(test, ast.Call) and
-                             isinstance(test.func, ast.Name) and
-                             test.func.id == "isinstance")
-            is_comparison = isinstance(test, ast.Compare)
-
-            if is_isinstance or is_comparison:
-                findings.append(Finding(
-                    rule="SI-006",
-                    path=path,
-                    line=node.lineno,
-                    col=node.col_offset,
-                    message="`assert` used for runtime validation -- stripped by `python -O`",
-                    severity=Severity.HIGH,
-                    fix=Fix.RECALIBRATE,
-                    detail="assert statements are removed when Python runs with -O or -OO. "
-                           "If this check is a runtime validation (not a development-only "
-                           "invariant), use `if not ...: raise ValueError(...)` instead.",
-                ))
+            findings.append(Finding(
+                rule="SI-006",
+                path=path,
+                line=node.lineno,
+                col=node.col_offset,
+                message="`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+                severity=Severity.MEDIUM,
+                fix=Fix.RECALIBRATE,
+                detail="assert statements are removed when Python runs with -O or -OO. "
+                       "If this is a runtime validation (not a development-only invariant), "
+                       "use `if not ...: raise ValueError(...)` instead.",
+            ))
     return findings
+
+
+def _is_test_path(path: str) -> bool:
+    """Check if a file path is a test file."""
+    parts = path.replace("\\", "/").split("/")
+    basename = parts[-1] if parts else ""
+    return (
+        basename.startswith("test_")
+        or basename.endswith("_test.py")
+        or basename == "conftest.py"
+        or "tests/" in path + "/"
+        or "/test/" in path + "/"
+    )
 
 
 def _check_hasattr_class(tree: ast.Module, path: str) -> List[Finding]:

@@ -1,0 +1,26 @@
+package,domain,py_files,py_lines,furqan_findings,bandit_findings,ratio
+django,Web framework,909,165634,3389,281,12.1
+flask,Micro web framework,24,9199,135,13,10.4
+fastapi,Async web framework,52,22748,831,70,11.9
+tornado,Async networking/web,76,50586,1290,285,4.5
+starlette,ASGI framework,36,6947,336,73,4.6
+requests,HTTP library,19,6385,214,16,13.4
+httpx,Async HTTP client,23,8828,174,29,6.0
+urllib3,HTTP client low-level,36,11914,193,10,19.3
+aiohttp,Async HTTP,54,28467,781,178,4.4
+sqlalchemy,SQL ORM,258,253997,9831,866,11.4
+celery,Task queue,161,47496,1176,49,24.0
+jinja2,Template engine,25,14425,362,62,5.8
+pydantic,Data validation,105,45762,2764,86,32.1
+cryptography,Crypto library,78,13868,373,18,20.7
+paramiko,SSH library,42,18621,309,21,14.7
+scrapy,Web scraping,199,38503,1729,241,7.2
+click,CLI framework,17,12674,174,36,4.8
+rich,Rich terminal,100,38515,286,58,4.9
+typer,CLI builder,32,13911,583,60,9.7
+boto3,AWS SDK,39,8558,80,0,inf
+PIL,Image processing,98,35149,991,288,3.4
+werkzeug,WSGI utilities,52,21687,372,28,13.3
+numpy,Numerical computing,407,243710,4738,3597,1.3
+pandas,Data analysis,1422,635499,20687,17701,1.2
+scipy,Scientific computing,988,574785,7040,5893,1.2

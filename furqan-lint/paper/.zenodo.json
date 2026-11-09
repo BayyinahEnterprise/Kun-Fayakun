@@ -1,0 +1,57 @@
+{
+  "title": "furqan-lint vs. bandit: A Finding-Count Comparison Across 25 Python Codebases",
+  "description": "Empirical benchmark of furqan-lint v2.1.0, a multi-language static analysis tool checking for structural honesty (surface-substrate divergence), against bandit 1.9.4 across 25 widely-used open-source Python packages (2.3M lines, 5,252 files). Includes raw JSON output from both tools, benchmark harness with offline replay, 208 tests, and a machine-readable rule manifest covering 50 rules across six languages (Python, C, C++, Java, C#, Ada/SPARK).",
+  "upload_type": "software",
+  "publication_date": "2026-11-09",
+  "creators": [
+    {
+      "name": "Arfeen, Bilal Syed",
+      "affiliation": "BayyinahEnterprise",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "static analysis",
+    "structural honesty",
+    "software quality",
+    "Python linter",
+    "bandit",
+    "security analysis",
+    "code quality",
+    "surface-substrate divergence",
+    "multi-language linter",
+    "SARIF",
+    "tree-sitter",
+    "exception handling",
+    "resource leak detection",
+    "type annotation analysis",
+    "software verification",
+    "CI/CD tooling",
+    "open source",
+    "empirical software engineering",
+    "finding-count comparison",
+    "safety-critical systems",
+    "MISRA",
+    "AUTOSAR",
+    "DO-178C",
+    "Ada SPARK"
+  ],
+  "license": {
+    "id": "Apache-2.0"
+  },
+  "access_right": "open",
+  "language": "eng",
+  "version": "2.1.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/BayyinahEnterprise/Kun-Fayakun",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "subjects": [
+    {"term": "Software Engineering", "scheme": "url", "identifier": "https://id.loc.gov/authorities/subjects/sh89003285"},
+    {"term": "Static program analysis", "scheme": "url", "identifier": "https://id.loc.gov/authorities/subjects/sh85127580"}
+  ],
+  "notes": "Benchmark dataset includes per-package raw JSON from furqan-lint and bandit, a versions.json manifest, and a harness with --from-json offline replay. All numbers independently verified by a fresh non-Anthropic audit seat (PASS WITH REVISIONS). Tag v2.1.0 at commit 979c79e."
+}

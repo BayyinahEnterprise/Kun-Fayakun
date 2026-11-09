@@ -1,12 +1,12 @@
 # Bismillah ir-Rahman ir-Rahim
 """
-Furqan-lint v2.0 runner -- coordinates all check families on Python files.
+Furqan-lint v2.0 runner -- coordinates structural honesty checks across languages.
 
 This module is the heart of `kun furqan lint`. It:
 1. Loads config from .furqan.toml or pyproject.toml
 2. Walks a directory or takes a single file
-3. Parses each .py file into an AST
-4. Runs all seven check families (RING-CLOSE, MARAD, TRUST-BOUNDARY, SCAN-INCOMPLETE, SECRETS, INJECTION, CRYPTO)
+3. Routes Python files through the AST-based check families
+4. Routes C, Java, and other supported languages through tree-sitter adapters
 5. Filters findings by config (select, ignore, severity, per-file)
 6. Formats output (text, json, sarif)
 7. Returns an exit code (0 = clean, 1 = findings, 2 = parse error)
@@ -29,6 +29,7 @@ from kun_fayakun.furqan.checks.scan_incomplete import check_scan_incomplete
 from kun_fayakun.furqan.checks.secrets import check_secrets
 from kun_fayakun.furqan.checks.injection import check_injection
 from kun_fayakun.furqan.checks.crypto import check_crypto
+from kun_fayakun.furqan.checks.adapters.base import get_adapter, supported_extensions
 
 
 EXCLUDED_DIRS: frozenset = frozenset({
@@ -66,7 +67,7 @@ def lint_source(source: str, path: str, config: Config | None = None) -> List[Fi
 
 
 def lint_file(path: Path, config: Config | None = None) -> tuple[List[Finding], int]:
-    """Lint a single Python file.
+    """Lint a single file (Python, C, Java, or other supported language).
 
     Returns (findings, exit_code) where exit_code is:
     - 0 if no findings
@@ -76,6 +77,17 @@ def lint_file(path: Path, config: Config | None = None) -> tuple[List[Finding], 
     if config and config.should_exclude_path(path):
         return [], 0
 
+    # Route non-Python files through adapters
+    adapter = get_adapter(str(path))
+    if adapter is not None:
+        return _lint_file_adapted(path, adapter, config)
+
+    # Python path: AST-based checks
+    return _lint_file_python(path, config)
+
+
+def _lint_file_python(path: Path, config: Config | None = None) -> tuple[List[Finding], int]:
+    """Lint a Python file via AST-based checks."""
     try:
         source = path.read_text(encoding="utf-8")
     except (OSError, UnicodeDecodeError) as exc:
@@ -105,25 +117,44 @@ def lint_file(path: Path, config: Config | None = None) -> tuple[List[Finding], 
     return findings, 1 if findings else 0
 
 
+def _lint_file_adapted(path: Path, adapter, config: Config | None = None) -> tuple[List[Finding], int]:
+    """Lint a non-Python file via a tree-sitter adapter."""
+    try:
+        source_bytes = path.read_bytes()
+    except OSError as exc:
+        print(f"  ERROR  Cannot read {path}: {exc}", file=sys.stderr)
+        return [], 2
+
+    findings = adapter.check(source_bytes, str(path))
+
+    if config:
+        findings = config.filter_findings(findings)
+
+    findings.sort(key=lambda f: (f.path, f.line, f.col))
+    return findings, 1 if findings else 0
+
+
 def lint_directory(directory: Path, config: Config | None = None) -> tuple[List[Finding], int]:
-    """Lint all .py files in a directory recursively."""
+    """Lint all supported files in a directory recursively."""
     all_findings: List[Finding] = []
     exit_code = 0
 
-    py_files = sorted(
-        p for p in directory.rglob("*.py")
+    exts = supported_extensions()
+    source_files = sorted(
+        p for p in directory.rglob("*")
         if p.is_file()
+        and p.suffix.lower() in exts
         and not any(part in EXCLUDED_DIRS for part in p.parts)
     )
 
     if config:
-        py_files = [p for p in py_files if not config.should_exclude_path(p)]
+        source_files = [p for p in source_files if not config.should_exclude_path(p)]
 
-    if not py_files:
-        print(f"  No .py files found in {directory}")
+    if not source_files:
+        print(f"  No supported files found in {directory}")
         return [], 0
 
-    for path in py_files:
+    for path in source_files:
         findings, code = lint_file(path, config)
         all_findings.extend(findings)
         exit_code = max(exit_code, code)
@@ -189,7 +220,7 @@ def run(args: list[str]) -> int:
     if config.output_format == "text":
         print("Bismillah ir-Rahman ir-Rahim")
         print()
-        print("furqan-lint v2.0 -- structural honesty checks for Python")
+        print("furqan-lint v2.0 -- structural honesty checks for Python, C, and Java")
         print()
 
     all_findings: List[Finding] = []
@@ -212,12 +243,15 @@ def run(args: list[str]) -> int:
             findings, code = lint_directory(target, config)
             all_findings.extend(findings)
             exit_code = max(exit_code, code)
-            py_files = [
-                p for p in target.rglob("*.py")
-                if not any(part in EXCLUDED_DIRS for part in p.parts)
+            exts = supported_extensions()
+            scanned = [
+                p for p in target.rglob("*")
+                if p.is_file()
+                and p.suffix.lower() in exts
+                and not any(part in EXCLUDED_DIRS for part in p.parts)
                 and not (config and config.should_exclude_path(p))
             ]
-            file_count += len(py_files)
+            file_count += len(scanned)
 
     # Output findings
     if config.output_format == "json":
@@ -259,10 +293,15 @@ def run(args: list[str]) -> int:
 
 
 def _print_usage() -> None:
-    print("furqan-lint v2.0 -- structural honesty checks for Python")
+    print("furqan-lint v2.0 -- structural honesty checks")
     print()
     print("Usage:")
     print("  kun furqan lint [options] [path ...]")
+    print()
+    print("Supported languages:")
+    print("  Python (.py)    40 rules via AST analysis")
+    print("  C (.c, .h)      12 rules via tree-sitter (automotive, medical, aerospace)")
+    print("  Java (.java)    10 rules via tree-sitter (financial, medical, enterprise)")
     print()
     print("Options:")
     print("  -v, --verbose              Show detailed explanations")
@@ -277,7 +316,7 @@ def _print_usage() -> None:
     print("Check families:")
     print("  RING-CLOSE (RC-*)       Unclosed resources (files, locks, sockets)")
     print("  MARAD (MR-*)            Silent failure / swallowed exceptions")
-    print("  TRUST-BOUNDARY (TB-*)   Security-relevant type confusion patterns")
+    print("  TRUST-BOUNDARY (TB-*)   Security and trust boundary violations")
     print("  SCAN-INCOMPLETE (SI-*)  Catch-all types, blanket suppressions, stale TODOs")
     print()
     print("Fix categories (tawba operations):")

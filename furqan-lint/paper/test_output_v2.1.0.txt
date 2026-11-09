@@ -190,4 +190,4 @@ tests/furqan/test_config_and_output.py::TestFormatters::test_format_text_verbose
 tests/furqan/test_config_and_output.py::TestFormatters::test_format_json_empty PASSED [ 99%]
 tests/furqan/test_config_and_output.py::TestFormatters::test_format_sarif_empty PASSED [100%]
 
-============================= 183 passed in 0.17s ==============================
+============================= 183 passed in 0.20s ==============================

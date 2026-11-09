@@ -1,6 +1,6 @@
 # Bismillah ir-Rahman ir-Rahim
 """
-Furqan-lint v2.0 runner -- coordinates structural honesty checks across languages.
+Furqan-lint v2.1.0 runner -- coordinates structural honesty checks across languages.
 
 This module is the heart of `kun furqan lint`. It:
 1. Loads config from .furqan.toml or pyproject.toml
@@ -35,16 +35,33 @@ from furqan_lint.adapters.base import get_adapter, supported_extensions
 EXCLUDED_DIRS: frozenset = frozenset({
     ".venv", "venv", "__pycache__", ".git", "node_modules",
     ".tox", ".mypy_cache", ".ruff_cache", ".pytest_cache",
-    "target", "vendor", "build", "dist", ".eggs", "*.egg-info",
+    ".eggs",
 })
+
+
+def _is_excluded(path: Path, scan_root: Path) -> bool:
+    """Check if a path should be excluded, relative to the scan root.
+
+    Only matches directory names that are direct children of the scan root
+    or intermediate directories, not ancestor paths like /tmp/build/.
+    """
+    try:
+        rel = path.relative_to(scan_root)
+    except ValueError:
+        rel = path
+    return any(part in EXCLUDED_DIRS for part in rel.parts[:-1])
 
 
 def lint_source(source: str, path: str, config: Config | None = None) -> List[Finding]:
     """Run all check families on a single Python source string.
 
     Returns a list of Finding objects, sorted by line number.
-    If config is provided, findings are filtered accordingly.
+    A default Config is always applied (excludes informational rules
+    unless explicitly selected).
     """
+    if config is None:
+        config = Config()
+
     try:
         tree = ast.parse(source, filename=path)
     except SyntaxError:
@@ -59,8 +76,7 @@ def lint_source(source: str, path: str, config: Config | None = None) -> List[Fi
     findings.extend(check_injection(tree, path))
     findings.extend(check_crypto(tree, path))
 
-    if config:
-        findings = config.filter_findings(findings)
+    findings = config.filter_findings(findings)
 
     findings.sort(key=lambda f: (f.path, f.line, f.col))
     return findings
@@ -88,6 +104,9 @@ def lint_file(path: Path, config: Config | None = None) -> tuple[List[Finding], 
 
 def _lint_file_python(path: Path, config: Config | None = None) -> tuple[List[Finding], int]:
     """Lint a Python file via AST-based checks."""
+    if config is None:
+        config = Config()
+
     try:
         source = path.read_text(encoding="utf-8")
     except (OSError, UnicodeDecodeError) as exc:
@@ -110,8 +129,7 @@ def _lint_file_python(path: Path, config: Config | None = None) -> tuple[List[Fi
     findings.extend(check_injection(tree, str(path)))
     findings.extend(check_crypto(tree, str(path)))
 
-    if config:
-        findings = config.filter_findings(findings)
+    findings = config.filter_findings(findings)
 
     findings.sort(key=lambda f: (f.path, f.line, f.col))
     return findings, 1 if findings else 0
@@ -119,6 +137,9 @@ def _lint_file_python(path: Path, config: Config | None = None) -> tuple[List[Fi
 
 def _lint_file_adapted(path: Path, adapter, config: Config | None = None) -> tuple[List[Finding], int]:
     """Lint a non-Python file via a tree-sitter adapter."""
+    if config is None:
+        config = Config()
+
     try:
         source_bytes = path.read_bytes()
     except OSError as exc:
@@ -127,8 +148,7 @@ def _lint_file_adapted(path: Path, adapter, config: Config | None = None) -> tup
 
     findings = adapter.check(source_bytes, str(path))
 
-    if config:
-        findings = config.filter_findings(findings)
+    findings = config.filter_findings(findings)
 
     findings.sort(key=lambda f: (f.path, f.line, f.col))
     return findings, 1 if findings else 0
@@ -144,15 +164,15 @@ def lint_directory(directory: Path, config: Config | None = None) -> tuple[List[
         p for p in directory.rglob("*")
         if p.is_file()
         and p.suffix.lower() in exts
-        and not any(part in EXCLUDED_DIRS for part in p.parts)
+        and not _is_excluded(p, directory)
     )
 
     if config:
         source_files = [p for p in source_files if not config.should_exclude_path(p)]
 
     if not source_files:
-        print(f"  No supported files found in {directory}")
-        return [], 0
+        print(f"  WARNING: No supported files found in {directory}", file=sys.stderr)
+        return [], 2  # exit nonzero -- scanning nothing is not a pass
 
     for path in source_files:
         findings, code = lint_file(path, config)
@@ -220,7 +240,7 @@ def run(args: list[str]) -> int:
     if config.output_format == "text":
         print("Bismillah ir-Rahman ir-Rahim")
         print()
-        print("furqan-lint v2.0 -- structural honesty checks for Python, C, C++, Java, C#, and Ada/SPARK")
+        print("furqan-lint v2.1.0 -- structural honesty checks for Python, C, C++, Java, C#, and Ada/SPARK")
         print()
 
     all_findings: List[Finding] = []
@@ -248,7 +268,7 @@ def run(args: list[str]) -> int:
                 p for p in target.rglob("*")
                 if p.is_file()
                 and p.suffix.lower() in exts
-                and not any(part in EXCLUDED_DIRS for part in p.parts)
+                and not _is_excluded(p, target)
                 and not (config and config.should_exclude_path(p))
             ]
             file_count += len(scanned)
@@ -283,8 +303,10 @@ def run(args: list[str]) -> int:
             if low:
                 parts.append(f"{low} LOW")
             print(f"  {', '.join(parts)}")
-        else:
+        elif file_count > 0:
             print(f"PASS  {file_count} file(s) scanned. Zero findings.")
+        else:
+            print(f"FAIL  No supported files found to scan.")
 
         print()
         print("Bismillah ir-Rahman ir-Rahim")
@@ -293,7 +315,7 @@ def run(args: list[str]) -> int:
 
 
 def _print_usage() -> None:
-    print("furqan-lint v2.0 -- structural honesty checks")
+    print("furqan-lint v2.1.0 -- structural honesty checks")
     print()
     print("Usage:")
     print("  kun furqan lint [options] [path ...]")

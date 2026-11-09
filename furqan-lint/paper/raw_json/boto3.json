@@ -45,15 +45,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/compat.py",
-    "line": 95,
-    "col": 8,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/boto3/docs/docstring.py",
     "line": 31,
@@ -153,78 +144,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
-    "line": 34,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
-    "line": 39,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
-    "line": 54,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
-    "line": 130,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
-    "line": 343,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
-    "line": 395,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
-    "line": 405,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/conditions.py",
-    "line": 406,
-    "col": 40,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/table.py",
     "line": 28,
@@ -234,156 +153,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
-    "line": 36,
-    "col": 11,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
     "line": 40,
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
-    "line": 255,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
-    "line": 303,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
-    "line": 320,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/transform.py",
-    "line": 333,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 57,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 63,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 163,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 168,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 170,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 177,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 182,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 187,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 198,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 203,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/dynamodb/types.py",
-    "line": 223,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -403,24 +178,6 @@
     "message": "`FIXME` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/collection.py",
-    "line": 51,
-    "col": 23,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/collection.py",
-    "line": 106,
-    "col": 17,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -549,15 +306,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/params.py",
-    "line": 142,
-    "col": 38,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/response.py",
     "line": 151,
@@ -565,24 +313,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/response.py",
-    "line": 240,
-    "col": 53,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/resources/response.py",
-    "line": 306,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -608,51 +338,6 @@
     "line": 840,
     "col": 11,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/transfer.py",
-    "line": 442,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/transfer.py",
-    "line": 444,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/transfer.py",
-    "line": 474,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/s3/transfer.py",
-    "line": 476,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/boto3/session.py",
-    "line": 471,
-    "col": 25,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
     "severity": "LOW",
     "fix": "recalibrate"
   }

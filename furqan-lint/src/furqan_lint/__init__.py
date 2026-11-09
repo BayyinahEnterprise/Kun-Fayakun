@@ -15,7 +15,7 @@ Public API:
 from furqan_lint.finding import Finding, Severity, Fix
 from furqan_lint.runner import lint_source, lint_file, lint_directory
 
-__version__ = "2.0.0"
+__version__ = "2.1.0"
 
 __all__ = [
     "Finding",

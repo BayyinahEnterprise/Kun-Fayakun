@@ -126,15 +126,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 111,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
     "line": 120,
@@ -180,65 +171,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1049,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1050,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1052,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1054,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1134,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
     "line": 1428,
     "col": 49,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1471,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -252,65 +189,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1527,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1539,
-    "col": 24,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1553,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1672,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
-    "line": 1766,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
     "line": 1820,
     "col": 37,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/debug.py",
-    "line": 29,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -378,15 +261,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 118,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
     "line": 128,
@@ -419,15 +293,6 @@
     "line": 383,
     "col": 19,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 473,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -477,15 +342,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 520,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
     "line": 523,
@@ -504,29 +360,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 677,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
     "line": 694,
     "col": 26,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 761,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -558,33 +396,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 1011,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 1053,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 1062,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
     "line": 1068,
@@ -599,24 +410,6 @@
     "line": 1070,
     "col": 40,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 1086,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 1088,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -783,15 +576,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 1514,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "TB-020",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
     "line": 1544,
@@ -801,39 +585,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 1554,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
     "line": 1567,
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 1571,
-    "col": 39,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
-    "line": 1607,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -878,24 +635,6 @@
     "line": 1667,
     "col": 29,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/exceptions.py",
-    "line": 40,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/exceptions.py",
-    "line": 76,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -1053,56 +792,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
-    "line": 351,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
-    "line": 400,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
     "line": 538,
     "col": 54,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
-    "line": 700,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
-    "line": 708,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
-    "line": 708,
-    "col": 48,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -1125,74 +819,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 52,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 75,
-    "col": 39,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 101,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 133,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
     "line": 141,
     "col": 7,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 165,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 165,
-    "col": 37,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 168,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -1233,33 +864,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 245,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 248,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 302,
-    "col": 28,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "TB-020",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
     "line": 316,
@@ -1283,15 +887,6 @@
     "line": 548,
     "col": 28,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 573,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -1350,24 +945,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 843,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 850,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "TB-020",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
     "line": 851,
@@ -1401,15 +978,6 @@
     "col": 4,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 995,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1491,15 +1059,6 @@
     "col": 11,
     "message": "Markup() called on non-literal input -- XSS risk",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
-    "line": 1397,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1602,15 +1161,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
-    "line": 229,
-    "col": 61,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
     "line": 252,
@@ -1635,15 +1185,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
-    "line": 281,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1746,60 +1287,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
-    "line": 724,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
-    "line": 727,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
-    "line": 760,
-    "col": 27,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
-    "line": 97,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
-    "line": 187,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
-    "line": 187,
-    "col": 55,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
     "line": 325,
@@ -1818,15 +1305,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
-    "line": 331,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
     "line": 333,
@@ -1841,15 +1319,6 @@
     "line": 393,
     "col": 51,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
-    "line": 499,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -1872,24 +1341,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
-    "line": 644,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
-    "line": 644,
-    "col": 49,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
     "line": 53,
@@ -1904,105 +1355,6 @@
     "line": 80,
     "col": 46,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
-    "line": 82,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
-    "line": 84,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
-    "line": 88,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
-    "line": 89,
-    "col": 27,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
-    "line": 99,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
-    "line": 104,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
-    "line": 104,
-    "col": 49,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/meta.py",
-    "line": 108,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
-    "line": 32,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
-    "line": 35,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nativetypes.py",
-    "line": 70,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2097,24 +1449,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 135,
-    "col": 39,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 137,
-    "col": 23,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
     "line": 166,
@@ -2122,42 +1456,6 @@
     "message": "Empty except block for AttributeError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 179,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 181,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 183,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 202,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-002",
@@ -2174,42 +1472,6 @@
     "line": 216,
     "col": 32,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 250,
-    "col": 18,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 254,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 258,
-    "col": 32,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
-    "line": 266,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2295,15 +1557,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/optimizer.py",
-    "line": 38,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/optimizer.py",
     "line": 45,
@@ -2331,38 +1584,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
-    "line": 318,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
-    "line": 319,
-    "col": 24,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
     "line": 402,
     "col": 15,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
-    "line": 431,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2374,15 +1600,6 @@
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
     "severity": "LOW",
     "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
-    "line": 507,
-    "col": 35,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
   },
   {
     "rule": "SI-002",
@@ -2403,15 +1620,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
-    "line": 1031,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
     "line": 83,
@@ -2419,15 +1627,6 @@
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
     "severity": "LOW",
     "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
-    "line": 133,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
   },
   {
     "rule": "SI-003",
@@ -2446,15 +1645,6 @@
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
     "severity": "LOW",
     "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
-    "line": 341,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
   },
   {
     "rule": "SI-002",
@@ -2520,15 +1710,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
-    "line": 588,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
     "line": 592,
@@ -2592,15 +1773,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
-    "line": 713,
-    "col": 20,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
     "line": 773,
@@ -2643,24 +1815,6 @@
     "col": 17,
     "message": "Markup() called on non-literal input -- XSS risk",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
-    "line": 793,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
-    "line": 841,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -2754,51 +1908,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 127,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 130,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 133,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 136,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 138,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
     "line": 141,
@@ -2808,38 +1917,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 141,
-    "col": 45,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
     "line": 144,
     "col": 9,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 144,
-    "col": 50,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 172,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2850,15 +1932,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 295,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -2898,42 +1971,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 338,
-    "col": 16,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 350,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 357,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
-    "line": 364,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
     "line": 388,
@@ -2949,69 +1986,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
-    "line": 44,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
-    "line": 49,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
-    "line": 127,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
-    "line": 136,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
-    "line": 151,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
-    "line": 159,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/tests.py",
-    "line": 164,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -3078,15 +2052,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
-    "line": 118,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "RC-001",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
     "line": 171,
@@ -3103,33 +2068,6 @@
     "message": "Markup() called on non-literal input -- XSS risk",
     "severity": "HIGH",
     "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
-    "line": 416,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
-    "line": 417,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
-    "line": 506,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
   },
   {
     "rule": "MR-005",
@@ -3177,15 +2115,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
-    "line": 33,
-    "col": 38,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
     "line": 35,
@@ -3213,57 +2142,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
-    "line": 63,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
-    "line": 66,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
-    "line": 70,
-    "col": 33,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
-    "line": 75,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
     "line": 83,
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/jinja2/visitor.py",
-    "line": 89,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   }
 ]

@@ -1,8 +1,13 @@
 # Bismillah ir-Rahman ir-Rahim
 """
-Benchmark: furqan-lint vs bandit across 25 real-world Python packages.
+Benchmark v2.1.1: furqan-lint vs bandit across 25 real-world Python packages.
 
-Produces a CSV dataset and summary statistics for a peer-reviewable paper.
+Fixes from round-2 audit:
+- Uses default Config() (excludes TB-001/002/003)
+- Records bandit --version
+- Outputs the shipped CSV schema (with severity columns)
+- Fails loudly on errors
+- Parameterized paths
 """
 
 import csv
@@ -13,7 +18,6 @@ import time
 from collections import Counter
 from pathlib import Path
 
-# Add monorepo to path
 sys.path.insert(0, "/home/claude/kun-fayakun/src")
 
 from kun_fayakun.furqan.checks.runner import lint_directory
@@ -21,49 +25,35 @@ from kun_fayakun.furqan.checks.finding import Severity
 
 SITE_PACKAGES = Path("/usr/local/lib/python3.13/site-packages")
 
-# 25 packages spanning web, data, crypto, networking, CLI, serialization
 PACKAGES = [
-    # Web frameworks
     ("django", "Web framework"),
     ("flask", "Micro web framework"),
     ("fastapi", "Async web framework"),
     ("tornado", "Async networking/web"),
     ("starlette", "ASGI framework"),
-    # HTTP / networking
     ("requests", "HTTP library"),
     ("httpx", "Async HTTP client"),
-    ("urllib3", "HTTP client (low-level)"),
-    ("aiohttp", "Async HTTP client/server"),
-    # Data / science
+    ("urllib3", "HTTP client low-level"),
+    ("aiohttp", "Async HTTP"),
+    ("sqlalchemy", "SQL ORM"),
+    ("celery", "Task queue"),
+    ("jinja2", "Template engine"),
+    ("pydantic", "Data validation"),
+    ("cryptography", "Crypto library"),
+    ("paramiko", "SSH library"),
+    ("scrapy", "Web scraping"),
+    ("click", "CLI framework"),
+    ("rich", "Rich terminal"),
+    ("typer", "CLI builder"),
+    ("boto3", "AWS SDK"),
+    ("PIL", "Image processing"),
+    ("werkzeug", "WSGI utilities"),
     ("numpy", "Numerical computing"),
     ("pandas", "Data analysis"),
     ("scipy", "Scientific computing"),
-    # ORM / database
-    ("sqlalchemy", "SQL toolkit / ORM"),
-    # Task / messaging
-    ("celery", "Distributed task queue"),
-    # Templating / serialization
-    ("jinja2", "Template engine"),
-    ("pydantic", "Data validation"),
-    # Security / crypto
-    ("cryptography", "Cryptographic recipes"),
-    ("paramiko", "SSH library"),
-    # Scraping / parsing
-    ("scrapy", "Web scraping framework"),
-    # CLI / utilities
-    ("click", "CLI framework"),
-    ("rich", "Rich terminal output"),
-    ("typer", "CLI builder"),
-    # Cloud SDK
-    ("boto3", "AWS SDK"),
-    # Image processing
-    ("PIL", "Image processing (Pillow)"),
-    # Low-level web
-    ("werkzeug", "WSGI utilities"),
 ]
 
 def count_py_lines(pkg_path):
-    """Count total lines of Python code in a package."""
     total = 0
     for f in pkg_path.rglob("*.py"):
         try:
@@ -73,111 +63,128 @@ def count_py_lines(pkg_path):
     return total
 
 def count_py_files(pkg_path):
-    """Count Python files in a package."""
     return sum(1 for f in pkg_path.rglob("*.py") if f.is_file())
 
 def run_bandit(pkg_path):
-    """Run bandit on a package, return (total_findings, findings_by_rule)."""
+    result = subprocess.run(
+        ["bandit", "-r", str(pkg_path), "-f", "json", "-q"],
+        capture_output=True, text=True, timeout=300
+    )
     try:
-        result = subprocess.run(
-            ["bandit", "-r", str(pkg_path), "-f", "json", "-q"],
-            capture_output=True, text=True, timeout=120
-        )
         data = json.loads(result.stdout)
-        results = data.get("results", [])
-        by_rule = Counter(r["test_id"] for r in results)
-        return len(results), dict(by_rule)
-    except (json.JSONDecodeError, subprocess.TimeoutExpired, FileNotFoundError):
-        return 0, {}
+    except json.JSONDecodeError:
+        raise RuntimeError(f"bandit JSON parse failed on {pkg_path}: {result.stderr[:200]}")
+    results = data.get("results", [])
+    by_rule = Counter(r["test_id"] for r in results)
+    return len(results), dict(by_rule), results
 
 def run_furqan(pkg_path):
-    """Run furqan-lint on a package, return (total_findings, findings_by_rule, findings_by_severity)."""
+    # lint_directory now applies default Config() which excludes TB-001/002/003
     findings, _ = lint_directory(pkg_path)
     by_rule = Counter(f.rule for f in findings)
     by_severity = Counter(f.severity.value for f in findings)
-    return len(findings), dict(by_rule), dict(by_severity)
+    return len(findings), dict(by_rule), dict(by_severity), findings
 
 def main():
-    print("Bismillah ir-Rahman ir-Rahim")
+    # Record tool versions
+    bandit_ver = subprocess.run(["bandit", "--version"], capture_output=True, text=True).stdout.strip().split("\n")[0]
+    print(f"Bismillah ir-Rahman ir-Rahim")
     print()
-    print("furqan-lint v2.0 benchmark: 25 real-world Python packages")
+    print(f"furqan-lint v2.1.0 benchmark (rerun with default config)")
+    print(f"bandit version: {bandit_ver}")
     print("=" * 70)
-    print()
 
     rows = []
+    all_furqan_findings = {}
+    all_bandit_findings = {}
+
     for pkg_name, domain in PACKAGES:
         pkg_path = SITE_PACKAGES / pkg_name
         if not pkg_path.exists():
-            print(f"  SKIP  {pkg_name} (not installed)")
+            print(f"  SKIP  {pkg_name} (not installed)", file=sys.stderr)
             continue
 
         py_files = count_py_files(pkg_path)
         py_lines = count_py_lines(pkg_path)
 
-        t0 = time.time()
-        furqan_total, furqan_rules, furqan_sev = run_furqan(pkg_path)
-        furqan_time = time.time() - t0
-
-        t0 = time.time()
-        bandit_total, bandit_rules = run_bandit(pkg_path)
-        bandit_time = time.time() - t0
+        furqan_total, furqan_rules, furqan_sev, furqan_raw = run_furqan(pkg_path)
+        bandit_total, bandit_rules, bandit_raw = run_bandit(pkg_path)
 
         ratio = furqan_total / bandit_total if bandit_total > 0 else float("inf")
-        unique_furqan = furqan_total  # furqan catches a superset
-        unique_bandit = 0  # we've established near-total coverage
 
         row = {
             "package": pkg_name,
             "domain": domain,
             "py_files": py_files,
             "py_lines": py_lines,
-            "furqan_total": furqan_total,
-            "bandit_total": bandit_total,
+            "furqan_v21": furqan_total,
+            "bandit": bandit_total,
             "ratio": round(ratio, 1) if ratio != float("inf") else "inf",
-            "furqan_critical": furqan_sev.get("CRITICAL", 0),
-            "furqan_high": furqan_sev.get("HIGH", 0),
-            "furqan_medium": furqan_sev.get("MEDIUM", 0),
-            "furqan_low": furqan_sev.get("LOW", 0),
-            "furqan_time_s": round(furqan_time, 2),
-            "bandit_time_s": round(bandit_time, 2),
+            "critical": furqan_sev.get("CRITICAL", 0),
+            "high": furqan_sev.get("HIGH", 0),
+            "medium": furqan_sev.get("MEDIUM", 0),
+            "low": furqan_sev.get("LOW", 0),
         }
         rows.append(row)
+        all_furqan_findings[pkg_name] = furqan_raw
+        all_bandit_findings[pkg_name] = bandit_raw
 
         ratio_str = f"{ratio:.1f}x" if ratio != float("inf") else "inf"
         print(f"  {pkg_name:20s}  furqan={furqan_total:5d}  bandit={bandit_total:4d}  "
-              f"ratio={ratio_str:>6s}  files={py_files:4d}  lines={py_lines:6d}")
+              f"ratio={ratio_str:>6s}  C={furqan_sev.get('CRITICAL',0)} H={furqan_sev.get('HIGH',0)} "
+              f"M={furqan_sev.get('MEDIUM',0)} L={furqan_sev.get('LOW',0)}")
 
     print()
     print("=" * 70)
 
-    # Summary statistics
-    totals_furqan = sum(r["furqan_total"] for r in rows)
-    totals_bandit = sum(r["bandit_total"] for r in rows)
+    # Summary
+    totals_furqan = sum(r["furqan_v21"] for r in rows)
+    totals_bandit = sum(r["bandit"] for r in rows)
     total_files = sum(r["py_files"] for r in rows)
     total_lines = sum(r["py_lines"] for r in rows)
-    ratios = [r["furqan_total"] / r["bandit_total"]
-              for r in rows if r["bandit_total"] > 0]
+    ratios = [r["furqan_v21"] / r["bandit"] for r in rows if r["bandit"] > 0]
 
-    print(f"Packages scanned:     {len(rows)}")
-    print(f"Total Python files:   {total_files:,}")
-    print(f"Total Python lines:   {total_lines:,}")
-    print(f"Total furqan findings: {totals_furqan:,}")
-    print(f"Total bandit findings: {totals_bandit:,}")
-    print(f"Overall ratio:        {totals_furqan/totals_bandit:.1f}x")
-    if ratios:
-        import statistics
-        print(f"Median per-package ratio: {statistics.median(ratios):.1f}x")
-        print(f"Mean per-package ratio:   {statistics.mean(ratios):.1f}x")
-        print(f"Min ratio:  {min(ratios):.1f}x")
-        print(f"Max ratio:  {max(ratios):.1f}x")
+    import statistics
+    print(f"Packages: {len(rows)}")
+    print(f"Files: {total_files:,}  Lines: {total_lines:,}")
+    print(f"furqan total: {totals_furqan:,}  bandit total: {totals_bandit:,}")
+    print(f"Pooled ratio: {totals_furqan/totals_bandit:.2f}x")
+    print(f"Median per-pkg ratio: {statistics.median(ratios):.1f}x")
+    print(f"Mean per-pkg ratio: {statistics.mean(ratios):.1f}x")
+    print(f"furqan > bandit: {sum(1 for r in rows if r['furqan_v21'] > r['bandit'])}/{len(rows)}")
+    print(f"bandit > furqan: {sum(1 for r in rows if r['bandit'] > r['furqan_v21'])}/{len(rows)}")
 
     # Write CSV
-    csv_path = "/tmp/claude-0/-home-claude/4e67f777-2a42-5321-8e28-d119a9830ef2/scratchpad/benchmark_results.csv"
+    csv_path = "/home/claude/kun-fayakun/furqan-lint/paper/benchmark_v2.1.0.csv"
     with open(csv_path, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         writer.writeheader()
         writer.writerows(rows)
-    print(f"\nCSV written to: {csv_path}")
+    print(f"\nCSV: {csv_path}")
+
+    # Write raw JSON per package
+    json_dir = Path("/home/claude/kun-fayakun/furqan-lint/paper/raw_json")
+    json_dir.mkdir(exist_ok=True)
+    for pkg_name, findings in all_furqan_findings.items():
+        data = [{"rule": f.rule, "path": f.path, "line": f.line, "col": f.col,
+                 "message": f.message, "severity": f.severity.value,
+                 "fix": f.fix.value if f.fix else None} for f in findings]
+        (json_dir / f"{pkg_name}.json").write_text(json.dumps(data, indent=2))
+
+    # Write bandit raw JSON
+    bandit_json_dir = Path("/home/claude/kun-fayakun/furqan-lint/paper/bandit_json")
+    bandit_json_dir.mkdir(exist_ok=True)
+    for pkg_name, results in all_bandit_findings.items():
+        (bandit_json_dir / f"{pkg_name}.json").write_text(json.dumps(results, indent=2))
+
+    # Per-rule summary
+    print("\n--- Per-rule totals (furqan) ---")
+    all_rules = Counter()
+    for findings in all_furqan_findings.values():
+        for f in findings:
+            all_rules[f.rule] += 1
+    for rule, count in all_rules.most_common():
+        print(f"  {rule}: {count} ({count/totals_furqan*100:.1f}%)")
 
     print()
     print("Bismillah ir-Rahman ir-Rahim")

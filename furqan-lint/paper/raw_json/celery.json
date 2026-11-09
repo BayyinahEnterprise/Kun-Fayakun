@@ -36,57 +36,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 50,
-    "col": 28,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 70,
-    "col": 34,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 111,
-    "col": 38,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 115,
-    "col": 27,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
     "line": 143,
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 160,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -117,96 +72,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 382,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 384,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 393,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 400,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 403,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 475,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 477,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 483,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 487,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 489,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
     "line": 540,
@@ -225,15 +90,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 568,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
     "line": 576,
@@ -243,15 +99,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 593,
-    "col": 49,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
     "line": 666,
@@ -259,24 +106,6 @@
     "message": "`XXX` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 667,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/amqp.py",
-    "line": 682,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-005",
@@ -295,33 +124,6 @@
     "message": "Empty except block for KeyError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/annotations.py",
-    "line": 37,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/annotations.py",
-    "line": 39,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/annotations.py",
-    "line": 45,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-007",
@@ -360,24 +162,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/backends.py",
-    "line": 53,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/backends.py",
-    "line": 62,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-003",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
     "line": 47,
@@ -402,33 +186,6 @@
     "col": 4,
     "message": "`**task_kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 249,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 250,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 273,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -459,42 +216,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 301,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 301,
-    "col": 59,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 304,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 323,
-    "col": 34,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
     "line": 353,
@@ -520,15 +241,6 @@
     "message": "`XXX` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 514,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -581,33 +293,6 @@
     "line": 1084,
     "col": 38,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 1132,
-    "col": 27,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 1156,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 1158,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -675,15 +360,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 1433,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
     "line": 1472,
@@ -711,15 +387,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 1502,
-    "col": 18,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
     "line": 1528,
@@ -727,15 +394,6 @@
     "message": "`**kw` accepted and passed through without validation",
     "severity": "MEDIUM",
     "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
-    "line": 1575,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
   },
   {
     "rule": "SI-004",
@@ -765,39 +423,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/builtins.py",
-    "line": 210,
-    "col": 32,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/control.py",
     "line": 69,
     "col": 4,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/control.py",
-    "line": 98,
-    "col": 24,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/control.py",
-    "line": 370,
-    "col": 29,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -816,15 +447,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/control.py",
-    "line": 540,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -963,24 +585,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/defaults.py",
-    "line": 407,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/defaults.py",
-    "line": 456,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/defaults.py",
     "line": 459,
@@ -999,15 +603,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/log.py",
-    "line": 107,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/log.py",
     "line": 144,
@@ -1015,15 +610,6 @@
     "message": "Empty except block for (AttributeError, IndexError) -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/log.py",
-    "line": 151,
-    "col": 34,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -1053,42 +639,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/log.py",
-    "line": 243,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/registry.py",
-    "line": 29,
-    "col": 20,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/routes.py",
-    "line": 30,
-    "col": 29,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/routes.py",
-    "line": 34,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/routes.py",
     "line": 44,
@@ -1096,24 +646,6 @@
     "message": "Empty except block for KeyError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/routes.py",
-    "line": 80,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/routes.py",
-    "line": 88,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-007",
@@ -1130,42 +662,6 @@
     "line": 116,
     "col": 7,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/routes.py",
-    "line": 126,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/routes.py",
-    "line": 128,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/routes.py",
-    "line": 134,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 92,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -1194,15 +690,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 166,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1278,33 +765,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 1041,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 1043,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 1045,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
     "line": 1050,
@@ -1320,60 +780,6 @@
     "col": 4,
     "message": "`**fields` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 1147,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 1151,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 1154,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 1154,
-    "col": 39,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 1165,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/task.py",
-    "line": 1184,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1395,42 +801,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/trace.py",
-    "line": 139,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/trace.py",
-    "line": 141,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/trace.py",
-    "line": 146,
-    "col": 27,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/trace.py",
-    "line": 265,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/trace.py",
     "line": 304,
@@ -1449,15 +819,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/trace.py",
-    "line": 424,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/trace.py",
     "line": 496,
@@ -1473,15 +834,6 @@
     "col": 16,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/trace.py",
-    "line": 610,
-    "col": 46,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1557,57 +909,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
-    "line": 292,
-    "col": 15,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
     "line": 325,
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
-    "line": 388,
-    "col": 22,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
-    "line": 466,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
-    "line": 475,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
-    "line": 477,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1620,33 +927,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
-    "line": 532,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
-    "line": 535,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
-    "line": 540,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
     "line": 550,
@@ -1654,15 +934,6 @@
     "message": "Empty except block for ImportError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/app/utils.py",
-    "line": 553,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-004",
@@ -1683,15 +954,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/apps/beat.py",
-    "line": 79,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/apps/multi.py",
     "line": 150,
@@ -1699,15 +961,6 @@
     "message": "Empty except block for KeyError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/apps/multi.py",
-    "line": 191,
-    "col": 65,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -1728,33 +981,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/apps/multi.py",
-    "line": 261,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/apps/multi.py",
-    "line": 267,
-    "col": 40,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/apps/multi.py",
-    "line": 272,
-    "col": 40,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/apps/multi.py",
     "line": 280,
@@ -1771,15 +997,6 @@
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
     "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/apps/multi.py",
-    "line": 533,
-    "col": 17,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
   },
   {
     "rule": "SI-007",
@@ -1818,57 +1035,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/apps/worker.py",
-    "line": 161,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/apps/worker.py",
-    "line": 252,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/apps/worker.py",
-    "line": 261,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/arangodb.py",
     "line": 53,
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/arangodb.py",
-    "line": 79,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/arangodb.py",
-    "line": 154,
-    "col": 32,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1989,74 +1161,11 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 122,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 124,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 145,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 175,
-    "col": 10,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 179,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 263,
-    "col": 53,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
     "line": 405,
     "col": 24,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 409,
-    "col": 28,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2070,15 +1179,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 475,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
     "line": 498,
@@ -2088,29 +1188,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 518,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
     "line": 518,
     "col": 43,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 527,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2151,33 +1233,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 620,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 624,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 669,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
     "line": 674,
@@ -2185,15 +1240,6 @@
     "message": "`XXX` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 678,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-003",
@@ -2219,42 +1265,6 @@
     "line": 682,
     "col": 34,
     "message": "Blanket `# noqa` -- specify which rule is being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 689,
-    "col": 43,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 735,
-    "col": 49,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 750,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 763,
-    "col": 46,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2331,15 +1341,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 1050,
-    "col": 59,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
     "line": 1052,
@@ -2355,15 +1356,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 1094,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -2394,29 +1386,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 1266,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
     "line": 1289,
     "col": 11,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
-    "line": 1306,
-    "col": 26,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2436,60 +1410,6 @@
     "col": 16,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/cache.py",
-    "line": 94,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/cache.py",
-    "line": 97,
-    "col": 12,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/cache.py",
-    "line": 99,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/cache.py",
-    "line": 100,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/cache.py",
-    "line": 104,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/cache.py",
-    "line": 119,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -2556,24 +1476,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/couchbase.py",
-    "line": 73,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/couchbase.py",
-    "line": 141,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/couchbase.py",
     "line": 148,
@@ -2599,24 +1501,6 @@
     "message": "Empty except block for NotFound -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/database/__init__.py",
-    "line": 111,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/database/__init__.py",
-    "line": 129,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-007",
@@ -2651,24 +1535,6 @@
     "line": 225,
     "col": 11,
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/database/__init__.py",
-    "line": 260,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/database/__init__.py",
-    "line": 263,
-    "col": 55,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2826,24 +1692,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/elasticsearch.py",
-    "line": 91,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/elasticsearch.py",
-    "line": 100,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/elasticsearch.py",
     "line": 110,
@@ -2887,24 +1735,6 @@
     "message": "Empty except block for (TypeError, KeyError) -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/elasticsearch.py",
-    "line": 237,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/elasticsearch.py",
-    "line": 249,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-005",
@@ -2988,24 +1818,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/mongodb.py",
-    "line": 101,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/mongodb.py",
-    "line": 158,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/mongodb.py",
     "line": 212,
@@ -3078,87 +1890,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 552,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 556,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 626,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 639,
-    "col": 27,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 648,
-    "col": 20,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 711,
-    "col": 30,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 717,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 721,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 767,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
     "line": 790,
@@ -3174,42 +1905,6 @@
     "col": 4,
     "message": "`**retry_policy` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 811,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 857,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 877,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/backends/redis.py",
-    "line": 879,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -3321,42 +2016,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
-    "line": 178,
-    "col": 17,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
-    "line": 182,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
-    "line": 211,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
-    "line": 220,
-    "col": 18,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
     "line": 289,
@@ -3420,15 +2079,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
-    "line": 508,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
     "line": 601,
@@ -3438,30 +2088,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
-    "line": 638,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
     "line": 727,
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
-    "line": 833,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -3507,24 +2139,6 @@
     "col": 8,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/amqp.py",
-    "line": 34,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/amqp.py",
-    "line": 70,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -3600,15 +2214,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/amqp.py",
-    "line": 279,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/celery/bin/amqp.py",
     "line": 287,
@@ -3636,33 +2241,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 85,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 87,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 95,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
     "line": 110,
@@ -3670,24 +2248,6 @@
     "message": "Empty except block for KeyError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 125,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 128,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -3735,42 +2295,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 313,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 321,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 333,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 341,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
     "line": 367,
@@ -3778,15 +2302,6 @@
     "message": "Empty except block for (TypeError, ValueError) -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/base.py",
-    "line": 384,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -3805,15 +2320,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/celery.py",
-    "line": 135,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-002",
@@ -3876,33 +2382,6 @@
     "col": 4,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/graph.py",
-    "line": 47,
-    "col": 35,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/graph.py",
-    "line": 88,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/graph.py",
-    "line": 100,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -4086,15 +2565,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/bin/worker.py",
-    "line": 69,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/bin/worker.py",
     "line": 365,
@@ -4131,159 +2601,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 70,
-    "col": 8,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 71,
-    "col": 8,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 89,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 91,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 95,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 100,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 114,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 115,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 122,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 122,
-    "col": 58,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 165,
-    "col": 8,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 167,
-    "col": 12,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 187,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 190,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 192,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 204,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 209,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 218,
@@ -4293,57 +2610,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 254,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 257,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 259,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 259,
-    "col": 49,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 329,
     "col": 4,
     "message": "`**header` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 338,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -4365,24 +2637,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 481,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 628,
-    "col": 52,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 661,
@@ -4392,192 +2646,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 820,
-    "col": 18,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 835,
-    "col": 18,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 862,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 932,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 936,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 941,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 984,
-    "col": 27,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1003,
-    "col": 32,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1109,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1131,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1134,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1141,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1148,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1151,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1152,
-    "col": 30,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1161,
-    "col": 42,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1165,
-    "col": 32,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1165,
-    "col": 74,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 1178,
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1220,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1223,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -4608,87 +2682,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1377,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1379,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1385,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1389,
-    "col": 20,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1390,
-    "col": 20,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1418,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1420,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1427,
-    "col": 25,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1442,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 1447,
@@ -4696,33 +2689,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1448,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1511,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1518,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -4734,24 +2700,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1563,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1576,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 1586,
@@ -4759,33 +2707,6 @@
     "message": "Empty except block for (LookupError, AttributeError) -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1594,
-    "col": 23,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1657,
-    "col": 36,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1657,
-    "col": 77,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -4824,75 +2745,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1759,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1762,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1764,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1767,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 1863,
     "col": 4,
     "message": "`**options` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1866,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1868,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1870,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -4905,33 +2763,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1883,
-    "col": 12,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1884,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1885,
-    "col": 12,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 1893,
@@ -4939,60 +2770,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1927,
-    "col": 32,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1962,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 1970,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2034,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2041,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2048,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -5022,33 +2799,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2163,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2182,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2206,
-    "col": 28,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 2233,
@@ -5056,24 +2806,6 @@
     "message": "`XXX` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2239,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2241,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-005",
@@ -5103,33 +2835,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2382,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2383,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2388,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 2401,
@@ -5137,150 +2842,6 @@
     "message": "`XXX` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2402,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2433,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2442,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2482,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2487,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2487,
-    "col": 58,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2517,
-    "col": 39,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2530,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2530,
-    "col": 50,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2532,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2536,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2545,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2548,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2590,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2595,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2645,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -5301,42 +2862,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2746,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2768,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2835,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2836,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
     "line": 2842,
@@ -5344,60 +2869,6 @@
     "message": "`XXX` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2853,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2855,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2871,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2877,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2899,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/canvas.py",
-    "line": 2902,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-004",
@@ -5461,15 +2932,6 @@
     "message": "Empty except block for AttributeError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
-    "line": 108,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-007",
@@ -5895,15 +3357,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/concurrency/prefork.py",
-    "line": 119,
-    "col": 12,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/celery/concurrency/prefork.py",
     "line": 145,
@@ -6039,15 +3492,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/abortable.py",
-    "line": 163,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/django/task.py",
     "line": 15,
@@ -6075,48 +3519,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/migrate.py",
-    "line": 122,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/migrate.py",
     "line": 127,
     "col": 0,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/migrate.py",
-    "line": 200,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/migrate.py",
-    "line": 237,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/migrate.py",
-    "line": 239,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -6219,24 +3627,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/sphinx.py",
-    "line": 66,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/sphinx.py",
-    "line": 105,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/app.py",
     "line": 42,
@@ -6260,15 +3650,6 @@
     "line": 50,
     "col": 25,
     "message": "Blanket `# noqa` -- specify which rule is being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-002",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/app.py",
-    "line": 51,
-    "col": 18,
-    "message": "deepcopy() invokes __deepcopy__ hooks on the input object",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -6324,15 +3705,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/manager.py",
-    "line": 116,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -6444,33 +3816,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/mocks.py",
-    "line": 95,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/mocks.py",
-    "line": 98,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/mocks.py",
-    "line": 100,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/mocks.py",
     "line": 128,
@@ -6495,15 +3840,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/worker.py",
-    "line": 46,
-    "col": 39,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -6633,15 +3969,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/events/receiver.py",
-    "line": 143,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-003",
     "path": "/usr/local/lib/python3.13/site-packages/celery/events/state.py",
     "line": 25,
@@ -6678,33 +4005,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/events/state.py",
-    "line": 120,
-    "col": 26,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/events/state.py",
-    "line": 121,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/events/state.py",
-    "line": 135,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/events/state.py",
     "line": 549,
@@ -6738,24 +4038,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/exceptions.py",
-    "line": 168,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/exceptions.py",
-    "line": 178,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -6811,15 +4093,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/fixups/django.py",
-    "line": 54,
-    "col": 40,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-001",
@@ -6885,15 +4158,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/fixups/django.py",
-    "line": 254,
-    "col": 39,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/celery/fixups/django.py",
     "line": 270,
@@ -6919,24 +4183,6 @@
     "message": "Empty except block for (TypeError, AttributeError) -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/loaders/base.py",
-    "line": 103,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/loaders/base.py",
-    "line": 120,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-005",
@@ -7000,42 +4246,6 @@
     "message": "Empty except block for AttributeError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/local.py",
-    "line": 422,
-    "col": 38,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/local.py",
-    "line": 424,
-    "col": 38,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/local.py",
-    "line": 528,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/local.py",
-    "line": 533,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-005",
@@ -7110,15 +4320,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/platforms.py",
-    "line": 382,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "RC-001",
     "path": "/usr/local/lib/python3.13/site-packages/celery/platforms.py",
     "line": 486,
@@ -7164,24 +4365,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/platforms.py",
-    "line": 713,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/platforms.py",
-    "line": 715,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/platforms.py",
     "line": 749,
@@ -7207,15 +4390,6 @@
     "message": "Empty except block for OSError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/platforms.py",
-    "line": 818,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-007",
@@ -7317,33 +4491,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 426,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 429,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 431,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
     "line": 536,
@@ -7371,24 +4518,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 567,
-    "col": 29,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 636,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
     "line": 650,
@@ -7407,15 +4536,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 888,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
     "line": 905,
@@ -7423,24 +4543,6 @@
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
     "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 919,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 924,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
   },
   {
     "rule": "MR-005",
@@ -7461,42 +4563,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 1004,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 1010,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 1015,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 1039,
-    "col": 27,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
     "line": 1051,
@@ -7504,15 +4570,6 @@
     "message": "`XXX` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 1089,
-    "col": 37,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-004",
@@ -7533,24 +4590,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 1168,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/result.py",
-    "line": 1170,
-    "col": 28,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
     "line": 124,
@@ -7558,15 +4597,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 125,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-001",
@@ -7578,15 +4608,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 210,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
     "line": 326,
@@ -7594,15 +4615,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 330,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-001",
@@ -7621,42 +4633,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 503,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 505,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 507,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 509,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-002",
@@ -7704,33 +4680,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 726,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 743,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 745,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
     "line": 831,
@@ -7776,38 +4725,11 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/schedules.py",
-    "line": 930,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-003",
     "path": "/usr/local/lib/python3.13/site-packages/celery/security/__init__.py",
     "line": 39,
     "col": 25,
     "message": "Blanket `# noqa` -- specify which rule is being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/security/certificate.py",
-    "line": 41,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/security/key.py",
-    "line": 24,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -7848,38 +4770,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/annotations.py",
-    "line": 42,
-    "col": 48,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-003",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
     "line": 9,
     "col": 46,
     "message": "Blanket `# noqa` -- specify which rule is being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 42,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 44,
-    "col": 35,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -7891,15 +4786,6 @@
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
     "severity": "LOW",
     "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 114,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
   },
   {
     "rule": "SI-007",
@@ -7938,51 +4824,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 585,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 601,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 605,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 607,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 638,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
     "line": 654,
@@ -8001,24 +4842,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 687,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 694,
-    "col": 23,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
     "line": 743,
@@ -8028,48 +4851,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 794,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/collections.py",
-    "line": 942,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/deprecated.py",
     "line": 53,
     "col": 8,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/dispatch/signal.py",
-    "line": 22,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/dispatch/signal.py",
-    "line": 24,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -8100,15 +4887,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/dispatch/signal.py",
-    "line": 196,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/dispatch/signal.py",
     "line": 260,
@@ -8136,42 +4914,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/dispatch/signal.py",
-    "line": 300,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/dispatch/signal.py",
-    "line": 335,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/dispatch/signal.py",
-    "line": 356,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
-    "line": 71,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
     "line": 99,
@@ -8190,24 +4932,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
-    "line": 191,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
-    "line": 285,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
     "line": 411,
@@ -8224,51 +4948,6 @@
     "message": "exec() executes arbitrary code",
     "severity": "CRITICAL",
     "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
-    "line": 483,
-    "col": 28,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
-    "line": 497,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
-    "line": 499,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
-    "line": 505,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
-    "line": 505,
-    "col": 51,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -8352,33 +5031,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/log.py",
-    "line": 118,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/log.py",
-    "line": 140,
-    "col": 22,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/log.py",
-    "line": 159,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/log.py",
     "line": 164,
@@ -8433,15 +5085,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/nodenames.py",
-    "line": 47,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/nodenames.py",
     "line": 89,
@@ -8478,87 +5121,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 104,
-    "col": 14,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 109,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 143,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 163,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 176,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 178,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 180,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 191,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 205,
-    "col": 20,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
     "line": 215,
@@ -8566,105 +5128,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 229,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 232,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 235,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 237,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 239,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 241,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 243,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 246,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 253,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 258,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/saferepr.py",
-    "line": 261,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-005",
@@ -8736,105 +5199,6 @@
     "col": 4,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 187,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 207,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 217,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 224,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 243,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 246,
-    "col": 22,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 248,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 250,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 255,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
-    "line": 257,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/sysinfo.py",
-    "line": 32,
-    "col": 8,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -8919,24 +5283,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/text.py",
-    "line": 30,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/text.py",
-    "line": 68,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/text.py",
     "line": 103,
@@ -8953,24 +5299,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/text.py",
-    "line": 106,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/text.py",
-    "line": 108,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-001",
@@ -9007,24 +5335,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/text.py",
-    "line": 204,
-    "col": 38,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/text.py",
-    "line": 208,
-    "col": 29,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-002",
@@ -9090,84 +5400,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/threads.py",
-    "line": 328,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
-    "line": 164,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
     "line": 173,
     "col": 8,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
-    "line": 175,
-    "col": 73,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
-    "line": 191,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
-    "line": 260,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
-    "line": 313,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
-    "line": 379,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
-    "line": 407,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -9196,15 +5434,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
-    "line": 501,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -9477,30 +5706,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/components.py",
-    "line": 122,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/worker/components.py",
     "line": 190,
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/components.py",
-    "line": 199,
-    "col": 36,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -9528,33 +5739,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/connection.py",
-    "line": 47,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/connection.py",
-    "line": 49,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/connection.py",
-    "line": 51,
-    "col": 47,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -9609,15 +5793,6 @@
     "col": 16,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/consumer.py",
-    "line": 421,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -9690,51 +5865,6 @@
     "col": 12,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/delayed_delivery.py",
-    "line": 169,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/delayed_delivery.py",
-    "line": 189,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/delayed_delivery.py",
-    "line": 247,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/delayed_delivery.py",
-    "line": 249,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/delayed_delivery.py",
-    "line": 250,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -9873,15 +6003,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/control.py",
-    "line": 99,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/worker/control.py",
     "line": 121,
@@ -9909,15 +6030,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/control.py",
-    "line": 155,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/celery/worker/control.py",
     "line": 176,
@@ -9925,15 +6037,6 @@
     "message": "`XXX` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/control.py",
-    "line": 181,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-007",
@@ -9979,24 +6082,6 @@
     "message": "try/except with bare `continue` -- loop errors silently skipped",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/control.py",
-    "line": 448,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/control.py",
-    "line": 497,
-    "col": 24,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -10107,192 +6192,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 495,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
     "line": 521,
     "col": 4,
     "message": "`**fields` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 621,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 623,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 647,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 650,
-    "col": 24,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 667,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 677,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 679,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 681,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 704,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 706,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 709,
-    "col": 25,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 752,
-    "col": 25,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 866,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 887,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 891,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 895,
-    "col": 21,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 941,
-    "col": 12,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 1030,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/request.py",
-    "line": 1032,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -10329,24 +6234,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/worker.py",
-    "line": 119,
-    "col": 12,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/celery/worker/worker.py",
-    "line": 181,
-    "col": 12,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {

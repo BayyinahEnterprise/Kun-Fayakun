@@ -19,6 +19,7 @@ Rules:
 from __future__ import annotations
 
 import ast
+import re
 from typing import List
 
 from furqan_lint.finding import Finding, Fix, Severity
@@ -136,10 +137,20 @@ def _check_partial_path(tree: ast.Module, path: str) -> List[Finding]:
 
 
 def _check_sql_injection(tree: ast.Module, path: str) -> List[Finding]:
-    """TB-018: SQL injection via string formatting."""
+    """TB-018: SQL injection via string formatting.
+
+    Uses word-boundary matching to avoid false positives on strings
+    like "Cannot update %s" or "Selected items: %d".
+    """
     findings: List[Finding] = []
-    _sql_keywords = {"SELECT", "INSERT", "UPDATE", "DELETE", "DROP", "CREATE",
-                     "ALTER", "EXECUTE", "EXEC", "MERGE", "REPLACE"}
+    # Word-boundary SQL pattern: the keyword must appear as a standalone word
+    # followed by whitespace or special chars typical of SQL (not as part of
+    # a larger English word like "update" in "Cannot update")
+    _sql_pattern = re.compile(
+        r"\b(SELECT|INSERT\s+INTO|UPDATE\s+\w+\s+SET|DELETE\s+FROM|"
+        r"DROP\s+TABLE|CREATE\s+TABLE|ALTER\s+TABLE|EXEC(?:UTE)?(?:\s+|\())\b",
+        re.IGNORECASE,
+    )
 
     for node in ast.walk(tree):
         sql_str = None
@@ -148,11 +159,9 @@ def _check_sql_injection(tree: ast.Module, path: str) -> List[Finding]:
 
         # f-string with SQL
         if isinstance(node, ast.JoinedStr):
-            # Check if any string parts contain SQL keywords
             for value in node.values:
                 if isinstance(value, ast.Constant) and isinstance(value.value, str):
-                    upper = value.value.upper().strip()
-                    if any(upper.startswith(kw) or f" {kw} " in f" {upper} " for kw in _sql_keywords):
+                    if _sql_pattern.search(value.value):
                         sql_str = "f-string"
                         line = node.lineno
                         col = node.col_offset
@@ -161,8 +170,7 @@ def _check_sql_injection(tree: ast.Module, path: str) -> List[Finding]:
         # % formatting: "SELECT ... %s" % (val,)
         if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Mod):
             if isinstance(node.left, ast.Constant) and isinstance(node.left.value, str):
-                upper = node.left.value.upper()
-                if any(kw in upper for kw in _sql_keywords):
+                if _sql_pattern.search(node.left.value):
                     sql_str = "% formatting"
                     line = node.lineno
                     col = node.col_offset
@@ -172,8 +180,7 @@ def _check_sql_injection(tree: ast.Module, path: str) -> List[Finding]:
             if (isinstance(node.func, ast.Attribute) and node.func.attr == "format"
                     and isinstance(node.func.value, ast.Constant)
                     and isinstance(node.func.value.value, str)):
-                upper = node.func.value.value.upper()
-                if any(kw in upper for kw in _sql_keywords):
+                if _sql_pattern.search(node.func.value.value):
                     sql_str = ".format()"
                     line = node.lineno
                     col = node.col_offset
@@ -181,8 +188,7 @@ def _check_sql_injection(tree: ast.Module, path: str) -> List[Finding]:
         # String concatenation with SQL: "SELECT " + var
         if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Add):
             if isinstance(node.left, ast.Constant) and isinstance(node.left.value, str):
-                upper = node.left.value.upper().strip()
-                if any(upper.startswith(kw) or upper.endswith(kw) or f" {kw} " in f" {upper} " for kw in _sql_keywords):
+                if _sql_pattern.search(node.left.value):
                     sql_str = "string concatenation"
                     line = node.lineno
                     col = node.col_offset

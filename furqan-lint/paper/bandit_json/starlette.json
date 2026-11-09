@@ -1,0 +1,1483 @@
+[
+  {
+    "code": "47                 websocket = kwargs.get(\"websocket\", args[idx] if idx < len(args) else None)\n48                 assert isinstance(websocket, WebSocket), (\n49                     \"Parameter with name 'websocket' is required to be of type 'WebSocket'\"\n50                     f\" not '{type(websocket).__name__}'\"\n51                 )\n52 \n",
+    "col_offset": 16,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 48,
+    "line_range": [
+      48,
+      49,
+      50,
+      51
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "64                 request = kwargs.get(\"request\", args[idx] if idx < len(args) else None)\n65                 assert isinstance(request, Request), (\n66                     f\"Parameter with name 'request' is required to be of type 'Request' not '{type(request).__name__}'\"\n67                 )\n68 \n",
+    "col_offset": 16,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 65,
+    "line_range": [
+      65,
+      66,
+      67
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "83                 request = kwargs.get(\"request\", args[idx] if idx < len(args) else None)\n84                 assert isinstance(request, Request), (\n85                     f\"Parameter with name 'request' is required to be of type 'Request' not '{type(request).__name__}'\"\n86                 )\n87 \n",
+    "col_offset": 16,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/authentication.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 84,
+    "line_range": [
+      84,
+      85,
+      86
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "27         value = str(value)\n28         assert \"/\" not in value, \"May not contain path separators\"\n29         assert value, \"Must not be empty\"\n",
+    "col_offset": 8,
+    "end_col_offset": 66,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 28,
+    "line_range": [
+      28
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "28         assert \"/\" not in value, \"May not contain path separators\"\n29         assert value, \"Must not be empty\"\n30         return value\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 29,
+    "line_range": [
+      29
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "50         value = int(value)\n51         assert value >= 0, \"Negative integers are not supported\"\n52         return str(value)\n",
+    "col_offset": 8,
+    "end_col_offset": 64,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 51,
+    "line_range": [
+      51
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "62         value = float(value)\n63         assert value >= 0.0, \"Negative floats are not supported\"\n64         assert not math.isnan(value), \"NaN values are not supported\"\n",
+    "col_offset": 8,
+    "end_col_offset": 64,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 63,
+    "line_range": [
+      63
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "63         assert value >= 0.0, \"Negative floats are not supported\"\n64         assert not math.isnan(value), \"NaN values are not supported\"\n65         assert not math.isinf(value), \"Infinite values are not supported\"\n",
+    "col_offset": 8,
+    "end_col_offset": 68,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 64,
+    "line_range": [
+      64
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "64         assert not math.isnan(value), \"NaN values are not supported\"\n65         assert not math.isinf(value), \"Infinite values are not supported\"\n66         return (\"%0.20f\" % value).rstrip(\"0\").rstrip(\".\")\n",
+    "col_offset": 8,
+    "end_col_offset": 73,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/convertors.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 65,
+    "line_range": [
+      65
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "32         if scope is not None:\n33             assert not url, 'Cannot set both \"url\" and \"scope\".'\n34             assert not components, 'Cannot set both \"scope\" and \"**components\".'\n",
+    "col_offset": 12,
+    "end_col_offset": 64,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 33,
+    "line_range": [
+      33
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "33             assert not url, 'Cannot set both \"url\" and \"scope\".'\n34             assert not components, 'Cannot set both \"scope\" and \"**components\".'\n35             scheme = scope.get(\"scheme\", \"http\")\n",
+    "col_offset": 12,
+    "end_col_offset": 80,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 34,
+    "line_range": [
+      34
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "63         elif components:\n64             assert not url, 'Cannot set both \"url\" and \"**components\".'\n65             url = URL(\"\").replace(**components).components.geturl()\n",
+    "col_offset": 12,
+    "end_col_offset": 71,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 64,
+    "line_range": [
+      64
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "170         if self.password:\n171             url = str(self.replace(password=\"********\"))\n172         return f\"{self.__class__.__name__}({repr(url)})\"\n",
+    "col_offset": 22,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: '********'",
+    "line_number": 171,
+    "line_range": [
+      171
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b106_hardcoded_password_funcarg.html",
+    "test_id": "B106",
+    "test_name": "hardcoded_password_funcarg"
+  },
+  {
+    "code": "181     def __new__(cls, path: str, protocol: Literal[\"http\", \"websocket\", \"\"] = \"\", host: str = \"\") -> URLPath:\n182         assert protocol in (\"http\", \"websocket\", \"\")\n183         return str.__new__(cls, path)\n",
+    "col_offset": 8,
+    "end_col_offset": 52,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 182,
+    "line_range": [
+      182
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "262     ) -> None:\n263         assert len(args) < 2, \"Too many arguments.\"\n264 \n",
+    "col_offset": 8,
+    "end_col_offset": 51,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 263,
+    "line_range": [
+      263
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "387     ) -> None:\n388         assert len(args) < 2, \"Too many arguments.\"\n389 \n",
+    "col_offset": 8,
+    "end_col_offset": 51,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 388,
+    "line_range": [
+      388
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "512         if headers is not None:\n513             assert raw is None, 'Cannot set both \"headers\" and \"raw\".'\n514             assert scope is None, 'Cannot set both \"headers\" and \"scope\".'\n",
+    "col_offset": 12,
+    "end_col_offset": 70,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 513,
+    "line_range": [
+      513
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "513             assert raw is None, 'Cannot set both \"headers\" and \"raw\".'\n514             assert scope is None, 'Cannot set both \"headers\" and \"scope\".'\n515             self._list = [(key.lower().encode(\"latin-1\"), value.encode(\"latin-1\")) for key, value in headers.items()]\n",
+    "col_offset": 12,
+    "end_col_offset": 74,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 514,
+    "line_range": [
+      514
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "516         elif raw is not None:\n517             assert scope is None, 'Cannot set both \"raw\" and \"scope\".'\n518             self._list = raw\n",
+    "col_offset": 12,
+    "end_col_offset": 70,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/datastructures.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 517,
+    "line_range": [
+      517
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "18     def __init__(self, scope: Scope, receive: Receive, send: Send) -> None:\n19         assert scope[\"type\"] == \"http\"\n20         self.scope = scope\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 19,
+    "line_range": [
+      19
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "61     def __init__(self, scope: Scope, receive: Receive, send: Send) -> None:\n62         assert scope[\"type\"] == \"websocket\"\n63         self.scope = scope\n",
+    "col_offset": 8,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 62,
+    "line_range": [
+      62
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "115 \n116         assert self.encoding is None, f\"Unsupported 'encoding' attribute {self.encoding}\"\n117         return message[\"text\"] if message.get(\"text\") is not None else message[\"bytes\"]\n",
+    "col_offset": 8,
+    "end_col_offset": 89,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/endpoints.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 116,
+    "line_range": [
+      116
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "68     ) -> None:\n69         assert multipart is not None, \"The `python-multipart` library must be installed to use form parsing.\"\n70         self.headers = headers\n",
+    "col_offset": 8,
+    "end_col_offset": 109,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 69,
+    "line_range": [
+      69
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "163     ) -> None:\n164         assert multipart is not None, \"The `python-multipart` library must be installed to use form parsing.\"\n165         self.headers = headers\n",
+    "col_offset": 8,
+    "end_col_offset": 109,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 164,
+    "line_range": [
+      164
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "284                 for part, data in self._file_parts_to_write:\n285                     assert part.file  # for type checkers\n286                     await part.file.write(data)\n",
+    "col_offset": 20,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 285,
+    "line_range": [
+      285
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "287                 for part in self._file_parts_to_finish:\n288                     assert part.file  # for type checkers\n289                     await part.file.seek(0)\n",
+    "col_offset": 20,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/formparsers.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 288,
+    "line_range": [
+      288
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "175 \n176             assert message[\"type\"] == \"http.response.start\"\n177 \n",
+    "col_offset": 12,
+    "end_col_offset": 59,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/base.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 176,
+    "line_range": [
+      176
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "182                         break\n183                     assert message[\"type\"] == \"http.response.body\", f\"Unexpected message: {message}\"\n184                     body = message.get(\"body\", b\"\")\n",
+    "col_offset": 20,
+    "end_col_offset": 100,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/base.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 183,
+    "line_range": [
+      183
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "57     def scope(self) -> Scope:\n58         assert self._scope is not None\n59         return self._scope\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/body_limit.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 58,
+    "line_range": [
+      58
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "62     def receive(self) -> Receive:\n63         assert self._receive is not None\n64         return self._receive\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/body_limit.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 63,
+    "line_range": [
+      63
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "67     def send(self) -> Send:\n68         assert self._send is not None\n69         return self._send\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/body_limit.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 68,
+    "line_range": [
+      68
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "43         else:\n44             assert issubclass(exc_class_or_status_code, Exception)\n45             self._exception_handlers[exc_class_or_status_code] = handler\n",
+    "col_offset": 12,
+    "end_col_offset": 66,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 44,
+    "line_range": [
+      44
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "65     async def http_exception(self, request: Request, exc: Exception) -> Response:\n66         assert isinstance(exc, HTTPException)\n67         if exc.status_code in {204, 304}:\n",
+    "col_offset": 8,
+    "end_col_offset": 45,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 66,
+    "line_range": [
+      66
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "71     async def websocket_exception(self, websocket: WebSocket, exc: Exception) -> None:\n72         assert isinstance(exc, WebSocketException)\n73         await websocket.close(code=exc.code, reason=exc.reason)  # pragma: no cover\n",
+    "col_offset": 8,
+    "end_col_offset": 50,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 72,
+    "line_range": [
+      72
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "23         for pattern in allowed_hosts:\n24             assert \"*\" not in pattern[1:], ENFORCE_DOMAIN_WILDCARD\n25             if pattern.startswith(\"*\") and pattern != \"*\":\n",
+    "col_offset": 12,
+    "end_col_offset": 66,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/trustedhost.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 24,
+    "line_range": [
+      24
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "25             if pattern.startswith(\"*\") and pattern != \"*\":\n26                 assert pattern.startswith(\"*.\"), ENFORCE_DOMAIN_WILDCARD\n27         self.app = app\n",
+    "col_offset": 16,
+    "end_col_offset": 72,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/trustedhost.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 26,
+    "line_range": [
+      26
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "82     async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:\n83         assert scope[\"type\"] == \"http\"\n84         responder = WSGIResponder(self.app, scope)\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/middleware/wsgi.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 83,
+    "line_range": [
+      83
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "86     def __init__(self, scope: Scope, receive: Receive | None = None) -> None:\n87         assert scope[\"type\"] in (\"http\", \"websocket\")\n88         self.scope = scope\n",
+    "col_offset": 8,
+    "end_col_offset": 53,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 87,
+    "line_range": [
+      87
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "170     def session(self) -> dict[str, Any]:\n171         assert \"session\" in self.scope, \"SessionMiddleware must be installed to access request.session\"\n172         session: Session = self.scope[\"session\"]\n",
+    "col_offset": 8,
+    "end_col_offset": 103,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 171,
+    "line_range": [
+      171
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "179     def auth(self) -> Any:\n180         assert \"auth\" in self.scope, \"AuthenticationMiddleware must be installed to access request.auth\"\n181         return self.scope[\"auth\"]\n",
+    "col_offset": 8,
+    "end_col_offset": 104,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 180,
+    "line_range": [
+      180
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "184     def user(self) -> Any:\n185         assert \"user\" in self.scope, \"AuthenticationMiddleware must be installed to access request.user\"\n186         return self.scope[\"user\"]\n",
+    "col_offset": 8,
+    "end_col_offset": 104,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 185,
+    "line_range": [
+      185
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "218         super().__init__(scope)\n219         assert scope[\"type\"] == \"http\"\n220         self._receive = receive\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 219,
+    "line_range": [
+      219
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "275         if self._form is None:  # pragma: no branch\n276             assert parse_options_header is not None, (\n277                 \"The `python-multipart` library must be installed to use form parsing.\"\n278             )\n279             content_type_header = self.headers.get(\"Content-Type\")\n",
+    "col_offset": 12,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/requests.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 276,
+    "line_range": [
+      276,
+      277,
+      278
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "119         if samesite is not None:\n120             assert samesite.lower() in [\n121                 \"strict\",\n122                 \"lax\",\n123                 \"none\",\n124             ], \"samesite must be either 'strict', 'lax' or 'none'\"\n125             cookie[key][\"samesite\"] = samesite\n",
+    "col_offset": 12,
+    "end_col_offset": 66,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/responses.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 120,
+    "line_range": [
+      120,
+      121,
+      122,
+      123,
+      124
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "133         convertor_type = convertor_type.lstrip(\":\")\n134         assert convertor_type in CONVERTOR_TYPES, f\"Unknown path convertor '{convertor_type}'\"\n135         convertor = CONVERTOR_TYPES[convertor_type]\n",
+    "col_offset": 8,
+    "end_col_offset": 94,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 134,
+    "line_range": [
+      134
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "210     ) -> None:\n211         assert path.startswith(\"/\"), \"Routed paths must start with '/'\"\n212         self.path = path\n",
+    "col_offset": 8,
+    "end_col_offset": 71,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 211,
+    "line_range": [
+      211
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "269         path, remaining_params = replace_params(self.path_format, self.param_convertors, path_params)\n270         assert not remaining_params\n271         return URLPath(path=path, protocol=\"http\")\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 270,
+    "line_range": [
+      270
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "307     ) -> None:\n308         assert path.startswith(\"/\"), \"Routed paths must start with '/'\"\n309         self.path = path\n",
+    "col_offset": 8,
+    "end_col_offset": 71,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 308,
+    "line_range": [
+      308
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "351         path, remaining_params = replace_params(self.path_format, self.param_convertors, path_params)\n352         assert not remaining_params\n353         return URLPath(path=path, protocol=\"websocket\")\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 352,
+    "line_range": [
+      352
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "375     ) -> None:\n376         assert path == \"\" or path.startswith(\"/\"), \"Routed paths must start with '/'\"\n377         assert app is not None or routes is not None, \"Either 'app=...', or 'routes=' must be specified\"\n",
+    "col_offset": 8,
+    "end_col_offset": 85,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 376,
+    "line_range": [
+      376
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "376         assert path == \"\" or path.startswith(\"/\"), \"Routed paths must start with '/'\"\n377         assert app is not None or routes is not None, \"Either 'app=...', or 'routes=' must be specified\"\n378         self.path = path.rstrip(\"/\")\n",
+    "col_offset": 8,
+    "end_col_offset": 104,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 377,
+    "line_range": [
+      377
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "469     def __init__(self, host: str, app: ASGIApp, name: str | None = None) -> None:\n470         assert not host.startswith(\"/\"), \"Host must not start with '/'\"\n471         self.host = host\n",
+    "col_offset": 8,
+    "end_col_offset": 71,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 470,
+    "line_range": [
+      470
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "678     async def app(self, scope: Scope, receive: Receive, send: Send) -> None:\n679         assert scope[\"type\"] in (\"http\", \"websocket\", \"lifespan\")\n680 \n",
+    "col_offset": 8,
+    "end_col_offset": 65,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/routing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 679,
+    "line_range": [
+      679
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "21     def render(self, content: Any) -> bytes:\n22         assert yaml is not None, \"`pyyaml` must be installed to use OpenAPIResponse.\"\n23         assert isinstance(content, dict), \"The schema passed to OpenAPIResponse should be a dictionary.\"\n",
+    "col_offset": 8,
+    "end_col_offset": 85,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 22,
+    "line_range": [
+      22
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "22         assert yaml is not None, \"`pyyaml` must be installed to use OpenAPIResponse.\"\n23         assert isinstance(content, dict), \"The schema passed to OpenAPIResponse should be a dictionary.\"\n24         return yaml.dump(content, default_flow_style=False).encode(\"utf-8\")\n",
+    "col_offset": 8,
+    "end_col_offset": 104,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 23,
+    "line_range": [
+      23
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "105 \n106         assert yaml is not None, \"`pyyaml` must be installed to use parse_docstring.\"\n107 \n",
+    "col_offset": 8,
+    "end_col_offset": 85,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/schemas.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 106,
+    "line_range": [
+      106
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "77             spec = importlib.util.find_spec(package)\n78             assert spec is not None, f\"Package {package!r} could not be found.\"\n79             assert spec.origin is not None, f\"Package {package!r} could not be found.\"\n",
+    "col_offset": 12,
+    "end_col_offset": 79,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 78,
+    "line_range": [
+      78
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "78             assert spec is not None, f\"Package {package!r} could not be found.\"\n79             assert spec.origin is not None, f\"Package {package!r} could not be found.\"\n80             package_directory = os.path.normpath(os.path.join(spec.origin, \"..\", statics_dir))\n",
+    "col_offset": 12,
+    "end_col_offset": 86,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 79,
+    "line_range": [
+      79
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "80             package_directory = os.path.normpath(os.path.join(spec.origin, \"..\", statics_dir))\n81             assert os.path.isdir(package_directory), (\n82                 f\"Directory '{statics_dir!r}' in package {package!r} could not be found.\"\n83             )\n84             directories.append(package_directory)\n",
+    "col_offset": 12,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 81,
+    "line_range": [
+      81,
+      82,
+      83
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "96 \n97         assert scope[\"type\"] == \"http\"\n98 \n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/staticfiles.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 97,
+    "line_range": [
+      97
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "90     ) -> None:\n91         assert bool(directory) ^ bool(env), \"either 'directory' or 'env' arguments must be passed\"\n92         self.context_processors = context_processors or []\n",
+    "col_offset": 8,
+    "end_col_offset": 98,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/templating.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 91,
+    "line_range": [
+      91
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "156                 message = self.receive()\n157                 assert message[\"type\"] == \"websocket.http.response.body\"\n158                 body.append(message[\"body\"])\n",
+    "col_offset": 16,
+    "end_col_offset": 72,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 157,
+    "line_range": [
+      157
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "325             if message[\"type\"] == \"http.response.start\":\n326                 assert not response_started, 'Received multiple \"http.response.start\" messages.'\n327                 raw_kwargs[\"status_code\"] = message[\"status\"]\n",
+    "col_offset": 16,
+    "end_col_offset": 96,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 326,
+    "line_range": [
+      326
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "331             elif message[\"type\"] == \"http.response.body\":\n332                 assert response_started, 'Received \"http.response.body\" without \"http.response.start\".'\n333                 assert not response_complete.is_set(), 'Received \"http.response.body\" after response completed.'\n",
+    "col_offset": 16,
+    "end_col_offset": 103,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 332,
+    "line_range": [
+      332
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "332                 assert response_started, 'Received \"http.response.body\" without \"http.response.start\".'\n333                 assert not response_complete.is_set(), 'Received \"http.response.body\" after response completed.'\n334                 assert not body_complete, 'Received \"http.response.body\" after body completed.'\n",
+    "col_offset": 16,
+    "end_col_offset": 112,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 333,
+    "line_range": [
+      333
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "333                 assert not response_complete.is_set(), 'Received \"http.response.body\" after response completed.'\n334                 assert not body_complete, 'Received \"http.response.body\" after body completed.'\n335                 body = message.get(\"body\", b\"\")\n",
+    "col_offset": 16,
+    "end_col_offset": 95,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 334,
+    "line_range": [
+      334
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "344             elif message[\"type\"] == \"http.response.trailers\":\n345                 assert trailers_expected, 'Received \"http.response.trailers\" without declaring trailers.'\n346                 assert body_complete, 'Received \"http.response.trailers\" before body completed.'\n",
+    "col_offset": 16,
+    "end_col_offset": 105,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 345,
+    "line_range": [
+      345
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "345                 assert trailers_expected, 'Received \"http.response.trailers\" without declaring trailers.'\n346                 assert body_complete, 'Received \"http.response.trailers\" before body completed.'\n347                 assert not response_complete.is_set(), 'Received \"http.response.trailers\" after response completed.'\n",
+    "col_offset": 16,
+    "end_col_offset": 96,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 346,
+    "line_range": [
+      346
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "346                 assert body_complete, 'Received \"http.response.trailers\" before body completed.'\n347                 assert not response_complete.is_set(), 'Received \"http.response.trailers\" after response completed.'\n348                 trailers.extend(message.get(\"headers\", []))\n",
+    "col_offset": 16,
+    "end_col_offset": 116,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 347,
+    "line_range": [
+      347
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "362         if self.raise_server_exceptions:\n363             assert response_started, \"TestClient did not receive any response.\"\n364         elif not response_started:\n",
+    "col_offset": 12,
+    "end_col_offset": 79,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 363,
+    "line_range": [
+      363
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "546         message = await receive()\n547         assert message[\"type\"] in (\n548             \"lifespan.startup.complete\",\n549             \"lifespan.startup.failed\",\n550         )\n551         if message[\"type\"] == \"lifespan.startup.failed\":\n",
+    "col_offset": 8,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 547,
+    "line_range": [
+      547,
+      548,
+      549,
+      550
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "562         message = await receive()\n563         assert message[\"type\"] in (\n564             \"lifespan.shutdown.complete\",\n565             \"lifespan.shutdown.failed\",\n566         )\n567         if message[\"type\"] == \"lifespan.shutdown.failed\":\n",
+    "col_offset": 8,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/testclient.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 563,
+    "line_range": [
+      563,
+      564,
+      565,
+      566
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "34         super().__init__(scope)\n35         assert scope[\"type\"] == \"websocket\"\n36         self._receive = receive\n",
+    "col_offset": 8,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/starlette/websockets.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 35,
+    "line_range": [
+      35
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  }
+]

@@ -1,0 +1,1262 @@
+[
+  {
+    "code": "12 import os\n13 import pickle\n14 import stat\n",
+    "col_offset": 0,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with pickle module.",
+    "line_number": 13,
+    "line_range": [
+      13
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "72         # the source code of the file changed, we need to reload\n73         checksum = pickle.load(f)\n74         if self.checksum != checksum:\n",
+    "col_offset": 19,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+    "line_number": 73,
+    "line_range": [
+      73
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b301-pickle",
+    "test_id": "B301",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "78         try:\n79             self.code = marshal.load(f)\n80         except (EOFError, ValueError, TypeError):\n",
+    "col_offset": 24,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Deserialization with the marshal module is possibly dangerous.",
+    "line_number": 79,
+    "line_range": [
+      79
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b302-marshal",
+    "test_id": "B302",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "155         \"\"\"Returns the unique hash key for this template name.\"\"\"\n156         hash = sha1(name.encode(\"utf-8\"))\n157 \n",
+    "col_offset": 15,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 156,
+    "line_range": [
+      156
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "164         \"\"\"Returns a checksum for the source.\"\"\"\n165         return sha1(source.encode(\"utf-8\")).hexdigest()\n166 \n",
+    "col_offset": 15,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/bccache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 165,
+    "line_range": [
+      165
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "831     ) -> None:\n832         assert frame is None, \"no root frame allowed\"\n833         eval_ctx = EvalContext(self.environment, self.name)\n",
+    "col_offset": 8,
+    "end_col_offset": 53,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 832,
+    "line_range": [
+      832
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1439 \n1440                 if pass_arg == \"environment\":\n1441 \n",
+    "col_offset": 31,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/compiler.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'environment'",
+    "line_number": 1440,
+    "line_range": [
+      1440
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "144     try:\n145         exec(code, globals, locals)\n146     except BaseException:\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/debug.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Use of exec detected.",
+    "line_number": 145,
+    "line_range": [
+      145
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b102_exec_used.html",
+    "test_id": "B102",
+    "test_name": "exec_used"
+  },
+  {
+    "code": "127     \"\"\"Perform a sanity check on the environment.\"\"\"\n128     assert issubclass(\n129         environment.undefined, Undefined\n130     ), \"'undefined' must be a subclass of 'jinja2.Undefined'.\"\n131     assert (\n",
+    "col_offset": 4,
+    "end_col_offset": 62,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 128,
+    "line_range": [
+      128,
+      129,
+      130
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "130     ), \"'undefined' must be a subclass of 'jinja2.Undefined'.\"\n131     assert (\n132         environment.block_start_string\n133         != environment.variable_start_string\n134         != environment.comment_start_string\n135     ), \"block, variable and comment start strings must be different.\"\n136     assert environment.newline_sequence in {\n",
+    "col_offset": 4,
+    "end_col_offset": 69,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 131,
+    "line_range": [
+      131,
+      132,
+      133,
+      134,
+      135
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "135     ), \"block, variable and comment start strings must be different.\"\n136     assert environment.newline_sequence in {\n137         \"\\r\",\n138         \"\\r\\n\",\n139         \"\\n\",\n140     }, \"'newline_sequence' must be one of '\\\\n', '\\\\r\\\\n', or '\\\\r'.\"\n141     return environment\n",
+    "col_offset": 4,
+    "end_col_offset": 69,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 136,
+    "line_range": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "475                     attr = str(argument)\n476                 except Exception:\n477                     pass\n478                 else:\n",
+    "col_offset": 16,
+    "end_col_offset": 24,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 476,
+    "line_range": [
+      476,
+      477
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "850 \n851         assert log_function is not None\n852         assert self.loader is not None, \"No loader configured.\"\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 851,
+    "line_range": [
+      851
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "851         assert log_function is not None\n852         assert self.loader is not None, \"No loader configured.\"\n853 \n",
+    "col_offset": 8,
+    "end_col_offset": 63,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 852,
+    "line_range": [
+      852
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "918         \"\"\"\n919         assert self.loader is not None, \"No loader configured.\"\n920         names = self.loader.list_templates()\n",
+    "col_offset": 8,
+    "end_col_offset": 63,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 919,
+    "line_range": [
+      919
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1227         namespace = {\"environment\": environment, \"__file__\": code.co_filename}\n1228         exec(code, namespace)\n1229         rv = cls._from_namespace(environment, namespace, globals)\n",
+    "col_offset": 8,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Use of exec detected.",
+    "line_number": 1228,
+    "line_range": [
+      1228
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b102_exec_used.html",
+    "test_id": "B102",
+    "test_name": "exec_used"
+  },
+  {
+    "code": "1543     def __html__(self) -> Markup:\n1544         return Markup(concat(self._body_stream))\n1545 \n",
+    "col_offset": 15,
+    "end_col_offset": 48,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/environment.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 1544,
+    "line_range": [
+      1544
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "175         if __context.eval_ctx.autoescape:\n176             rv = Markup(rv)\n177         # Always treat as a format string, even if there are no\n",
+    "col_offset": 17,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 176,
+    "line_range": [
+      176
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "196         if __context.eval_ctx.autoescape:\n197             rv = Markup(rv)\n198         # Always treat as a format string, see gettext comment above.\n",
+    "col_offset": 17,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 197,
+    "line_range": [
+      197
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "212         if __context.eval_ctx.autoescape:\n213             rv = Markup(rv)\n214 \n",
+    "col_offset": 17,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 213,
+    "line_range": [
+      213
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "237         if __context.eval_ctx.autoescape:\n238             rv = Markup(rv)\n239 \n",
+    "col_offset": 17,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/ext.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 238,
+    "line_range": [
+      238
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "315     if eval_ctx.autoescape:\n316         rv = Markup(rv)\n317 \n",
+    "col_offset": 13,
+    "end_col_offset": 23,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 316,
+    "line_range": [
+      316
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "698     try:\n699         return random.choice(seq)\n700     except IndexError:\n",
+    "col_offset": 15,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 699,
+    "line_range": [
+      699
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "819     if eval_ctx.autoescape:\n820         rv = Markup(rv)\n821 \n",
+    "col_offset": 13,
+    "end_col_offset": 23,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 820,
+    "line_range": [
+      820
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "850     if isinstance(s, Markup):\n851         indention = Markup(indention)\n852         newline = Markup(newline)\n",
+    "col_offset": 20,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 851,
+    "line_range": [
+      851
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "851         indention = Markup(indention)\n852         newline = Markup(newline)\n853 \n",
+    "col_offset": 18,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 852,
+    "line_range": [
+      852
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "907 \n908     assert length >= len(end), f\"expected length >= {len(end)}, got {length}\"\n909     assert leeway >= 0, f\"expected leeway >= 0, got {leeway}\"\n",
+    "col_offset": 4,
+    "end_col_offset": 77,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 908,
+    "line_range": [
+      908
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "908     assert length >= len(end), f\"expected length >= {len(end)}, got {length}\"\n909     assert leeway >= 0, f\"expected leeway >= 0, got {leeway}\"\n910 \n",
+    "col_offset": 4,
+    "end_col_offset": 61,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 909,
+    "line_range": [
+      909
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1055 \n1056     return Markup(str(value)).striptags()\n1057 \n",
+    "col_offset": 11,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 1056,
+    "line_range": [
+      1056
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "1376     \"\"\"\n1377     return Markup(value)\n1378 \n",
+    "col_offset": 11,
+    "end_col_offset": 24,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/filters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 1377,
+    "line_range": [
+      1377
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "137             target = self.find_ref(name)\n138             assert target is not None, \"should not happen\"\n139 \n",
+    "col_offset": 12,
+    "end_col_offset": 58,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/idtracking.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 138,
+    "line_range": [
+      138
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "143 reverse_operators = {v: k for k, v in operators.items()}\n144 assert len(operators) == len(reverse_operators), \"operators dropped\"\n145 operator_re = re.compile(\n",
+    "col_offset": 0,
+    "end_col_offset": 68,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 144,
+    "line_range": [
+      144
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "638                 value = self._normalize_newlines(value_str)\n639             elif token == \"keyword\":\n640                 token = value_str\n",
+    "col_offset": 26,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'keyword'",
+    "line_number": 639,
+    "line_range": [
+      639
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "693         if state is not None and state != \"root\":\n694             assert state in (\"variable\", \"block\"), \"invalid state\"\n695             stack.append(state + \"_begin\")\n",
+    "col_offset": 12,
+    "end_col_offset": 66,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 694,
+    "line_range": [
+      694
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "764                         # group that matched\n765                         elif token == \"#bygroup\":\n766                             for key, value in m.groupdict().items():\n",
+    "col_offset": 38,
+    "end_col_offset": 48,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/lexer.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: '#bygroup'",
+    "line_number": 765,
+    "line_range": [
+      765
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "324         spec = importlib.util.find_spec(package_name)\n325         assert spec is not None, \"An import spec was not found for the package.\"\n326         loader = spec.loader\n",
+    "col_offset": 8,
+    "end_col_offset": 80,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 325,
+    "line_range": [
+      325
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "326         loader = spec.loader\n327         assert loader is not None, \"A loader was not found for the package.\"\n328         self._loader = loader\n",
+    "col_offset": 8,
+    "end_col_offset": 76,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 327,
+    "line_range": [
+      327
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "660     def get_template_key(name: str) -> str:\n661         return \"tmpl_\" + sha1(name.encode(\"utf-8\")).hexdigest()\n662 \n",
+    "col_offset": 25,
+    "end_col_offset": 51,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/loaders.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 661,
+    "line_range": [
+      661
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "63             storage.extend(d.get(attr, ()))\n64             assert len(bases) <= 1, \"multiple inheritance not allowed\"\n65             assert len(storage) == len(set(storage)), \"layout conflict\"\n",
+    "col_offset": 12,
+    "end_col_offset": 70,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 64,
+    "line_range": [
+      64
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "64             assert len(bases) <= 1, \"multiple inheritance not allowed\"\n65             assert len(storage) == len(set(storage)), \"layout conflict\"\n66             d[attr] = tuple(storage)\n",
+    "col_offset": 12,
+    "end_col_offset": 71,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 65,
+    "line_range": [
+      65
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "618         if eval_ctx.autoescape:\n619             return Markup(self.data)\n620         return self.data\n",
+    "col_offset": 19,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 619,
+    "line_range": [
+      619
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "1090         eval_ctx = get_eval_context(self, eval_ctx)\n1091         return Markup(self.expr.as_const(eval_ctx))\n1092 \n",
+    "col_offset": 15,
+    "end_col_offset": 51,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 1091,
+    "line_range": [
+      1091
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "1111         if eval_ctx.autoescape:\n1112             return Markup(expr)\n1113         return expr\n",
+    "col_offset": 19,
+    "end_col_offset": 31,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/nodes.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 1112,
+    "line_range": [
+      1112
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "629 \n630         if token_type == \"sub\":\n631             next(self.stream)\n",
+    "col_offset": 25,
+    "end_col_offset": 30,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'sub'",
+    "line_number": 630,
+    "line_range": [
+      630
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "632             node = nodes.Neg(self.parse_unary(False), lineno=lineno)\n633         elif token_type == \"add\":\n634             next(self.stream)\n",
+    "col_offset": 27,
+    "end_col_offset": 32,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'add'",
+    "line_number": 633,
+    "line_range": [
+      633
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "783             token_type = self.stream.current.type\n784             if token_type == \"dot\" or token_type == \"lbracket\":\n785                 node = self.parse_subscript(node)\n",
+    "col_offset": 29,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'dot'",
+    "line_number": 784,
+    "line_range": [
+      784
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "783             token_type = self.stream.current.type\n784             if token_type == \"dot\" or token_type == \"lbracket\":\n785                 node = self.parse_subscript(node)\n",
+    "col_offset": 52,
+    "end_col_offset": 62,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'lbracket'",
+    "line_number": 784,
+    "line_range": [
+      784
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "787             # and getitem) as well as filters and tests\n788             elif token_type == \"lparen\":\n789                 node = self.parse_call(node)\n",
+    "col_offset": 31,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'lparen'",
+    "line_number": 788,
+    "line_range": [
+      788
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "796             token_type = self.stream.current.type\n797             if token_type == \"pipe\":\n798                 node = self.parse_filter(node)  # type: ignore\n",
+    "col_offset": 29,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'pipe'",
+    "line_number": 797,
+    "line_range": [
+      797
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "798                 node = self.parse_filter(node)  # type: ignore\n799             elif token_type == \"name\" and self.stream.current.value == \"is\":\n800                 node = self.parse_test(node)\n",
+    "col_offset": 31,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'name'",
+    "line_number": 799,
+    "line_range": [
+      799
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "802             # and getitem) as well as filters and tests\n803             elif token_type == \"lparen\":\n804                 node = self.parse_call(node)\n",
+    "col_offset": 31,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/parser.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'lparen'",
+    "line_number": 803,
+    "line_range": [
+      803
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "374         if self._context.eval_ctx.autoescape:\n375             return Markup(rv)\n376 \n",
+    "col_offset": 19,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 375,
+    "line_range": [
+      375
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "388         if self._context.eval_ctx.autoescape:\n389             return Markup(rv)\n390 \n",
+    "col_offset": 19,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 389,
+    "line_range": [
+      389
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "775         if autoescape:\n776             return Markup(rv)\n777 \n",
+    "col_offset": 19,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 776,
+    "line_range": [
+      776
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "786         if autoescape:\n787             rv = Markup(rv)\n788 \n",
+    "col_offset": 17,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/runtime.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 787,
+    "line_range": [
+      787
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "297                     attr = str(argument)\n298                 except Exception:\n299                     pass\n300                 else:\n",
+    "col_offset": 16,
+    "end_col_offset": 24,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/sandbox.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 298,
+    "line_range": [
+      298,
+      299
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "369         # each paragraph contains out of 20 to 100 words.\n370         for idx, _ in enumerate(range(randrange(min, max))):\n371             while True:\n",
+    "col_offset": 38,
+    "end_col_offset": 57,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 370,
+    "line_range": [
+      370
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "371             while True:\n372                 word = choice(words)\n373                 if word != last:\n",
+    "col_offset": 23,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 372,
+    "line_range": [
+      372
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "379             # add commas\n380             if idx - randrange(3, 8) > last_comma:\n381                 last_comma = idx\n",
+    "col_offset": 21,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 380,
+    "line_range": [
+      380
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "384             # add end of sentences\n385             if idx - randrange(10, 20) > last_fullstop:\n386                 last_comma = last_fullstop = idx\n",
+    "col_offset": 21,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 385,
+    "line_range": [
+      385
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "402         return \"\\n\\n\".join(result)\n403     return markupsafe.Markup(\n404         \"\\n\".join(f\"<p>{markupsafe.escape(x)}</p>\" for x in result)\n405     )\n406 \n",
+    "col_offset": 11,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 403,
+    "line_range": [
+      403,
+      404,
+      405
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  },
+  {
+    "code": "667 \n668     return markupsafe.Markup(\n669         dumps(obj, **kwargs)\n670         .replace(\"<\", \"\\\\u003c\")\n671         .replace(\">\", \"\\\\u003e\")\n672         .replace(\"&\", \"\\\\u0026\")\n673         .replace(\"'\", \"\\\\u0027\")\n674     )\n675 \n",
+    "col_offset": 11,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/jinja2/utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 79,
+      "link": "https://cwe.mitre.org/data/definitions/79.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Potential XSS with ``markupsafe.Markup`` detected. Do not use ``Markup`` on untrusted data.",
+    "line_number": 668,
+    "line_range": [
+      668,
+      669,
+      670,
+      671,
+      672,
+      673,
+      674
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b704_markupsafe_markup_xss.html",
+    "test_id": "B704",
+    "test_name": "markupsafe_markup_xss"
+  }
+]

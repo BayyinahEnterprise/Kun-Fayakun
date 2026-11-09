@@ -1,14 +1,5 @@
 [
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 75,
-    "col": 24,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
     "line": 268,
@@ -23,15 +14,6 @@
     "line": 278,
     "col": 75,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 303,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -72,15 +54,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 496,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
     "line": 669,
@@ -117,129 +90,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 771,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 796,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 801,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
     "line": 918,
     "col": 8,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1190,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1198,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1219,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1220,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1220,
-    "col": 58,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1230,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1232,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1246,
-    "col": 34,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1254,
-    "col": 24,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/app.py",
-    "line": 1260,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -279,15 +135,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/blueprints.py",
-    "line": 77,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "RC-001",
     "path": "/usr/local/lib/python3.13/site-packages/flask/blueprints.py",
     "line": 126,
@@ -306,69 +153,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
-    "line": 51,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
-    "line": 55,
-    "col": 54,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
-    "line": 74,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
-    "line": 135,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
-    "line": 139,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
-    "line": 141,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
-    "line": 191,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
     "line": 395,
@@ -384,24 +168,6 @@
     "col": 8,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
-    "line": 830,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/cli.py",
-    "line": 848,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -459,24 +225,6 @@
     "fix": "simplify"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/config.py",
-    "line": 250,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/config.py",
-    "line": 367,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/flask/ctx.py",
     "line": 189,
@@ -531,84 +279,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/ctx.py",
-    "line": 457,
-    "col": 16,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
     "line": 59,
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
-    "line": 59,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
-    "line": 108,
-    "col": 46,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
-    "line": 112,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
-    "line": 113,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
-    "line": 119,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
-    "line": 143,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/debughelpers.py",
-    "line": 145,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -729,24 +405,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
-    "line": 109,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
-    "line": 112,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
     "line": 118,
@@ -754,15 +412,6 @@
     "message": "`hasattr()` swallows AttributeError -- may hide real bugs",
     "severity": "LOW",
     "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/provider.py",
-    "line": 121,
-    "col": 38,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
   },
   {
     "rule": "SI-005",
@@ -774,93 +423,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
-    "line": 105,
-    "col": 12,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
-    "line": 123,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
-    "line": 138,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
-    "line": 151,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
-    "line": 164,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "TB-020",
     "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
     "line": 188,
     "col": 15,
     "message": "Markup() called on non-literal input -- XSS risk",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
-    "line": 196,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
-    "line": 210,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
-    "line": 310,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/json/tag.py",
-    "line": 315,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -882,47 +450,11 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
-    "line": 53,
-    "col": 24,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-002",
     "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
     "line": 614,
     "col": 60,
     "message": "Blanket `# type: ignore` -- specify the error code being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
-    "line": 623,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
-    "line": 874,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/app.py",
-    "line": 879,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -963,48 +495,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/scaffold.py",
-    "line": 218,
-    "col": 19,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/scaffold.py",
-    "line": 669,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/scaffold.py",
-    "line": 681,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/flask/sansio/scaffold.py",
     "line": 705,
     "col": 4,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/sessions.py",
-    "line": 169,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1068,33 +564,6 @@
     "col": 4,
     "message": "`**kwargs` accepted and passed through without validation",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
-    "line": 211,
-    "col": 20,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
-    "line": 214,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/flask/testing.py",
-    "line": 218,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {

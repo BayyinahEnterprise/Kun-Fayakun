@@ -36,15 +36,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/_websocket/helpers.py",
-    "line": 44,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/_websocket/helpers.py",
     "line": 45,
@@ -198,24 +189,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/_websocket/writer.py",
-    "line": 104,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/_websocket/writer.py",
-    "line": 262,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/abc.py",
     "line": 22,
@@ -315,30 +288,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client.py",
-    "line": 376,
-    "col": 31,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client.py",
     "line": 382,
     "col": 12,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client.py",
-    "line": 403,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -396,30 +351,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client.py",
-    "line": 650,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client.py",
     "line": 666,
     "col": 12,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client.py",
-    "line": 697,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -438,24 +375,6 @@
     "col": 24,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client.py",
-    "line": 925,
-    "col": 49,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client.py",
-    "line": 1253,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -492,15 +411,6 @@
     "col": 12,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client.py",
-    "line": 1456,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -783,15 +693,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_exceptions.py",
-    "line": 120,
-    "col": 18,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_exceptions.py",
     "line": 391,
@@ -799,24 +700,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_exceptions.py",
-    "line": 396,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_middleware_digest_auth.py",
-    "line": 311,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "TB-021",
@@ -864,15 +747,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_proto.py",
-    "line": 163,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_proto.py",
     "line": 174,
@@ -916,33 +790,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_proto.py",
-    "line": 366,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_proto.py",
-    "line": 369,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 227,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-006",
@@ -1080,48 +927,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1256,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
     "line": 1275,
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1281,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1321,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1326,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1134,24 +945,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1347,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1378,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
     "line": 1383,
@@ -1159,15 +952,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1400,
-    "col": 34,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-006",
@@ -1197,24 +981,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1528,
-    "col": 30,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1532,
-    "col": 45,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
     "line": 1585,
@@ -1224,30 +990,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1599,
-    "col": 77,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
     "line": 1611,
     "col": 12,
     "message": "`except Exception` without re-raise -- broad exception swallowed",
     "severity": "HIGH",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1636,
-    "col": 27,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1266,15 +1014,6 @@
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_reqrep.py",
-    "line": 1712,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1305,15 +1044,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_ws.py",
-    "line": 197,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_ws.py",
     "line": 272,
@@ -1330,24 +1060,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_ws.py",
-    "line": 298,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/client_ws.py",
-    "line": 305,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-001",
@@ -1602,15 +1314,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 126,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
     "line": 153,
@@ -1674,51 +1377,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1186,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1287,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1293,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1302,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1305,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
     "line": 1311,
@@ -1735,15 +1393,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1343,
-    "col": 37,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -1773,15 +1422,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1365,
-    "col": 37,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
     "line": 1381,
@@ -1797,15 +1437,6 @@
     "col": 12,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1523,
-    "col": 37,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1827,15 +1458,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1594,
-    "col": 37,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
     "line": 1640,
@@ -1854,60 +1476,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1804,
-    "col": 37,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1848,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/connector.py",
-    "line": 1880,
-    "col": 37,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/cookiejar.py",
-    "line": 165,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/cookiejar.py",
-    "line": 167,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/cookiejar.py",
-    "line": 174,
-    "col": 41,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-005",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/cookiejar.py",
     "line": 269,
@@ -1915,24 +1483,6 @@
     "message": "Empty except block for (JSONDecodeError, UnicodeDecodeError, ValueError) -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/cookiejar.py",
-    "line": 559,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/cookiejar.py",
-    "line": 563,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-004",
@@ -1980,24 +1530,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 37,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 39,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
     "line": 50,
@@ -2007,60 +1539,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 57,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 59,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 70,
-    "col": 40,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 72,
-    "col": 32,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 81,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 89,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
     "line": 103,
@@ -2068,33 +1546,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 109,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 113,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/formdata.py",
-    "line": 116,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-004",
@@ -2112,15 +1563,6 @@
     "col": 16,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/helpers.py",
-    "line": 187,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -2149,15 +1591,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/helpers.py",
-    "line": 428,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-001",
@@ -2247,24 +1680,6 @@
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/helpers.py",
-    "line": 897,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/helpers.py",
-    "line": 910,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -2394,24 +1809,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/http_exceptions.py",
-    "line": 93,
-    "col": 57,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/http_exceptions.py",
-    "line": 101,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/http_parser.py",
     "line": 329,
@@ -2439,15 +1836,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/http_parser.py",
-    "line": 490,
-    "col": 35,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/http_parser.py",
     "line": 561,
@@ -2472,15 +1860,6 @@
     "col": 16,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/http_parser.py",
-    "line": 585,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -2553,15 +1932,6 @@
     "col": 12,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/http_writer.py",
-    "line": 171,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -2691,15 +2061,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/multipart.py",
-    "line": 789,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/multipart.py",
     "line": 1024,
@@ -2707,15 +2068,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/multipart.py",
-    "line": 1028,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-006",
@@ -2742,24 +2094,6 @@
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/multipart.py",
-    "line": 1092,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/multipart.py",
-    "line": 1097,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -2907,33 +2241,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/payload.py",
-    "line": 108,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/payload.py",
-    "line": 114,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/payload.py",
-    "line": 118,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/payload.py",
     "line": 123,
@@ -2941,15 +2248,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/payload.py",
-    "line": 129,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-001",
@@ -3004,24 +2302,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/payload.py",
-    "line": 353,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/payload.py",
-    "line": 355,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -3247,15 +2527,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/payload.py",
-    "line": 1001,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -3537,48 +2808,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/pytest_plugin.py",
-    "line": 402,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/pytest_plugin.py",
-    "line": 402,
-    "col": 49,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/pytest_plugin.py",
     "line": 408,
     "col": 12,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/pytest_plugin.py",
-    "line": 410,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/pytest_plugin.py",
-    "line": 414,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -3940,15 +3175,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/test_utils.py",
-    "line": 297,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -4455,33 +3681,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web.py",
-    "line": 325,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web.py",
-    "line": 363,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web.py",
-    "line": 384,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web.py",
     "line": 444,
@@ -4563,15 +3762,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
-    "line": 131,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
     "line": 156,
@@ -4626,15 +3816,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
-    "line": 220,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
     "line": 237,
@@ -4680,24 +3861,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
-    "line": 347,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
-    "line": 372,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
     "line": 417,
@@ -4731,33 +3894,6 @@
     "col": 12,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
-    "line": 526,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
-    "line": 549,
-    "col": 56,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_app.py",
-    "line": 597,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -4887,15 +4023,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_log.py",
-    "line": 221,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_log.py",
     "line": 230,
@@ -4911,15 +4038,6 @@
     "col": 4,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_middlewares.py",
-    "line": 78,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -4956,15 +4074,6 @@
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_protocol.py",
-    "line": 376,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -5085,24 +4194,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_protocol.py",
-    "line": 656,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_protocol.py",
-    "line": 677,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "MR-002",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_protocol.py",
     "line": 736,
@@ -5118,15 +4209,6 @@
     "col": 16,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_protocol.py",
-    "line": 862,
-    "col": 40,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -5220,15 +4302,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_request.py",
-    "line": 365,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_request.py",
     "line": 382,
@@ -5238,24 +4311,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_request.py",
-    "line": 507,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_request.py",
-    "line": 527,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_request.py",
     "line": 771,
@@ -5263,15 +4318,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_request.py",
-    "line": 823,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "RC-005",
@@ -5299,15 +4345,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_request.py",
-    "line": 951,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-001",
@@ -5418,30 +4455,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 201,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
     "line": 207,
     "col": 12,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 207,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -5460,87 +4479,6 @@
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 369,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 373,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 379,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-003",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 382,
-    "col": 57,
-    "message": "type(x).__name__ interceptable by metaclass __getattribute__",
-    "severity": "LOW",
-    "fix": "simplify"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 405,
-    "col": 14,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 406,
-    "col": 12,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 409,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 412,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 412,
-    "col": 41,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -5616,15 +4554,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 556,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
     "line": 568,
@@ -5649,15 +4578,6 @@
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 578,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -5715,15 +4635,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 620,
-    "col": 16,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
     "line": 642,
@@ -5742,15 +4653,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 694,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-001",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
     "line": 730,
@@ -5760,39 +4662,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 733,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
     "line": 766,
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 766,
-    "col": 31,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 789,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -5820,33 +4695,6 @@
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 813,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 827,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_response.py",
-    "line": 841,
-    "col": 28,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -6255,15 +5103,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_runner.py",
-    "line": 198,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_runner.py",
     "line": 215,
@@ -6372,15 +5211,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_runner.py",
-    "line": 401,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-003",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_server.py",
     "line": 4,
@@ -6426,30 +5256,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
-    "line": 190,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
     "line": 202,
     "col": 16,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
-    "line": 202,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -6468,15 +5280,6 @@
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
-    "line": 363,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -6651,39 +5454,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
-    "line": 768,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
-    "line": 811,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
     "line": 819,
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
-    "line": 882,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -6723,15 +5499,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
-    "line": 965,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-007",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
     "line": 972,
@@ -6747,24 +5514,6 @@
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
-    "line": 1081,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_urldispatcher.py",
-    "line": 1113,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -6948,15 +5697,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_ws.py",
-    "line": 225,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_ws.py",
     "line": 281,
@@ -7000,24 +5740,6 @@
     "message": "`Any` type annotation disables type checking at this boundary",
     "severity": "MEDIUM",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_ws.py",
-    "line": 486,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/web_ws.py",
-    "line": 495,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-001",
@@ -7171,24 +5893,6 @@
     "message": "Empty except block for RuntimeError -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/worker.py",
-    "line": 82,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/aiohttp/worker.py",
-    "line": 88,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-006",

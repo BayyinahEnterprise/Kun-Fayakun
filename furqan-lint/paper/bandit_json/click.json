@@ -1,0 +1,746 @@
+[
+  {
+    "code": "76             self.detach()\n77         except Exception:\n78             pass\n79 \n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_compat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 77,
+    "line_range": [
+      77,
+      78
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "169             return False\n170         except Exception:\n171             pass\n172         return default\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_compat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 170,
+    "line_range": [
+      170,
+      171
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "431             os.path.dirname(filename),\n432             f\".__atomic-write{random.randrange(1 << 32):08x}\",\n433         )\n",
+    "col_offset": 30,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_compat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 432,
+    "line_range": [
+      432
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "567             cache[stream] = rv\n568         except Exception:\n569             pass\n570         return rv\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_compat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 568,
+    "line_range": [
+      568,
+      569
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "559     \"\"\"\n560     import subprocess\n561 \n",
+    "col_offset": 4,
+    "end_col_offset": 21,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 560,
+    "line_range": [
+      560
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "587         [str(cmd_path)] + cmd_params,\n588         shell=False,\n589         stdin=subprocess.PIPE,\n590         env=env,\n591         errors=\"replace\",\n592         text=True,\n593     )\n594     # With ``text=True``, ``c.stdin`` is already a text stream that encodes\n595     # writes for the pager process (honoring ``errors=\"replace\"``).\n596     stdin = t.cast(t.TextIO, c.stdin)\n",
+    "col_offset": 8,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 588,
+    "line_range": [
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "645     \"\"\"\n646     import subprocess\n647     import tempfile\n",
+    "col_offset": 4,
+    "end_col_offset": 21,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 646,
+    "line_range": [
+      646
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "659         f.close()\n660         subprocess.call([str(cmd_path), *cmd_params, f.name])\n661     finally:\n",
+    "col_offset": 8,
+    "end_col_offset": 61,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 660,
+    "line_range": [
+      660
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "715         import shlex\n716         import subprocess\n717 \n",
+    "col_offset": 8,
+    "end_col_offset": 25,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 716,
+    "line_range": [
+      716
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "728             # Windows paths.\n729             c = subprocess.Popen(\n730                 args=shlex.split(editor) + list(filenames),\n731                 env=environ,\n732             )\n733             exit_code = c.wait()\n",
+    "col_offset": 16,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 729,
+    "line_range": [
+      729,
+      730,
+      731,
+      732
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "799 def open_url(url: str, wait: bool = False, locate: bool = False) -> int:\n800     import subprocess\n801 \n",
+    "col_offset": 4,
+    "end_col_offset": 21,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 800,
+    "line_range": [
+      800
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "818         try:\n819             return subprocess.Popen(args, stderr=null).wait()\n820         finally:\n",
+    "col_offset": 19,
+    "end_col_offset": 54,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 819,
+    "line_range": [
+      819
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "826             try:\n827                 return subprocess.call(args)\n828             except OSError:\n",
+    "col_offset": 23,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 827,
+    "line_range": [
+      827
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "831             try:\n832                 os.startfile(url)  # type: ignore[attr-defined]\n833             except OSError:\n",
+    "col_offset": 16,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Starting a process without a shell.",
+    "line_number": 832,
+    "line_range": [
+      832
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b606_start_process_with_no_shell.html",
+    "test_id": "B606",
+    "test_name": "start_process_with_no_shell"
+  },
+  {
+    "code": "845         try:\n846             return subprocess.call(args)\n847         except OSError:\n",
+    "col_offset": 19,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 846,
+    "line_range": [
+      846
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "855             url = _unquote_file(url)\n856         c = subprocess.Popen([\"xdg-open\", url])\n857         if wait:\n",
+    "col_offset": 12,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Starting a process with a partial executable path",
+    "line_number": 856,
+    "line_range": [
+      856
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+    "test_id": "B607",
+    "test_name": "start_process_with_partial_path"
+  },
+  {
+    "code": "855             url = _unquote_file(url)\n856         c = subprocess.Popen([\"xdg-open\", url])\n857         if wait:\n",
+    "col_offset": 12,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 856,
+    "line_range": [
+      856
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "34 \n35 assert sys.platform == \"win32\"\n36 import msvcrt  # noqa: E402\n",
+    "col_offset": 0,
+    "end_col_offset": 30,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_winconsole.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 35,
+    "line_range": [
+      35
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "208             self.flush()\n209         except Exception:\n210             pass\n211         return self.buffer.write(x)\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/_winconsole.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 209,
+    "line_range": [
+      209,
+      210
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "798         # Assert to make the type checker happy.\n799         assert self.default_map is not None\n800         value = self.default_map[name]\n",
+    "col_offset": 8,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 799,
+    "line_range": [
+      799
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1820         if args and callable(args[0]):\n1821             assert len(args) == 1 and not kwargs, (\n1822                 \"Use 'command(**kwargs)(callable)' to provide arguments.\"\n1823             )\n1824             (func,) = args\n",
+    "col_offset": 12,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1821,
+    "line_range": [
+      1821,
+      1822,
+      1823
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1869         if args and callable(args[0]):\n1870             assert len(args) == 1 and not kwargs, (\n1871                 \"Use 'group(**kwargs)(callable)' to provide arguments.\"\n1872             )\n1873             (func,) = args\n",
+    "col_offset": 12,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1870,
+    "line_range": [
+      1870,
+      1871,
+      1872
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "2026                 cmd_name, cmd, args = self.resolve_command(ctx, args)\n2027                 assert cmd is not None\n2028                 ctx.invoked_subcommand = cmd_name\n",
+    "col_offset": 16,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 2027,
+    "line_range": [
+      2027
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "2048                 cmd_name, cmd, args = self.resolve_command(ctx, args)\n2049                 assert cmd is not None\n2050                 sub_ctx = cmd.make_context(\n",
+    "col_offset": 16,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 2049,
+    "line_range": [
+      2049
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "3472         \"\"\"\n3473         assert self.prompt is not None\n3474 \n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 3473,
+    "line_range": [
+      3473
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "210         name = None\n211         assert cls is None, \"Use 'command(cls=cls)(callable)' to specify a class.\"\n212         assert not attrs, \"Use 'command(**kwargs)(callable)' to provide arguments.\"\n",
+    "col_offset": 8,
+    "end_col_offset": 82,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/decorators.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 211,
+    "line_range": [
+      211
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "211         assert cls is None, \"Use 'command(cls=cls)(callable)' to specify a class.\"\n212         assert not attrs, \"Use 'command(**kwargs)(callable)' to provide arguments.\"\n213 \n",
+    "col_offset": 8,
+    "end_col_offset": 83,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/decorators.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 212,
+    "line_range": [
+      212
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "235         if t.TYPE_CHECKING:\n236             assert cls is not None\n237             assert not callable(name)\n",
+    "col_offset": 12,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/decorators.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 236,
+    "line_range": [
+      236
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "236             assert cls is not None\n237             assert not callable(name)\n238 \n",
+    "col_offset": 12,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/decorators.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 237,
+    "line_range": [
+      237
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "196         if self.nargs > 1:\n197             assert isinstance(value, cabc.Sequence)\n198             holes = sum(x is UNSET for x in value)\n",
+    "col_offset": 12,
+    "end_col_offset": 51,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/parser.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 197,
+    "line_range": [
+      197
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "397         import shutil\n398         import subprocess\n399 \n",
+    "col_offset": 8,
+    "end_col_offset": 25,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/shell_completion.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 398,
+    "line_range": [
+      398
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "404         else:\n405             output = subprocess.run(\n406                 [bash_exe, \"--norc\", \"-c\", 'echo \"${BASH_VERSION}\"'],\n407                 stdout=subprocess.PIPE,\n408             )\n409             match = re.search(r\"^(\\d+)\\.(\\d+)\\.\\d+\", output.stdout.decode())\n",
+    "col_offset": 21,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/shell_completion.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 405,
+    "line_range": [
+      405,
+      406,
+      407,
+      408
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "105     def stop(self) -> bytes:\n106         assert self._tmpfile is not None, \"_FDCapture.start() was not called\"\n107         os.dup2(self.saved_fd, self._targetfd)\n",
+    "col_offset": 8,
+    "end_col_offset": 77,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/testing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 106,
+    "line_range": [
+      106
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "570                         del os.environ[key]\n571                     except Exception:\n572                         pass\n573                 else:\n",
+    "col_offset": 20,
+    "end_col_offset": 28,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/testing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 571,
+    "line_range": [
+      571,
+      572
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "580                         del os.environ[key]\n581                     except Exception:\n582                         pass\n583                 else:\n",
+    "col_offset": 20,
+    "end_col_offset": 28,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/testing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 581,
+    "line_range": [
+      581,
+      582
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "44             return func(*args, **kwargs)\n45         except Exception:\n46             pass\n47         return None\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/click/utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 45,
+    "line_range": [
+      45,
+      46
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  }
+]

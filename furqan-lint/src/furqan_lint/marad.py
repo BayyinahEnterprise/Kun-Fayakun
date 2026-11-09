@@ -9,10 +9,8 @@ marad mode.
 Rules:
     MR-001  Bare `except:` with no re-raise -- exception swallowed silently
     MR-002  `except Exception` that logs/passes without re-raising
-    MR-003  Generic error message discards exception information (nifaq -- A8)
-    MR-004  Function returns None on failure without documenting it
+    MR-003  Exception caught and named but never referenced in handler
     MR-005  Empty except block (pass/... only)
-    MR-006  Exception caught and replaced with generic string
     MR-007  try-except-continue (errors silently skipped in loop)
 """
 

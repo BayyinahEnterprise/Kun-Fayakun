@@ -1,0 +1,438 @@
+[
+  {
+    "code": "171     def write(self, msg):\n172         assert isinstance(msg, bytes)\n173         n = len(msg)\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/_winapi.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 172,
+    "line_range": [
+      172
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "397 \n398     assert isinstance(user, TOKEN_USER), \"user must be TOKEN_USER instance\"\n399 \n",
+    "col_offset": 4,
+    "end_col_offset": 75,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/_winapi.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 398,
+    "line_range": [
+      398
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "138             self.close()\n139         except:\n140             pass\n141 \n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/channel.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 139,
+    "line_range": [
+      139,
+      140
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "400         self.status_event.wait()\n401         assert self.status_event.is_set()\n402         return self.exit_status\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/channel.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 401,
+    "line_range": [
+      401
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1217         self.event.wait()\n1218         assert self.event.is_set()\n1219         if self.event_ready:\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/channel.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1218,
+    "line_range": [
+      1218
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "361                             sock.settimeout(timeout)\n362                         except:\n363                             pass\n364                     sock.connect(addr)\n",
+    "col_offset": 24,
+    "end_col_offset": 32,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 362,
+    "line_range": [
+      362,
+      363
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "553             chan.update_environment(environment)\n554         chan.exec_command(command)\n555         stdin = chan.makefile_stdin(\"wb\", bufsize)\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Possible shell injection via Paramiko call, check inputs are properly sanitized.",
+    "line_number": 554,
+    "line_range": [
+      554
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b601_paramiko_calls.html",
+    "test_id": "B601",
+    "test_name": "paramiko_calls"
+  },
+  {
+    "code": "30 def byte_chr(c):\n31     assert isinstance(c, int)\n32     return struct.pack(\"B\", c)\n",
+    "col_offset": 4,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/common.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 31,
+    "line_range": [
+      31
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "35 def byte_mask(c, mask):\n36     assert isinstance(c, int)\n37     return struct.pack(\"B\", c & mask)\n",
+    "col_offset": 4,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/common.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 36,
+    "line_range": [
+      36
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "448             # TODO: sha1 bad / this is offspec from rfc/openssh\n449             \"%C\": sha1(tohash.encode()).hexdigest(),\n450             \"%d\": homedir,\n",
+    "col_offset": 18,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 449,
+    "line_range": [
+      449
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "151             # Verify that all the public keys are the same...\n152             assert (\n153                 signing_key.verify_key.encode()\n154                 == public\n155                 == public_keys[i]\n156                 == key_data[32:]\n157             )\n158             signing_keys.append(signing_key)\n",
+    "col_offset": 12,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ed25519key.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 152,
+    "line_range": [
+      152,
+      153,
+      154,
+      155,
+      156,
+      157
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "293         if salt is None:\n294             salt = os.urandom(sha1().digest_size)\n295         else:\n",
+    "col_offset": 30,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 294,
+    "line_range": [
+      294
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "298             salt = decodebytes(b(salt))\n299         assert len(salt) == sha1().digest_size\n300         hmac = HMAC(salt, b(hostname), sha1).digest()\n",
+    "col_offset": 8,
+    "end_col_offset": 46,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 299,
+    "line_range": [
+      299
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "298             salt = decodebytes(b(salt))\n299         assert len(salt) == sha1().digest_size\n300         hmac = HMAC(salt, b(hostname), sha1).digest()\n",
+    "col_offset": 28,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 299,
+    "line_range": [
+      299
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "389         \"\"\"\n390         return md5(self.asbytes()).digest()\n391 \n",
+    "col_offset": 15,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak MD5 hash for security. Consider usedforsecurity=False",
+    "line_number": 390,
+    "line_range": [
+      390
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "120                     self._parse_modulus(line)\n121                 except:\n122                     continue\n123 \n",
+    "col_offset": 16,
+    "end_col_offset": 28,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/primes.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Continue detected.",
+    "line_number": 121,
+    "line_range": [
+      121,
+      122
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b112_try_except_continue.html",
+    "test_id": "B112",
+    "test_name": "try_except_continue"
+  },
+  {
+    "code": "30 try:\n31     import subprocess\n32 except ImportError as e:\n",
+    "col_offset": 4,
+    "end_col_offset": 21,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/proxy.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 31,
+    "line_range": [
+      31
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "61         self.cmd = shlex.split(command_line)\n62         self.process = subprocess.Popen(\n63             self.cmd,\n64             stdin=subprocess.PIPE,\n65             stdout=subprocess.PIPE,\n66             stderr=subprocess.PIPE,\n67             bufsize=0,\n68         )\n69         self.timeout = None\n",
+    "col_offset": 23,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/proxy.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 62,
+    "line_range": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "225             self._got_bad_key_format_id(pkformat)\n226         assert isinstance(key, rsa.RSAPrivateKey)\n227         self.key = key\n",
+    "col_offset": 8,
+    "end_col_offset": 49,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 226,
+    "line_range": [
+      226
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "621             self.finish_subsystem()\n622         except:\n623             pass\n624 \n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/server.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 622,
+    "line_range": [
+      622,
+      623
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "158                     self._send_status(request_number, SFTP_FAILURE)\n159                 except:\n160                     pass\n161 \n",
+    "col_offset": 16,
+    "end_col_offset": 24,
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 159,
+    "line_range": [
+      159,
+      160
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  }
+]

@@ -18,15 +18,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/_winapi.py",
-    "line": 172,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-005",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/_winapi.py",
     "line": 324,
@@ -45,15 +36,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/_winapi.py",
-    "line": 398,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/agent.py",
     "line": 60,
@@ -61,15 +43,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/agent.py",
-    "line": 142,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-007",
@@ -252,15 +225,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
-    "line": 519,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
     "line": 539,
@@ -268,15 +232,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
-    "line": 604,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-004",
@@ -367,15 +322,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
-    "line": 120,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-004",
@@ -549,15 +495,6 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/channel.py",
-    "line": 1040,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/channel.py",
     "line": 1218,
@@ -684,15 +621,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
-    "line": 472,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
     "line": 627,
@@ -729,39 +657,12 @@
     "fix": "recalibrate"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/common.py",
-    "line": 31,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/common.py",
     "line": 36,
     "col": 4,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/common.py",
-    "line": 36,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/common.py",
-    "line": 42,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -873,15 +774,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
-    "line": 498,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-003",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
     "line": 551,
@@ -898,15 +790,6 @@
     "message": "Empty except block for gaierror -- failure silenced entirely",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
-    "line": 683,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-004",
@@ -943,24 +826,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/file.py",
-    "line": 381,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/file.py",
-    "line": 525,
-    "col": 42,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-007",
@@ -1071,15 +936,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
-    "line": 298,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
     "line": 305,
@@ -1161,33 +1017,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
-    "line": 212,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
-    "line": 214,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
-    "line": 216,
-    "col": 13,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
     "line": 273,
@@ -1260,15 +1089,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
-    "line": 323,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
     "line": 351,
@@ -1287,24 +1107,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
-    "line": 858,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
-    "line": 860,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
     "line": 885,
@@ -1312,15 +1114,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
-    "line": 911,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-001",
@@ -1341,24 +1134,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
-    "line": 99,
-    "col": 27,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
-    "line": 103,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
     "line": 117,
@@ -1368,48 +1143,12 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
-    "line": 132,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
-    "line": 159,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-006",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
     "line": 226,
     "col": 8,
     "message": "`assert` stripped by `python -O` -- use explicit raise for runtime checks",
     "severity": "MEDIUM",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
-    "line": 226,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/server.py",
-    "line": 546,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
     "fix": "recalibrate"
   },
   {
@@ -1449,15 +1188,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp.py",
-    "line": 184,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_attr.py",
     "line": 226,
@@ -1467,15 +1197,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_client.py",
-    "line": 173,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_client.py",
     "line": 672,
@@ -1483,33 +1204,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_client.py",
-    "line": 866,
-    "col": 19,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_client.py",
-    "line": 868,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_client.py",
-    "line": 870,
-    "col": 21,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-003",
@@ -1602,33 +1296,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
-    "line": 227,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
-    "line": 229,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
-    "line": 231,
-    "col": 17,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
     "line": 306,
@@ -1636,33 +1303,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
-    "line": 342,
-    "col": 23,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
-    "line": 410,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
-    "line": 502,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-005",
@@ -1755,15 +1395,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
-    "line": 448,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "RC-003",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
     "line": 468,
@@ -1771,15 +1402,6 @@
     "message": "Connection/socket created without context manager",
     "severity": "HIGH",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
-    "line": 794,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "MR-005",
@@ -1836,15 +1458,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
-    "line": 1320,
-    "col": 15,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
     "line": 1784,
@@ -1886,15 +1499,6 @@
     "line": 1865,
     "col": 15,
     "message": "Blanket `# noqa` -- specify which rule is being suppressed",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
-    "line": 1872,
-    "col": 11,
-    "message": "isinstance() admits subclasses that may override behavior",
     "severity": "LOW",
     "fix": "recalibrate"
   },
@@ -2214,24 +1818,6 @@
     "fix": "enrich"
   },
   {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
-    "line": 320,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
-    "line": 322,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
     "rule": "SI-004",
     "path": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
     "line": 328,
@@ -2239,24 +1825,6 @@
     "message": "`TODO` comment -- an acknowledged incomplete scan",
     "severity": "LOW",
     "fix": "enrich"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
-    "line": 331,
-    "col": 7,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
-  },
-  {
-    "rule": "TB-001",
-    "path": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
-    "line": 333,
-    "col": 9,
-    "message": "isinstance() admits subclasses that may override behavior",
-    "severity": "LOW",
-    "fix": "recalibrate"
   },
   {
     "rule": "SI-003",

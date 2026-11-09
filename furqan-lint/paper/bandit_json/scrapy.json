@@ -1,0 +1,4881 @@
+[
+  {
+    "code": "127         \"\"\"Populate the option parser with the options available for this command.\"\"\"\n128         assert self.settings is not None\n129         group = parser.add_argument_group(title=\"Global Options\")\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 128,
+    "line_range": [
+      128
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "188     def _spider_names(self) -> list[str]:\n189         assert self.settings is not None\n190         try:\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 189,
+    "line_range": [
+      189
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "198         \"\"\"Set settings based on the command line options.\"\"\"\n199         assert self.settings is not None\n200         try:\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 199,
+    "line_range": [
+      199
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "278         if opts.output or opts.overwrite_output:\n279             assert self.settings is not None\n280             feeds = feed_process_params_from_cli(\n",
+    "col_offset": 12,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 279,
+    "line_range": [
+      279
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "287     def _create_crawler(self, spidercls: type[Spider] | str) -> Crawler:\n288         assert self.crawler_process is not None\n289         crawler = self.crawler_process.create_crawler(spidercls)\n",
+    "col_offset": 8,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 288,
+    "line_range": [
+      288
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "297     ) -> None:\n298         assert self.crawler_process is not None\n299         crawler = self._create_crawler(spidercls)\n",
+    "col_offset": 8,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 298,
+    "line_range": [
+      298
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "2 \n3 import subprocess\n4 import sys\n",
+    "col_offset": 0,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/bench.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 3,
+    "line_range": [
+      3
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "32         with _BenchServer() as baseurl:\n33             assert self.crawler_process\n34             self.crawler_process.crawl(_BenchSpider, total=100000, baseurl=baseurl)\n",
+    "col_offset": 12,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/bench.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 33,
+    "line_range": [
+      33
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "40         pargs = [sys.executable, \"-u\", \"-m\", \"scrapy.utils._benchserver\"]\n41         self.proc = subprocess.Popen(  # noqa: S603\n42             pargs, stdout=subprocess.PIPE, env=get_testenv()\n43         )\n44         assert self.proc.stdout\n",
+    "col_offset": 20,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/bench.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 41,
+    "line_range": [
+      41,
+      42,
+      43
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "43         )\n44         assert self.proc.stdout\n45         # The server listens on a random port and prints it at the end of\n",
+    "col_offset": 8,
+    "end_col_offset": 31,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/bench.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 44,
+    "line_range": [
+      44
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "75     def parse(self, response: Response) -> Any:\n76         assert isinstance(response, TextResponse)\n77         for link in self.link_extractor.extract_links(response):\n",
+    "col_offset": 8,
+    "end_col_offset": 49,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/bench.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 76,
+    "line_range": [
+      76
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "72         def on_failure(failure: Failure) -> None:\n73             assert failure.value is not None\n74             report(failure.value)\n",
+    "col_offset": 12,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/check.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 73,
+    "line_range": [
+      73
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "77     else:\n78         assert isinstance(crawl, asyncio.Task)\n79 \n",
+    "col_offset": 8,
+    "end_col_offset": 46,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/check.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 78,
+    "line_range": [
+      78
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "133             ) from None\n134         assert self.settings is not None\n135         # Contracts discard the output of callbacks, so item pipelines and\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/check.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 134,
+    "line_range": [
+      134
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "145         # load contracts\n146         assert self.settings is not None\n147         contracts = build_component_list(\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/check.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 146,
+    "line_range": [
+      146
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "156 \n157         assert self.crawler_process\n158         spider_loader = self.crawler_process.spider_loader\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/check.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 157,
+    "line_range": [
+      157
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "159     def run(self, args: list[str], opts: argparse.Namespace) -> None:\n160         assert self.settings is not None\n161         if args and args[0] == \"--\":\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/complete.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 160,
+    "line_range": [
+      160
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "4 import shlex\n5 import subprocess\n6 import sys\n",
+    "col_offset": 0,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/edit.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 5,
+    "line_range": [
+      5
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "25     \"\"\"\n26     return subprocess.call([*shlex.split(editor), os.fspath(file_path)])  # noqa: S603\n27 \n",
+    "col_offset": 11,
+    "end_col_offset": 72,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/edit.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 26,
+    "line_range": [
+      26
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "56 \n57         assert self.settings is not None\n58         editor = self.settings[\"EDITOR\"]  # pylint: disable=unsubscriptable-object\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/edit.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 57,
+    "line_range": [
+      57
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "66         sfile = sys.modules[spidercls.__module__].__file__\n67         assert sfile\n68         sfile = sfile.replace(\".pyc\", \".py\")\n",
+    "col_offset": 8,
+    "end_col_offset": 20,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/edit.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 67,
+    "line_range": [
+      67
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "64         if opts.headers:\n65             assert response.request\n66             self._print_headers(response.request.headers, b\">\")\n",
+    "col_offset": 12,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/fetch.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 65,
+    "line_range": [
+      65
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "101         spidercls: type[Spider] = DefaultSpider\n102         assert self.crawler_process\n103         spider_loader = self.crawler_process.spider_loader\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/fetch.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 102,
+    "line_range": [
+      102
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "3 import shutil\n4 import subprocess\n5 from typing import TYPE_CHECKING, Any, ClassVar\n",
+    "col_offset": 0,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/genrequest.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 4,
+    "line_range": [
+      4
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "49     try:\n50         result = subprocess.run(  # noqa: S603\n51             [ruff, \"format\", \"-\"],\n52             input=code,\n53             capture_output=True,\n54             text=True,\n55             check=True,\n56         )\n57     except subprocess.CalledProcessError:\n",
+    "col_offset": 17,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/genrequest.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 50,
+    "line_range": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "99     def run(self, args: list[str], opts: argparse.Namespace) -> None:\n100         assert self.settings is not None\n101         if opts.list:\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/genspider.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 100,
+    "line_range": [
+      100
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "137     ) -> dict[str, Any]:\n138         assert self.settings is not None\n139         capitalized_module = \"\".join(s.capitalize() for s in module.split(\"_\"))\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/genspider.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 138,
+    "line_range": [
+      138
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "158         \"\"\"Generate the spider module, based on the given template\"\"\"\n159         assert self.settings is not None\n160         tvars = self._generate_template_variables(module, name, url, template_name)\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/genspider.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 159,
+    "line_range": [
+      159
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "162             spiders_module = import_module(self.settings[\"NEWSPIDER_MODULE\"])  # pylint: disable=unsubscriptable-object\n163             assert spiders_module.__file__\n164             spiders_dir = Path(spiders_module.__file__).parent.resolve()\n",
+    "col_offset": 12,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/genspider.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 163,
+    "line_range": [
+      163
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "203     def _spider_exists(self, name: str) -> bool:\n204         assert self.settings is not None\n205         if not self.settings.get(\"NEWSPIDER_MODULE\"):\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/genspider.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 204,
+    "line_range": [
+      204
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "238     def templates_dir(self) -> str:\n239         assert self.settings is not None\n240         return str(\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/genspider.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 239,
+    "line_range": [
+      239
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "20     def run(self, args: list[str], opts: argparse.Namespace) -> None:\n21         assert self.settings is not None\n22         spider_loader = get_spider_loader(self.settings)\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/list.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 21,
+    "line_range": [
+      21
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "249     def set_spidercls(self, request: Request, opts: argparse.Namespace) -> None:\n250         assert self.crawler_process\n251         spider_loader = self.crawler_process.spider_loader\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/parse.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 250,
+    "line_range": [
+      250
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "270     def start_parsing(self, url: str, opts: argparse.Namespace) -> None:\n271         assert self.crawler_process\n272         assert self.spidercls\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/parse.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 271,
+    "line_range": [
+      271
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "271         assert self.crawler_process\n272         assert self.spidercls\n273         self.pcrawler = self._create_crawler(self.spidercls)\n",
+    "col_offset": 8,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/parse.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 272,
+    "line_range": [
+      272
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "333         if not callable(cb):\n334             assert cb is not None\n335             cb_method = getattr(spider, cb, None)\n",
+    "col_offset": 12,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/parse.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 334,
+    "line_range": [
+      334
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "341                 )\n342         assert callable(cb)\n343         return cb\n",
+    "col_offset": 8,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/parse.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 342,
+    "line_range": [
+      342
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "353             cb = self._get_callback(spider=spider, opts=opts, response=response)\n354             assert response.request\n355             response.request.callback = cb\n",
+    "col_offset": 12,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/parse.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 354,
+    "line_range": [
+      354
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "31     spec = importlib.util.spec_from_file_location(module_name, abspath, loader=loader)\n32     assert spec\n33     module = importlib.util.module_from_spec(spec)\n",
+    "col_offset": 4,
+    "end_col_offset": 15,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/runspider.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 32,
+    "line_range": [
+      32
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "32         if dest.startswith(\"get\"):\n33             assert self.settings is not None\n34             return sorted(self.settings)\n",
+    "col_offset": 12,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/settings.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 33,
+    "line_range": [
+      33
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "76         \"\"\"Return the settings as they would be during a crawl.\"\"\"\n77         assert self.settings is not None\n78         # Must run before get_spider_loader(), because add-ons may change\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/settings.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 77,
+    "line_range": [
+      77
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "97 \n98         assert self.crawler_process\n99         spider_loader = self.crawler_process.spider_loader\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/shell.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 98,
+    "line_range": [
+      98
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "145     def _get_reactorless_loop(self) -> asyncio.AbstractEventLoop:\n146         assert self.crawler_process\n147         assert isinstance(self.crawler_process, AsyncCrawlerProcess)\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/shell.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 146,
+    "line_range": [
+      146
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "146         assert self.crawler_process\n147         assert isinstance(self.crawler_process, AsyncCrawlerProcess)\n148         loop = self.crawler_process._reactorless_loop\n",
+    "col_offset": 8,
+    "end_col_offset": 68,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/shell.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 147,
+    "line_range": [
+      147
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "148         loop = self.crawler_process._reactorless_loop\n149         assert loop\n150         return loop\n",
+    "col_offset": 8,
+    "end_col_offset": 19,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/shell.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 149,
+    "line_range": [
+      149
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "153         \"\"\"Run self.crawler_process.start() in a separate thread.\"\"\"\n154         assert self.crawler_process\n155         t = Thread(\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/shell.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 154,
+    "line_range": [
+      154
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "134     def templates_dir(self) -> str:\n135         assert self.settings is not None\n136         return str(\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/commands/startproject.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 135,
+    "line_range": [
+      135
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "99             cb = request.callback\n100             assert cb is not None\n101             pre_process = self.pre_process\n",
+    "col_offset": 12,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/contracts/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 100,
+    "line_range": [
+      100
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "127             cb = request.callback\n128             assert cb is not None\n129             post_process = self.post_process\n",
+    "col_offset": 12,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/contracts/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 128,
+    "line_range": [
+      128
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "226         \"\"\"\n227         assert method.__doc__ is not None\n228         return [\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/contracts/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 227,
+    "line_range": [
+      227
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "313         cb = request.callback\n314         assert cb is not None\n315 \n",
+    "col_offset": 8,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/contracts/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 314,
+    "line_range": [
+      314
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "154         for conn in self._connections.values():\n155             assert conn.transport is not None  # typing\n156             conn.transport.abortConnection()\n",
+    "col_offset": 12,
+    "end_col_offset": 45,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/agent.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 155,
+    "line_range": [
+      155
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "162         \"\"\"\n163         assert self.transport is not None  # typing\n164         return bool(self.transport.connected) and self.metadata[\"settings_acknowledged\"]\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/protocol.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 163,
+    "line_range": [
+      163
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "229         \"\"\"\n230         assert self.transport is not None  # typing\n231         # Reset the idle timeout as connection is still actively sending data\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/protocol.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 230,
+    "line_range": [
+      230
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "260 \n261         assert self.transport is not None  # typing\n262         destination = self.transport.getPeer()\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/protocol.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 261,
+    "line_range": [
+      261
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "276         self._conn_lost_errors.extend(errors)\n277         assert self.transport is not None  # typing\n278         self.transport.loseConnection()\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/protocol.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 277,
+    "line_range": [
+      277
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "288         \"\"\"\n289         assert self.transport is not None  # typing\n290         if (\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/protocol.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 289,
+    "line_range": [
+      289
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "326                 self._conn_lost_errors.append(e)\n327                 assert self.transport is not None  # typing\n328                 self.transport.abortConnection()\n",
+    "col_offset": 16,
+    "end_col_offset": 49,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/protocol.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 327,
+    "line_range": [
+      327
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "370 \n371         assert reason.value is not None\n372         self._conn_lost_errors.append(reason.value)\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/protocol.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 371,
+    "line_range": [
+      371
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "444         # Update certificate when our HTTP/2 connection is established\n445         assert self.transport is not None  # typing\n446         self.metadata[\"certificate\"] = Certificate(self.transport.getPeerCertificate())\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/protocol.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 445,
+    "line_range": [
+      445
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "504         else:\n505             assert reason is StreamCloseReason.INVALID_HOSTNAME\n506             self._deferred_response.errback(\n",
+    "col_offset": 12,
+    "end_col_offset": 63,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/_http2/stream.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 505,
+    "line_range": [
+      505
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "160         # A jitter above 1 would reach into negative delays, floored at 0.\n161         return max(0.0, self.delay * (1 + random.uniform(-self.jitter, self.jitter)))  # noqa: S311\n162 \n",
+    "col_offset": 42,
+    "end_col_offset": 83,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 161,
+    "line_range": [
+      161
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "327         if last_reason is not None and self._stats is not None:\n328             assert last_reason_start_time is not None\n329             last_reason_seconds = current_time - last_reason_start_time\n",
+    "col_offset": 12,
+    "end_col_offset": 53,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 328,
+    "line_range": [
+      328
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "393             return not self._exceeds_max_active_size()\n394         assert self._stats is not None\n395         self._stats.inc_value(\"response_max_active_size/bypass_count\")\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 394,
+    "line_range": [
+      394
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "544             )\n545             assert isinstance(download_dfd, Deferred)\n546             self._download_tasks[request] = download_dfd\n",
+    "col_offset": 12,
+    "end_col_offset": 53,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 545,
+    "line_range": [
+      545
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "701         self._size_bypass_due = False\n702         assert self._stats is not None\n703         self._stats.inc_value(\"response_max_active_size/bypass_count\")\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 702,
+    "line_range": [
+      702
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "68 \n69     def __init__(\n70         self,\n71         method: int | None = SSL.SSLv23_METHOD,  # noqa: S503\n72         tls_verbose_logging: bool = False,\n73         tls_ciphers: str | None = None,\n74         *args: Any,\n75         verify_certificates: bool = False,\n76         tls_min_version: TLSVersion | None = None,\n77         tls_max_version: TLSVersion | None = None,\n78         **kwargs: Any,\n79     ):\n80         super().__init__(*args, **kwargs)  # type: ignore[no-untyped-call]\n81         self._ssl_method: int | None = method\n82         self.tls_min_version: TLSVersion | None = tls_min_version\n83         self.tls_max_version: TLSVersion | None = tls_max_version\n84         self.tls_verbose_logging: bool = tls_verbose_logging  # unused\n85         self.tls_ciphers: AcceptableCiphers | None = (\n86             AcceptableCiphers.fromOpenSSLCipherString(tls_ciphers)\n87             if tls_ciphers\n88             else None\n89         )\n90         self._verify_certificates = verify_certificates\n91 \n",
+    "col_offset": 4,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/contextfactory.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function definition identified with insecure SSL/TLS protocol version by default, possible security issue.",
+    "line_number": 69,
+    "line_range": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b503_ssl_with_bad_defaults.html",
+    "test_id": "B503",
+    "test_name": "ssl_with_bad_defaults"
+  },
+  {
+    "code": "92     @classmethod\n93     def from_crawler(\n94         cls,\n95         crawler: Crawler,\n96         method: int | None = SSL.SSLv23_METHOD,  # noqa: S503\n97         *args: Any,\n98         **kwargs: Any,\n99     ) -> Self:\n100         tls_verbose_logging: bool = crawler.settings.getbool(\n101             \"DOWNLOADER_CLIENT_TLS_VERBOSE_LOGGING\"\n102         )\n103         tls_ciphers: str | None = crawler.settings[\"DOWNLOADER_CLIENT_TLS_CIPHERS\"]\n104         # DOWNLOADER_CLIENT_TLS_METHOD reading and handling should be also moved here\n105         # when the deprecated load_context_factory_from_settings() is removed\n106         tls_min_ver, tls_max_ver = _get_tls_version_limits(\n107             crawler.settings, _TWISTED_VERSION_MAP.__getitem__\n108         )\n109         if tls_min_ver or tls_max_ver:\n110             method = None\n111         verify_certificates = crawler.settings.getbool(\"DOWNLOAD_VERIFY_CERTIFICATES\")\n112         return cls(  # type: ignore[misc]\n113             *args,\n114             method=method,\n115             tls_verbose_logging=tls_verbose_logging,\n116             tls_ciphers=tls_ciphers,\n117             tls_min_version=tls_min_ver,\n118             tls_max_version=tls_max_ver,\n119             verify_certificates=verify_certificates,\n120             **kwargs,\n121         )\n122 \n",
+    "col_offset": 4,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/contextfactory.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function definition identified with insecure SSL/TLS protocol version by default, possible security issue.",
+    "line_number": 93,
+    "line_range": [
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b503_ssl_with_bad_defaults.html",
+    "test_id": "B503",
+    "test_name": "ssl_with_bad_defaults"
+  },
+  {
+    "code": "214     ) -> Response:\n215         assert self._crawler.spider\n216         with _in_download_handler_scope():\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 215,
+    "line_range": [
+      215
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "119         url = urlparse_cached(request)\n120         assert url.hostname\n121         if not request.meta.get(\"ftp_passive\", True):\n",
+    "col_offset": 8,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/_aioftp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 120,
+    "line_range": [
+      120
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "190             )\n191         assert parts.hostname\n192         return Proxy(\n",
+    "col_offset": 8,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/_aioftp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 191,
+    "line_range": [
+      191
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "92         transport = connection.transport\n93         assert transport is not None\n94         self._peername = transport.get_extra_info(\"peername\")\n",
+    "col_offset": 8,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/_aiohttp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 93,
+    "line_range": [
+      93
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "195         )\n196         assert response._peername is not None\n197         ip_address = ipaddress.ip_address(response._peername[0])\n",
+    "col_offset": 8,
+    "end_col_offset": 45,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/_aiohttp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 196,
+    "line_range": [
+      196
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "211     def _log_tls_info(self, response: _ClientResponse, request: Request) -> None:\n212         assert response._ssl_object is not None\n213         _log_sslobj_debug_info(response._ssl_object)\n",
+    "col_offset": 8,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/_aiohttp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 212,
+    "line_range": [
+      212
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "155             return b\"\"\n156         assert isinstance(buffer, BytesIO)\n157         return buffer.getvalue()\n",
+    "col_offset": 8,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/_base_streaming.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 156,
+    "line_range": [
+      156
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "96             self.body.truncate(0)\n97             assert self.transport\n98             self.transport.loseConnection()\n",
+    "col_offset": 12,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/ftp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 97,
+    "line_range": [
+      97
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "102             self._reached_warnsize = True\n103             assert self._request is not None\n104             logger.warning(\n",
+    "col_offset": 12,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/ftp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 103,
+    "line_range": [
+      103
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "177                 m = _CODE_RE.search(message)\n178                 assert m\n179                 httpcode = self.CODE_MAPPING.get(\n",
+    "col_offset": 16,
+    "end_col_offset": 24,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/ftp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 178,
+    "line_range": [
+      178
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "191             protocol.close()\n192             assert client.transport\n193             client.transport.loseConnection()\n",
+    "col_offset": 12,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/ftp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 192,
+    "line_range": [
+      192
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "160         # creates a parser.\n161         assert self._parser is not None\n162         self._parser.__class__ = _LenientHTTPClientParser\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 161,
+    "line_range": [
+      161
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "170         # them on the response.\n171         assert self.transport is not None\n172         transport = self.transport\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 171,
+    "line_range": [
+      171
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "416         \"\"\"Asks the proxy to open a tunnel.\"\"\"\n417         assert self.transport\n418         self.transport.write(\n",
+    "col_offset": 8,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 417,
+    "line_range": [
+      417
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "444             # protocol, which starts its handshake through the tunnel.\n445             assert self.transport is not None\n446             self._wrappedProtocol.makeConnection(self.transport)\n",
+    "col_offset": 12,
+    "end_col_offset": 45,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 445,
+    "line_range": [
+      445
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "506         # wrapClientTLS, whose buildProtocol never returns None.\n507         assert wrappedProtocol is not None\n508         return _TunnelProtocol(\n",
+    "col_offset": 8,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 507,
+    "line_range": [
+      507
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "560             else:\n561                 assert isinstance(proxyProtocol, _TunnelProtocol)\n562                 assert proxyProtocol.transport\n",
+    "col_offset": 16,
+    "end_col_offset": 65,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 561,
+    "line_range": [
+      561
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "561                 assert isinstance(proxyProtocol, _TunnelProtocol)\n562                 assert proxyProtocol.transport\n563                 proxyProtocol.transport.loseConnection()\n",
+    "col_offset": 16,
+    "end_col_offset": 46,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 562,
+    "line_range": [
+      562
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "811             if urlparse_cached(request).scheme == \"https\":\n812                 assert proxy_host is not None\n813                 proxy_headers = get_proxy_headers(request)\n",
+    "col_offset": 16,
+    "end_col_offset": 45,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 812,
+    "line_range": [
+      812
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1098     def connectionMade(self) -> None:\n1099         assert self.transport\n1100         with suppress(AttributeError):\n",
+    "col_offset": 8,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1099,
+    "line_range": [
+      1099
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1108             hostname = urlparse_cached(self._request).hostname\n1109             assert hostname is not None\n1110             _log_ssl_conn_debug_info(hostname, connection)\n",
+    "col_offset": 12,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1109,
+    "line_range": [
+      1109
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1116 \n1117         assert self.transport\n1118         self._bodybuf.write(data)\n",
+    "col_offset": 8,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1117,
+    "line_range": [
+      1117
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1164         # twisted.web._newclient.HTTPClientParser.connectionLost().\n1165         assert isinstance(reason.value, ResponseFailed)\n1166         assert any(r.check(_DataLoss) for r in reason.value.reasons)\n",
+    "col_offset": 8,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1165,
+    "line_range": [
+      1165
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1165         assert isinstance(reason.value, ResponseFailed)\n1166         assert any(r.check(_DataLoss) for r in reason.value.reasons)\n1167         if not self._fail_on_dataloss:\n",
+    "col_offset": 8,
+    "end_col_offset": 68,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http11.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1166,
+    "line_range": [
+      1166
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "66         )\n67         assert self._crawler.spider\n68         try:\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/http2.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 67,
+    "line_range": [
+      67
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "79             )\n80             assert self._signer\n81             self._signer.add_auth(awsrequest)\n",
+    "col_offset": 12,
+    "end_col_offset": 31,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/handlers/s3.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 80,
+    "line_range": [
+      80
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "39     priority = settings.getpriority(\"RESPONSE_MAX_ACTIVE_SIZE\")\n40     assert deprecated_priority is not None\n41     assert priority is not None\n",
+    "col_offset": 4,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/middleware.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 40,
+    "line_range": [
+      40
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "40     assert deprecated_priority is not None\n41     assert priority is not None\n42     if deprecated_priority <= 0:\n",
+    "col_offset": 4,
+    "end_col_offset": 31,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/middleware.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 41,
+    "line_range": [
+      41
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "80         super().__init__(*middlewares, crawler=crawler)\n81         assert crawler is not None\n82         settings = crawler.settings\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/middleware.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 81,
+    "line_range": [
+      81
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "215         for method in self.methods[\"process_request\"]:\n216             assert method is not None\n217             response = await ensure_awaitable(\n",
+    "col_offset": 12,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/downloader/middleware.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 216,
+    "line_range": [
+      216
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "171         if self.closing is not None and not self.inprogress:\n172             assert not self.closing.called\n173             self.nextcall.cancel()\n",
+    "col_offset": 12,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 172,
+    "line_range": [
+      172
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "430         \"\"\"\n431         assert self._start is not None\n432         # Lets Request.__await__() find this crawler while Spider.start() runs.\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 431,
+    "line_range": [
+      431
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "464                 else:\n465                     assert self._slot is not None\n466                     self.scraper._start_itemproc_nowait(item_or_request)\n",
+    "col_offset": 20,
+    "end_col_offset": 49,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 465,
+    "line_range": [
+      465
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "475         try:\n476             assert self._slot is not None  # typing\n477             self._slot.nextcall.schedule()\n",
+    "col_offset": 12,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 476,
+    "line_range": [
+      476
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "501             return\n502         assert self._slot is not None\n503 \n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 502,
+    "line_range": [
+      502
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "516         \"\"\"\n517         assert self.scraper.slot is not None  # typing\n518         return (\n",
+    "col_offset": 8,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 517,
+    "line_range": [
+      517
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "525     def _remove_request(self, _: Any, request: Request) -> None:\n526         assert self._slot\n527         self._slot.remove_request(request)\n",
+    "col_offset": 8,
+    "end_col_offset": 25,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 526,
+    "line_range": [
+      526
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "529     def _start_scheduled_request(self) -> bool:\n530         assert self._slot is not None  # typing\n531         assert self.spider is not None  # typing\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 530,
+    "line_range": [
+      530
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "530         assert self._slot is not None  # typing\n531         assert self.spider is not None  # typing\n532 \n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 531,
+    "line_range": [
+      531
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "590         except Exception:\n591             assert self.spider is not None\n592             logger.exception(\n",
+    "col_offset": 12,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 591,
+    "line_range": [
+      591
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "639                 return\n640         assert self._slot is not None\n641         if request.meta.get(\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 640,
+    "line_range": [
+      640
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "686                 raise RuntimeError(f\"Cannot download {request}: the spider is closing\")\n687             assert self._slot is not None\n688             self._slot.add_request(request)\n",
+    "col_offset": 12,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 687,
+    "line_range": [
+      687
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "702     ) -> Generator[Deferred[Any], Any, Response | Request]:\n703         assert self._slot is not None  # typing\n704         assert self.spider is not None\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 703,
+    "line_range": [
+      703
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "703         assert self._slot is not None  # typing\n704         assert self.spider is not None\n705 \n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 704,
+    "line_range": [
+      704
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "770         \"\"\"\n771         assert self.crawler.spider\n772         if self._state is EngineState.STOPPED:\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 771,
+    "line_range": [
+      771
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "840         \"\"\"\n841         assert self.spider is not None  # typing\n842         expected_ex = (DontCloseSpider, CloseSpider)\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 841,
+    "line_range": [
+      841
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "859             )\n860             assert isinstance(ex, CloseSpider)  # typing\n861             _schedule_coro(self.close_spider_async(reason=ex.reason, error=ex.error))\n",
+    "col_offset": 12,
+    "end_col_offset": 46,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 860,
+    "line_range": [
+      860
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "890 \n891         assert self.crawler.stats\n892         if dropped_count:\n",
+    "col_offset": 8,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 891,
+    "line_range": [
+      891
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "971 \n972         assert self._slot is not None\n973         assert self.spider is not None\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 972,
+    "line_range": [
+      972
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "972         assert self._slot is not None\n973         assert self.spider is not None\n974         spider = self.spider\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 973,
+    "line_range": [
+      973
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1074         \"\"\"Send :signal:`engine_stopped` and mark the engine as stopped.\"\"\"\n1075         assert self._closewait is not None\n1076         await self.signals.send_catch_log_async(signal=signals.engine_stopped)\n",
+    "col_offset": 8,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1075,
+    "line_range": [
+      1075
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "383             state = self.dqs.close()\n384             assert isinstance(self.dqdir, str)\n385             self._write_dqs_state(self.dqdir, state)\n",
+    "col_offset": 12,
+    "end_col_offset": 46,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 384,
+    "line_range": [
+      384
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "406         dqok = self._dqpush(request)\n407         assert self.stats is not None\n408         if dqok:\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 407,
+    "line_range": [
+      407
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "426         request: Request | None = None\n427         assert self.stats is not None\n428         if not self._dqs_first():\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 427,
+    "line_range": [
+      427
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "464                 self.logunser = False\n465             assert self.stats is not None\n466             self.stats.inc_value(\"scheduler/unserializable\")\n",
+    "col_offset": 12,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 465,
+    "line_range": [
+      465
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "496             return\n497         assert self.dqs is not None\n498         self.dqs.changed = False\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 497,
+    "line_range": [
+      497
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "501             self._dqs_changes = 0\n502             assert isinstance(self.dqdir, str)\n503             self._write_dqs_state(self.dqdir, self.dqs.state())\n",
+    "col_offset": 12,
+    "end_col_offset": 46,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 502,
+    "line_range": [
+      502
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "506         \"\"\"Create a new priority queue instance, with in-memory storage\"\"\"\n507         assert self.crawler\n508         assert self.pqclass\n",
+    "col_offset": 8,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 507,
+    "line_range": [
+      507
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "507         assert self.crawler\n508         assert self.pqclass\n509         return build_from_crawler(\n",
+    "col_offset": 8,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 508,
+    "line_range": [
+      508
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "518         \"\"\"Create a new priority queue instance, with disk storage\"\"\"\n519         assert self.crawler\n520         assert self.dqdir\n",
+    "col_offset": 8,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 519,
+    "line_range": [
+      519
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "519         assert self.crawler\n520         assert self.dqdir\n521         assert self.pqclass\n",
+    "col_offset": 8,
+    "end_col_offset": 25,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 520,
+    "line_range": [
+      520
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "520         assert self.dqdir\n521         assert self.pqclass\n522         state = self._read_dqs_state(self.dqdir)\n",
+    "col_offset": 8,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scheduler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 521,
+    "line_range": [
+      521
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "117         )\n118         assert self._crawler.engine is not None\n119         return self._crawler.engine.response_active_size\n",
+    "col_offset": 8,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 118,
+    "line_range": [
+      118
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "128         )\n129         assert self._crawler.engine is not None\n130         return self._crawler.engine.downloader.middleware._max_active_size\n",
+    "col_offset": 8,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 129,
+    "line_range": [
+      129
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "138         )\n139         assert self._crawler.engine is not None\n140         return self._crawler.engine.downloader._exceeds_max_active_size()\n",
+    "col_offset": 8,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 139,
+    "line_range": [
+      139
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "240         else:\n241             assert self.crawler.spider\n242             await maybe_deferred_to_future(\n",
+    "col_offset": 12,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 241,
+    "line_range": [
+      241
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "250     def _check_if_closing(self) -> None:\n251         assert self.slot is not None  # typing\n252         if self.slot.closing and self.slot.is_idle():\n",
+    "col_offset": 8,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 251,
+    "line_range": [
+      251
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "252         if self.slot.closing and self.slot.is_idle():\n253             assert self.crawler.spider\n254             self.slot.closing.callback(self.crawler.spider)\n",
+    "col_offset": 12,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 253,
+    "line_range": [
+      253
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "277     def _scrape_next(self) -> None:\n278         assert self.slot is not None  # typing\n279         while self.slot.queue:\n",
+    "col_offset": 8,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 278,
+    "line_range": [
+      278
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "307                 exc = result.value\n308                 assert isinstance(exc, CloseSpider)  # typing\n309                 _schedule_coro(\n",
+    "col_offset": 16,
+    "end_col_offset": 51,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 308,
+    "line_range": [
+      308
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "323                 # the errback didn't silence the exception\n324                 assert self.crawler.spider\n325                 if not result.check(IgnoreRequest):\n",
+    "col_offset": 16,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 324,
+    "line_range": [
+      324
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "372         await _process_pending_io_before_callback()\n373         assert self.crawler.spider\n374         if isinstance(result, Response):\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 373,
+    "line_range": [
+      373
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "376                 result.request = request\n377             assert result.request\n378             parent_id = result.request.id\n",
+    "col_offset": 12,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 377,
+    "line_range": [
+      377
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "399             if isinstance(output, Failure):\n400                 assert output.value is not None\n401                 exception = output.value.with_traceback(output.tb)\n",
+    "col_offset": 16,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 400,
+    "line_range": [
+      400
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "436         )\n437         assert _failure.value is not None\n438         self._handle_spider_error(_failure.value, request, response)\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 437,
+    "line_range": [
+      437
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "446         \"\"\"Handle an exception raised by a spider callback or errback.\"\"\"\n447         assert self.crawler.spider\n448         if isinstance(exc, CloseSpider):\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 447,
+    "line_range": [
+      447
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "567         \"\"\"\n568         assert self.slot is not None  # typing\n569         self.slot.itemproc_size += 1\n",
+    "col_offset": 8,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 568,
+    "line_range": [
+      568
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "572     async def _start_itemproc_nowait_async(self, item: Any) -> None:\n573         assert self.slot is not None  # typing\n574         # start_itemproc_async() takes over the count of this item.\n",
+    "col_offset": 8,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 573,
+    "line_range": [
+      573
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "587         \"\"\"\n588         assert self.slot is not None  # typing\n589         assert self.crawler.spider is not None  # typing\n",
+    "col_offset": 8,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 588,
+    "line_range": [
+      588
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "588         assert self.slot is not None  # typing\n589         assert self.crawler.spider is not None  # typing\n590         self.slot.itemproc_size += 1\n",
+    "col_offset": 8,
+    "end_col_offset": 46,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/scraper.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 589,
+    "line_range": [
+      589
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "82         for method in self.methods[\"process_spider_input\"]:\n83             assert method is not None\n84             try:\n",
+    "col_offset": 12,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/core/spidermw.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 83,
+    "line_range": [
+      83
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1243         loop = self._reactorless_loop\n1244         assert loop\n1245 \n",
+    "col_offset": 8,
+    "end_col_offset": 19,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/crawler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1244,
+    "line_range": [
+      1244
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1262             install_shutdown_handlers(self._signal_shutdown_reactorless)\n1263         assert self._reactorless_loop\n1264         assert self._reactorless_main_task\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/crawler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1263,
+    "line_range": [
+      1263
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1263         assert self._reactorless_loop\n1264         assert self._reactorless_main_task\n1265         self._reactorless_loop.run_until_complete(self._reactorless_main_task)\n",
+    "col_offset": 8,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/crawler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1264,
+    "line_range": [
+      1264
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1269         loop = self._reactorless_loop\n1270         assert loop\n1271         try:\n",
+    "col_offset": 8,
+    "end_col_offset": 19,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/crawler.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1270,
+    "line_range": [
+      1270
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "80     def process_request(self, request: Request, spider: Spider | None = None) -> None:\n81         assert self.crawler.spider\n82         if (\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/downloadermiddlewares/offsite.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 81,
+    "line_range": [
+      81
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "242 \n243         assert response.headers[\"Location\"] is not None\n244         redirected_url = _redirect_url(request.url, response.headers[\"Location\"])\n",
+    "col_offset": 8,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/downloadermiddlewares/redirect.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 243,
+    "line_range": [
+      243
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "128     stats.inc_value(f\"{stats_base_key}/max_reached\")\n129     assert give_up_log_level is not None\n130     logger.log(\n",
+    "col_offset": 4,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/downloadermiddlewares/retry.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 129,
+    "line_range": [
+      129
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "191         )\n192         assert self.crawler.spider\n193         return get_retry_request(\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/downloadermiddlewares/retry.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 192,
+    "line_range": [
+      192
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "167             useragent = request.headers.get(b\"User-Agent\", self._default_useragent)\n168             assert useragent is not None\n169         if not rp.allowed(request.url, useragent):\n",
+    "col_offset": 12,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/downloadermiddlewares/robotstxt.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 168,
+    "line_range": [
+      168
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "232         rp_dfd = self._parsers[netloc]\n233         assert isinstance(rp_dfd, Deferred)\n234         self._parsers[netloc] = rp\n",
+    "col_offset": 8,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/downloadermiddlewares/robotstxt.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 233,
+    "line_range": [
+      233
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "246         rp_dfd = self._parsers[netloc]\n247         assert isinstance(rp_dfd, Deferred)\n248         self._parsers[netloc] = None\n",
+    "col_offset": 8,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/downloadermiddlewares/robotstxt.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 247,
+    "line_range": [
+      247
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "9 import marshal\n10 import pickle\n11 import pprint\n",
+    "col_offset": 0,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/exporters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with pickle module.",
+    "line_number": 10,
+    "line_range": [
+      10
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "15 from typing import TYPE_CHECKING, Any\n16 from xml.sax.saxutils import XMLGenerator\n17 from xml.sax.xmlreader import AttributesImpl\n",
+    "col_offset": 0,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/exporters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 20,
+      "link": "https://cwe.mitre.org/data/definitions/20.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Using XMLGenerator to parse untrusted XML data is known to be vulnerable to XML attacks. Replace XMLGenerator with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",
+    "line_number": 16,
+    "line_range": [
+      16
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b406-import-xml-sax",
+    "test_id": "B406",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "16 from xml.sax.saxutils import XMLGenerator\n17 from xml.sax.xmlreader import AttributesImpl\n18 \n",
+    "col_offset": 0,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/exporters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 20,
+      "link": "https://cwe.mitre.org/data/definitions/20.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Using AttributesImpl to parse untrusted XML data is known to be vulnerable to XML attacks. Replace AttributesImpl with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",
+    "line_number": 17,
+    "line_range": [
+      17
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b406-import-xml-sax",
+    "test_id": "B406",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "394             else:\n395                 assert self.fields_to_export\n396                 fields = self.fields_to_export\n",
+    "col_offset": 16,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/exporters.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 395,
+    "line_range": [
+      395
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "39     def spider_closed(self, spider: Spider, reason: str, error: bool = False) -> None:\n40         assert self.start_time is not None\n41         assert self._start_time_mono is not None\n",
+    "col_offset": 8,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/corestats.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 40,
+    "line_range": [
+      40
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "40         assert self.start_time is not None\n41         assert self._start_time_mono is not None\n42         finish_time, finish_time_mono = datetime.now(tz=UTC), monotonic()\n",
+    "col_offset": 8,
+    "end_col_offset": 48,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/corestats.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 41,
+    "line_range": [
+      41
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "73     def _enter_debugger(self, signum: int, frame: FrameType | None) -> None:\n74         assert frame\n75         Pdb().set_trace(frame.f_back)\n",
+    "col_offset": 8,
+    "end_col_offset": 20,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/debug.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 74,
+    "line_range": [
+      74
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "56         now = time.monotonic()\n57         assert self._last_tick is not None\n58         lag = now - self._last_tick - self._interval\n",
+    "col_offset": 8,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/event_loop_lag.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 57,
+    "line_range": [
+      57
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "303         u = urlparse(uri)\n304         assert u.hostname\n305         self.bucketname: str = u.hostname\n",
+    "col_offset": 8,
+    "end_col_offset": 25,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/feedexport.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 304,
+    "line_range": [
+      304
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "453         u = urlparse(uri)\n454         assert u.hostname\n455         self.bucket_name: str = u.hostname\n",
+    "col_offset": 8,
+    "end_col_offset": 25,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/feedexport.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 454,
+    "line_range": [
+      454
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "649         if not self._exporting:\n650             assert self.exporter\n651             await _maybe_coroutine(self.exporter.start_exporting)\n",
+    "col_offset": 12,
+    "end_col_offset": 32,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/feedexport.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 650,
+    "line_range": [
+      650
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "662         if self._exporting:  # pragma: no branch\n663             assert self.exporter\n664             await _maybe_coroutine(self.exporter.finish_exporting)\n",
+    "col_offset": 12,
+    "end_col_offset": 32,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/feedexport.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 663,
+    "line_range": [
+      663
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "791             spider = self.crawler.spider\n792             assert spider is not None\n793             for slot in self.slots:\n",
+    "col_offset": 12,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/feedexport.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 792,
+    "line_range": [
+      792
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "838         )\n839         assert self.crawler.stats\n840         self.crawler.stats.inc_value(\n",
+    "col_offset": 8,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/feedexport.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 839,
+    "line_range": [
+      839
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "884     def _get_file(slot_: FeedSlot) -> IO[bytes]:\n885         assert slot_.file\n886         if isinstance(slot_.file, PostProcessingManager):\n",
+    "col_offset": 8,
+    "end_col_offset": 25,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/feedexport.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 885,
+    "line_range": [
+      885
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "991                 if not slot._skipped:\n992                     assert slot.exporter\n993                     try:\n",
+    "col_offset": 20,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/feedexport.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 992,
+    "line_range": [
+      992
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "4 import logging\n5 import pickle\n6 from datetime import UTC\n",
+    "col_offset": 0,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/httpcache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with pickle module.",
+    "line_number": 5,
+    "line_range": [
+      5
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "88             cch = r.headers.get(b\"Cache-Control\", b\"\")\n89             assert cch is not None\n90             parsed = parse_cachecontrol(cch)\n",
+    "col_offset": 12,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/httpcache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 89,
+    "line_range": [
+      89
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "313 \n314         data = cast(\"dict[str, Any]\", pickle.loads(db[f\"{key}_data\"]))  # noqa: S301\n315         return data, ts\n",
+    "col_offset": 38,
+    "end_col_offset": 69,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/httpcache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+    "line_number": 314,
+    "line_range": [
+      314
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b301-pickle",
+    "test_id": "B301",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "361             with self._open(datapath, \"rb\") as f:\n362                 data.update(pickle.load(f))  # noqa: S301\n363         request.meta[\"cache_timestamp\"] = metadata[\"timestamp\"]\n",
+    "col_offset": 28,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/httpcache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+    "line_number": 362,
+    "line_range": [
+      362
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b301-pickle",
+    "test_id": "B301",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "422         with self._open(metapath, \"rb\") as f:\n423             return cast(\"dict[str, Any]\", pickle.load(f))  # noqa: S301\n424 \n",
+    "col_offset": 42,
+    "end_col_offset": 56,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/httpcache.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+    "line_number": 423,
+    "line_range": [
+      423
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b301-pickle",
+    "test_id": "B301",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "106             raise NotConfigured\n107         assert ext_stats is not None\n108         assert ext_delta is not None\n",
+    "col_offset": 8,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/periodic_log.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 107,
+    "line_range": [
+      107
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "107         assert ext_stats is not None\n108         assert ext_delta is not None\n109         o = cls(\n",
+    "col_offset": 8,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/periodic_log.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 108,
+    "line_range": [
+      108
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "169             job_path = job_files_dir(self._crawler.settings) / new_job_file_name()\n170             assert self._crawler.spider\n171             # we create the job file after starting the HTTP server\n",
+    "col_offset": 12,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/remote_control.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 170,
+    "line_range": [
+      170
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "278             # else it runs synchronously and returns None.\n279             eval_result = eval(code_obj, ns)  # noqa: S307 - arbitrary code by design\n280             if inspect.iscoroutine(eval_result):\n",
+    "col_offset": 26,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/remote_control.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+    "line_number": 279,
+    "line_range": [
+      279
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b307-eval",
+    "test_id": "B307",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "309         \"\"\"Return the data for the ``/status`` response.\"\"\"\n310         assert self._crawler.spider\n311         start_time: datetime | None = self._crawler.stats.get_value(\"start_time\")\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/remote_control.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 310,
+    "line_range": [
+      310
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "2 \n3 import pickle\n4 import warnings\n",
+    "col_offset": 0,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/spiderstate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with pickle module.",
+    "line_number": 3,
+    "line_range": [
+      3
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "37             with Path(self.statefn).open(\"rb\") as f:\n38                 spider.state = pickle.load(f)  # noqa: S301\n39         else:\n",
+    "col_offset": 31,
+    "end_col_offset": 45,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/spiderstate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+    "line_number": 38,
+    "line_range": [
+      38
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b301-pickle",
+    "test_id": "B301",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "43         with Path(self.statefn).open(\"wb\") as f:\n44             assert hasattr(spider, \"state\")\n45             pickle.dump(spider.state, f, protocol=4)\n",
+    "col_offset": 12,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/spiderstate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 44,
+    "line_range": [
+      44
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "48         self._load_state(spider)\n49         assert self.crawler is not None\n50         await self.crawler.signals.send_catch_log_async(\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/spiderstate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 49,
+    "line_range": [
+      49
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "55     async def _spider_closed(self, spider: Spider) -> None:\n56         assert self.crawler is not None\n57         await self.crawler.signals.send_catch_log_async(\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/spiderstate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 56,
+    "line_range": [
+      56
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "70         self._load_state(spider)\n71         assert self.crawler is not None\n72         self.crawler.signals.send_catch_log(\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/spiderstate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 71,
+    "line_range": [
+      71
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "83         )\n84         assert self.crawler is not None\n85         self.crawler.signals.send_catch_log(\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/spiderstate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 84,
+    "line_range": [
+      84
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "92     def statefn(self) -> str:\n93         assert self.jobdir\n94         return str(Path(self.jobdir, \"spider.state\"))\n",
+    "col_offset": 8,
+    "end_col_offset": 26,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/extensions/spiderstate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 93,
+    "line_range": [
+      93
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "157 def _get_form_url(form: FormElement, url: str | None) -> str:\n158     assert form.base_url is not None  # typing\n159     if url is None:\n",
+    "col_offset": 4,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/http/request/form.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 158,
+    "line_range": [
+      158
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "308     if nr is not None:\n309         assert isinstance(nr, int)\n310         try:\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/http/request/form.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 309,
+    "line_range": [
+      309
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "9 \n10 import xmlrpc.client as xmlrpclib\n11 from typing import Any\n",
+    "col_offset": 0,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/http/request/rpc.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 20,
+      "link": "https://cwe.mitre.org/data/definitions/20.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Using xmlrpc.client to parse untrusted XML data is known to be vulnerable to XML attacks. Use defusedxml.xmlrpc.monkey_patch() function to monkey-patch xmlrpclib and mitigate XML vulnerabilities.",
+    "line_number": 10,
+    "line_range": [
+      10
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b411-import-xmlrpclib",
+    "test_id": "B411",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "191             self._read_html_metadata()\n192         assert self._base_url is not None\n193         return self._base_url\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/http/response/text.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 192,
+    "line_range": [
+      192
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "209             self._read_html_metadata()\n210         assert self._meta_refresh is not _UNSET\n211         return self._meta_refresh\n",
+    "col_offset": 8,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/http/response/text.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 210,
+    "line_range": [
+      210
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "91     def _eb(failure: Failure) -> Failure:\n92         assert isinstance(failure.value, FirstError)\n93         return failure.value.subFailure\n",
+    "col_offset": 8,
+    "end_col_offset": 52,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 92,
+    "line_range": [
+      92
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "19 from datetime import UTC, datetime\n20 from ftplib import FTP\n21 from io import BytesIO\n",
+    "col_offset": 0,
+    "end_col_offset": 22,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/files.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 319,
+      "link": "https://cwe.mitre.org/data/definitions/319.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "A FTP-related module is being imported.  FTP is considered insecure. Use SSH/SFTP/SCP or some other encrypted protocol.",
+    "line_number": 20,
+    "line_range": [
+      20
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b402-import-ftplib",
+    "test_id": "B402",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "341         ).input_shape\n342         assert input_shape is not None\n343         return CaseInsensitiveDict(\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/files.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 342,
+    "line_range": [
+      342
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "501         u = urlparse(uri)\n502         assert u.port\n503         assert u.hostname\n",
+    "col_offset": 8,
+    "end_col_offset": 21,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/files.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 502,
+    "line_range": [
+      502
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "502         assert u.port\n503         assert u.hostname\n504         self.port: int = u.port\n",
+    "col_offset": 8,
+    "end_col_offset": 25,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/files.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 503,
+    "line_range": [
+      503
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "506         self.port = int(u.port or 21)\n507         assert self.FTP_USERNAME\n508         assert self.FTP_PASSWORD\n",
+    "col_offset": 8,
+    "end_col_offset": 32,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/files.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 507,
+    "line_range": [
+      507
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "507         assert self.FTP_USERNAME\n508         assert self.FTP_PASSWORD\n509         self.username: str = u.username or self.FTP_USERNAME\n",
+    "col_offset": 8,
+    "end_col_offset": 32,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/files.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 508,
+    "line_range": [
+      508
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "537         try:\n538             with FTP() as ftp:\n539                 ftp.connect(self.host, self.port)\n",
+    "col_offset": 17,
+    "end_col_offset": 22,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/files.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 319,
+      "link": "https://cwe.mitre.org/data/definitions/319.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "FTP-related functions are being called. FTP is considered insecure. Use SSH/SFTP/SCP or some other encrypted protocol.",
+    "line_number": 538,
+    "line_range": [
+      538
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b321-ftplib",
+    "test_id": "B321",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "950     ) -> str:\n951         media_guid = hashlib.sha1(request.url.encode()).hexdigest()  # noqa: S324\n952 \n",
+    "col_offset": 21,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/files.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 951,
+    "line_range": [
+      951
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "175             )\n176         assert checksum is not None\n177         return checksum\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/images.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 176,
+    "line_range": [
+      176
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "188         orig_image = self._Image.open(BytesIO(response.body))\n189         assert orig_image.format is not None\n190         image_format = orig_image.format\n",
+    "col_offset": 8,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/images.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 189,
+    "line_range": [
+      189
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "301     ) -> str:\n302         image_guid = hashlib.sha1(request.url.encode()).hexdigest()  # noqa: S324\n303         ext = \"\" if self.preserve_format else \".jpg\"\n",
+    "col_offset": 21,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/images.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 302,
+    "line_range": [
+      302
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "314     ) -> str:\n315         thumb_guid = hashlib.sha1(request.url.encode()).hexdigest()  # noqa: S324\n316         ext = \"\" if self.preserve_format else \".jpg\"\n",
+    "col_offset": 21,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/images.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 315,
+    "line_range": [
+      315
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "147     def open_spider(self, spider: Spider | None = None) -> None:\n148         assert self.crawler.spider\n149         self.spiderinfo = self.SpiderInfo(self.crawler.spider)\n",
+    "col_offset": 8,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/media.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 148,
+    "line_range": [
+      148
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "314                 if not ok:\n315                     assert isinstance(value, Failure)\n316                     if _media_request_filtered(value):\n",
+    "col_offset": 20,
+    "end_col_offset": 53,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pipelines/media.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 315,
+    "line_range": [
+      315
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "34     # prefix, so a hash of the original text keeps the result unique.\n35     unique_slot = hashlib.md5(text.encode()).hexdigest()  # noqa: S324\n36     return f\"{pathable_slot}-{unique_slot}\"\n",
+    "col_offset": 18,
+    "end_col_offset": 44,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pqueues.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak MD5 hash for security. Consider usedforsecurity=False",
+    "line_number": 35,
+    "line_range": [
+      35
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "211     def _sqfactory(self, key: int) -> QueueProtocol:\n212         assert self._start_queue_cls is not None\n213         return build_from_crawler(\n",
+    "col_offset": 8,
+    "end_col_offset": 48,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pqueues.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 212,
+    "line_range": [
+      212
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "242     def _curqueue(self) -> QueueProtocol:\n243         assert self.curprio is not None\n244         # Whichever dict holds a non-empty queue at the current priority. The\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/pqueues.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 243,
+    "line_range": [
+      243
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "446 FTP_USER = \"anonymous\"\n447 FTP_PASSWORD = \"guest\"  # noqa: S105\n448 \n",
+    "col_offset": 15,
+    "end_col_offset": 22,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/settings/default_settings.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: 'guest'",
+    "line_number": 447,
+    "line_range": [
+      447
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "453 HTTPAUTH_USER = \"\"\n454 HTTPAUTH_PASS = \"\"\n455 HTTPAUTH_DOMAIN = None\n",
+    "col_offset": 16,
+    "end_col_offset": 18,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/settings/default_settings.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 259,
+      "link": "https://cwe.mitre.org/data/definitions/259.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Possible hardcoded password: ''",
+    "line_number": 454,
+    "line_range": [
+      454
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html",
+    "test_id": "B105",
+    "test_name": "hardcoded_password_string"
+  },
+  {
+    "code": "152         if self.code:\n153             print(eval(self.code, globals(), self.vars))  # noqa: S307\n154         else:\n",
+    "col_offset": 18,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/shell.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+    "line_number": 153,
+    "line_range": [
+      153
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b307-eval",
+    "test_id": "B307",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "231         else:\n232             assert self._loop\n233             with contextlib.suppress(IgnoreRequest):\n",
+    "col_offset": 12,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/shell.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 232,
+    "line_range": [
+      232
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "325         )\n326         assert settings_policy\n327         self.default_policy = settings_policy\n",
+    "col_offset": 8,
+    "end_col_offset": 30,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/spidermiddlewares/referer.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 326,
+    "line_range": [
+      326
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "7 import marshal\n8 import pickle\n9 from pathlib import Path\n",
+    "col_offset": 0,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/squeues.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with pickle module.",
+    "line_number": 8,
+    "line_range": [
+      8
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "17         show = _getarg(request, b\"show\", 10, int)\n18         nlist = [random.randint(1, total) for _ in range(show)]  # noqa: S311\n19         request.write(b\"<html><head></head><body>\")\n",
+    "col_offset": 17,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/_benchserver.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 18,
+    "line_range": [
+      18
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "19         request.write(b\"<html><head></head><body>\")\n20         assert request.args is not None\n21         args = request.args.copy()\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/_benchserver.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 20,
+    "line_range": [
+      20
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "32 ) -> Any:\n33     assert request.args is not None\n34     return type_(request.args[name][0]) if name in request.args else default\n",
+    "col_offset": 4,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/_benchserver.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 33,
+    "line_range": [
+      33
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "118     if body_file is not None:\n119         assert not body\n120         response = BodyFileResponse(**kwargs, body_file=body_file)\n",
+    "col_offset": 8,
+    "end_col_offset": 23,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/_download_handlers.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 119,
+    "line_range": [
+      119
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "4 from contextlib import closing\n5 from ftplib import FTP, FTP_TLS, error_perm\n6 from posixpath import dirname\n",
+    "col_offset": 0,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/_ftp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 319,
+      "link": "https://cwe.mitre.org/data/definitions/319.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "A FTP-related module is being imported.  FTP is considered insecure. Use SSH/SFTP/SCP or some other encrypted protocol.",
+    "line_number": 5,
+    "line_range": [
+      5
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b402-import-ftplib",
+    "test_id": "B402",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "65         mode = \"overwrite\" if overwrite else \"append\"\n66     ftp = FTP_TLS(context=create_default_context()) if tls else FTP()\n67     with ftp, closing(file):\n",
+    "col_offset": 64,
+    "end_col_offset": 69,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/_ftp.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 319,
+      "link": "https://cwe.mitre.org/data/definitions/319.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "FTP-related functions are being called. FTP is considered insecure. Use SSH/SFTP/SCP or some other encrypted protocol.",
+    "line_number": 66,
+    "line_range": [
+      66
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b321-ftplib",
+    "test_id": "B321",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "215         \"\"\"\n216         assert self.interval is not None\n217         passed = max(math.floor((time.monotonic() - boundary) / self.interval), 0)\n",
+    "col_offset": 8,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/asyncio.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 216,
+    "line_range": [
+      216
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "40                 prio = compdict.getpriority(k)\n41                 assert prio is not None\n42                 if compbs.getpriority(convert(k)) == prio:\n",
+    "col_offset": 16,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/conf.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 41,
+    "line_range": [
+      41
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "459     def eb(failure: Failure) -> Failure:\n460         assert isinstance(failure.value, FirstError)\n461         return failure.value.subFailure\n",
+    "col_offset": 8,
+    "end_col_offset": 52,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/defer.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 460,
+    "line_range": [
+      460
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "67     frame = inspect.currentframe()\n68     assert frame is not None\n69     while frame.f_globals.get(\"__name__\") in _WRAPPER_MODULES:\n",
+    "col_offset": 4,
+    "end_col_offset": 28,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/deprecate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 68,
+    "line_range": [
+      68
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "69     while frame.f_globals.get(\"__name__\") in _WRAPPER_MODULES:\n70         assert frame.f_back is not None\n71         frame = frame.f_back\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/deprecate.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 70,
+    "line_range": [
+      70
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "33         try:\n34             checks += [(test, eval(test))]  # noqa: S307\n35         except Exception as e:\n",
+    "col_offset": 30,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/engine.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+    "line_number": 34,
+    "line_range": [
+      34
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b307-eval",
+    "test_id": "B307",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "41         if event == \"start-ns\":\n42             assert isinstance(data, tuple)\n43             if needs_namespace_resolution:\n",
+    "col_offset": 12,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/iterators.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 42,
+    "line_range": [
+      42
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "51             continue\n52         assert isinstance(data, etree._Element)\n53         node = data\n",
+    "col_offset": 8,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/iterators.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 52,
+    "line_range": [
+      52
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "37     if isinstance(failure, Failure):\n38         assert failure.type\n39         assert failure.value\n",
+    "col_offset": 8,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/log.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 38,
+    "line_range": [
+      38
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "38         assert failure.type\n39         assert failure.value\n40         return (\n",
+    "col_offset": 8,
+    "end_col_offset": 28,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/log.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 39,
+    "line_range": [
+      39
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "116         fingerprint_json = json.dumps(fingerprint_data, sort_keys=True)\n117         cache[cache_key] = hashlib.sha1(  # noqa: S324\n118             fingerprint_json.encode()\n119         ).digest()\n120     return cache[cache_key]\n",
+    "col_offset": 27,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/request.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 327,
+      "link": "https://cwe.mitre.org/data/definitions/327.html"
+    },
+    "issue_severity": "HIGH",
+    "issue_text": "Use of weak SHA1 hash for security. Consider usedforsecurity=False",
+    "line_number": 117,
+    "line_range": [
+      117,
+      118,
+      119
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html",
+    "test_id": "B324",
+    "test_name": "hashlib"
+  },
+  {
+    "code": "235         else:\n236             assert isinstance(value, bytes)\n237             try:\n",
+    "col_offset": 12,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/scrapy/utils/request.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 236,
+    "line_range": [
+      236
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  }
+]

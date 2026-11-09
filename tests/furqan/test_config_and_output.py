@@ -169,11 +169,14 @@ class TestLintSourceWithConfig:
             if isinstance(x, int):
                 pass
         """)
-        all_findings = lint_source(source, "<test>")
+        # TB-001 is informational (off by default), so select it first
+        config_with = Config(select={"TB-001"})
+        all_findings = lint_source(source, "<test>", config_with)
         assert any(f.rule == "TB-001" for f in all_findings)
 
-        config = Config(ignore={"TB-001"})
-        filtered = lint_source(source, "<test>", config)
+        # Now select + ignore: ignore wins
+        config_without = Config(select={"TB-001"}, ignore={"TB-001"})
+        filtered = lint_source(source, "<test>", config_without)
         assert not any(f.rule == "TB-001" for f in filtered)
 
 

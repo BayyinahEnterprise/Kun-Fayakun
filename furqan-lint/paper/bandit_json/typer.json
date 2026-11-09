@@ -1,0 +1,1258 @@
+[
+  {
+    "code": "67             self.detach()\n68         except Exception:  # pragma: no cover\n69             pass\n70 \n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 68,
+    "line_range": [
+      68,
+      69
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "127             return False\n128         except Exception:\n129             pass\n130         return default\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 128,
+    "line_range": [
+      128,
+      129
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "380             os.path.dirname(filename),\n381             f\".__atomic-write{random.randrange(1 << 32):08x}\",\n382         )\n",
+    "col_offset": 30,
+    "end_col_offset": 55,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 381,
+    "line_range": [
+      381
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "501             _ansi_stream_wrappers[stream] = rv\n502         except Exception:  # pragma: no cover\n503             pass\n504 \n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 502,
+    "line_range": [
+      502,
+      503
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "546             cache[stream] = rv\n547         except Exception:  # pragma: no cover\n548             pass\n549         return rv\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_compat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 547,
+    "line_range": [
+      547,
+      548
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "345 def open_url(url: str, wait: bool = False, locate: bool = False) -> int:\n346     import subprocess\n347 \n",
+    "col_offset": 4,
+    "end_col_offset": 21,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 346,
+    "line_range": [
+      346
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "364         try:\n365             return subprocess.Popen(args, stderr=null).wait()\n366         finally:\n",
+    "col_offset": 19,
+    "end_col_offset": 54,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 365,
+    "line_range": [
+      365
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "378         try:\n379             return subprocess.call(args)\n380         except OSError:\n",
+    "col_offset": 19,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 379,
+    "line_range": [
+      379
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "392         try:\n393             return subprocess.call(args)\n394         except OSError:\n",
+    "col_offset": 19,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 393,
+    "line_range": [
+      393
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "402             url = _unquote_file(url)\n403         c = subprocess.Popen([\"xdg-open\", url])\n404         if wait:\n",
+    "col_offset": 12,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Starting a process with a partial executable path",
+    "line_number": 403,
+    "line_range": [
+      403
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+    "test_id": "B607",
+    "test_name": "start_process_with_partial_path"
+  },
+  {
+    "code": "402             url = _unquote_file(url)\n403         c = subprocess.Popen([\"xdg-open\", url])\n404         if wait:\n",
+    "col_offset": 12,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_termui_impl.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 403,
+    "line_range": [
+      403
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "38 \n39 assert sys.platform == \"win32\"\n40 import msvcrt  # noqa: E402\n",
+    "col_offset": 0,
+    "end_col_offset": 30,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_winconsole.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 39,
+    "line_range": [
+      39
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "211             self.flush()\n212         except Exception:  # pragma: no cover\n213             pass\n214         return self.buffer.write(x)\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/_winconsole.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 212,
+    "line_range": [
+      212,
+      213
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "879         \"\"\"\n880         assert self.name is not None, \"self.name should be set\"\n881         return self.name\n",
+    "col_offset": 8,
+    "end_col_offset": 63,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 880,
+    "line_range": [
+      880
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "49 \n50     assert len(param_decls) > 0, \"At least one help option should be provided\"\n51 \n",
+    "col_offset": 4,
+    "end_col_offset": 78,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/decorators.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 50,
+    "line_range": [
+      50
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "71         nargs = _fetch(nargs_spec)\n72         assert nargs is not None\n73 \n",
+    "col_offset": 8,
+    "end_col_offset": 32,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 72,
+    "line_range": [
+      72
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "180         if self.nargs > 1:\n181             assert value is not None\n182             holes = sum(1 for x in value if x is None)\n",
+    "col_offset": 12,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/parser.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 181,
+    "line_range": [
+      181
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "181 \n182     assert param.name is not None\n183     # Will be None if expose_value is False.\n",
+    "col_offset": 4,
+    "end_col_offset": 33,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/shell_completion.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 182,
+    "line_range": [
+      182
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "137             except UnicodeError:  # pragma: no cover\n138                 assert isinstance(value, bytes)\n139                 value = value.decode(\"utf-8\", \"replace\")\n",
+    "col_offset": 16,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/types.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 138,
+    "line_range": [
+      138
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "53             return func(*args, **kwargs)\n54         except Exception:  # pragma: no cover\n55             pass\n56         return None  # pragma: no cover\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_click/utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 54,
+    "line_range": [
+      54,
+      55
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "65         import shutil\n66         import subprocess\n67 \n",
+    "col_offset": 8,
+    "end_col_offset": 25,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_classes.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 66,
+    "line_range": [
+      66
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "72         else:\n73             output = subprocess.run(\n74                 [bash_exe, \"--norc\", \"-c\", 'echo \"${BASH_VERSION}\"'],\n75                 stdout=subprocess.PIPE,\n76             )\n77             match = re.search(r\"^(\\d+)\\.(\\d+)\\.\\d+\", output.stdout.decode())\n",
+    "col_offset": 21,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_classes.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 73,
+    "line_range": [
+      73,
+      74,
+      75,
+      76
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "2 import re\n3 import subprocess\n4 from enum import Enum\n",
+    "col_offset": 0,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 3,
+    "line_range": [
+      3
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "115     script_content = get_completion_script(\n116         prog_name=prog_name, complete_var=complete_var, shell=shell\n117     )\n118     completion_path.write_text(script_content)\n119     return completion_path\n",
+    "col_offset": 21,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 116,
+    "line_range": [
+      115,
+      116,
+      117
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "143     script_content = get_completion_script(\n144         prog_name=prog_name, complete_var=complete_var, shell=shell\n145     )\n146     path_obj.write_text(script_content)\n147     return path_obj\n",
+    "col_offset": 21,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 144,
+    "line_range": [
+      143,
+      144,
+      145
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "154     script_content = get_completion_script(\n155         prog_name=prog_name, complete_var=complete_var, shell=shell\n156     )\n157     path_obj.write_text(f\"{script_content}\\n\")\n158     return path_obj\n",
+    "col_offset": 21,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 155,
+    "line_range": [
+      154,
+      155,
+      156
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "161 def install_powershell(*, prog_name: str, complete_var: str, shell: str) -> Path:\n162     subprocess.run(\n163         [\n164             shell,\n165             \"-Command\",\n166             \"Set-ExecutionPolicy\",\n167             \"Unrestricted\",\n168             \"-Scope\",\n169             \"CurrentUser\",\n170         ]\n171     )\n172     result = subprocess.run(\n",
+    "col_offset": 4,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 162,
+    "line_range": [
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "171     )\n172     result = subprocess.run(\n173         [shell, \"-NoProfile\", \"-Command\", \"echo\", \"$profile\"],\n174         check=True,\n175         stdout=subprocess.PIPE,\n176     )\n177     if result.returncode != 0:  # pragma: no cover\n",
+    "col_offset": 13,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 172,
+    "line_range": [
+      172,
+      173,
+      174,
+      175,
+      176
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "196     script_content = get_completion_script(\n197         prog_name=prog_name, complete_var=complete_var, shell=shell\n198     )\n199     with path_obj.open(mode=\"a\") as f:\n200         f.write(f\"{script_content}\\n\")\n",
+    "col_offset": 21,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 197,
+    "line_range": [
+      196,
+      197,
+      198
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "209     prog_name = prog_name or get_current_context().find_root().info_name\n210     assert prog_name\n211     if complete_var is None:\n",
+    "col_offset": 4,
+    "end_col_offset": 20,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 210,
+    "line_range": [
+      210
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "217         installed_path = install_bash(\n218             prog_name=prog_name, complete_var=complete_var, shell=shell\n219         )\n220         return shell, installed_path\n221     elif shell == \"zsh\":\n",
+    "col_offset": 25,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 218,
+    "line_range": [
+      217,
+      218,
+      219
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "222         installed_path = install_zsh(\n223             prog_name=prog_name, complete_var=complete_var, shell=shell\n224         )\n225         return shell, installed_path\n226     elif shell == \"fish\":\n",
+    "col_offset": 25,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 223,
+    "line_range": [
+      222,
+      223,
+      224
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "227         installed_path = install_fish(\n228             prog_name=prog_name, complete_var=complete_var, shell=shell\n229         )\n230         return shell, installed_path\n231     elif shell in {\"powershell\", \"pwsh\"}:\n",
+    "col_offset": 25,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 228,
+    "line_range": [
+      227,
+      228,
+      229
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "232         installed_path = install_powershell(\n233             prog_name=prog_name, complete_var=complete_var, shell=shell\n234         )\n235         return shell, installed_path\n236     else:\n",
+    "col_offset": 25,
+    "end_col_offset": 9,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/_completion_shared.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 233,
+    "line_range": [
+      232,
+      233,
+      234
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "132         sys.exit(1)\n133     assert spec is not None\n134     module = importlib.util.module_from_spec(spec)\n",
+    "col_offset": 4,
+    "end_col_offset": 27,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 133,
+    "line_range": [
+      133
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "250                 command_obj = group.get_command(ctx, command)\n251                 assert command_obj\n252                 docs += f\"* `{command_obj.name}`\"\n",
+    "col_offset": 16,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 251,
+    "line_range": [
+      251
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "259             command_obj = group.get_command(ctx, command)\n260             assert command_obj\n261             use_prefix = \"\"\n",
+    "col_offset": 12,
+    "end_col_offset": 30,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/cli.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 260,
+    "line_range": [
+      260
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "33     if isinstance(value, str):\n34         shell, path = install(shell=value)\n35     else:\n",
+    "col_offset": 22,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 34,
+    "line_range": [
+      34
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "45     prog_name = ctx.find_root().info_name\n46     assert prog_name\n47     complete_var = \"_{}_COMPLETE\".format(prog_name.replace(\"-\", \"_\").upper())\n",
+    "col_offset": 4,
+    "end_col_offset": 20,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 46,
+    "line_range": [
+      46
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "56     script_content = get_completion_script(\n57         prog_name=prog_name, complete_var=complete_var, shell=shell\n58     )\n59     _click.echo(script_content)\n60     sys.exit(0)\n",
+    "col_offset": 21,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/completion.py",
+    "issue_confidence": "LOW",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Function call with shell=True parameter identified, possible security issue.",
+    "line_number": 57,
+    "line_range": [
+      56,
+      57,
+      58
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b604_any_other_function_with_shell_equals_true.html",
+    "test_id": "B604",
+    "test_name": "any_other_function_with_shell_equals_true"
+  },
+  {
+    "code": "73                 else:\n74                     assert isinstance(c, str)\n75                     use_completion = CompletionItem(c)\n",
+    "col_offset": 20,
+    "end_col_offset": 45,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 74,
+    "line_range": [
+      74
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "304             return self.metavar\n305         assert self.name is not None, \"self.name or self.metavar should be set\"\n306         return self.name\n",
+    "col_offset": 8,
+    "end_col_offset": 79,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 305,
+    "line_range": [
+      305
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "632         \"\"\"\n633         assert self.prompt is not None\n634 \n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 633,
+    "line_range": [
+      633
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1068             for subcommand, cmd in commands:\n1069                 assert cmd is not None\n1070                 help = cmd.get_short_help_str(limit)\n",
+    "col_offset": 16,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1069,
+    "line_range": [
+      1069
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1113             cmd_name, cmd, args = self.resolve_command(ctx, args)\n1114             assert cmd is not None\n1115             ctx.invoked_subcommand = cmd_name\n",
+    "col_offset": 12,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/core.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1114,
+    "line_range": [
+      1114
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "4 import shutil\n5 import subprocess\n6 import sys\n",
+    "col_offset": 0,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 5,
+    "line_range": [
+      5
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "1158         val_str = val.value if isinstance(val, DefaultPlaceholder) else val\n1159         assert isinstance(val_str, str)\n1160         return val_str\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1159,
+    "line_range": [
+      1159
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1289 ) -> TyperGroup:\n1290     assert group_info.typer_instance, (\n1291         \"A Typer instance is needed to generate a Click Group\"\n1292     )\n1293     commands: dict[str, _click.Command] = {}\n",
+    "col_offset": 4,
+    "end_col_offset": 5,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1290,
+    "line_range": [
+      1290,
+      1291,
+      1292
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1327     cls = solved_info.cls or TyperGroup\n1328     assert issubclass(cls, TyperGroup), f\"{cls} should be a subclass of {TyperGroup}\"\n1329     group = cls(\n",
+    "col_offset": 4,
+    "end_col_offset": 85,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1328,
+    "line_range": [
+      1328
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1392 ) -> _click.Command:\n1393     assert command_info.callback, \"A command must have a callback function\"\n1394     name = command_info.name or get_command_name(command_info.callback.__name__)  # ty: ignore\n",
+    "col_offset": 4,
+    "end_col_offset": 75,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1393,
+    "line_range": [
+      1393
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1667                 types.append(type_)\n1668             assert len(types) == 1, \"Typer Currently doesn't support Union types\"\n1669             main_type = types[0]\n",
+    "col_offset": 12,
+    "end_col_offset": 81,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1668,
+    "line_range": [
+      1668
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1673             main_type = get_args(main_type)[0]\n1674             assert not get_origin(main_type), (\n1675                 \"List types with complex sub-types are not currently supported\"\n1676             )\n1677             is_list = True\n",
+    "col_offset": 12,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1674,
+    "line_range": [
+      1674,
+      1675,
+      1676
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1680             for type_ in get_args(main_type):\n1681                 assert not get_origin(type_), (\n1682                     \"Tuple types with complex sub-types are not currently supported\"\n1683                 )\n1684                 types.append(\n",
+    "col_offset": 16,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1681,
+    "line_range": [
+      1681,
+      1682,
+      1683
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1993         if _is_macos():\n1994             return subprocess.Popen(\n1995                 [\"open\", url], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT\n1996             ).wait()\n1997 \n",
+    "col_offset": 19,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Starting a process with a partial executable path",
+    "line_number": 1994,
+    "line_range": [
+      1994,
+      1995,
+      1996
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+    "test_id": "B607",
+    "test_name": "start_process_with_partial_path"
+  },
+  {
+    "code": "1993         if _is_macos():\n1994             return subprocess.Popen(\n1995                 [\"open\", url], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT\n1996             ).wait()\n1997 \n",
+    "col_offset": 19,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 1994,
+    "line_range": [
+      1994,
+      1995,
+      1996
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "2000         if has_xdg_open:\n2001             process = subprocess.Popen(\n2002                 [\"xdg-open\", url], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT\n2003             )\n2004             if wait:\n",
+    "col_offset": 22,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Starting a process with a partial executable path",
+    "line_number": 2001,
+    "line_range": [
+      2001,
+      2002,
+      2003
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+    "test_id": "B607",
+    "test_name": "start_process_with_partial_path"
+  },
+  {
+    "code": "2000         if has_xdg_open:\n2001             process = subprocess.Popen(\n2002                 [\"xdg-open\", url], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT\n2003             )\n2004             if wait:\n",
+    "col_offset": 22,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/main.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 2001,
+    "line_range": [
+      2001,
+      2002,
+      2003
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "179     else:\n180         assert markup_mode == MARKUP_MODE_RICH\n181         if _has_ansi_character(text):\n",
+    "col_offset": 8,
+    "end_col_offset": 46,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/rich_utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 180,
+    "line_range": [
+      180
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "250                         del os.environ[key]\n251                     except Exception:  # pragma: no cover\n252                         pass\n253                 else:\n",
+    "col_offset": 20,
+    "end_col_offset": 28,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 251,
+    "line_range": [
+      251,
+      252
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "260                         del os.environ[key]\n261                     except Exception:  # pragma: no cover\n262                         pass\n263                 else:\n",
+    "col_offset": 20,
+    "end_col_offset": 28,
+    "filename": "/usr/local/lib/python3.13/site-packages/typer/testing.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 261,
+    "line_range": [
+      261,
+      262
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  }
+]

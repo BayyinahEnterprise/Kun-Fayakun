@@ -1,26 +1,26 @@
 package,domain,py_files,py_lines,furqan_v21,bandit,ratio,critical,high,medium,low
-django,Web framework,909,165634,3195,281,11.4,13,372,638,2172
-flask,Micro web framework,24,9199,135,13,10.4,2,14,35,84
-fastapi,Async web framework,52,22748,859,70,12.3,0,9,631,219
-tornado,Async networking/web,76,50586,1144,285,4.0,4,144,534,462
-starlette,ASGI framework,36,6947,364,73,5.0,0,11,281,72
-requests,HTTP library,19,6385,223,16,13.9,0,6,119,98
-httpx,Async HTTP client,23,8828,178,29,6.1,0,5,37,136
-urllib3,HTTP client low-level,36,11914,189,10,18.9,0,25,23,141
-aiohttp,Async HTTP,54,28467,806,178,4.5,0,28,592,186
-sqlalchemy,SQL ORM,258,253997,9771,866,11.3,26,203,7687,1855
-celery,Task queue,161,47496,1160,49,23.7,5,224,319,612
-jinja2,Template engine,25,14425,363,62,5.9,3,47,51,262
-pydantic,Data validation,105,45762,2776,86,32.3,3,37,1743,993
-cryptography,Crypto library,78,13868,374,18,20.8,0,17,13,344
-paramiko,SSH library,42,18621,252,21,12.0,7,29,19,197
-scrapy,Web scraping,199,38503,1716,241,7.1,8,64,1229,415
-click,CLI framework,17,12674,174,36,4.8,0,29,34,111
-rich,Rich terminal,100,38515,290,58,5.0,1,19,163,107
-typer,CLI builder,32,13911,588,60,9.8,0,29,392,167
-boto3,AWS SDK,39,8558,73,0,inf,0,1,26,46
-PIL,Image processing,98,35149,982,288,3.4,0,66,476,440
-werkzeug,WSGI utilities,52,21687,362,28,12.9,2,38,37,285
-numpy,Numerical computing,407,243710,2069,3597,0.6,162,218,365,1324
-pandas,Data analysis,1422,635499,7703,17701,0.4,40,163,1333,6167
-scipy,Scientific computing,988,574785,3326,5893,0.6,55,120,1023,2128
+django,Web framework,909,165634,1605,281,5.7,13,372,638,582
+flask,Micro web framework,24,9199,76,13,5.8,2,14,35,25
+fastapi,Async web framework,52,22748,688,70,9.8,0,9,631,48
+tornado,Async networking/web,76,50586,947,285,3.3,4,144,534,265
+starlette,ASGI framework,36,6947,313,73,4.3,0,11,281,21
+requests,HTTP library,19,6385,149,16,9.3,0,6,119,24
+httpx,Async HTTP client,23,8828,84,29,2.9,0,5,37,42
+urllib3,HTTP client low-level,36,11914,99,10,9.9,0,25,23,51
+aiohttp,Async HTTP,54,28467,662,178,3.7,0,28,592,42
+sqlalchemy,SQL ORM,258,253997,8496,866,9.8,26,203,7687,580
+celery,Task queue,161,47496,703,49,14.3,5,224,319,155
+jinja2,Template engine,25,14425,239,62,3.9,3,47,51,138
+pydantic,Data validation,105,45762,2099,86,24.4,3,37,1743,316
+cryptography,Crypto library,78,13868,52,18,2.9,0,17,13,22
+paramiko,SSH library,42,18621,204,21,9.7,7,29,19,149
+scrapy,Web scraping,199,38503,1361,241,5.6,8,64,1229,60
+click,CLI framework,17,12674,94,36,2.6,0,29,34,31
+rich,Rich terminal,100,38515,200,58,3.4,1,19,163,17
+typer,CLI builder,32,13911,486,60,8.1,0,29,392,65
+boto3,AWS SDK,39,8558,38,0,inf,0,1,26,11
+PIL,Image processing,98,35149,652,288,2.3,0,66,476,110
+werkzeug,WSGI utilities,52,21687,184,28,6.6,2,38,37,107
+numpy,Numerical computing,407,243710,1018,3597,0.3,162,218,365,273
+pandas,Data analysis,1422,635499,2657,17701,0.2,40,163,1333,1121
+scipy,Scientific computing,988,574785,1827,5893,0.3,55,120,1023,629

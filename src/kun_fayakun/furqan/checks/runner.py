@@ -1,6 +1,6 @@
 # Bismillah ir-Rahman ir-Rahim
 """
-Furqan-lint v2.0 runner -- coordinates structural honesty checks across languages.
+Furqan-lint v2.1.0 runner -- coordinates structural honesty checks across languages.
 
 This module is the heart of `kun furqan lint`. It:
 1. Loads config from .furqan.toml or pyproject.toml
@@ -56,8 +56,12 @@ def lint_source(source: str, path: str, config: Config | None = None) -> List[Fi
     """Run all check families on a single Python source string.
 
     Returns a list of Finding objects, sorted by line number.
-    If config is provided, findings are filtered accordingly.
+    A default Config is always applied (excludes informational rules
+    unless explicitly selected).
     """
+    if config is None:
+        config = Config()
+
     try:
         tree = ast.parse(source, filename=path)
     except SyntaxError:
@@ -72,8 +76,7 @@ def lint_source(source: str, path: str, config: Config | None = None) -> List[Fi
     findings.extend(check_injection(tree, path))
     findings.extend(check_crypto(tree, path))
 
-    if config:
-        findings = config.filter_findings(findings)
+    findings = config.filter_findings(findings)
 
     findings.sort(key=lambda f: (f.path, f.line, f.col))
     return findings
@@ -101,6 +104,9 @@ def lint_file(path: Path, config: Config | None = None) -> tuple[List[Finding], 
 
 def _lint_file_python(path: Path, config: Config | None = None) -> tuple[List[Finding], int]:
     """Lint a Python file via AST-based checks."""
+    if config is None:
+        config = Config()
+
     try:
         source = path.read_text(encoding="utf-8")
     except (OSError, UnicodeDecodeError) as exc:
@@ -123,8 +129,7 @@ def _lint_file_python(path: Path, config: Config | None = None) -> tuple[List[Fi
     findings.extend(check_injection(tree, str(path)))
     findings.extend(check_crypto(tree, str(path)))
 
-    if config:
-        findings = config.filter_findings(findings)
+    findings = config.filter_findings(findings)
 
     findings.sort(key=lambda f: (f.path, f.line, f.col))
     return findings, 1 if findings else 0
@@ -132,6 +137,9 @@ def _lint_file_python(path: Path, config: Config | None = None) -> tuple[List[Fi
 
 def _lint_file_adapted(path: Path, adapter, config: Config | None = None) -> tuple[List[Finding], int]:
     """Lint a non-Python file via a tree-sitter adapter."""
+    if config is None:
+        config = Config()
+
     try:
         source_bytes = path.read_bytes()
     except OSError as exc:
@@ -140,8 +148,7 @@ def _lint_file_adapted(path: Path, adapter, config: Config | None = None) -> tup
 
     findings = adapter.check(source_bytes, str(path))
 
-    if config:
-        findings = config.filter_findings(findings)
+    findings = config.filter_findings(findings)
 
     findings.sort(key=lambda f: (f.path, f.line, f.col))
     return findings, 1 if findings else 0
@@ -296,8 +303,10 @@ def run(args: list[str]) -> int:
             if low:
                 parts.append(f"{low} LOW")
             print(f"  {', '.join(parts)}")
-        else:
+        elif file_count > 0:
             print(f"PASS  {file_count} file(s) scanned. Zero findings.")
+        else:
+            print(f"FAIL  No supported files found to scan.")
 
         print()
         print("Bismillah ir-Rahman ir-Rahim")
@@ -306,7 +315,7 @@ def run(args: list[str]) -> int:
 
 
 def _print_usage() -> None:
-    print("furqan-lint v2.0 -- structural honesty checks")
+    print("furqan-lint v2.1.0 -- structural honesty checks")
     print()
     print("Usage:")
     print("  kun furqan lint [options] [path ...]")

@@ -37,49 +37,92 @@ def _check_open_without_with(tree: ast.Module, path: str) -> List[Finding]:
     findings: List[Finding] = []
     with_targets = set()
 
-    # Collect all open() calls that ARE inside a with statement
+    # Collect all open() calls that ARE inside a with/async with statement
     for node in ast.walk(tree):
-        if isinstance(node, ast.With):
+        if isinstance(node, (ast.With, ast.AsyncWith)):
             for item in node.items:
-                if isinstance(item.context_expr, ast.Call):
-                    call = item.context_expr
-                    if _is_open_call(call):
-                        with_targets.add(id(call))
+                ctx = item.context_expr
+                if isinstance(ctx, ast.Call):
+                    if _is_open_call(ctx):
+                        with_targets.add(id(ctx))
+                    # contextlib.closing(open(...))
+                    if _is_closing_call(ctx) and ctx.args:
+                        inner = ctx.args[0]
+                        if isinstance(inner, ast.Call) and _is_open_call(inner):
+                            with_targets.add(id(inner))
 
-    # Find all open() calls that are NOT in a with
+    # Also collect open() calls inside try blocks that have a finally with .close()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Try) and node.finalbody:
+            finally_text = ast.dump(ast.Module(body=node.finalbody, type_ignores=[]))
+            if "close" in finally_text:
+                # There's a .close() in the finally -- any open() in the try body is paired
+                for child in ast.walk(ast.Module(body=node.body, type_ignores=[])):
+                    if isinstance(child, ast.Call) and _is_open_call(child):
+                        with_targets.add(id(child))
+
+    # Collect open() calls inside ExitStack contexts
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call):
+            func = node.func
+            if isinstance(func, ast.Attribute) and func.attr in ("enter_context", "push"):
+                # ExitStack.enter_context(open(...))
+                if node.args:
+                    arg = node.args[0]
+                    if isinstance(arg, ast.Call) and _is_open_call(arg):
+                        with_targets.add(id(arg))
+
+    # Find all open() calls that are NOT paired with a close mechanism
     for node in ast.walk(tree):
         if isinstance(node, ast.Call) and _is_open_call(node):
             if id(node) not in with_targets:
-                # Check if the result is assigned (not just called and discarded)
                 findings.append(Finding(
                     rule="RC-001",
                     path=path,
                     line=node.lineno,
                     col=node.col_offset,
-                    message="open() called without context manager -- file handle may never close",
+                    message="open() without context manager, try/finally close, or ExitStack",
                     severity=Severity.HIGH,
                     fix=Fix.ENRICH,
                     detail="Use `with open(...) as f:` to guarantee the file handle closes. "
-                           "The ring must close: every opened resource needs a matching close.",
+                           "Alternatives: try/finally with explicit close(), or "
+                           "contextlib.ExitStack / contextlib.closing.",
                 ))
     return findings
 
 
 def _check_lock_without_with(tree: ast.Module, path: str) -> List[Finding]:
-    """RC-002: .acquire() called without context manager."""
+    """RC-002: .acquire() called outside a `with` block and no .release() in scope."""
     findings: List[Finding] = []
+    # Collect all acquire() calls that are inside a with statement
+    with_acquire_ids: set = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.With):
+            for child in ast.walk(ast.Module(body=node.body, type_ignores=[])):
+                # acquire() inside a with body is likely paired with the with
+                pass
+            for item in node.items:
+                # The with target itself might use the lock
+                for child in ast.walk(item.context_expr):
+                    if isinstance(child, ast.Call) and isinstance(child.func, ast.Attribute):
+                        if child.func.attr == "acquire":
+                            with_acquire_ids.add(id(child))
+
     for node in ast.walk(tree):
         if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute):
-            if node.func.attr == "acquire":
-                # Check if this acquire is inside a with statement
-                # Simple heuristic: if acquire() is called as a bare statement,
-                # it should be in a with or have a matching release
+            if node.func.attr == "acquire" and id(node) not in with_acquire_ids:
+                # Check if there's a matching .release() in the enclosing scope
+                scope = _find_enclosing_scope(node, tree)
+                if scope:
+                    scope_text = ast.dump(scope)
+                    if "release" in scope_text:
+                        continue  # Has a release -- possibly paired via try/finally
                 findings.append(Finding(
                     rule="RC-002",
                     path=path,
                     line=node.lineno,
                     col=node.col_offset,
-                    message=".acquire() called -- prefer `with lock:` to guarantee release",
+                    message=".acquire() without matching release or context manager",
                     severity=Severity.MEDIUM,
                     fix=Fix.RECALIBRATE,
                     detail="Lock acquire without guaranteed release is an open ring. "
@@ -173,24 +216,70 @@ def _check_tempfile_without_cleanup(tree: ast.Module, path: str) -> List[Finding
     return findings
 
 
+def _find_enclosing_scope(node: ast.AST, tree: ast.Module) -> ast.AST | None:
+    """Find the enclosing function/class body for a node."""
+    # Build parent map
+    parent_map: dict = {}
+    for parent in ast.walk(tree):
+        for child in ast.iter_child_nodes(parent):
+            parent_map[id(child)] = parent
+
+    current = parent_map.get(id(node))
+    while current:
+        if isinstance(current, (ast.FunctionDef, ast.AsyncFunctionDef, ast.Module)):
+            return current
+        current = parent_map.get(id(current))
+    return tree
+
+
 # ── Helpers ──
 
 def _is_open_call(node: ast.Call) -> bool:
-    """Check if a Call node is a call to open() or io.open()."""
+    """Check if a Call node is a call to the built-in open() or io.open().
+
+    Does NOT flag Image.open, webbrowser.open, or other .open() methods
+    that are not file-handle constructors.
+    """
+    # Built-in open()
     if isinstance(node.func, ast.Name) and node.func.id == "open":
         return True
+    # io.open() or builtins.open()
     if isinstance(node.func, ast.Attribute) and node.func.attr == "open":
+        obj = node.func.value
+        if isinstance(obj, ast.Name) and obj.id in ("io", "builtins", "codecs"):
+            return True
+        # Bare .open() on unknown object -- too many false positives
+        # (Image.open, webbrowser.open, zipfile.open, etc)
+        return False
+    return False
+
+
+def _is_closing_call(node: ast.Call) -> bool:
+    """Check if a Call node is contextlib.closing()."""
+    if isinstance(node.func, ast.Attribute) and node.func.attr == "closing":
+        return True
+    if isinstance(node.func, ast.Name) and node.func.id == "closing":
         return True
     return False
 
 
 def _is_connection_call(node: ast.Call) -> bool:
-    """Check if a Call node creates a socket or connection."""
+    """Check if a Call node creates a socket or network connection.
+
+    Only matches calls that are clearly socket/connection constructors,
+    not bare .connect() which could be a Django signal or any other API.
+    """
     if isinstance(node.func, ast.Attribute):
-        if node.func.attr in ("socket", "connect", "create_connection"):
+        # socket.socket(), socket.create_connection()
+        if node.func.attr in ("socket", "create_connection"):
+            if isinstance(node.func.value, ast.Name) and node.func.value.id == "socket":
+                return True
+        # http.client.HTTPConnection(), HTTPSConnection()
+        if node.func.attr in ("HTTPConnection", "HTTPSConnection"):
             return True
     if isinstance(node.func, ast.Name):
-        if node.func.id in ("socket", "create_connection"):
+        # Direct import: from socket import socket
+        if node.func.id in ("HTTPConnection", "HTTPSConnection"):
             return True
     return False
 

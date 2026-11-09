@@ -211,15 +211,20 @@ def _check_assert_validation(tree: ast.Module, path: str) -> List[Finding]:
 
 
 def _is_test_path(path: str) -> bool:
-    """Check if a file path is a test file."""
+    """Check if a file path is a test file.
+
+    Matches by path *components*, not substrings, to avoid false matches
+    like "app/contests/auth.py".
+    """
     parts = path.replace("\\", "/").split("/")
     basename = parts[-1] if parts else ""
+    dir_parts = parts[:-1] if len(parts) > 1 else []
     return (
         basename.startswith("test_")
         or basename.endswith("_test.py")
         or basename == "conftest.py"
-        or "tests/" in path + "/"
-        or "/test/" in path + "/"
+        or "tests" in dir_parts
+        or "test" in dir_parts
     )
 
 

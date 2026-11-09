@@ -10,10 +10,10 @@ Rules:
     SI-001  `Any` type annotation -- disables type checking at that boundary
     SI-002  `# type: ignore` without specific error code
     SI-003  `# noqa` without specific rule code
-    SI-004  TODO/FIXME/HACK/XXX older than 90 days (stale incomplete scan)
+    SI-004  TODO/FIXME/HACK/XXX comment -- acknowledged incomplete work
     SI-005  `**kwargs` passed through without validation or documentation
     SI-006  `assert` used for runtime validation (stripped in -O mode)
-    SI-007  `hasattr` on a class attribute -- hides AttributeError
+    SI-007  `hasattr` swallows AttributeError -- may hide real bugs
 """
 
 from __future__ import annotations
@@ -114,7 +114,7 @@ def _check_noqa_blanket(source: str, path: str) -> List[Finding]:
 
 
 def _check_stale_todo(source: str, path: str) -> List[Finding]:
-    """SI-004: TODO/FIXME/HACK/XXX comments."""
+    """SI-004: TODO/FIXME/HACK/XXX comments -- acknowledged incomplete work."""
     findings: List[Finding] = []
     pattern = re.compile(r"#\s*(TODO|FIXME|HACK|XXX)\b", re.IGNORECASE)
     for lineno, line in enumerate(source.splitlines(), 1):
@@ -182,35 +182,54 @@ def _check_kwargs_passthrough(tree: ast.Module, path: str) -> List[Finding]:
 
 
 def _check_assert_validation(tree: ast.Module, path: str) -> List[Finding]:
-    """SI-006: `assert` used for what looks like runtime validation."""
+    """SI-006: `assert` used outside test files -- stripped by `python -O`.
+
+    Test files are exempt: assert is the standard way to write test
+    assertions and will not be stripped in a test runner.
+    """
+    # Exempt test files
+    path_lower = path.lower().replace("\\", "/")
+    if (_is_test_path(path_lower)):
+        return []
+
     findings: List[Finding] = []
     for node in ast.walk(tree):
         if isinstance(node, ast.Assert):
-            # Heuristic: assert with isinstance, assert with comparison to input
-            test = node.test
-            is_isinstance = (isinstance(test, ast.Call) and
-                             isinstance(test.func, ast.Name) and
-                             test.func.id == "isinstance")
-            is_comparison = isinstance(test, ast.Compare)
-
-            if is_isinstance or is_comparison:
-                findings.append(Finding(
-                    rule="SI-006",
-                    path=path,
-                    line=node.lineno,
-                    col=node.col_offset,
-                    message="`assert` used for runtime validation -- stripped by `python -O`",
-                    severity=Severity.HIGH,
-                    fix=Fix.RECALIBRATE,
-                    detail="assert statements are removed when Python runs with -O or -OO. "
-                           "If this check is a runtime validation (not a development-only "
-                           "invariant), use `if not ...: raise ValueError(...)` instead.",
-                ))
+            findings.append(Finding(
+                rule="SI-006",
+                path=path,
+                line=node.lineno,
+                col=node.col_offset,
+                message="`assert` stripped by `python -O` -- use explicit raise for runtime checks",
+                severity=Severity.MEDIUM,
+                fix=Fix.RECALIBRATE,
+                detail="assert statements are removed when Python runs with -O or -OO. "
+                       "If this is a runtime validation (not a development-only invariant), "
+                       "use `if not ...: raise ValueError(...)` instead.",
+            ))
     return findings
 
 
+def _is_test_path(path: str) -> bool:
+    """Check if a file path is a test file.
+
+    Matches by path *components*, not substrings, to avoid false matches
+    like "app/contests/auth.py".
+    """
+    parts = path.replace("\\", "/").split("/")
+    basename = parts[-1] if parts else ""
+    dir_parts = parts[:-1] if len(parts) > 1 else []
+    return (
+        basename.startswith("test_")
+        or basename.endswith("_test.py")
+        or basename == "conftest.py"
+        or "tests" in dir_parts
+        or "test" in dir_parts
+    )
+
+
 def _check_hasattr_class(tree: ast.Module, path: str) -> List[Finding]:
-    """SI-007: hasattr() hides AttributeError, masking real bugs."""
+    """SI-007: hasattr() swallows AttributeError, potentially hiding real bugs."""
     findings: List[Finding] = []
     for node in ast.walk(tree):
         if (isinstance(node, ast.Call)

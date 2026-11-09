@@ -1,0 +1,995 @@
+[
+  {
+    "code": "286                 return dumped\n287         except Exception:\n288             # The model's serializers and validators run here on the caller, and some\n289             # may only work on a worker. If anything fails, the model is left as it is.\n290             pass\n291         return arg_value\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/app/base.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 287,
+    "line_range": [
+      287,
+      288,
+      289,
+      290
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "8 from functools import partial\n9 from subprocess import Popen\n10 from time import sleep\n",
+    "col_offset": 0,
+    "end_col_offset": 28,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/apps/multi.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with the subprocess module.",
+    "line_number": 9,
+    "line_range": [
+      9
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+    "test_id": "B404",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "232         maybe_call(on_spawn, self, argstr=' '.join(argstr), env=env)\n233         pipe = Popen(argstr, env=env)\n234         return self.handle_process_exit(\n",
+    "col_offset": 15,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/apps/multi.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "subprocess call - check for execution of untrusted input.",
+    "line_number": 233,
+    "line_range": [
+      233
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+    "test_id": "B603",
+    "test_name": "subprocess_without_shell_equals_true"
+  },
+  {
+    "code": "528     ])\n529     os.execv(sys.executable, [sys.executable] + sys.argv)\n530 \n",
+    "col_offset": 4,
+    "end_col_offset": 57,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/apps/worker.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Starting a process without a shell.",
+    "line_number": 529,
+    "line_range": [
+      529
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b606_start_process_with_no_shell.html",
+    "test_id": "B606",
+    "test_name": "start_process_with_no_shell"
+  },
+  {
+    "code": "555                             backend._call_task_errbacks(fake_request, original_exc, None)\n556                         except Exception:  # pylint: disable=broad-except\n557                             # continue on exception to be sure to iter to all the group tasks\n558                             pass\n559 \n",
+    "col_offset": 24,
+    "end_col_offset": 32,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/backends/base.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 556,
+    "line_range": [
+      556,
+      557,
+      558
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "2 import logging\n3 import pickle\n4 from contextlib import contextmanager\n",
+    "col_offset": 0,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/backends/database/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with pickle module.",
+    "line_number": 3,
+    "line_range": [
+      3
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "264                             data.update(stamps_info['stamps'])\n265                 except Exception:\n266                     pass\n267             return self.meta_from_decoded(data)\n",
+    "col_offset": 16,
+    "end_col_offset": 24,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/backends/database/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 265,
+    "line_range": [
+      265,
+      266
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "296             )\n297             return pickle.loads(payload)\n298 \n",
+    "col_offset": 19,
+    "end_col_offset": 40,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/backends/database/__init__.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+    "line_number": 297,
+    "line_range": [
+      297
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b301-pickle",
+    "test_id": "B301",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "74             self.set(key, b'test value')\n75             assert self.get(key) == b'test value'\n76             self.delete(key)\n",
+    "col_offset": 12,
+    "end_col_offset": 49,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/backends/filesystem.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 75,
+    "line_range": [
+      75
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "7 import os\n8 import shelve\n9 import socket\n",
+    "col_offset": 0,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with shelve module.",
+    "line_number": 8,
+    "line_range": [
+      8
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "15 from functools import total_ordering\n16 from pickle import UnpicklingError\n17 from threading import Event, Thread\n",
+    "col_offset": 0,
+    "end_col_offset": 34,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/beat.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with UnpicklingError module.",
+    "line_number": 16,
+    "line_range": [
+      16
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "144                 path = executable\n145             os.execv(path, [path] + argv)\n146             return EX_OK\n",
+    "col_offset": 12,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/bin/worker.py",
+    "issue_confidence": "MEDIUM",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Starting a process without a shell.",
+    "line_number": 145,
+    "line_range": [
+      145
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b606_start_process_with_no_shell.html",
+    "test_id": "B606",
+    "test_name": "start_process_with_no_shell"
+  },
+  {
+    "code": "24 from numbers import Integral\n25 from pickle import HIGHEST_PROTOCOL\n26 from struct import pack, unpack, unpack_from\n",
+    "col_offset": 0,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with HIGHEST_PROTOCOL module.",
+    "line_number": 25,
+    "line_range": [
+      25
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "708                     proc in waiting_to_start):\n709                 assert proc.outqR_fd in fileno_to_outq\n710                 assert fileno_to_outq[proc.outqR_fd] is proc\n",
+    "col_offset": 16,
+    "end_col_offset": 54,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 709,
+    "line_range": [
+      709
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "709                 assert proc.outqR_fd in fileno_to_outq\n710                 assert fileno_to_outq[proc.outqR_fd] is proc\n711                 assert proc.outqR_fd in hub.readers\n",
+    "col_offset": 16,
+    "end_col_offset": 60,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 710,
+    "line_range": [
+      710
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "710                 assert fileno_to_outq[proc.outqR_fd] is proc\n711                 assert proc.outqR_fd in hub.readers\n712                 error('Timed out waiting for UP message from %r', proc)\n",
+    "col_offset": 16,
+    "end_col_offset": 51,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 711,
+    "line_range": [
+      711
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "731 \n732             assert not isblocking(proc.outq._reader)\n733 \n",
+    "col_offset": 12,
+    "end_col_offset": 52,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 732,
+    "line_range": [
+      732
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1237         synq = None\n1238         assert isblocking(inq._reader)\n1239         assert not isblocking(inq._writer)\n",
+    "col_offset": 8,
+    "end_col_offset": 38,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1238,
+    "line_range": [
+      1238
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1238         assert isblocking(inq._reader)\n1239         assert not isblocking(inq._writer)\n1240         assert not isblocking(outq._reader)\n",
+    "col_offset": 8,
+    "end_col_offset": 42,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1239,
+    "line_range": [
+      1239
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1239         assert not isblocking(inq._writer)\n1240         assert not isblocking(outq._reader)\n1241         assert isblocking(outq._writer)\n",
+    "col_offset": 8,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1240,
+    "line_range": [
+      1240
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1240         assert not isblocking(outq._reader)\n1241         assert isblocking(outq._writer)\n1242         if self.synack:\n",
+    "col_offset": 8,
+    "end_col_offset": 39,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1241,
+    "line_range": [
+      1241
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1243             synq = _SimpleQueue(wnonblock=True)\n1244             assert isblocking(synq._reader)\n1245             assert not isblocking(synq._writer)\n",
+    "col_offset": 12,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1244,
+    "line_range": [
+      1244
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1244             assert isblocking(synq._reader)\n1245             assert not isblocking(synq._writer)\n1246         return inq, outq, synq\n",
+    "col_offset": 12,
+    "end_col_offset": 47,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1245,
+    "line_range": [
+      1245
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1256             return logger.warning('process with pid=%s already exited', pid)\n1257         assert proc.inqW_fd not in self._fileno_to_inq\n1258         assert proc.inqW_fd not in self._all_inqueues\n",
+    "col_offset": 8,
+    "end_col_offset": 54,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1257,
+    "line_range": [
+      1257
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1257         assert proc.inqW_fd not in self._fileno_to_inq\n1258         assert proc.inqW_fd not in self._all_inqueues\n1259         self._waiting_to_start.discard(proc)\n",
+    "col_offset": 8,
+    "end_col_offset": 53,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1258,
+    "line_range": [
+      1258
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1336         \"\"\"Mark new ownership for ``queues`` to update fileno indices.\"\"\"\n1337         assert queues in self._queues\n1338         b = len(self._queues)\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1337,
+    "line_range": [
+      1337
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1339         self._queues[queues] = proc\n1340         assert b == len(self._queues)\n1341 \n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1340,
+    "line_range": [
+      1340
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1419                 pass\n1420             assert len(self._queues) == before\n1421 \n",
+    "col_offset": 12,
+    "end_col_offset": 46,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1420,
+    "line_range": [
+      1420
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "1426         \"\"\"\n1427         assert not proc._is_alive()\n1428         self._waiting_to_start.discard(proc)\n",
+    "col_offset": 8,
+    "end_col_offset": 35,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/concurrency/asynpool.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 1427,
+    "line_range": [
+      1427
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "131                 with allow_join_result():\n132                     assert ping.delay().get(timeout=ping_task_timeout) == 'pong'\n133 \n",
+    "col_offset": 20,
+    "end_col_offset": 80,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/worker.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 132,
+    "line_range": [
+      132
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "155     if perform_ping_check:\n156         assert 'celery.ping' in app.tasks\n157     # Make sure we can connect to the broker\n",
+    "col_offset": 8,
+    "end_col_offset": 41,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/contrib/testing/worker.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 156,
+    "line_range": [
+      156
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "169                 return self.win.getkey().upper()\n170             except Exception:  # pylint: disable=broad-except\n171                 pass\n172 \n",
+    "col_offset": 12,
+    "end_col_offset": 20,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/events/cursesmon.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 170,
+    "line_range": [
+      170,
+      171
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "553         max_groups = os.sysconf('SC_NGROUPS_MAX')\n554     except Exception:  # pylint: disable=broad-except\n555         pass\n556     try:\n",
+    "col_offset": 4,
+    "end_col_offset": 12,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/platforms.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 554,
+    "line_range": [
+      554,
+      555
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "32         \"\"\"Serialize data structure into string.\"\"\"\n33         assert self._key is not None\n34         assert self._cert is not None\n",
+    "col_offset": 8,
+    "end_col_offset": 36,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/security/serialization.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 33,
+    "line_range": [
+      33
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "33         assert self._key is not None\n34         assert self._cert is not None\n35         with reraise_errors('Unable to serialize: {0!r}', (Exception,)):\n",
+    "col_offset": 8,
+    "end_col_offset": 37,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/security/serialization.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 34,
+    "line_range": [
+      34
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "49         \"\"\"Deserialize data structure from string.\"\"\"\n50         assert self._cert_store is not None\n51         with reraise_errors('Unable to deserialize: {0!r}', (Exception,)):\n",
+    "col_offset": 8,
+    "end_col_offset": 43,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/security/serialization.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 50,
+    "line_range": [
+      50
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "14     \"\"\"Convert string to hash object of cryptography library.\"\"\"\n15     assert digest is not None\n16     return getattr(hashes, digest.upper())()\n",
+    "col_offset": 4,
+    "end_col_offset": 29,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/security/utils.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 15,
+    "line_range": [
+      15
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "190     def _connect_signal(self, receiver, sender, weak, dispatch_uid):\n191         assert callable(receiver), 'Signal receivers must be callable'\n192         if not fun_accepts_kwargs(receiver):\n",
+    "col_offset": 8,
+    "end_col_offset": 70,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/utils/dispatch/signal.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 191,
+    "line_range": [
+      191
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "435     # Tasks are rarely, if ever, created at runtime - exec here is fine.\n436     exec(definition, namespace)\n437     result = namespace[name]\n",
+    "col_offset": 4,
+    "end_col_offset": 31,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/utils/functional.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 78,
+      "link": "https://cwe.mitre.org/data/definitions/78.html"
+    },
+    "issue_severity": "MEDIUM",
+    "issue_text": "Use of exec detected.",
+    "line_number": 436,
+    "line_range": [
+      436
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b102_exec_used.html",
+    "test_id": "B102",
+    "test_name": "exec_used"
+  },
+  {
+    "code": "13 try:\n14     import cPickle as pickle\n15 except ImportError:\n",
+    "col_offset": 4,
+    "end_col_offset": 28,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with cPickle module.",
+    "line_number": 14,
+    "line_range": [
+      14
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "15 except ImportError:\n16     import pickle\n17 \n",
+    "col_offset": 4,
+    "end_col_offset": 17,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with pickle module.",
+    "line_number": 16,
+    "line_range": [
+      16
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "62             loads(dumps(superexc))\n63         except Exception:  # pylint: disable=broad-except\n64             pass\n65         else:\n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 63,
+    "line_range": [
+      63,
+      64
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "164         pickle.loads(pickle.dumps(exc))\n165     except Exception:  # pylint: disable=broad-except\n166         pass\n167     else:\n",
+    "col_offset": 4,
+    "end_col_offset": 12,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/utils/serialization.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 165,
+    "line_range": [
+      165,
+      166
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "92                 sock.settimeout(timeout)\n93             except Exception:  # pylint: disable=broad-except\n94                 pass\n95     except Exception:  # pylint: disable=broad-except\n",
+    "col_offset": 12,
+    "end_col_offset": 20,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/utils/threads.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 93,
+    "line_range": [
+      93,
+      94
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "94                 pass\n95     except Exception:  # pylint: disable=broad-except\n96         pass\n97 \n",
+    "col_offset": 4,
+    "end_col_offset": 12,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/utils/threads.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 95,
+    "line_range": [
+      95,
+      96
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "554     if full_jitter:\n555         countdown = random.randrange(countdown + 1)\n556     # Adjust according to maximum wait time and account for negative values.\n",
+    "col_offset": 20,
+    "end_col_offset": 51,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/utils/time.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 330,
+      "link": "https://cwe.mitre.org/data/definitions/330.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "line_number": 555,
+    "line_range": [
+      555
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random",
+    "test_id": "B311",
+    "test_name": "blacklist"
+  },
+  {
+    "code": "83 \n84         assert self.keepalive, 'cannot scale down too fast.'\n85 \n",
+    "col_offset": 8,
+    "end_col_offset": 60,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/worker/autoscale.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+    "line_number": 84,
+    "line_range": [
+      84
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+    "test_id": "B101",
+    "test_name": "assert_used"
+  },
+  {
+    "code": "476             self.connection.collect(socket_timeout=COLLECT_SOCKET_TIMEOUT)\n477         except Exception:  # pylint: disable=broad-except\n478             pass\n479 \n",
+    "col_offset": 8,
+    "end_col_offset": 16,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/worker/consumer/consumer.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 703,
+      "link": "https://cwe.mitre.org/data/definitions/703.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Try, Except, Pass detected.",
+    "line_number": 477,
+    "line_range": [
+      477,
+      478
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html",
+    "test_id": "B110",
+    "test_name": "try_except_pass"
+  },
+  {
+    "code": "7 import platform\n8 import shelve\n9 import sys\n",
+    "col_offset": 0,
+    "end_col_offset": 13,
+    "filename": "/usr/local/lib/python3.13/site-packages/celery/worker/state.py",
+    "issue_confidence": "HIGH",
+    "issue_cwe": {
+      "id": 502,
+      "link": "https://cwe.mitre.org/data/definitions/502.html"
+    },
+    "issue_severity": "LOW",
+    "issue_text": "Consider possible security implications associated with shelve module.",
+    "line_number": 8,
+    "line_range": [
+      8
+    ],
+    "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle",
+    "test_id": "B403",
+    "test_name": "blacklist"
+  }
+]

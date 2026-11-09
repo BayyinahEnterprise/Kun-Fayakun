@@ -12,7 +12,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "furqan-lint"
-version = "2.0.0"
+version = "2.1.0"
 description = "Structural honesty linter -- catches what ruff and bandit miss, across six languages"
 readme = "README.md"
 license = "Apache-2.0"

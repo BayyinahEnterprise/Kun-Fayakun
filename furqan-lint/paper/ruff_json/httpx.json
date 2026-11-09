@@ -1,0 +1,1807 @@
+[
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 40,
+      "row": 18
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 18
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 18,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 47
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_api.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 47
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 47,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 132
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_api.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 132
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 132,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 288
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_api.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 288
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 288,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 329
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_api.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 329
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 329,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 370
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_api.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 370
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 370,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 235
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_auth.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 235
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 235,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 267
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_auth.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 267
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 267,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 267
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_auth.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 267
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 267,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 267
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_auth.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 267
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 267,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 28,
+      "row": 309
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_auth.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 309
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 309,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 348
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 348
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 348,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 779
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 779
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 779,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 836
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 836
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 836,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1016
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1016
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1016,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1130
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1130
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 1130,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1167
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1167
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 1167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1204
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1204
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 1204,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1493
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1493
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 1493,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1551
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1551
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 1551,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1732
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1732
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1732,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1845
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1845
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 1845,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1882
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1882
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 1882,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1919
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1919
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 1919,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 97
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_config.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 97
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 97,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 98
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_config.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 98
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 98,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 99
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_config.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 99
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 99,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 100
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_config.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 100
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 140
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_config.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 140
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 140,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 184
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_config.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 184
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 184,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 68,
+      "row": 127
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_content.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 127
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 127,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 26,
+      "row": 176
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_content.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 176
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 176,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 190
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_content.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 190
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 190,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 225
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_content.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 225
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 225,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 37,
+      "row": 33
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_decoders.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 33
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 33,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 181
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_decoders.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 181
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 181,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 22,
+      "row": 276
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_main.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 276
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 276,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 16,
+      "row": 277
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_main.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 277
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `validate_json`",
+    "name": "any-type",
+    "noqa_row": 277,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 22,
+      "row": 290
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_main.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 290
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 290,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 16,
+      "row": 291
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_main.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 291
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `validate_auth`",
+    "name": "any-type",
+    "noqa_row": 291,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 23,
+      "row": 296
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_main.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 296
+    },
+    "message": "Possible hardcoded password assigned to: \"password\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 296,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 22,
+      "row": 304
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_main.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 304
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 304,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 45,
+      "row": 486
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_main.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 486
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 486,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 48,
+      "row": 242
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 242
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 242,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 70,
+      "row": 242
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 60,
+      "row": 242
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get`",
+    "name": "any-type",
+    "noqa_row": 242,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 82,
+      "row": 274
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 68,
+      "row": 274
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 274,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 346
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 346
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 346,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 356
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 356
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 356,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 394
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 394
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 394,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 473
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 473
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 473,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 487
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 487
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 487,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 25,
+      "row": 524
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 524
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 524,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 40,
+      "row": 831
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 831
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 831,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 55,
+      "row": 831
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 831
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 831,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 82,
+      "row": 1108
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 68,
+      "row": 1108
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 1108,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 50,
+      "row": 1140
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 1140
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 1140,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 29,
+      "row": 1143
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1143
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 1143,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 1201
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1201
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1201,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 82,
+      "row": 1205
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_models.py",
+    "fix": null,
+    "location": {
+      "column": 68,
+      "row": 1205
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 1205,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 81,
+      "row": 143
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_multipart.py",
+    "fix": null,
+    "location": {
+      "column": 67,
+      "row": 143
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 143,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 55,
+      "row": 41
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_status_codes.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 41
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 41,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 103
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 103
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 103,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 152
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 152
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 159
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 159
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 159,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 181
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 181
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 181,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 182
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 182
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 182,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 183
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 183
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 183,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 234
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 234
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 234,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 252
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 252
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 252,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 378
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 378
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 396
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 396
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 396,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 138
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/wsgi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 138
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 138,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 139
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_transports/wsgi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 139
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 290
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urlparse.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 290
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 290,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 306
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urlparse.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 306
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 306,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 65,
+      "row": 77
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 77
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 77,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 327
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 327
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 327,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 57,
+      "row": 342
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 342
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 342,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 57,
+      "row": 345
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 345
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 345,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 371
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 371
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 371,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 75,
+      "row": 425
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 425
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 425,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 426
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 426
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 426,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 427
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 427
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 427,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 512
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 512
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 512,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 55,
+      "row": 512
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 512
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 512,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 77,
+      "row": 512
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 67,
+      "row": 512
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get`",
+    "name": "any-type",
+    "noqa_row": 512,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 537
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 537
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 537,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 552
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 552
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 552,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 42,
+      "row": 600
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 600
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 600,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 603
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 603
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 603,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 618
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_urls.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 618
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 618,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 44,
+      "row": 95
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_utils.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 95
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `stream`",
+    "name": "any-type",
+    "noqa_row": 95,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 225
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_utils.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 225
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 225,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 232
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_utils.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 232
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 232,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 240
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/httpx/_utils.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 240
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 240,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  }
+]

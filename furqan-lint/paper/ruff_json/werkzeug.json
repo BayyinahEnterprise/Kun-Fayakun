@@ -1,0 +1,6006 @@
+[
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 39
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 39
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 39,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 49,
+      "row": 59
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 59
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 59,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 47,
+      "row": 78
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 78
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 64,
+      "row": 78
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 78
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 145
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 145
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `instance`",
+    "name": "any-type",
+    "noqa_row": 145,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 38,
+      "row": 154
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 154
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `instance`",
+    "name": "any-type",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 48,
+      "row": 165
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 165
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 52,
+      "row": 173
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 173
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 173,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 37,
+      "row": 175
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 175
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 175,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 38,
+      "row": 177
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 177
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `instance`",
+    "name": "any-type",
+    "noqa_row": 177,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 41,
+      "row": 186
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_internal.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 186
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `instance`",
+    "name": "any-type",
+    "noqa_row": 186,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 67,
+      "row": 248
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "fix": null,
+    "location": {
+      "column": 53,
+      "row": 248
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 248,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 40,
+      "row": 275
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 275
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 275,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 314
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 314
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 314,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 53,
+      "row": 314
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 314
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 314,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 67,
+      "row": 370
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/_reloader.py",
+    "fix": null,
+    "location": {
+      "column": 53,
+      "row": 370
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 370,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 39
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 39
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getattr__`",
+    "name": "any-type",
+    "noqa_row": 39,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 27,
+      "row": 12
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/cache_control.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 12
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `empty`",
+    "name": "any-type",
+    "noqa_row": 12,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 11,
+      "row": 13
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/cache_control.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 13
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `cache_control_property`",
+    "name": "any-type",
+    "noqa_row": 13,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 99
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/cache_control.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 99
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `empty`",
+    "name": "any-type",
+    "noqa_row": 99,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 15,
+      "row": 100
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/cache_control.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 100
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_get_cache_value`",
+    "name": "any-type",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 120
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/cache_control.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 120
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 120,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 9
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/csp.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 9
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `csp_property`",
+    "name": "any-type",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 143
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 142
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 142,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 142
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 142
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 142,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 148
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/file_storage.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 148
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getattr__`",
+    "name": "any-type",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 41,
+      "row": 349
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 349
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 349,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 61,
+      "row": 349
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 349
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 349,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 48,
+      "row": 376
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 376
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 376,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 68,
+      "row": 376
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 376
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 376,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 41,
+      "row": 388
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 388
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 388,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 61,
+      "row": 388
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 388
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 388,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 449
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 449
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 449,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 49,
+      "row": 488
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 488
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 488,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 76,
+      "row": 520
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 520
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 520,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 35,
+      "row": 618
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 618
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 618,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 680
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/headers.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 680
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 680,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 19
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 19
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `self`",
+    "name": "any-type",
+    "noqa_row": 19,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 64,
+      "row": 39
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 39
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__reduce_ex__`",
+    "name": "any-type",
+    "noqa_row": 39,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 42
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 42
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 42,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 45
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 45
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 45,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 48
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 48
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 48,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 51
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 51
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 51,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 51,
+      "row": 51
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 51
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 51,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 54
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 54
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `item`",
+    "name": "any-type",
+    "noqa_row": 54,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 57
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 57
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `item`",
+    "name": "any-type",
+    "noqa_row": 57,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 60
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 60
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `iterable`",
+    "name": "any-type",
+    "noqa_row": 60,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 63
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 63
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `pos`",
+    "name": "any-type",
+    "noqa_row": 63,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 63
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 63
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 63,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 66
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 66
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `index`",
+    "name": "any-type",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 30,
+      "row": 72
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 72
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 53,
+      "row": 72
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 72
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `reverse`",
+    "name": "any-type",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 64,
+      "row": 105
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 105
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__reduce_ex__`",
+    "name": "any-type",
+    "noqa_row": 105,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 117
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 117
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 117,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 117
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 117
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 117,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 120
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 120
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `arg`",
+    "name": "any-type",
+    "noqa_row": 120,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 120
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 120
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 120,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 35,
+      "row": 123
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 123
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 123,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 29,
+      "row": 126
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 126
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 126,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 126
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 126
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 126,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 132
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 132
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 132,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 51,
+      "row": 132
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 132
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 132,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 135
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 135
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 64,
+      "row": 150
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 150
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__reduce_ex__`",
+    "name": "any-type",
+    "noqa_row": 150,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 29,
+      "row": 156
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 156
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 156
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 156
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 162
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 162
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 162,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 165
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 165
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 165
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 165
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `new_list`",
+    "name": "any-type",
+    "noqa_row": 165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 40,
+      "row": 168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 168
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 61,
+      "row": 168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 168
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default_list`",
+    "name": "any-type",
+    "noqa_row": 168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 185
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 185
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 185,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 54,
+      "row": 185
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 185
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 185,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 188
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 188
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 188,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 51,
+      "row": 188
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 188
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 188,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 29,
+      "row": 191
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 191
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 191,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 191
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 191
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 191,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 63,
+      "row": 191
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 191
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 191,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 194
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 194
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 194,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 48,
+      "row": 194
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 194
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `values`",
+    "name": "any-type",
+    "noqa_row": 194,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 29,
+      "row": 197
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 197
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 197,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 197
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 197
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 197,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 63,
+      "row": 197
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 197
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 197,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 200
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 200
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 200,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 200
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 200
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 200,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 70,
+      "row": 200
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 200
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 200,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 203
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 203
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 203,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 206
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 206
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `arg`",
+    "name": "any-type",
+    "noqa_row": 206,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 206
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 206
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 206,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 209
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 209
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `arg`",
+    "name": "any-type",
+    "noqa_row": 209,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 209
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 209
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 209,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 35,
+      "row": 212
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 212
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 212,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 215
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 215
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `pos`",
+    "name": "any-type",
+    "noqa_row": 215,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 215
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 215
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 215,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 29,
+      "row": 218
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 218
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 218
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 218
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 224
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 224
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 224,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 224
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 224
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 224,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 40,
+      "row": 227
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 227
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 227,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 56,
+      "row": 227
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 227
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 227,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 61,
+      "row": 233
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 233
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 233,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 78,
+      "row": 233
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 233
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 233,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 15,
+      "row": 234
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/mixins.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 234
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `wrapper`",
+    "name": "any-type",
+    "noqa_row": 234,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 178
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/range.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 178
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 212
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 212
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getstate__`",
+    "name": "any-type",
+    "noqa_row": 212,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 40,
+      "row": 215
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 215
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 215,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 35,
+      "row": 396
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 396
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `memo`",
+    "name": "any-type",
+    "noqa_row": 396,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 542
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 542
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `memo`",
+    "name": "any-type",
+    "noqa_row": 542,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 64,
+      "row": 650
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 650
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__reduce_ex__`",
+    "name": "any-type",
+    "noqa_row": 650,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 653
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 653
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getstate__`",
+    "name": "any-type",
+    "noqa_row": 653,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 41,
+      "row": 656
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 656
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `values`",
+    "name": "any-type",
+    "noqa_row": 656,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 40,
+      "row": 741
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 741
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `key`",
+    "name": "any-type",
+    "noqa_row": 741,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 61,
+      "row": 741
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 741
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default_list`",
+    "name": "any-type",
+    "noqa_row": 741,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 64,
+      "row": 839
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 839
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__reduce_ex__`",
+    "name": "any-type",
+    "noqa_row": 839,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 847
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 847
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `keys`",
+    "name": "any-type",
+    "noqa_row": 847,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 48,
+      "row": 847
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 847
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 847,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 1218
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/datastructures/structures.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 1218
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getattr__`",
+    "name": "any-type",
+    "noqa_row": 1218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 24,
+      "row": 45
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 45
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 45,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 138
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 138
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `eval`",
+    "name": "any-type",
+    "noqa_row": 138,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 21,
+      "row": 196
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 196
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 196,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 69,
+      "row": 317
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 317
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 69,
+      "row": 333
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 333
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 333,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 351
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 351
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 49,
+      "row": 353
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 353
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 353,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 371
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 371
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 371,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 87,
+      "row": 553
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 553
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 553,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 75,
+      "row": 555
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 61,
+      "row": 555
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 555,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 66,
+      "row": 557
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 557
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 557,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 73,
+      "row": 559
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 559
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 559,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 85,
+      "row": 567
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 71,
+      "row": 567
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 567,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 69,
+      "row": 573
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 573
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 573,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 53,
+      "row": 83
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 83
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 83,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 91
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 91
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 91,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 51,
+      "row": 97
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 97
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getattribute__`",
+    "name": "any-type",
+    "noqa_row": 97,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 53,
+      "row": 159
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 159
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 159,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 78,
+      "row": 159
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "fix": null,
+    "location": {
+      "column": 64,
+      "row": 159
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 159,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 178
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 178
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 70,
+      "row": 186
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 186
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 186,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 70,
+      "row": 193
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/console.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 193
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 42,
+      "row": 52
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 52
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 52,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 63
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 63
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `topic`",
+    "name": "any-type",
+    "noqa_row": 63,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 83,
+      "row": 65
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 69,
+      "row": 65
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 65,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 48,
+      "row": 70
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 70
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 70,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 86,
+      "row": 78
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 72,
+      "row": 78
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 190
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 190
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `obj`",
+    "name": "any-type",
+    "noqa_row": 190,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 194
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 194
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `obj`",
+    "name": "any-type",
+    "noqa_row": 194,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 220
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 220
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 220,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 237
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 237
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 237,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 261
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 260
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 260,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 260
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/repr.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 260
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 260,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 370
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/tbtools.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 370
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 370,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 391
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/debug/tbtools.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 391
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `eval`",
+    "name": "any-type",
+    "noqa_row": 391,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 81,
+      "row": 94
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 67,
+      "row": 94
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 94,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 63,
+      "row": 214
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 214
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 214,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 80,
+      "row": 214
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 75,
+      "row": 214
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 214,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 55,
+      "row": 877
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 877
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 877,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 72,
+      "row": 877
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 67,
+      "row": 877
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 877,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 53,
+      "row": 890
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 890
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 890,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 70,
+      "row": 890
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 890
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 890,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 48,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/formparser.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 29
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 137
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 137
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 137,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 16,
+      "row": 1077
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 1077
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 1077,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 1444
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 1444
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1444,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 1444
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 1444
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1444,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 1444
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 1444
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1444,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 49,
+      "row": 1498
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 1498
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 1498,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 40,
+      "row": 1499
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/http.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 1499
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 1499,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 82
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 82
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getattr__`",
+    "name": "any-type",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 90
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 90
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 90,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 277
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 277
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `class_value`",
+    "name": "any-type",
+    "noqa_row": 277,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 56,
+      "row": 286
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 286
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `obj`",
+    "name": "any-type",
+    "noqa_row": 286,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 65,
+      "row": 288
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 288
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 288,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 56,
+      "row": 294
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 294
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `obj`",
+    "name": "any-type",
+    "noqa_row": 294,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 87,
+      "row": 310
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 82,
+      "row": 310
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__get__`",
+    "name": "any-type",
+    "noqa_row": 310,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 56,
+      "row": 341
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 341
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 341,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 73,
+      "row": 341
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 68,
+      "row": 341
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 341,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 15,
+      "row": 342
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 342
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__call__`",
+    "name": "any-type",
+    "noqa_row": 342,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 59,
+      "row": 365
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 365
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `obj`",
+    "name": "any-type",
+    "noqa_row": 365,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 366
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 366
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `self`",
+    "name": "any-type",
+    "noqa_row": 366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 47,
+      "row": 366
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 366
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 47,
+      "row": 367
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 367
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 367,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 64,
+      "row": 370
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 370
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 370,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 378
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 378
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `obj`",
+    "name": "any-type",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 38,
+      "row": 378
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 378
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 48,
+      "row": 378
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/local.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 378
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `r_op`",
+    "name": "any-type",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 54
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 54
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 54,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 71
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 71
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 224
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 223
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 223,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 223
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 223
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 223,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 386
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 386
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 386,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 53,
+      "row": 386
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 386
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 386,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 25,
+      "row": 410
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 410
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 410,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 42,
+      "row": 410
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/lint.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 410
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 410,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 85,
+      "row": 113
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/profiler.py",
+    "fix": null,
+    "location": {
+      "column": 71,
+      "row": 113
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 113,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 86,
+      "row": 250
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "fix": null,
+    "location": {
+      "column": 72,
+      "row": 250
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 250,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 75,
+      "row": 253
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "fix": null,
+    "location": {
+      "column": 61,
+      "row": 253
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 253,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 99,
+      "row": 261
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/middleware/shared_data.py",
+    "fix": null,
+    "location": {
+      "column": 85,
+      "row": 261
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 261,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 47,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 29
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 37
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 37
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 63,
+      "row": 37
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 37
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 40
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 40
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `to_python`",
+    "name": "any-type",
+    "noqa_row": 40,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 43
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 43
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 104
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 104
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 104,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 152
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 152
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `to_python`",
+    "name": "any-type",
+    "noqa_row": 152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 167
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 167
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 79,
+      "row": 232
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/converters.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 232
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 232,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 78,
+      "row": 62
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 73,
+      "row": 62
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `endpoint`",
+    "name": "any-type",
+    "noqa_row": 62,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 75
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 75
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `endpoint`",
+    "name": "any-type",
+    "noqa_row": 75,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 134
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 134
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `endpoint`",
+    "name": "any-type",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 48,
+      "row": 158
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 158
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `endpoint`",
+    "name": "any-type",
+    "noqa_row": 158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 51,
+      "row": 691
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 691
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 691,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 729
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 729
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 729,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 58,
+      "row": 737
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 737
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 737,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 68,
+      "row": 738
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 738
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 738,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 773
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 773
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `endpoint`",
+    "name": "any-type",
+    "noqa_row": 773,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 784
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 784
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 784,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 789
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 789
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `endpoint`",
+    "name": "any-type",
+    "noqa_row": 789,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 830
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/map.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 830
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `endpoint`",
+    "name": "any-type",
+    "noqa_row": 830,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 253
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 253
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 253,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 53,
+      "row": 253
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 253
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 253,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 465
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 465
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `endpoint`",
+    "name": "any-type",
+    "noqa_row": 465,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 45,
+      "row": 480
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 480
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 480,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 700
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 700
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 700,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 42,
+      "row": 737
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 737
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 737,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 36,
+      "row": 911
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/routing/rules.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 911
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 911,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 152
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/request.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 152
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 45,
+      "row": 245
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/request.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 245
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 245,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 34,
+      "row": 337
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/sansio/response.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 337
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 337,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 50
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 50
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getattr__`",
+    "name": "any-type",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 38,
+      "row": 56
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 56
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 56,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 40,
+      "row": 73
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 73
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 35,
+      "row": 80
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 80
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 80,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 63,
+      "row": 121
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 121
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 121,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 53,
+      "row": 168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 168
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 265
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 265
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 265,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 266
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 266
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 266,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 306
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 306
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 306,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 76,
+      "row": 320
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 62,
+      "row": 320
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 320,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 392
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 391
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 391,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 391
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 391
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 391,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 418
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 418
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getattr__`",
+    "name": "any-type",
+    "noqa_row": 418,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 63,
+      "row": 428
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 428
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 428,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 473
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 473
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 473,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 476
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 476
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 476,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 56,
+      "row": 479
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 479
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 479,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 37,
+      "row": 683
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 683
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 683,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 50,
+      "row": 701
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 701
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 701,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 56,
+      "row": 818
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 818
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 818,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 29,
+      "row": 830
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 830
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `request`",
+    "name": "any-type",
+    "noqa_row": 830,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S104",
+    "end_location": {
+      "column": 39,
+      "row": 852
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 852
+    },
+    "message": "Possible binding to all interfaces",
+    "name": "hardcoded-bind-all-interfaces",
+    "noqa_row": 852,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-bind-all-interfaces"
+  },
+  {
+    "cell": null,
+    "code": "S104",
+    "end_location": {
+      "column": 42,
+      "row": 855
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/serving.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 855
+    },
+    "message": "Possible binding to all interfaces",
+    "name": "hardcoded-bind-all-interfaces",
+    "noqa_row": 855,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-bind-all-interfaces"
+  },
+  {
+    "cell": null,
+    "code": "S311",
+    "end_location": {
+      "column": 71,
+      "row": 70
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 70
+    },
+    "message": "Standard pseudo-random generators are not suitable for cryptographic purposes",
+    "name": "suspicious-non-cryptographic-random-usage",
+    "noqa_row": 70,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 72,
+      "row": 91
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 91
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 91,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 68,
+      "row": 401
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 401
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 401,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 34,
+      "row": 550
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 550
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 550,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 651
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 650
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 650,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 650
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 650
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 650,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 668
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 667
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 667,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 667
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 667
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 667,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 861
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 861
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 861,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 1064
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 1064
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1064,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 1067
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1067
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 1067,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 1163
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 1163
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 44,
+      "row": 1163
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 1163
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kw`",
+    "name": "any-type",
+    "noqa_row": 1163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 1168
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 1168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 1168
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kw`",
+    "name": "any-type",
+    "noqa_row": 1168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 1173
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 1173
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1173,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 44,
+      "row": 1173
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 1173
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kw`",
+    "name": "any-type",
+    "noqa_row": 1173,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 1178
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1178
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 47,
+      "row": 1178
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 1178
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kw`",
+    "name": "any-type",
+    "noqa_row": 1178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 1183
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 1183
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1183,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 1183
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 1183
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kw`",
+    "name": "any-type",
+    "noqa_row": 1183,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 35,
+      "row": 1188
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 1188
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1188,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 48,
+      "row": 1188
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 1188
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kw`",
+    "name": "any-type",
+    "noqa_row": 1188,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1193
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 1193
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 1193
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 1193
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kw`",
+    "name": "any-type",
+    "noqa_row": 1193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 1198
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 1198
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1198,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 1198
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 1198
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kw`",
+    "name": "any-type",
+    "noqa_row": 1198,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 1207
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 1207
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 1207,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 49,
+      "row": 1207
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 1207
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 1207,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 72,
+      "row": 1256
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 1256
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 1256,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 47,
+      "row": 1298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 1298
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 1298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 59,
+      "row": 1347
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 1347
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 1347,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 1348
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/test.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1348
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 1348,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 68,
+      "row": 22
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/urls.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 22
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 22,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 38,
+      "row": 23
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/urls.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 23
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 23,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 77,
+      "row": 88
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 88
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 88,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 40,
+      "row": 90
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 90
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 90,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 51,
+      "row": 100
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 100
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 52,
+      "row": 473
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 473
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 473,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 57,
+      "row": 489
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 489
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 489,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 49,
+      "row": 491
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 491
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 491,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 59,
+      "row": 506
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 506
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 506,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 20,
+      "row": 535
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 535
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 535,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 67,
+      "row": 573
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/utils.py",
+    "fix": null,
+    "location": {
+      "column": 62,
+      "row": 573
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `import_string`",
+    "name": "any-type",
+    "noqa_row": 573,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 38,
+      "row": 148
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 148
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 55,
+      "row": 148
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 148
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 201
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 201
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 201,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 73,
+      "row": 327
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 327
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 327,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 557
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 557
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 557,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 15,
+      "row": 581
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 581
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get_json`",
+    "name": "any-type",
+    "noqa_row": 581,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 22,
+      "row": 586
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 586
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get_json`",
+    "name": "any-type",
+    "noqa_row": 586,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 68,
+      "row": 643
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/request.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 643
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `on_json_loading_failed`",
+    "name": "any-type",
+    "noqa_row": 643,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 68,
+      "row": 326
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 326
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 326,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 47,
+      "row": 380
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 380
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 380,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 65,
+      "row": 410
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 410
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 410,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 49,
+      "row": 542
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 542
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 542,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 35,
+      "row": 587
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 587
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 587,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 83,
+      "row": 596
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "fix": null,
+    "location": {
+      "column": 78,
+      "row": 596
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get_json`",
+    "name": "any-type",
+    "noqa_row": 596,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 78,
+      "row": 599
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "fix": null,
+    "location": {
+      "column": 66,
+      "row": 599
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get_json`",
+    "name": "any-type",
+    "noqa_row": 599,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 88,
+      "row": 637
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "fix": null,
+    "location": {
+      "column": 74,
+      "row": 637
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 637,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 61,
+      "row": 810
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wrappers/response.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 810
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 810,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 74,
+      "row": 297
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "fix": null,
+    "location": {
+      "column": 60,
+      "row": 297
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 297,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 335
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 335
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 335,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 64,
+      "row": 404
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 404
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 404,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 68,
+      "row": 405
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/werkzeug/wsgi.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 405
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 405,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  }
+]

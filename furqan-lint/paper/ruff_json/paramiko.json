@@ -1,0 +1,6633 @@
+[
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 172
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/_winapi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 172
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 172,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 398
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/_winapi.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 398
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 398,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 60
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/agent.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 60
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 60,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 60
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/agent.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 60
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 60,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 18,
+      "row": 149
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/agent.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 149
+    },
+    "message": "Invalid TODO tag: `XXX`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 149,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 18,
+      "row": 149
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/agent.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 149
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 149,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 18,
+      "row": 149
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/agent.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 149
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 149,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 231
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/agent.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 231
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 231,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 224
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 224
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 224,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 224
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 224
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 224,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 310
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 310
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 310,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 310
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 310
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 310,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 310
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 310
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 310,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 472
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 472
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 472,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 472
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 472
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 472,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 472
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 472
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 472,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 474
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 474
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 474,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 474
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 474
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 474,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 474
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 474
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 474,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 477
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 477
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 477,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 477
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 477
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 477,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 477
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 477
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 477,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 485
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 485
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 485,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 539
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 539
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 539,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 539
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 539
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 539,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 612
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 612
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 612,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 612
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 612
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 612,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 617
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 617
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 617,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 617
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 617
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 617,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 617
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 617
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 617,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 623
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 623
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 623,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 623
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 623
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 623,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 693
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 693
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 693,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 693
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 693
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 693,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 705
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 705
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 705,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 705
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 705
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 705,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 705
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_handler.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 705
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 705,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 28
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 28
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 28
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 28
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 28
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 28
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 79
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 79
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 79,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 79
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 79
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 79,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 79
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 79
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 79,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 84
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 84
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 84,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 84
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 84
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 84,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 86
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 86
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 86,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 86
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 86
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 86,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 118
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 118
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 118
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 118
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 118
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 118
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 154
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 154
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 154
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 154
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 154
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 154
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 161
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 161
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 161,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 161
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 161
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 161,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 161
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 161
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 161,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 163
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 163
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 163
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 163
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 163
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 163
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 168
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 168
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 168
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 208
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 208
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 208,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 208
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 208
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 208,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 208
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 208
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 208,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 209
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 209
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 209,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 209
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 209
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 209,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 209
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 209
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 209,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 215
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 215
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 215,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 215
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 215
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 215,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 271
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 271
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 271
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 271
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 271
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 271
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 275
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 275
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 275,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 275
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 275
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 275,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 275
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 275
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 275,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 281
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 281
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 281,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 281
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 281
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 281,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 281
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 281
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 281,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 285
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 285
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 285,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 287
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 287
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 287
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 287
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 287
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 287
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 307
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 307
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 307,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 307
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 307
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 307,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 307
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/auth_strategy.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 307
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 307,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 20,
+      "row": 71
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ber.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 71
+    },
+    "message": "Invalid TODO tag: `FIXME`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 20,
+      "row": 71
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ber.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 71
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 20,
+      "row": 71
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ber.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 71
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX001",
+    "end_location": {
+      "column": 20,
+      "row": 71
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ber.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 71
+    },
+    "message": "Line contains FIXME, consider resolving the issue",
+    "name": "line-contains-fixme",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-fixme"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 139
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/channel.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 139
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 140
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/channel.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 139
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 401
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/channel.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 401
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 401,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1218
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/channel.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1218
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 31,
+      "row": 362
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 362
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 362,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 33,
+      "row": 363
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 362
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 362,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 413
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 413
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 413,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 413
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 413
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 413,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 413
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 413
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 413,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 416
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 416
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 416,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 416
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 416
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 416,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 416
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 416
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 416,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 420
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 420
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 420,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 420
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 420
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 420,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 420
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 420
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 420,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 422
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 422
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 422,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 422
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 422
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 422,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 422
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 422
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 422,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 424
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 424
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 424,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 424
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 424
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 424,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 424
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 424
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 424,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 429
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 429
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 429,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 429
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 429
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 429,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 429
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 429
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 429,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 27,
+      "row": 436
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 436
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 436,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 27,
+      "row": 436
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 436
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 436,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 27,
+      "row": 436
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 436
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 436,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 452
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 452
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 452,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 452
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 452
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 452,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 452
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 452
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 452,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 627
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 627
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 627,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 627
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 627
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 627,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 627
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 627
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 627,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 688
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 688
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 688,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 688
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 688
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 688,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 31,
+      "row": 739
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 739
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 739,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 31,
+      "row": 739
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 739
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 739,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 31,
+      "row": 739
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/client.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 739
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 739,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 31
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/common.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 31
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 36
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/common.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 36
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 58
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 58
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 58
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 58
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 58
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 58
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 27,
+      "row": 151
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 151
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 27,
+      "row": 151
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 151
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 300
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 300
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 300
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 300
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 300
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 300
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 305
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 305
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 305
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 305
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 305
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 305
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 312
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 312
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 312,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 312
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 312
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 312,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 312
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 312
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 312,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 447
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 447
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 447,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 447
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 447
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 447,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 447
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 447
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 447,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 448
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 448
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 448,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 448
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 448
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 448,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 448
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 448
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 448,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 23,
+      "row": 449
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 449
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 449,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 452
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 452
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 452,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 452
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 452
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 452,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 452
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 452
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 452,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 460
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 460
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 460,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 460
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 460
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 460,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 460
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 460
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 460,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 470
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 470
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 470,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 470
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 470
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 470,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 470
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/config.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 470
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 470,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 119
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ecdsakey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 119
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 119,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 119
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ecdsakey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 119
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 119,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 178
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ecdsakey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 178
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 178
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ecdsakey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 178
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 308
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ecdsakey.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 308
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 308,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 152
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ed25519key.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 152
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 179
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ed25519key.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 179
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 179,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 179
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ed25519key.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 179
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 179,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 35,
+      "row": 294
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 294
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 294,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 299
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 299
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 299,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 33,
+      "row": 299
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 299
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 299,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 351
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 351
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 351
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 351
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 351
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 351
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 362
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 362
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 362,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 362
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/hostkeys.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 362
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 362,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 66
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 66
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 66
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 66
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 165
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 165
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 165
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 165
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 175
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 175
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 175,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 175
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 175
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 175,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 271
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 271
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 271
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 271
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 271
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 271
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 305
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 305
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 305
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 305
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 305
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/message.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 305
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 365
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/packet.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 365
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 365,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 115
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 115
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 115,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 115
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 115
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 115,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 115
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 115
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 115,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 203
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 203
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 203,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 203
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 203
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 203,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 203
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 203
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 203,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 207
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 207
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 207,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 207
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 207
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 207,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 207
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 207
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 207,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 273
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 273
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 273,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 273
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 273
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 273,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 275
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 275
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 275,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 275
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 275
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 275,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 297
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 297
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 297,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 297
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 297
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 297,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 297
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 297
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 297,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 298
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 298
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 298
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 301
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 301
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 301,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 301
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 301
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 301,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 301
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 301
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 301,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 310
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 310
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 310,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 310
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 310
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 310,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 351
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 351
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 351
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 351
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 351
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 351
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 369
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 369
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 369,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 369
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 369
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 369,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 19,
+      "row": 390
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 390
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `md5`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 390,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 639
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 639
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 639,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 792
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 792
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 792,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 885
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 885
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 885,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 885
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 885
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 885,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 885
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/pkey.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 885
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 885,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 23,
+      "row": 121
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/primes.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 121
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 121,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 40,
+      "row": 62
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/proxy.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 62
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 62,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 117
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 117
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 117,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 117
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 117
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 117,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 226
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/rsakey.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 226
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 226,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 612
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/server.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 612
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 612,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 622
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/server.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 622
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 622,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 623
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/server.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 622
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 622,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 119
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 119
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 119,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 119
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 119
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 119,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 119
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 119
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 119,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 226
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_attr.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 226
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 226,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 226
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_attr.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 226
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 226,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 226
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_attr.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 226
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 226,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 672
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_client.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 672
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 672,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 672
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_client.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 672
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 672,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 672
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_client.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 672
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 672,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 534
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_file.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 534
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 534,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 572
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_file.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 572
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 572,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 82
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 82
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 82
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 82
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 82
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 82
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 145
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 145
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 145,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 153
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 153
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 23,
+      "row": 159
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 159
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 159,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 160
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 159
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 159,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 306
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 306
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 306,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 306
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 306
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 306,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 306
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/sftp_server.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 306
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 306,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 61
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 61
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 61,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 61
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 61
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 61,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 63
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 63
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 63,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 63
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 63
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 63,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 92
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 92
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 92,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 92
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 92
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 92,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 150
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 150
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 150,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 150
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 150
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 150,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 154
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 154
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 154
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 154
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 154
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/ssh_exception.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 154
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 300
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 300
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 300
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 300
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 300
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 300
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 302
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 302
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 302,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 302
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 302
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 302,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 302
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 302
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 302,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 303
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 303
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 303,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 303
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 303
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 303,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 303
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 303
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 303,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 446
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 446
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 446,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 446
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 446
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 446,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 446
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 446
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 446,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 1314
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1314
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1314,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 1314
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1314
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1314,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 1314
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1314
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1314,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 1316
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1316
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1316,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 1316
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1316
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1316,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 1316
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1316
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1316,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 1317
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1317
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 1317
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1317
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 1317
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1317
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 1318
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1318
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1318,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 1318
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1318
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1318,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 1318
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1318
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1318,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 1784
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 1784
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1784,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 1784
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 1784
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1784,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 1858
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1858
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1858,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 1858
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1858
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1858,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 1858
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1858
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1858,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 1919
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1919
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1919,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 1919
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1919
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1919,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 1919
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1919
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1919,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 2161
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 2161
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 2161,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 2183
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2183
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 2183,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 2230
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 2230
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 2230,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 27,
+      "row": 2287
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 2287
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 2287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 27,
+      "row": 2287
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 2287
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 2287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 27,
+      "row": 2287
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 2287
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 2287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 27,
+      "row": 2293
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 2293
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 2293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 27,
+      "row": 2293
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 2293
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 2293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 27,
+      "row": 2293
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 2293
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 2293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 2374
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2374
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 2374,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 2374
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2374
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 2374,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 2374
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2374
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 2374,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 2439
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2439
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 2439,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 2439
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2439
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 2439,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 2439
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2439
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 2439,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 2440
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2440
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 2440,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 2440
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2440
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 2440,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 2440
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2440
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 2440,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 3035
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 3035
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3035,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 3035
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 3035
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3035,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 3098
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3098
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 3098,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 3098
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3098
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3098,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 3098
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3098
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3098,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 3101
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3101
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 3101,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 3101
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3101
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3101,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 3101
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3101
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3101,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 3103
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3103
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 3103,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 3103
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3103
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3103,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 3103
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3103
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3103,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 3199
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 3199
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 3199
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 3199
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 3216
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 3216
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 3216,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 3216
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 3216
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3216,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 3216
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 3216
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3216,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 3234
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 3234
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 3234,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 3234
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 3234
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3234,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 3234
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 3234
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3234,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 3252
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3252
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3252,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 3252
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3252
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3252,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 3258
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3258
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3258,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 3258
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3258
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3258,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 3287
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3287
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 3287
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3287
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 3293
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3293
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 3293
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3293
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 3301
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3301
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 3301,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 3301
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/transport.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 3301
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 3301,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 317
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 317
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 317
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 317
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 317
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 317
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 328
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 328
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 328,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 328
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 328
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 328,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 328
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/paramiko/util.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 328
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 328,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  }
+]

@@ -1,0 +1,1522 @@
+[
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 66
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 66
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 76
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 76
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 76,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 78
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 78
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 85
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 85
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 85,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 90
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 90
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 90,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 46
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/_internal_utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 46
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 24,
+      "row": 55
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 55
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 24,
+      "row": 55
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 55
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 24,
+      "row": 55
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 55
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 24,
+      "row": 56
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 56
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 56,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 24,
+      "row": 56
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 56
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 56,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 24,
+      "row": 56
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/_types.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 56
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 56,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 66
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 66
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 66
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 66
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 27,
+      "row": 244
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 244
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**pool_kwargs`",
+    "name": "any-type",
+    "noqa_row": 244,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 64,
+      "row": 269
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 61,
+      "row": 269
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**proxy_kwargs`",
+    "name": "any-type",
+    "noqa_row": 269,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 72,
+      "row": 269
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 69,
+      "row": 269
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `proxy_manager_for`",
+    "name": "any-type",
+    "noqa_row": 269,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 308
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 308
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `conn`",
+    "name": "any-type",
+    "noqa_row": 308,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 61,
+      "row": 365
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 365
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `resp`",
+    "name": "any-type",
+    "noqa_row": 365,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 375
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 375
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 375,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 481
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 481
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 481,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 581
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 581
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 581,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 66,
+      "row": 599
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 599
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 599,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 659
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 659
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 659,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 715
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 715
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 715,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 715
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/adapters.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 715
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 715,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 108
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 108
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 108,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 14,
+      "row": 213
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 213
+    },
+    "message": "Invalid TODO tag: `XXX`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 213,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 14,
+      "row": 213
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 213
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 213,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 14,
+      "row": 213
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 213
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 213,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 18,
+      "row": 247
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 247
+    },
+    "message": "Invalid TODO tag: `XXX`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 247,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 18,
+      "row": 247
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 247
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 247,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 18,
+      "row": 247
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 247
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 247,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 14,
+      "row": 252
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 252
+    },
+    "message": "Invalid TODO tag: `XXX`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 252,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 14,
+      "row": 252
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 252
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 252,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 14,
+      "row": 252
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 252
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 252,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 57,
+      "row": 268
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 268
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 268,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 273
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 273
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 273,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 353
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/auth.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 353
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `other`",
+    "name": "any-type",
+    "noqa_row": 353,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 46
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 46
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 121
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 121
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `headers`",
+    "name": "any-type",
+    "noqa_row": 121,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 26,
+      "row": 128
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 128
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `info`",
+    "name": "any-type",
+    "noqa_row": 128,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 131
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 131
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `getheaders`",
+    "name": "any-type",
+    "noqa_row": 131,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 60,
+      "row": 136
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 136
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response`",
+    "name": "any-type",
+    "noqa_row": 136,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 83,
+      "row": 230
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 230
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 230,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 52,
+      "row": 382
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 382
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 382,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 67,
+      "row": 382
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "fix": null,
+    "location": {
+      "column": 64,
+      "row": 382
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 382,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 55,
+      "row": 494
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/cookies.py",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 494
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 494,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 28
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 28
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 49,
+      "row": 28
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 28
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 45
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 45
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 45,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 49,
+      "row": 45
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 45
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 45,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/hooks.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 29
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/hooks.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 29
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/hooks.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 29
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 18,
+      "row": 36
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/hooks.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 36
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 685
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 685
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 685,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 685
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 685
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 685,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 685
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 685
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 685,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 813
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 813
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 813,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 1012
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1012
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1012,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 1012
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1012
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1012,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 1012
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1012
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1012,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 1087
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 1087
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 1087,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 41,
+      "row": 1087
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/models.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 1087
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `json`",
+    "name": "any-type",
+    "noqa_row": 1087,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 25,
+      "row": 77
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 77
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `request_setting`",
+    "name": "any-type",
+    "noqa_row": 77,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 47,
+      "row": 77
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 77
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `session_setting`",
+    "name": "any-type",
+    "noqa_row": 77,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 78
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 78
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `merge_setting`",
+    "name": "any-type",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 59,
+      "row": 132
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 132
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 132,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 30,
+      "row": 196
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 196
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**adapter_kwargs`",
+    "name": "any-type",
+    "noqa_row": 196,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 317
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 317
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 318
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 318
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 318,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 350
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 350
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 350,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 508
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 508
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `*args`",
+    "name": "any-type",
+    "noqa_row": 508,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 637
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 637
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 637,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 59,
+      "row": 752
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 752
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**kwargs`",
+    "name": "any-type",
+    "noqa_row": 752,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 770
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/sessions.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 770
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 770,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 101
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/structures.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 101
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `name`",
+    "name": "any-type",
+    "noqa_row": 101,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 160
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 160
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `o`",
+    "name": "any-type",
+    "noqa_row": 160,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 283
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/requests/utils.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 283
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `obj`",
+    "name": "any-type",
+    "noqa_row": 283,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  }
+]

@@ -1,0 +1,5360 @@
+[
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 113
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/apps/config.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 112
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 112,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 112
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/apps/config.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 112
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 112,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 164
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/apps/config.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 163
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 163
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/apps/config.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 163
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 489
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/admin/options.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 489
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 489,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 489
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/admin/options.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 489
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 489,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 489
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/admin/options.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 489
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 489,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 494
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/admin/views/main.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 494
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 494,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 14,
+      "row": 298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/admin/widgets.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 298
+    },
+    "message": "Invalid TODO tag: `XXX`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 14,
+      "row": 298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/admin/widgets.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 298
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 14,
+      "row": 298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/admin/widgets.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 298
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "S107",
+    "end_location": {
+      "column": 79,
+      "row": 123
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/forms.py",
+    "fix": null,
+    "location": {
+      "column": 68,
+      "row": 123
+    },
+    "message": "Possible hardcoded password assigned to function default: \"password_field_name\"",
+    "name": "hardcoded-password-default",
+    "noqa_row": 123,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-default"
+  },
+  {
+    "cell": null,
+    "code": "S107",
+    "end_location": {
+      "column": 74,
+      "row": 131
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/forms.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 131
+    },
+    "message": "Possible hardcoded password assigned to function default: \"password_field_name\"",
+    "name": "hardcoded-password-default",
+    "noqa_row": 131,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-default"
+  },
+  {
+    "cell": null,
+    "code": "S107",
+    "end_location": {
+      "column": 53,
+      "row": 170
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/forms.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 170
+    },
+    "message": "Possible hardcoded password assigned to function default: \"usable_password_field_name\"",
+    "name": "hardcoded-password-default",
+    "noqa_row": 170,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-default"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 31,
+      "row": 25
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/hashers.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 25
+    },
+    "message": "Possible hardcoded password assigned to: \"UNUSABLE_PASSWORD_PREFIX\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 25,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 339
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/hashers.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 339
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 339,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 418
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/hashers.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 418
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 418,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 439
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/hashers.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 439
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 439,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 521
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/hashers.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 521
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 521,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 532
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/hashers.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 532
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 532,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 610
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/hashers.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 610
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 610,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 27,
+      "row": 665
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/hashers.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 665
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `md5`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 665,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 670
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/hashers.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 670
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 670,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 253
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/management/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 253
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 253,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 253
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/management/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 253
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 253,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 253
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/management/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 253
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 253,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 28,
+      "row": 23
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/management/commands/createsuperuser.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 23
+    },
+    "message": "Possible hardcoded password assigned to: \"PASSWORD_FIELD\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 23,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 55,
+      "row": 246
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/views.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 246
+    },
+    "message": "Possible hardcoded password assigned to: \"INTERNAL_RESET_SESSION_TOKEN\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 246,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 37,
+      "row": 262
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/auth/views.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 262
+    },
+    "message": "Possible hardcoded password assigned to: \"reset_url_token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 262,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 18
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/base/models.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 18
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 18,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 23
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/base/models.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 23
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 23,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 35
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/oracle/introspection.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 35
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 35
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/oracle/introspection.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 35
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 35
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/oracle/introspection.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 35
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 21
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/oracle/models.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 21
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 21,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 21
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/oracle/models.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 21
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 21,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 21
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/oracle/models.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 21
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 21,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 109
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/oracle/operations.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 109
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 109,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 109
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/oracle/operations.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 109
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 109,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 109
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/oracle/operations.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 109
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 109,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 72,
+      "row": 216
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/postgis/operations.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 212
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 212,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 255
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/postgis/operations.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 255
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 255,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 255
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/postgis/operations.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 255
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 255,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 255
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/postgis/operations.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 255
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 255,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 54
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/db/backends/spatialite/base.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 54
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 54,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 193
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/gdal/envelope.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 193
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 193
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/gdal/envelope.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 193
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 193
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/gdal/envelope.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 193
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 189
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/gdal/field.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 189
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 189,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 189
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/gdal/field.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 189
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 189,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 264
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/gdal/geometries.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 264
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 264,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 264
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/gdal/geometries.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 264
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 264,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 264
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/gdal/geometries.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 264
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 264,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 23
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/geos/coordseq.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 23
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 23,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 23
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/geos/coordseq.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 23
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 23,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 23
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/geos/coordseq.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 23
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 23,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 199
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/utils/layermapping.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 199
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 199
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/utils/layermapping.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 199
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 199
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/utils/layermapping.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 199
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 469
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/utils/layermapping.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 469
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 469,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 469
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/utils/layermapping.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 469
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 469,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 469
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/utils/layermapping.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 469
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 469,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 243
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/utils/ogrinspect.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 243
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 243,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 243
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/gis/utils/ogrinspect.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 243
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 243,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 147
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/sessions/backends/base.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 144
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 144,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 144
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/sessions/backends/base.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 144
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 144,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/sessions/backends/cache.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 29
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 41
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/sessions/backends/cache.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 41
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 41,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 37
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/sessions/backends/cached_db.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 37
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 56
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/sessions/backends/cached_db.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 56
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 56,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 20
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/sessions/backends/signed_cookies.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 20
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 20,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 307
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/contrib/staticfiles/storage.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 307
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 307,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 18,
+      "row": 78
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 70
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 70,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S301",
+    "end_location": {
+      "column": 86,
+      "row": 96
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 96
+    },
+    "message": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue",
+    "name": "suspicious-pickle-usage",
+    "noqa_row": 96,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-pickle-usage"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 61,
+      "row": 121
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 121
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 121,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 26,
+      "row": 150
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 144
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 144,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 86,
+      "row": 171
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 170
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 170,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 30,
+      "row": 184
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 178
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 30,
+      "row": 195
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 189
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 189,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 18,
+      "row": 231
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 226
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 226,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 18,
+      "row": 253
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 247
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 247,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 18,
+      "row": 269
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 265
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 265,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 26,
+      "row": 286
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 282
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 282,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 52,
+      "row": 295
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/db.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 295
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 295,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S301",
+    "end_location": {
+      "column": 67,
+      "row": 38
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/filebased.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 38
+    },
+    "message": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue",
+    "name": "suspicious-pickle-usage",
+    "noqa_row": 38,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-pickle-usage"
+  },
+  {
+    "cell": null,
+    "code": "S301",
+    "end_location": {
+      "column": 81,
+      "row": 71
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/filebased.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 71
+    },
+    "message": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue",
+    "name": "suspicious-pickle-usage",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-pickle-usage"
+  },
+  {
+    "cell": null,
+    "code": "S301",
+    "end_location": {
+      "column": 33,
+      "row": 152
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/filebased.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 152
+    },
+    "message": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue",
+    "name": "suspicious-pickle-usage",
+    "noqa_row": 152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-pickle-usage"
+  },
+  {
+    "cell": null,
+    "code": "S301",
+    "end_location": {
+      "column": 37,
+      "row": 43
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/locmem.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 43
+    },
+    "message": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue",
+    "name": "suspicious-pickle-usage",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-pickle-usage"
+  },
+  {
+    "cell": null,
+    "code": "S301",
+    "end_location": {
+      "column": 42,
+      "row": 73
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/locmem.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 73
+    },
+    "message": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue",
+    "name": "suspicious-pickle-usage",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-pickle-usage"
+  },
+  {
+    "cell": null,
+    "code": "S301",
+    "end_location": {
+      "column": 38,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/redis.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 29
+    },
+    "message": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue",
+    "name": "suspicious-pickle-usage",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-pickle-usage"
+  },
+  {
+    "cell": null,
+    "code": "S311",
+    "end_location": {
+      "column": 57,
+      "row": 82
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/cache/backends/redis.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 82
+    },
+    "message": "Standard pseudo-random generators are not suitable for cryptographic purposes",
+    "name": "suspicious-non-cryptographic-random-usage",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 48,
+      "row": 22
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/checks/security/base.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 22
+    },
+    "message": "Possible hardcoded password assigned to: \"SECRET_KEY_INSECURE_PREFIX\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 22,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 16,
+      "row": 166
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 166
+    },
+    "message": "Invalid TODO tag: `FIXME`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 166,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 16,
+      "row": 166
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 166
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 166,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 16,
+      "row": 166
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 166
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 166,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX001",
+    "end_location": {
+      "column": 16,
+      "row": 166
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 166
+    },
+    "message": "Line contains FIXME, consider resolving the issue",
+    "name": "line-contains-fixme",
+    "noqa_row": 166,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-fixme"
+  },
+  {
+    "cell": null,
+    "code": "invalid-syntax",
+    "end_location": {
+      "column": 24,
+      "row": 208
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 208
+    },
+    "message": "Cannot use `except*` on Python 3.10 (syntax was added in Python 3.11)",
+    "name": "invalid-syntax",
+    "noqa_row": null,
+    "severity": "error",
+    "url": null
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 226
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 226
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 226,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 292
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/asgi.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 292
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 292,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 44
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 44
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 57
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 57
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 57,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 167
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 167
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 50
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/mail/handler.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 50
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 67
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/mail/handler.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 67
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 67,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 396
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/management/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 396
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 396,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 125
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/management/commands/inspectdb.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 125
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 125,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S104",
+    "end_location": {
+      "column": 29,
+      "row": 178
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/management/commands/runserver.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 178
+    },
+    "message": "Possible binding to all interfaces",
+    "name": "hardcoded-bind-all-interfaces",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-bind-all-interfaces"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 89
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/management/commands/shell.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 89
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 104
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/management/commands/shell.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 104
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 104,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 16,
+      "row": 24
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/management/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 24
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 24,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 27,
+      "row": 175
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/management/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 175
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 175,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 323
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/serializers/base.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 323
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 323,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 385
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/serializers/base.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 385
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 385,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 159
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/serializers/python.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 159
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 159,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 201
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/serializers/python.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 201
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 201,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 210
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/serializers/python.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 210
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 210,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 433
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/core/serializers/xml_serializer.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 433
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 433,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 23,
+      "row": 31
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/base/client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 31
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 230
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/base/creation.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 230
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 230,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 37,
+      "row": 255
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/base/creation.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 255
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 255,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 85,
+      "row": 113
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/base/operations.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 113
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 113,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 26,
+      "row": 355
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/mysql/base.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 340
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 345,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 41
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/mysql/creation.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 41
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 41,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 57
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/mysql/creation.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 57
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 57,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 29,
+      "row": 78
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/mysql/creation.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 78
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 29,
+      "row": 81
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/mysql/creation.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 81
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 81,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 84,
+      "row": 160
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/mysql/introspection.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 160
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 160,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 18,
+      "row": 98
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/mysql/schema.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 94
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 94,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 59,
+      "row": 339
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/base.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 338
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 338,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 39
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/creation.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 39
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 39,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 41,
+      "row": 74
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/creation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 74
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 74,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 41,
+      "row": 83
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/creation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 83
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 83,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 97
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/creation.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 97
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 97,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 41,
+      "row": 118
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/creation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 118
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 182
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/creation.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 182
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 182,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 192
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/creation.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 192
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 192,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 78,
+      "row": 292
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/creation.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 292
+    },
+    "message": "Possible hardcoded password assigned to: \"set_password\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 292,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 14,
+      "row": 181
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/introspection.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 179
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 179,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 36
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/operations.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 36
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 36
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/operations.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 36
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 36
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/operations.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 36
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 76,
+      "row": 75
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/operations.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 73
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 64,
+      "row": 688
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/operations.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 688
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 688,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 14,
+      "row": 70
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/schema.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 55
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 65,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 14,
+      "row": 151
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/oracle/schema.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 146
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 146,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 72
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/postgresql/creation.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 72
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 85
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/postgresql/creation.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 85
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 85,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 84,
+      "row": 120
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/postgresql/introspection.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 120
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 120,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 55,
+      "row": 155
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/postgresql/operations.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 155
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 155,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 15,
+      "row": 414
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/sqlite3/_functions.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 414
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `md5`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 414,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 16,
+      "row": 460
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/sqlite3/_functions.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 460
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 460,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 22,
+      "row": 300
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 295
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 295,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 37,
+      "row": 46
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/sqlite3/creation.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 46
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 93
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/sqlite3/creation.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 93
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 93,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 98
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/sqlite3/creation.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 98
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 98,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 38,
+      "row": 450
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/sqlite3/introspection.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 450
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 450,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 14,
+      "row": 263
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/sqlite3/schema.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 257
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 257,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 14,
+      "row": 474
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/sqlite3/schema.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 456
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 456,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 10,
+      "row": 118
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 118
+    },
+    "message": "Invalid TODO tag: `XXX`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 10,
+      "row": 118
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 118
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 10,
+      "row": 118
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 118
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 880
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/autodetector.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 880
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 880,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 1040
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/autodetector.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1040
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1040,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 92
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/graph.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 92
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 92,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S307",
+    "end_location": {
+      "column": 88,
+      "row": 168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/questioner.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 168
+    },
+    "message": "Use of possibly insecure function; consider using `ast.literal_eval`",
+    "name": "suspicious-eval-usage",
+    "noqa_row": 168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-eval-usage"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 169
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/questioner.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 169
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 169,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 108
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/state.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 108
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 108,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/state.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 298
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/state.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 298
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 298
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/state.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 298
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 479
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/migrations/state.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 479
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 479,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 968
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/base.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 968
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 968,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 969
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/base.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 969
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 969,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 1555
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/base.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1555
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1555,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 1555
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/base.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1555
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1555,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 1555
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/base.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1555
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1555,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 213
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/expressions.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 213
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 213,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 16,
+      "row": 970
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/expressions.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 970
+    },
+    "message": "Invalid TODO tag: `FIXME`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 970,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 16,
+      "row": 970
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/expressions.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 970
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 970,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 16,
+      "row": 970
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/expressions.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 970
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 970,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX001",
+    "end_location": {
+      "column": 16,
+      "row": 970
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/expressions.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 970
+    },
+    "message": "Line contains FIXME, consider resolving the issue",
+    "name": "line-contains-fixme",
+    "noqa_row": 970,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-fixme"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1419
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/expressions.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1419
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1419,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 1347
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/fields/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1347
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1347,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 1347
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/fields/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1347
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1347,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 1347
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/fields/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1347
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1347,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 1444
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/fields/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1444
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1444,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 1625
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/fields/related.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1625
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1625,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 1776
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/fields/related.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1776
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1776,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 80
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/functions/datetime.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 80
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 80,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 44,
+      "row": 275
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/functions/text.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 272
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 272,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 27,
+      "row": 929
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/query.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 929
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 929,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 261
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 261
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 261,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 65,
+      "row": 667
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 667
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 667,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 18,
+      "row": 995
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 992
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 992,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1944
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1944
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1944,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 70,
+      "row": 2019
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 2019
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 2019,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 64,
+      "row": 2046
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 2046
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 2046,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 70,
+      "row": 2271
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2271
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 2271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 955
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 955
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 955,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1011
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1011
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1011,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 2756
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2756
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 2756,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 2756
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2756
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 2756,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 2756
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 2756
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 2756,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 200
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/sql/where.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 200
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 200,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 19
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/db/models/utils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 19
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 19,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 366
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/dispatch/dispatcher.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 366
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 376
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/dispatch/dispatcher.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 376
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 376,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 37,
+      "row": 436
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/dispatch/dispatcher.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 436
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 436,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 451
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/dispatch/dispatcher.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 451
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 451,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 16,
+      "row": 416
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/http/multipartparser.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 416
+    },
+    "message": "Invalid TODO tag: `FIXME`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 416,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 16,
+      "row": 416
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/http/multipartparser.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 416
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 416,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 16,
+      "row": 416
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/http/multipartparser.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 416
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 416,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX001",
+    "end_location": {
+      "column": 16,
+      "row": 416
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/http/multipartparser.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 416
+    },
+    "message": "Line contains FIXME, consider resolving the issue",
+    "name": "line-contains-fixme",
+    "noqa_row": 416,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-fixme"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 463
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/http/multipartparser.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 463
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 463,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 342
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/http/response.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 341
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 341,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 341
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/http/response.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 341
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 341,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 417
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/http/response.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 416
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 416,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 416
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/http/response.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 416
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 416,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 50,
+      "row": 33
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/middleware/csrf.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 33
+    },
+    "message": "Possible hardcoded password assigned to: \"REASON_CSRF_TOKEN_MISSING\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 33,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 156
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/middleware/csrf.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 156
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 34,
+      "row": 343
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/middleware/csrf.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 343
+    },
+    "message": "Possible hardcoded password assigned to: \"token_source\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 343,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 34,
+      "row": 389
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/middleware/csrf.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 389
+    },
+    "message": "Possible hardcoded password assigned to: \"token_source\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 389,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 57
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/tasks/backends/immediate.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 57
+    },
+    "message": "Do not catch blind exception: `BaseException`",
+    "name": "blind-except",
+    "noqa_row": 57,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 462
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/base.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 462
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 462,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 33,
+      "row": 601
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/base.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 601
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 601,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S311",
+    "end_location": {
+      "column": 43,
+      "row": 646
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/defaultfilters.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 646
+    },
+    "message": "Standard pseudo-random generators are not suitable for cryptographic purposes",
+    "name": "suspicious-non-cryptographic-random-usage",
+    "noqa_row": 646,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 754
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/defaultfilters.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 754
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 754,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 996
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/defaultfilters.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 996
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 996,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 43,
+      "row": 79
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/defaulttags.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 79
+    },
+    "message": "Possible hardcoded password assigned to: \"csrf_token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 79,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 28,
+      "row": 96
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/loaders/cached.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 96
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 96,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 62
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/smartif.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 62
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 62,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 89
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/smartif.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 89
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 29,
+      "row": 171
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/smartif.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 171
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 171,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 172
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/smartif.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 172
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 172,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 32,
+      "row": 174
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/smartif.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 174
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 174,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 175
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/smartif.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 175
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 175,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 37
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/template/utils.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 37
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 527
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/templatetags/i18n.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 527
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 527,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 55
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/templatetags/tz.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 55
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 92
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 92
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 92,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 105
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 105
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 105,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S301",
+    "end_location": {
+      "column": 40,
+      "row": 207
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/runner.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 207
+    },
+    "message": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue",
+    "name": "suspicious-pickle-usage",
+    "noqa_row": 207,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-pickle-usage"
+  },
+  {
+    "cell": null,
+    "code": "S311",
+    "end_location": {
+      "column": 49,
+      "row": 661
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/runner.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 661
+    },
+    "message": "Standard pseudo-random generators are not suitable for cryptographic purposes",
+    "name": "suspicious-non-cryptographic-random-usage",
+    "noqa_row": 661,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 943
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/runner.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 943
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 943,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S104",
+    "end_location": {
+      "column": 81,
+      "row": 46
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/selenium.py",
+    "fix": null,
+    "location": {
+      "column": 72,
+      "row": 46
+    },
+    "message": "Possible binding to all interfaces",
+    "name": "hardcoded-bind-all-interfaces",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-bind-all-interfaces"
+  },
+  {
+    "cell": null,
+    "code": "S301",
+    "end_location": {
+      "column": 40,
+      "row": 88
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/testcases.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 88
+    },
+    "message": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue",
+    "name": "suspicious-pickle-usage",
+    "noqa_row": 88,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-pickle-usage"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 1071
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/testcases.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 1071
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 1071,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 1094
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/testcases.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 1094
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 1094,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 1699
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/testcases.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1699
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1699,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 1699
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/testcases.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1699
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1699,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 1699
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/testcases.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1699
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1699,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 1771
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/testcases.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 1771
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 1771,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 519
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/utils.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 519
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 519,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 577
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 577
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 577,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 580
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/test/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 580
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 580,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 32,
+      "row": 43
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/_os.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 43
+    },
+    "message": "Invalid TODO tag: `xxx`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 32,
+      "row": 43
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/_os.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 43
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 32,
+      "row": 43
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/_os.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 43
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 27,
+      "row": 290
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/autoreload.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 290
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 290,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 355
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/autoreload.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 355
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 355,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 636
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/autoreload.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 636
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 636,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 647
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/autoreload.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 647
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 647,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 37,
+      "row": 174
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/decorators.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 174
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 174,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 37,
+      "row": 190
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/decorators.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 190
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 190,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 257
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/encoding.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 257
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 257,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 149
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/http.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 148
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 148
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/http.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 148
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 141
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/log.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 141
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 141,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "S311",
+    "end_location": {
+      "column": 60,
+      "row": 235
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/lorem_ipsum.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 235
+    },
+    "message": "Standard pseudo-random generators are not suitable for cryptographic purposes",
+    "name": "suspicious-non-cryptographic-random-usage",
+    "noqa_row": 235,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage"
+  },
+  {
+    "cell": null,
+    "code": "S311",
+    "end_location": {
+      "column": 44,
+      "row": 236
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/lorem_ipsum.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 236
+    },
+    "message": "Standard pseudo-random generators are not suitable for cryptographic purposes",
+    "name": "suspicious-non-cryptographic-random-usage",
+    "noqa_row": 236,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage"
+  },
+  {
+    "cell": null,
+    "code": "S311",
+    "end_location": {
+      "column": 64,
+      "row": 240
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/lorem_ipsum.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 240
+    },
+    "message": "Standard pseudo-random generators are not suitable for cryptographic purposes",
+    "name": "suspicious-non-cryptographic-random-usage",
+    "noqa_row": 240,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage"
+  },
+  {
+    "cell": null,
+    "code": "S311",
+    "end_location": {
+      "column": 67,
+      "row": 249
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/lorem_ipsum.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 249
+    },
+    "message": "Standard pseudo-random generators are not suitable for cryptographic purposes",
+    "name": "suspicious-non-cryptographic-random-usage",
+    "noqa_row": 249,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage"
+  },
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 24,
+      "row": 87
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/regex_helper.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 87
+    },
+    "message": "Invalid TODO tag: `FIXME`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 87,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 24,
+      "row": 87
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/regex_helper.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 87
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 87,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 24,
+      "row": 87
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/regex_helper.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 87
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 87,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX001",
+    "end_location": {
+      "column": 24,
+      "row": 87
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/regex_helper.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 87
+    },
+    "message": "Line contains FIXME, consider resolving the issue",
+    "name": "line-contains-fixme",
+    "noqa_row": 87,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-fixme"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 351
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/regex_helper.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 351
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 63
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/version.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 63
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 63,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 64
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/version.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 64
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 64,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S602",
+    "end_location": {
+      "column": 29,
+      "row": 90
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/utils/version.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 90
+    },
+    "message": "`subprocess` call with `shell=True` seems safe, but may be changed in the future; consider rewriting without `shell`",
+    "name": "subprocess-popen-with-shell-equals-true",
+    "noqa_row": 90,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-popen-with-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 230
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/views/debug.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 230
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 230,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 381
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/django/views/debug.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 381
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 381,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  }
+]

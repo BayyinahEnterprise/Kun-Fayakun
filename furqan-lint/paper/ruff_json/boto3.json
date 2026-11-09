@@ -1,0 +1,192 @@
+[
+  {
+    "cell": null,
+    "code": "TD001",
+    "end_location": {
+      "column": 8,
+      "row": 100
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 100
+    },
+    "message": "Invalid TODO tag: `FIXME`",
+    "name": "invalid-todo-tag",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/invalid-todo-tag"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 8,
+      "row": 100
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 100
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 8,
+      "row": 100
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 100
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX001",
+    "end_location": {
+      "column": 8,
+      "row": 100
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 100
+    },
+    "message": "Line contains FIXME, consider resolving the issue",
+    "name": "line-contains-fixme",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-fixme"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 27,
+      "row": 586
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 586
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 586,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 27,
+      "row": 586
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 586
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 586,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 27,
+      "row": 586
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/resources/factory.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 586
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 586,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 151
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/resources/response.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 151
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 151
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/resources/response.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 151
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 151
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/boto3/resources/response.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 151
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  }
+]

@@ -1,0 +1,5588 @@
+[
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 13,
+      "row": 48
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 48
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `cls`",
+    "name": "any-type",
+    "noqa_row": 48,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 80
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 80
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 80,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 47,
+      "row": 108
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 108
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 108,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 57,
+      "row": 134
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 134
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 67,
+      "row": 145
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 64,
+      "row": 145
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 145,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 49,
+      "row": 156
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 156
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 54,
+      "row": 171
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 171
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 171,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 186
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 186
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `obj`",
+    "name": "any-type",
+    "noqa_row": 186,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 187
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 187
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 187,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 187
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 187
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 187,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 187
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 187
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 187,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 40,
+      "row": 198
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 198
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `cls`",
+    "name": "any-type",
+    "noqa_row": 198,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 199
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 199
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 199
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 199
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 199
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 199
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 210
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/shared.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 210
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 210,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 15,
+      "row": 44
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 44
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 47
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 47
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `evaluate_forwardref`",
+    "name": "any-type",
+    "noqa_row": 47,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 58
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 58
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 58
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 58
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 73
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 73
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 73
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 73
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 73
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 73
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 99
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 99
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 99,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 99
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 99
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 99,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 99
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 99
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 99,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 29,
+      "row": 138
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 138
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 138,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 19,
+      "row": 153
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 153
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 19,
+      "row": 153
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 153
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 19,
+      "row": 153
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 153
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 168
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 168
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get_default`",
+    "name": "any-type",
+    "noqa_row": 168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 19,
+      "row": 175
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 175
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 175,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 19,
+      "row": 192
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 192
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 192,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 13,
+      "row": 201
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 201
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `serialize`",
+    "name": "any-type",
+    "noqa_row": 201,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 19,
+      "row": 217
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 217
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 217,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 279
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 279
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 279,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 279
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 279
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 279,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 279
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 279
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 279,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 62,
+      "row": 359
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 359
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 359,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 62,
+      "row": 371
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 371
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 371,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 380
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 380
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 380,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 20,
+      "row": 454
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/_compat/v2.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 454
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 454,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 924
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 924
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 924,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 925
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 925
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 925,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 1212
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1212
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 1212,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 1347
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1347
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 1347,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 1734
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1701
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 1701,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 2107
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 2074
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 2074,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 2485
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 2452
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 2452,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 2863
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 2830
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 2830,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 3236
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 3203
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 3203,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 3609
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 3576
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 3576,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 3982
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 3949
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 3949,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 4360
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/applications.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 4327
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 4327,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 72,
+      "row": 5
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/cli.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 5
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 5,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 42,
+      "row": 133
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/datastructures.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 133
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__input_value`",
+    "name": "any-type",
+    "noqa_row": 133,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 133
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/datastructures.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 133
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_`",
+    "name": "any-type",
+    "noqa_row": 133,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 161
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/datastructures.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 161
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 161,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 53,
+      "row": 181
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/datastructures.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 181
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 181,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 60,
+      "row": 18
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/models.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 18
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_unwrapped_call`",
+    "name": "any-type",
+    "noqa_row": 18,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 133
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/models.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 133
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 133,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 120
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 120
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 120,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 128
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 128
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 128,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 135
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 135
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 145
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 145
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 145,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 169
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 169
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 169,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 41,
+      "row": 259
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 259
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 259,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 75,
+      "row": 259
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 72,
+      "row": 259
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get_typed_annotation`",
+    "name": "any-type",
+    "noqa_row": 259,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 65,
+      "row": 268
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 62,
+      "row": 268
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get_typed_return_annotation`",
+    "name": "any-type",
+    "noqa_row": 268,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 41,
+      "row": 290
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 290
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 290,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 56,
+      "row": 290
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 290
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `get_stream_item_type`",
+    "name": "any-type",
+    "noqa_row": 290,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 331
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 331
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 331,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 340
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 340
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 340,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 366
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 366
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 370
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 370
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 370,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 379
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 379
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `type_annotation`",
+    "name": "any-type",
+    "noqa_row": 379,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 20,
+      "row": 412
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 412
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 412,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 15,
+      "row": 413
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 413
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 413,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 461
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 461
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 461,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 468
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 468
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 468,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 477
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 477
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 477,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 481
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 481
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 481,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 488
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 488
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 488,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 516
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 516
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 516,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 552
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 552
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 552,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 594
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 594
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 594,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 598
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 598
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 598,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 617
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 617
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 617,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 625
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 625
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_solve_generator`",
+    "name": "any-type",
+    "noqa_row": 625,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 626
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 626
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 626,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 14,
+      "row": 647
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 647
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `body`",
+    "name": "any-type",
+    "noqa_row": 647,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 650
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 650
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `dependency_overrides_provider`",
+    "name": "any-type",
+    "noqa_row": 650,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 652
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 652
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 652,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 652
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 652
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 652,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 652
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 652
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 652,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 659
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 659
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 659,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 663
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 663
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 663,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 52,
+      "row": 671
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 671
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 671,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 63,
+      "row": 688
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 688
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 688,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 795
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 795
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 795,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 36,
+      "row": 810
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 810
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 810,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 817
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 817
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_get_multidict_value`",
+    "name": "any-type",
+    "noqa_row": 817,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 902
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 902
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 902,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 944
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 944
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 944,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 958
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 958
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 958,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 47,
+      "row": 974
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 974
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 974,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 55,
+      "row": 974
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 974
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_add_form_union_validators`",
+    "name": "any-type",
+    "noqa_row": 974,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 994
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 994
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 994,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 72,
+      "row": 994
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 69,
+      "row": 994
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_normalize_form_model`",
+    "name": "any-type",
+    "noqa_row": 994,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 1112
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1112
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1112,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 1143
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 1143
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_extract_form_model`",
+    "name": "any-type",
+    "noqa_row": 1143,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 23,
+      "row": 1158
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 1158
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `received_body`",
+    "name": "any-type",
+    "noqa_row": 1158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 1163
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/dependencies/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 1163
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 58
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 58
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 58
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 58
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 58
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 58
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 137
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 130
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `obj`",
+    "name": "any-type",
+    "noqa_row": 130,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 218
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 218
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `jsonable_encoder`",
+    "name": "any-type",
+    "noqa_row": 218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 260
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 260
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 260,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 348
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 348
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 348,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 69
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 58
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `detail`",
+    "name": "any-type",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 18,
+      "row": 217
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 217
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `body`",
+    "name": "any-type",
+    "noqa_row": 217,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 18,
+      "row": 239
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/exceptions.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 239
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `body`",
+    "name": "any-type",
+    "noqa_row": 239,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 9
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/docs.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 9
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 19
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/models.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 19
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 19,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/models.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 29
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `v`",
+    "name": "any-type",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 37
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/models.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 37
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__input_value`",
+    "name": "any-type",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 54,
+      "row": 37
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/models.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 37
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_`",
+    "name": "any-type",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 234
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 234
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 234,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 316
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 316
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 316,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 321
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 321
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 321,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 23,
+      "row": 401
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 401
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 401,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 23,
+      "row": 401
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 401
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 401,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 23,
+      "row": 401
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 401
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 401,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 27,
+      "row": 479
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 479
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 479,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 556
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/openapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 556
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 556,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 25
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 15
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 15,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 271
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 265
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 265,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 318
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 318
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `Path`",
+    "name": "any-type",
+    "noqa_row": 318,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 386
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 376
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 376,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 645
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 639
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 639,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 698
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 698
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `Query`",
+    "name": "any-type",
+    "noqa_row": 698,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 742
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 735
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 735,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 982
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 976
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 976,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 1029
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 1029
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `Header`",
+    "name": "any-type",
+    "noqa_row": 1029,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 1074
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 1067
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 1067,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 1303
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 1297
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 1297,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 1350
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 1350
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `Cookie`",
+    "name": "any-type",
+    "noqa_row": 1350,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 1394
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 1387
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 1387,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 1646
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 1640
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 1640,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 1693
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 1693
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `Body`",
+    "name": "any-type",
+    "noqa_row": 1693,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 1739
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 1732
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 1732,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 1977
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 1971
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 1971,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 2024
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 2024
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `Form`",
+    "name": "any-type",
+    "noqa_row": 2024,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 2069
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 2062
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 2062,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 6,
+      "row": 2307
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 2301
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 2301,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 2354
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 2354
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `File`",
+    "name": "any-type",
+    "noqa_row": 2354,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 2447
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 2447
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `Depends`",
+    "name": "any-type",
+    "noqa_row": 2447,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 2532
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/param_functions.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 2532
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `Security`",
+    "name": "any-type",
+    "noqa_row": 2532,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 32
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 32
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 32,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 35
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 35
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 71
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 65
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 65,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 147
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 147
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 147,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 150
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 150
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 150,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 186
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 180
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 180,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 194
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 194
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 194,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 237
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 237
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 237,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 240
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 240
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 240,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 276
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 270
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 270,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 325
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 325
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 325,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 328
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 328
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 328,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 365
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 359
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 359,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 415
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 415
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 415,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 418
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 418
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 418,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 454
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 448
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 448,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 501
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 501
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 501,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 504
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 504
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 504,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 542
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 536
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 536,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 617
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 617
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 617,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 620
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 620
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 620,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 657
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 651
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 651,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 21,
+      "row": 705
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 705
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 705,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 708
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 708
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `annotation`",
+    "name": "any-type",
+    "noqa_row": 708,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 745
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/params.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 739
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `example`",
+    "name": "any-type",
+    "noqa_row": 739,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 17
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/responses.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 17
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__obj`",
+    "name": "any-type",
+    "noqa_row": 17,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 31,
+      "row": 24
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/responses.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 24
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__obj`",
+    "name": "any-type",
+    "noqa_row": 24,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 64
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/responses.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 64
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `content`",
+    "name": "any-type",
+    "noqa_row": 64,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 65
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/responses.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 65
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 65,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 94
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/responses.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 94
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `content`",
+    "name": "any-type",
+    "noqa_row": 94,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 95
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/responses.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 95
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 95,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 25,
+      "row": 235
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 235
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `app`",
+    "name": "any-type",
+    "noqa_row": 235,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 40,
+      "row": 286
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 286
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `func`",
+    "name": "any-type",
+    "noqa_row": 286,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 21,
+      "row": 302
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 302
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 302,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 43,
+      "row": 309
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 309
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `data`",
+    "name": "any-type",
+    "noqa_row": 309,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 51,
+      "row": 309
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 309
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_normalize_non_finite_floats`",
+    "name": "any-type",
+    "noqa_row": 309,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 26,
+      "row": 323
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 323
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_content`",
+    "name": "any-type",
+    "noqa_row": 323,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 333
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 333
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `serialize_response`",
+    "name": "any-type",
+    "noqa_row": 333,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 365
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 365
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `run_endpoint_function`",
+    "name": "any-type",
+    "noqa_row": 365,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 368
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 368
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 368,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 51,
+      "row": 380
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 380
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `solved_result`",
+    "name": "any-type",
+    "noqa_row": 380,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 409
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 409
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `dependency_overrides_provider`",
+    "name": "any-type",
+    "noqa_row": 409,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 415
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 415
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 415,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 434
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 434
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 434,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 507
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 507
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 507,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 523
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 523
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 523,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 42,
+      "row": 528
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 528
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `data`",
+    "name": "any-type",
+    "noqa_row": 528,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 559
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 559
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `item`",
+    "name": "any-type",
+    "noqa_row": 559,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 690
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 690
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `item`",
+    "name": "any-type",
+    "noqa_row": 690,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 801
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 801
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 801,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 809
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 809
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `dependency_overrides_provider`",
+    "name": "any-type",
+    "noqa_row": 809,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 826
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 826
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 826,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 847
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 847
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 847,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 862
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 862
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `dependency_overrides_provider`",
+    "name": "any-type",
+    "noqa_row": 862,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 931
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 931
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 931,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 67,
+      "row": 944
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 944
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_get_scope_effective_route_context`",
+    "name": "any-type",
+    "noqa_row": 944,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 59,
+      "row": 948
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 948
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_get_scope_included_router`",
+    "name": "any-type",
+    "noqa_row": 948,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 69,
+      "row": 961
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 66,
+      "row": 961
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `previous`",
+    "name": "any-type",
+    "noqa_row": 961,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 1019
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 1019
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 1019,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 1039
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 1039
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `dependency_overrides_provider`",
+    "name": "any-type",
+    "noqa_row": 1039,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 1046
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 1046
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `stream_item_type`",
+    "name": "any-type",
+    "noqa_row": 1046,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1093
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1093
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1093,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 1096
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1096
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1096,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 1109
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 1109
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1109,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1157
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1157
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1157,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 1219
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1219
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 1219,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 1239
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 1239
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `dependency_overrides_provider`",
+    "name": "any-type",
+    "noqa_row": 1239,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 1280
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1280
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 1280,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 1280
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1280
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 1280,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 1280
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 1280
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 1280,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 1327
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1327
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1327,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 1566
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1566
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1566,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 60,
+      "row": 1585
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 1585
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**path_params`",
+    "name": "any-type",
+    "noqa_row": 1585,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 68,
+      "row": 1585
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 1585
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `url_path_for`",
+    "name": "any-type",
+    "noqa_row": 1585,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 1587
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1587
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1587,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1597
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1597
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1597,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 44,
+      "row": 1640
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 1640
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getattr__`",
+    "name": "any-type",
+    "noqa_row": 1640,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 60,
+      "row": 1876
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 1876
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**path_params`",
+    "name": "any-type",
+    "noqa_row": 1876,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 68,
+      "row": 1876
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 1876
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `url_path_for`",
+    "name": "any-type",
+    "noqa_row": 1876,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1997
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1997
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1997,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 2002
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2002
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 2002,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 60,
+      "row": 2167
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 2167
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**path_params`",
+    "name": "any-type",
+    "noqa_row": 2167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 2176
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 2176
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `dependency_overrides_provider`",
+    "name": "any-type",
+    "noqa_row": 2176,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 60,
+      "row": 2281
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 2281
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `**path_params`",
+    "name": "any-type",
+    "noqa_row": 2281,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 2284
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 2284
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 2284,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 2284
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 2284
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 2284,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 2284
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 2284
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 2284,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 50,
+      "row": 2295
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 2295
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `dependency_overrides_provider`",
+    "name": "any-type",
+    "noqa_row": 2295,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 2475
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 2465
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `dependency_overrides_provider`",
+    "name": "any-type",
+    "noqa_row": 2465,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 2611
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2611
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 2611,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 2612
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2612
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 2612,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 2618
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 2618
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 2618,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 2618
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 2618
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 2618,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 2618
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 2618
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 2618,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 2792
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2792
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 2792,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 2999
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 2999
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 2999,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 3082
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 3082
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 3082,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 3373
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 3373
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 3373,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 3377
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 3377
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 3377,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 3382
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 3382
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 3382,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 3383
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 3383
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 3383,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 3473
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 3440
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 3440,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 3850
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 3817
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 3817,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 4232
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 4199
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 4199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 4614
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 4581
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 4581,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 4991
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 4958
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 4958,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 5368
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 5335
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 5335,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 5750
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 5717
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 5717,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 10,
+      "row": 6132
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 6099
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `response_model`",
+    "name": "any-type",
+    "noqa_row": 6099,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 6468
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 6468
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 6468,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 6468
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 6468
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 6468,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 6468
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 6468
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 6468,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 6484
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 6484
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 6484,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 6484
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 6484
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 6484,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 6484
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 6484
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 6484,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 6500
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 6500
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 6500,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 6500
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 6500
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 6500,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 6500
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 6500
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 6500,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 6514
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/routing.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 6514
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 6514,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "PGH003",
+    "end_location": {
+      "column": 40,
+      "row": 204
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/security/http.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 204
+    },
+    "message": "Use specific rule codes when ignoring type issues",
+    "name": "blanket-type-ignore",
+    "noqa_row": 204,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blanket-type-ignore"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 208
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_api.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 208
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 208,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 9,
+      "row": 242
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_api.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 242
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_run_sync_endpoint`",
+    "name": "any-type",
+    "noqa_row": 242,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 32,
+      "row": 276
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_api.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 276
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `provider`",
+    "name": "any-type",
+    "noqa_row": 276,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 72
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_asgi.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 72
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `stack`",
+    "name": "any-type",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 216
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_asgi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 216
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 216,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 225
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_asgi.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 225
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 225,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 24
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_runtime.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 24
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 24,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 25,
+      "row": 35
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_runtime.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 35
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 41,
+      "row": 73
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_runtime.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 73
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `provider`",
+    "name": "any-type",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 49,
+      "row": 73
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_runtime.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 73
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_registration_provider`",
+    "name": "any-type",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 67,
+      "row": 141
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_runtime.py",
+    "fix": null,
+    "location": {
+      "column": 64,
+      "row": 141
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `create_component`",
+    "name": "any-type",
+    "noqa_row": 141,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "BLE001",
+    "end_location": {
+      "column": 29,
+      "row": 218
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/telemetry/_runtime.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 218
+    },
+    "message": "Do not catch blind exception: `Exception`",
+    "name": "blind-except",
+    "noqa_row": 218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/blind-except"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 15,
+      "row": 60
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 60
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `type_`",
+    "name": "any-type",
+    "noqa_row": 60,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 61
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 61
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 61,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 98
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/fastapi/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 98
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 98,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  }
+]

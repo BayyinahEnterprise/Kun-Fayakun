@@ -1,0 +1,1883 @@
+[
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 36
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/fernet.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 36
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S303",
+    "end_location": {
+      "column": 53,
+      "row": 133
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/_oid.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 133
+    },
+    "message": "Use of insecure MD2, MD4, MD5, or SHA1 hash function",
+    "name": "suspicious-insecure-hash-usage",
+    "noqa_row": 133,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-insecure-hash-usage"
+  },
+  {
+    "cell": null,
+    "code": "S303",
+    "end_location": {
+      "column": 55,
+      "row": 134
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/_oid.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 134
+    },
+    "message": "Use of insecure MD2, MD4, MD5, or SHA1 hash function",
+    "name": "suspicious-insecure-hash-usage",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-insecure-hash-usage"
+  },
+  {
+    "cell": null,
+    "code": "S303",
+    "end_location": {
+      "column": 56,
+      "row": 135
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/_oid.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 135
+    },
+    "message": "Use of insecure MD2, MD4, MD5, or SHA1 hash function",
+    "name": "suspicious-insecure-hash-usage",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-insecure-hash-usage"
+  },
+  {
+    "cell": null,
+    "code": "S303",
+    "end_location": {
+      "column": 57,
+      "row": 144
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/_oid.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 144
+    },
+    "message": "Use of insecure MD2, MD4, MD5, or SHA1 hash function",
+    "name": "suspicious-insecure-hash-usage",
+    "noqa_row": 144,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-insecure-hash-usage"
+  },
+  {
+    "cell": null,
+    "code": "S303",
+    "end_location": {
+      "column": 55,
+      "row": 153
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/_oid.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 153
+    },
+    "message": "Use of insecure MD2, MD4, MD5, or SHA1 hash function",
+    "name": "suspicious-insecure-hash-usage",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-insecure-hash-usage"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 27,
+      "row": 69
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 69
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `field_type`",
+    "name": "any-type",
+    "noqa_row": 69,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 11,
+      "row": 82
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 82
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 11,
+      "row": 82
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 82
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 11,
+      "row": 82
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 7,
+      "row": 82
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 49,
+      "row": 92
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 92
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `field_type`",
+    "name": "any-type",
+    "noqa_row": 92,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 64,
+      "row": 92
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 92
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `_resolve_type_aliases`",
+    "name": "any-type",
+    "noqa_row": 92,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 27,
+      "row": 164
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 164
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `field_type`",
+    "name": "any-type",
+    "noqa_row": 164,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 18,
+      "row": 321
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 321
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `t`",
+    "name": "any-type",
+    "noqa_row": 321,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 7,
+      "row": 515
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 515
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 515,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 7,
+      "row": 515
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 515
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 515,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 7,
+      "row": 515
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/asn1/asn1.py",
+    "fix": null,
+    "location": {
+      "column": 3,
+      "row": 515
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 515,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 29,
+      "row": 10
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/backends/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 10
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default_backend`",
+    "name": "any-type",
+    "noqa_row": 10,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 89
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/backends/openssl/backend.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 89
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 33,
+      "row": 11
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/declarative_asn1.pyi",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 11
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 35,
+      "row": 35
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/declarative_asn1.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 35
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `default`",
+    "name": "any-type",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 62,
+      "row": 66
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/declarative_asn1.pyi",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 66
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 13
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/cmac.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 13
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 13,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 17
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/dh.pyi",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 17
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 17,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 27
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/dh.pyi",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 27
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 27,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 35
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/dh.pyi",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 35
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 55,
+      "row": 44
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/dh.pyi",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 44
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 47
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/dh.pyi",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 47
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 47,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 50
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/dh.pyi",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 50
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 46,
+      "row": 19
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/dsa.pyi",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 19
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 19,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/dsa.pyi",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 29
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 39
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/dsa.pyi",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 39
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 39,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 17
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/ec.pyi",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 17
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 17,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 27
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/ec.pyi",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 27
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 27,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 49,
+      "row": 39
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/ec.pyi",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 39
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 39,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 67,
+      "row": 12
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/hashes.pyi",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 12
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 12,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 15
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/hmac.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 15
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 15,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 18
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 18
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 18,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 32
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 32
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 32,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 108
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 108
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 108,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 124
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 124
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 124,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 136
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 136
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 136,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 148
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 148
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 161
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 161
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 161,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 179
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 179
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 179,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 30,
+      "row": 190
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 190
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `algorithm`",
+    "name": "any-type",
+    "noqa_row": 190,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 199
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 199
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 16
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/keys.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 16
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 16,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 23
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/keys.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 23
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 23,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 29
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/keys.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 29
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 33
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/keys.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 33
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 33,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 12
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/keywrap.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 12
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 12,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 17
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/keywrap.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 17
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 17,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 22
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/keywrap.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 22
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 22,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 27
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/keywrap.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 27
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 27,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 39
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/rsa.pyi",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 39
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 39,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 45,
+      "row": 50
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/openssl/rsa.pyi",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 50
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 31
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/pkcs12.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 31
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 40
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/pkcs12.pyi",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 40
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 40,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 21
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/x509.pyi",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 21
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 21,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 24
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/x509.pyi",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 24
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 24,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 30
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/x509.pyi",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 30
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 30,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 33
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/x509.pyi",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 33
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 33,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 36
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/x509.pyi",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 36
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 37,
+      "row": 39
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/_rust/x509.pyi",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 39
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 39,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 20,
+      "row": 35
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/openssl/binding.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 35
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `lib`",
+    "name": "any-type",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 16,
+      "row": 37
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/bindings/openssl/binding.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 37
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `build_conditional_library`",
+    "name": "any-type",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 167
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/asymmetric/dsa.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 167
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 39,
+      "row": 176
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/asymmetric/dsa.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 176
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 176,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 334
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/asymmetric/ec.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 334
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 334,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 140
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/asymmetric/padding.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 140
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 140,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 167
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/asymmetric/rsa.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 167
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S311",
+    "end_location": {
+      "column": 37,
+      "row": 275
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/asymmetric/rsa.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 275
+    },
+    "message": "Standard pseudo-random generators are not suitable for cryptographic purposes",
+    "name": "suspicious-non-cryptographic-random-usage",
+    "noqa_row": 275,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 11,
+      "row": 293
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/asymmetric/rsa.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 293
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 83
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/ciphers/base.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 83
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 83,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 91
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/ciphers/base.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 91
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 91,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 138
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/serialization/pkcs7.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 138
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 138,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 24,
+      "row": 678
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/serialization/ssh.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 678
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 678,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 740
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/serialization/ssh.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 740
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 740,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 998
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/serialization/ssh.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 998
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 998,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S303",
+    "end_location": {
+      "column": 41,
+      "row": 1000
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/serialization/ssh.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 1000
+    },
+    "message": "Use of insecure MD2, MD4, MD5, or SHA1 hash function",
+    "name": "suspicious-insecure-hash-usage",
+    "noqa_row": 1000,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-insecure-hash-usage"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 23,
+      "row": 1004
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/serialization/ssh.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1004
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1004,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 15,
+      "row": 1020
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/serialization/ssh.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1020
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1020,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 44,
+      "row": 1171
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/serialization/ssh.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 1171
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 1171,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 1595
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/serialization/ssh.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1595
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 1595,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 51
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/twofactor/hotp.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 51
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 51,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 26
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/hazmat/primitives/twofactor/totp.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 26
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 26,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 51,
+      "row": 78
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/utils.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 78
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `__getattr__`",
+    "name": "any-type",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 262
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/base.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 262
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 262,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 528
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/base.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 528
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 528,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 28,
+      "row": 729
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/base.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 729
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 729,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 40,
+      "row": 823
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/base.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 823
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 823,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S324",
+    "end_location": {
+      "column": 24,
+      "row": 72
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/extensions.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 72
+    },
+    "message": "Probable use of insecure hash functions in `hashlib`: `sha1`",
+    "name": "hashlib-insecure-hash-function",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hashlib-insecure-hash-function"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 34,
+      "row": 30
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/general_name.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 30
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `value`",
+    "name": "any-type",
+    "noqa_row": 30,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "S101",
+    "end_location": {
+      "column": 19,
+      "row": 154
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/name.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 154
+    },
+    "message": "Use of `assert` detected",
+    "name": "assert",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert"
+  },
+  {
+    "cell": null,
+    "code": "ANN401",
+    "end_location": {
+      "column": 47,
+      "row": 358
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/name.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 358
+    },
+    "message": "Dynamically typed expressions (typing.Any) are disallowed in `backend`",
+    "name": "any-type",
+    "noqa_row": 358,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/any-type"
+  },
+  {
+    "cell": null,
+    "code": "TD002",
+    "end_location": {
+      "column": 15,
+      "row": 368
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/name.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 368
+    },
+    "message": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`",
+    "name": "missing-todo-author",
+    "noqa_row": 368,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-author"
+  },
+  {
+    "cell": null,
+    "code": "TD003",
+    "end_location": {
+      "column": 15,
+      "row": 368
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/name.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 368
+    },
+    "message": "Missing issue link for this TODO",
+    "name": "missing-todo-link",
+    "noqa_row": 368,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/missing-todo-link"
+  },
+  {
+    "cell": null,
+    "code": "FIX002",
+    "end_location": {
+      "column": 15,
+      "row": 368
+    },
+    "filename": "/usr/local/lib/python3.13/site-packages/cryptography/x509/name.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 368
+    },
+    "message": "Line contains TODO, consider resolving the issue",
+    "name": "line-contains-todo",
+    "noqa_row": 368,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/line-contains-todo"
+  }
+]

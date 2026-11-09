@@ -1,0 +1,79 @@
+# Bismillah ir-Rahman ir-Rahim
+#
+# furqan-lint -- structural honesty verification for code
+#
+# Six languages, one command. Catches what other linters miss.
+#
+# Bismillah ir-Rahman ir-Rahim
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "furqan-lint"
+version = "2.0.0"
+description = "Structural honesty linter -- catches what ruff and bandit miss, across six languages"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [
+    { name = "Bilal Syed Arfeen", email = "bismillahbilalarfeenbismillah@gmail.com" },
+]
+keywords = [
+    "linter",
+    "static-analysis",
+    "security",
+    "structural-honesty",
+    "safety-critical",
+    "multi-language",
+    "bandit",
+    "misra",
+    "do-178c",
+    "automotive",
+    "medical",
+    "aerospace",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Security",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: C",
+    "Programming Language :: C++",
+    "Programming Language :: Java",
+    "Programming Language :: C#",
+]
+dependencies = [
+    "tree-sitter>=0.23",
+    "tree-sitter-c>=0.23",
+    "tree-sitter-cpp>=0.23",
+    "tree-sitter-java>=0.23",
+    "tree-sitter-c-sharp>=0.23",
+    "tree-sitter-ada>=0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+furqan-lint = "furqan_lint.cli:main"
+
+[project.urls]
+Repository = "https://github.com/BayyinahEnterprise/Kun-Fayakun"
+Issues = "https://github.com/BayyinahEnterprise/Kun-Fayakun/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/furqan_lint"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+# Bismillah ir-Rahman ir-Rahim

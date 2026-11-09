@@ -6,17 +6,9 @@ Structural honesty verification for code. Six languages, one command.
 kun furqan lint ./src/
 ```
 
-## What it catches that other linters miss
+## What it checks
 
-On **Django** (281,000 lines):
-
-| Linter | Findings |
-|--------|----------|
-| ruff | 0 (codebase is ruff-clean) |
-| bandit | 281 |
-| **furqan-lint** | **3,389** |
-
-furqan-lint finds **12x more** than bandit on an already-clean codebase, because it checks a class of patterns no other tool looks for: structural honesty -- whether what the code *claims* to do matches what it *actually* does.
+furqan-lint checks whether code's surface behavior (what it claims to do) matches its substrate behavior (what it actually does). It produces findings from 42 Python rules and 8 adapter-only rules across six languages (50 rule IDs total, 39 active by default).
 
 ## One-line install
 
@@ -68,33 +60,42 @@ Every finding tells you three things: what is wrong, how severe it is, and which
 - **recalibrate** -- align the surface (what it says) with the substrate (what it does)
 - **enrich** -- add what is missing
 
+## Benchmark (v2.1.0)
+
+Compared against bandit 1.9.4 on 25 open-source Python packages (2.3M lines). With symmetric test-path exclusion, furqan-lint produces more findings in all 25 packages:
+
+| Condition | furqan total | bandit total | Pooled ratio | furqan > bandit |
+|-----------|:-----------:|:-----------:|:-----------:|:---------------:|
+| Both exclude test paths | 22,888 | 3,615 | 6.3x | 25 / 25 |
+| As run (SI-006 exempts tests, B101 does not) | 24,933 | 29,959 | 0.83x | 22 / 25 |
+
+**Caveat.** Two rules (SI-001: Any annotation, SI-006: assert) account for 58.6% of furqan-lint's output. SI-001 duplicates ruff's ANN401. The false positive rate is not measured. See the paper in `paper/` for full methodology and data.
+
+Selected packages:
+
+| Package | furqan | bandit | Ratio |
+|---------|-------:|-------:|------:|
+| django | 1,605 | 281 | 5.7x |
+| sqlalchemy | 8,496 | 866 | 9.8x |
+| pydantic | 2,099 | 86 | 24.4x |
+| celery | 703 | 49 | 14.3x |
+| numpy | 1,018 | 3,597 | 0.3x |
+| pandas | 2,657 | 17,701 | 0.2x |
+
+Full CSV: `paper/benchmark_v2.1.0.csv`. Raw JSON from both tools: `paper/raw_json/`, `paper/bandit_json/`.
+
 ## Supported languages
 
 | Language | Extensions | Rules | Safety domain |
 |----------|-----------|-------|---------------|
-| Python | .py | 40 | General, web, ML, automation |
-| C | .c .h | 14 | Automotive (MISRA), medical devices, aerospace, nuclear |
-| C++ | .cpp .cc .cxx .hpp .hxx .hh | 21 | AUTOSAR C++14, aerospace, trading, medical imaging |
-| Java | .java | 10 | Financial services, medical records, enterprise |
-| C# | .cs | 12 | FDA 21 CFR Part 11, financial, enterprise .NET |
-| Ada/SPARK | .adb .ads .ada | 11 | DO-178C aerospace, IEC 60880 nuclear, EN 50128 railway |
+| Python | .py | 42 (39 active) | General, web, ML, automation |
+| C | .c .h | 9 | Automotive (MISRA), medical, aerospace |
+| C++ | .cpp .cc .cxx .hpp .hxx .hh | 5 additional | AUTOSAR, aerospace, trading |
+| Java | .java | 8 | Financial, medical, enterprise |
+| C# | .cs | 10 | FDA, financial, .NET |
+| Ada/SPARK | .adb .ads .ada | 11 | DO-178C, IEC 60880, EN 50128 |
 
-All languages produce the same Finding format, use the same config system, and output to the same formats (text, JSON, SARIF).
-
-## Real-world comparison (Python)
-
-Tested against real open-source libraries:
-
-| Codebase | furqan-lint | bandit | ruff | Ratio |
-|----------|-----------|--------|------|-------|
-| Django | 3,389 | 281 | 0 | 12x bandit |
-| Celery | 1,176 | 49 | 0 | 24x bandit |
-| Paramiko | 309 | 21 | 0 | 15x bandit |
-| Boto3 | 80 | 0 | 0 | -- |
-| Requests | 214 | 16 | 0 | 13x bandit |
-| Flask | 135 | 12 | 0 | 11x bandit |
-
-98% of bandit's non-noise findings are covered. The remaining 2% are import-level warnings (e.g. "you imported subprocess") that furqan-lint correctly skips in favor of catching actual *usage*.
+All languages produce the same Finding format, use the same config system, and output to text, JSON, or SARIF.
 
 ## Rule families
 
@@ -108,7 +109,7 @@ When something is wrong, the code must signal it. Bare `except:` with no re-rais
 
 ### TRUST-BOUNDARY (TB-*) -- Security and trust violations
 
-Where untrusted input meets trusted execution: hardcoded secrets, shell injection, SQL injection, buffer overflows, format strings, insecure crypto, SSL bypass, unsafe casts, XXE, weak random.
+Where untrusted input meets trusted execution: hardcoded secrets, shell injection, SQL injection, buffer overflows, format strings, insecure crypto, SSL bypass, unsafe casts, XXE, weak random. Three informational rules (TB-001/002/003) flag language features and are off by default.
 
 ### SCAN-INCOMPLETE (SI-*) -- Incomplete verification
 
@@ -134,7 +135,6 @@ exclude = ["tests/", "vendor/"]
 # Per-file rule suppression
 [per_file_ignores]
 "tests/*.py" = ["SI-004"]
-"migrations/*.py" = ["TB-001"]
 ```
 
 Or add to `pyproject.toml`:
@@ -155,17 +155,6 @@ Machine-readable array of finding objects for CI pipelines.
 
 ### SARIF (`--format sarif`)
 SARIF v2.1.0 for GitHub Code Scanning integration and VS Code SARIF Viewer.
-
-## What is structural honesty?
-
-A system is structurally honest when its surface (what it claims to do) matches its substrate (what it actually does). The gap between the two is where bugs, vulnerabilities, and failures hide.
-
-- A function that catches `Exception` and passes claims to handle errors. It doesn't.
-- A variable named `password` with the value `"admin123"` claims to be secret. It isn't.
-- `strcpy(buf, input)` claims the buffer is big enough. It has no way to know.
-- `when others => null;` in Ada claims the exception is handled. It's deleted.
-
-furqan-lint finds these gaps. Every other linter checks style or known vulnerability patterns. furqan-lint checks whether the code is *honest about what it does*.
 
 ## License
 

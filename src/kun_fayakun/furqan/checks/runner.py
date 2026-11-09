@@ -220,7 +220,7 @@ def run(args: list[str]) -> int:
     if config.output_format == "text":
         print("Bismillah ir-Rahman ir-Rahim")
         print()
-        print("furqan-lint v2.0 -- structural honesty checks for Python, C, and Java")
+        print("furqan-lint v2.0 -- structural honesty checks for Python, C, C++, Java, C#, and Ada/SPARK")
         print()
 
     all_findings: List[Finding] = []
@@ -299,9 +299,12 @@ def _print_usage() -> None:
     print("  kun furqan lint [options] [path ...]")
     print()
     print("Supported languages:")
-    print("  Python (.py)    40 rules via AST analysis")
-    print("  C (.c, .h)      12 rules via tree-sitter (automotive, medical, aerospace)")
-    print("  Java (.java)    10 rules via tree-sitter (financial, medical, enterprise)")
+    print("  Python (.py)         40 rules via AST analysis")
+    print("  C (.c, .h)           14 rules via tree-sitter (automotive, medical, aerospace)")
+    print("  C++ (.cpp, .cc, ...) 21 rules via tree-sitter (AUTOSAR, aerospace, trading)")
+    print("  Java (.java)         10 rules via tree-sitter (financial, medical, enterprise)")
+    print("  C# (.cs)             12 rules via tree-sitter (FDA medical, financial, .NET)")
+    print("  Ada/SPARK (.adb/ads) 11 rules via tree-sitter (DO-178C, IEC 60880, EN 50128)")
     print()
     print("Options:")
     print("  -v, --verbose              Show detailed explanations")

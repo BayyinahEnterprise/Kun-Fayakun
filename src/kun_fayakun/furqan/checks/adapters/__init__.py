@@ -18,7 +18,9 @@ from kun_fayakun.furqan.checks.adapters.base import BaseAdapter, get_adapter
 
 # Import adapters so they register via @register decorator
 from kun_fayakun.furqan.checks.adapters import c_adapter  # noqa: F401
+from kun_fayakun.furqan.checks.adapters import cpp_adapter  # noqa: F401
 from kun_fayakun.furqan.checks.adapters import java_adapter  # noqa: F401
+from kun_fayakun.furqan.checks.adapters import csharp_adapter  # noqa: F401
 
 __all__ = ["BaseAdapter", "get_adapter"]
 

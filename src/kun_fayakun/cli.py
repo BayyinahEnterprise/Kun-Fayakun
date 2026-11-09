@@ -16,8 +16,15 @@ import sys
 
 def main():
     """Entry point for the kun command."""
-    print("Bismillah ir-Rahman ir-Rahim")
-    print()
+    # Suppress banner when machine-readable output is requested
+    machine_output = any(
+        sys.argv[i] == "--format" and i + 1 < len(sys.argv)
+        and sys.argv[i + 1] in ("json", "sarif")
+        for i in range(len(sys.argv))
+    )
+    if not machine_output:
+        print("Bismillah ir-Rahman ir-Rahim")
+        print()
 
     if len(sys.argv) < 2:
         print("Kun Fayakun -- Be, and it is.")

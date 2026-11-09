@@ -3,11 +3,13 @@
 Furqan-lint v2.0 runner -- coordinates all check families on Python files.
 
 This module is the heart of `kun furqan lint`. It:
-1. Walks a directory or takes a single file
-2. Parses each .py file into an AST
-3. Runs all four check families (RING-CLOSE, MARAD, TRUST-BOUNDARY, SCAN-INCOMPLETE)
-4. Collects and formats findings
-5. Returns an exit code (0 = clean, 1 = findings, 2 = parse error)
+1. Loads config from .furqan.toml or pyproject.toml
+2. Walks a directory or takes a single file
+3. Parses each .py file into an AST
+4. Runs all four check families (RING-CLOSE, MARAD, TRUST-BOUNDARY, SCAN-INCOMPLETE)
+5. Filters findings by config (select, ignore, severity, per-file)
+6. Formats output (text, json, sarif)
+7. Returns an exit code (0 = clean, 1 = findings, 2 = parse error)
 """
 
 from __future__ import annotations
@@ -18,6 +20,8 @@ from pathlib import Path
 from typing import List
 
 from kun_fayakun.furqan.checks.finding import Finding, Severity
+from kun_fayakun.furqan.checks.config import Config, load_config
+from kun_fayakun.furqan.checks.formatters import format_text, format_json, format_sarif
 from kun_fayakun.furqan.checks.ring_close import check_ring_close
 from kun_fayakun.furqan.checks.marad import check_marad
 from kun_fayakun.furqan.checks.trust_boundary import check_trust_boundary
@@ -31,15 +35,16 @@ EXCLUDED_DIRS: frozenset = frozenset({
 })
 
 
-def lint_source(source: str, path: str) -> List[Finding]:
+def lint_source(source: str, path: str, config: Config | None = None) -> List[Finding]:
     """Run all check families on a single Python source string.
 
     Returns a list of Finding objects, sorted by line number.
+    If config is provided, findings are filtered accordingly.
     """
     try:
         tree = ast.parse(source, filename=path)
     except SyntaxError:
-        return []  # Caller handles parse errors separately
+        return []
 
     findings: List[Finding] = []
     findings.extend(check_ring_close(tree, path))
@@ -47,11 +52,14 @@ def lint_source(source: str, path: str) -> List[Finding]:
     findings.extend(check_trust_boundary(tree, path))
     findings.extend(check_scan_incomplete(source, tree, path))
 
+    if config:
+        findings = config.filter_findings(findings)
+
     findings.sort(key=lambda f: (f.path, f.line, f.col))
     return findings
 
 
-def lint_file(path: Path) -> tuple[List[Finding], int]:
+def lint_file(path: Path, config: Config | None = None) -> tuple[List[Finding], int]:
     """Lint a single Python file.
 
     Returns (findings, exit_code) where exit_code is:
@@ -59,6 +67,9 @@ def lint_file(path: Path) -> tuple[List[Finding], int]:
     - 1 if findings exist
     - 2 if the file could not be parsed
     """
+    if config and config.should_exclude_path(path):
+        return [], 0
+
     try:
         source = path.read_text(encoding="utf-8")
     except (OSError, UnicodeDecodeError) as exc:
@@ -78,18 +89,17 @@ def lint_file(path: Path) -> tuple[List[Finding], int]:
     findings.extend(check_trust_boundary(tree, str(path)))
     findings.extend(check_scan_incomplete(source, tree, str(path)))
 
+    if config:
+        findings = config.filter_findings(findings)
+
     findings.sort(key=lambda f: (f.path, f.line, f.col))
     return findings, 1 if findings else 0
 
 
-def lint_directory(directory: Path) -> tuple[List[Finding], int]:
-    """Lint all .py files in a directory recursively.
-
-    Returns (all_findings, max_exit_code).
-    """
+def lint_directory(directory: Path, config: Config | None = None) -> tuple[List[Finding], int]:
+    """Lint all .py files in a directory recursively."""
     all_findings: List[Finding] = []
     exit_code = 0
-    file_count = 0
 
     py_files = sorted(
         p for p in directory.rglob("*.py")
@@ -97,95 +107,81 @@ def lint_directory(directory: Path) -> tuple[List[Finding], int]:
         and not any(part in EXCLUDED_DIRS for part in p.parts)
     )
 
+    if config:
+        py_files = [p for p in py_files if not config.should_exclude_path(p)]
+
     if not py_files:
         print(f"  No .py files found in {directory}")
         return [], 0
 
     for path in py_files:
-        findings, code = lint_file(path)
+        findings, code = lint_file(path, config)
         all_findings.extend(findings)
         exit_code = max(exit_code, code)
-        file_count += 1
 
     return all_findings, exit_code
 
 
-def format_findings(findings: List[Finding], verbose: bool = False) -> str:
-    """Format findings for terminal output."""
-    if not findings:
-        return ""
-
-    lines: List[str] = []
-    current_path = ""
-
-    for f in findings:
-        if f.path != current_path:
-            if current_path:
-                lines.append("")
-            current_path = f.path
-
-        severity_color = {
-            Severity.CRITICAL: "\033[1;31m",  # bold red
-            Severity.HIGH: "\033[31m",         # red
-            Severity.MEDIUM: "\033[33m",       # yellow
-            Severity.LOW: "\033[36m",          # cyan
-        }
-        reset = "\033[0m"
-
-        # Check if stdout supports color
-        use_color = hasattr(sys.stdout, "isatty") and sys.stdout.isatty()
-
-        if use_color:
-            color = severity_color.get(f.severity, "")
-            line = f"{f.path}:{f.line}:{f.col}: {color}{f.rule}{reset} [{f.severity.value}] {f.message}"
-        else:
-            line = str(f)
-
-        lines.append(line)
-
-        if verbose and f.detail:
-            # Indent detail lines
-            for detail_line in f.detail.split("\n"):
-                lines.append(f"    {detail_line}")
-
-        # Show fix category
-        lines.append(f"    fix: {f.fix.value}")
-
-    return "\n".join(lines)
-
-
 def run(args: list[str]) -> int:
     """Entry point for `kun furqan lint`."""
-    verbose = False
+    # Parse CLI arguments
     paths: list[str] = []
-
-    # Parse arguments
     remaining = list(args)
+
+    # Skip "lint" if it's the first arg (dispatched from kun cli)
+    if remaining and remaining[0] == "lint":
+        remaining = remaining[1:]
+
     if not remaining or remaining[0] in ("-h", "--help"):
         _print_usage()
         return 0
 
-    # The first arg should be "lint" (dispatched from kun cli)
-    if remaining and remaining[0] == "lint":
-        remaining = remaining[1:]
+    # Load config from file first, then override with CLI
+    config = load_config()
 
     while remaining:
         arg = remaining.pop(0)
         if arg in ("-v", "--verbose"):
-            verbose = True
+            config.verbose = True
         elif arg in ("-h", "--help"):
             _print_usage()
             return 0
+        elif arg == "--format" and remaining:
+            fmt = remaining.pop(0)
+            if fmt in ("text", "json", "sarif"):
+                config.output_format = fmt
+            else:
+                print(f"Unknown format: {fmt}. Use text, json, or sarif.", file=sys.stderr)
+                return 2
+        elif arg == "--select" and remaining:
+            rules = remaining.pop(0).split(",")
+            config.select = set(r.strip() for r in rules)
+        elif arg == "--ignore" and remaining:
+            rules = remaining.pop(0).split(",")
+            config.ignore.update(r.strip() for r in rules)
+        elif arg == "--min-severity" and remaining:
+            sev = remaining.pop(0).upper()
+            from kun_fayakun.furqan.checks.config import SEVERITY_BY_NAME
+            if sev in SEVERITY_BY_NAME:
+                config.min_severity = SEVERITY_BY_NAME[sev]
+            else:
+                print(f"Unknown severity: {sev}. Use LOW, MEDIUM, HIGH, or CRITICAL.", file=sys.stderr)
+                return 2
+        elif arg.startswith("-"):
+            print(f"Unknown option: {arg}", file=sys.stderr)
+            return 2
         else:
             paths.append(arg)
 
     if not paths:
         paths = ["."]
 
-    print("Bismillah ir-Rahman ir-Rahim")
-    print()
-    print("furqan-lint v2.0 -- structural honesty checks for Python")
-    print()
+    # Banner (only for text output)
+    if config.output_format == "text":
+        print("Bismillah ir-Rahman ir-Rahim")
+        print()
+        print("furqan-lint v2.0 -- structural honesty checks for Python")
+        print()
 
     all_findings: List[Finding] = []
     exit_code = 0
@@ -199,50 +195,58 @@ def run(args: list[str]) -> int:
             continue
 
         if target.is_file():
-            findings, code = lint_file(target)
+            findings, code = lint_file(target, config)
             all_findings.extend(findings)
             exit_code = max(exit_code, code)
             file_count += 1
         else:
-            findings, code = lint_directory(target)
+            findings, code = lint_directory(target, config)
             all_findings.extend(findings)
             exit_code = max(exit_code, code)
-            py_files = list(target.rglob("*.py"))
-            file_count += len([
-                f for f in py_files
-                if not any(part in EXCLUDED_DIRS for part in f.parts)
-            ])
+            py_files = [
+                p for p in target.rglob("*.py")
+                if not any(part in EXCLUDED_DIRS for part in p.parts)
+                and not (config and config.should_exclude_path(p))
+            ]
+            file_count += len(py_files)
 
-    # Print findings
-    if all_findings:
-        output = format_findings(all_findings, verbose=verbose)
-        print(output)
-        print()
-
-    # Summary
-    crit = sum(1 for f in all_findings if f.severity == Severity.CRITICAL)
-    high = sum(1 for f in all_findings if f.severity == Severity.HIGH)
-    med = sum(1 for f in all_findings if f.severity == Severity.MEDIUM)
-    low = sum(1 for f in all_findings if f.severity == Severity.LOW)
-
-    if all_findings:
-        print(f"Found {len(all_findings)} finding(s) in {file_count} file(s):")
-        parts = []
-        if crit:
-            parts.append(f"{crit} CRITICAL")
-        if high:
-            parts.append(f"{high} HIGH")
-        if med:
-            parts.append(f"{med} MEDIUM")
-        if low:
-            parts.append(f"{low} LOW")
-        print(f"  {', '.join(parts)}")
+    # Output findings
+    if config.output_format == "json":
+        print(format_json(all_findings))
+    elif config.output_format == "sarif":
+        print(format_sarif(all_findings))
     else:
-        print(f"PASS  {file_count} file(s) scanned. Zero findings.")
+        # Text output
+        if all_findings:
+            output = format_text(all_findings, verbose=config.verbose)
+            print(output)
+            print()
 
-    print()
-    print("Bismillah ir-Rahman ir-Rahim")
-    return exit_code
+        # Summary
+        crit = sum(1 for f in all_findings if f.severity == Severity.CRITICAL)
+        high = sum(1 for f in all_findings if f.severity == Severity.HIGH)
+        med = sum(1 for f in all_findings if f.severity == Severity.MEDIUM)
+        low = sum(1 for f in all_findings if f.severity == Severity.LOW)
+
+        if all_findings:
+            print(f"Found {len(all_findings)} finding(s) in {file_count} file(s):")
+            parts = []
+            if crit:
+                parts.append(f"{crit} CRITICAL")
+            if high:
+                parts.append(f"{high} HIGH")
+            if med:
+                parts.append(f"{med} MEDIUM")
+            if low:
+                parts.append(f"{low} LOW")
+            print(f"  {', '.join(parts)}")
+        else:
+            print(f"PASS  {file_count} file(s) scanned. Zero findings.")
+
+        print()
+        print("Bismillah ir-Rahman ir-Rahim")
+
+    return min(exit_code, 1) if all_findings else exit_code
 
 
 def _print_usage() -> None:
@@ -252,8 +256,14 @@ def _print_usage() -> None:
     print("  kun furqan lint [options] [path ...]")
     print()
     print("Options:")
-    print("  -v, --verbose    Show detailed explanations for each finding")
-    print("  -h, --help       Show this help message")
+    print("  -v, --verbose              Show detailed explanations")
+    print("  --format text|json|sarif   Output format (default: text)")
+    print("  --select RC,MR,TB-001      Run only these families/rules")
+    print("  --ignore TB-001,SI-004     Suppress these rules")
+    print("  --min-severity MEDIUM      Skip findings below this level")
+    print("  -h, --help                 Show this help message")
+    print()
+    print("Config file: .furqan.toml or [tool.furqan] in pyproject.toml")
     print()
     print("Check families:")
     print("  RING-CLOSE (RC-*)       Unclosed resources (files, locks, sockets)")

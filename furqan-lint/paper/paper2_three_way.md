@@ -8,7 +8,7 @@ November 2026
 
 ## Abstract
 
-We decompose the findings of three static analysis tools -- furqan-lint v2.1.0 (structural honesty), bandit 1.9.4 (security), and a 30-rule subset of ruff 0.16.9 (style and convention) -- across 25 open-source Python packages (2.3M lines, 5,252 files). Using file-and-line co-location (window of 2 lines), we classify each of furqan-lint's 24,933 findings as not co-located with either other tool (45.5%, 11,338), co-located with ruff only (38.0%), co-located with bandit only (1.1%), or co-located with both (15.5%). SI-001 (Any annotation, which has a direct ruff counterpart in ANN401) accounts for 48.4% of the not-co-located findings; five rules with no known equivalent in bandit or ruff -- kwargs passthrough (SI-005), hasattr masking (SI-007), empty except blocks (MR-005), resource lifecycle (RC-*), and try-except-continue (MR-007) -- account for 46.1%. An exploratory keyword-based classifier (not blind human review) applied to a stratified sample of 585 suggests that the not-co-located findings are predominantly code-health signals (~77.6% stratum-weighted) rather than safety-critical (~5.3%). Precision is not measured: the classifier cannot detect false positives for most rules. We provide raw JSON from all three tools for independent verification.
+We decompose the findings of three static analysis tools -- furqan-lint v2.1.0 (structural honesty), bandit 1.9.4 (security), and a 30-rule subset of ruff 0.16.9 (style and convention) -- across 25 open-source Python packages (2.3M lines, 5,252 files). Using file-and-line co-location (window of 2 lines), we classify each of furqan-lint's 24,933 findings as not co-located with either other tool (45.5%, 11,338), co-located with ruff only (38.0%), co-located with bandit only (1.1%), or co-located with both (15.5%). SI-001 (Any annotation, which has a direct ruff counterpart in ANN401) accounts for 48.4% of the not-co-located findings; four rules plus the five-rule RC family -- kwargs passthrough (SI-005), hasattr masking (SI-007), empty except blocks (MR-005), the RC resource-lifecycle family, and try-except-continue (MR-007) -- account for 46.1%, though MR-005 and RC-001 have partial counterparts in ruff/bandit. An exploratory keyword-based classifier (not blind human review) applied to a stratified sample of 585 suggests that the not-co-located findings are predominantly code-health signals (~77.6% stratum-weighted) rather than safety-critical (~5.3%). Precision is not measured: the classifier cannot detect false positives for most rules. We provide raw JSON from all three tools for independent verification.
 
 **Note on terminology.** *Finding* means a pattern flagged by a tool's rule at a specific file and line. *Not co-located* means no other tool produced a finding within 2 lines on the same file; this is a proxy for uniqueness, not proof of it (see Section 2.5). *Precision* (false-positive rate) is not measured in this study.
 
@@ -37,7 +37,7 @@ We ask two questions:
 | bandit | 1.9.4 | Default (all rules) | Security scanning |
 | ruff | 0.16.9 | 30 rules mapped to furqan equivalents | Style + convention + security |
 
-ruff was run with a targeted rule set: 30 ruff rules with known furqan-lint equivalents (ANN401, BLE001, E722, FIX001/002, PGH001/002/003, S101, S104-S110, S301-S303, S307, S311, S324, S501, S602/603/605/606/608, TD001-003). This understates the overlap: additional ruff rules not included in the selection (SIM115, B006, PGH004, S112, S502-504, S506, S313-320) have partial or full equivalents to furqan-lint rules. Running ruff with its full 800+ rule set would increase the overlap. The 30-rule test provides a lower bound on ruff overlap, not an upper bound.
+ruff was run with a targeted rule set: 30 ruff rules with known furqan-lint equivalents (ANN401, BLE001, E722, FIX001/002, PGH001/002/003, S101, S104-S110, S301-S303, S307, S311, S324, S501, S602/603/605/606/608, TD001-003). This understates the overlap: additional ruff rules not included in the selection (SIM115, B006, PGH004, S112, S502-504, S506, S313-320) have partial or full equivalents to furqan-lint rules. Running ruff with its full 800+ rule set could increase the observed co-location rate (no full-rule comparison was performed). The 30-rule test provides a lower bound on ruff overlap, not an upper bound.
 
 Neither ruff's `--ignore-noqa` nor bandit's `--ignore-nosec` was used, so upstream-suppressed lines (where the original developer added `# noqa` or `# nosec`) appear as not-co-located furqan-lint findings even when a counterpart rule exists.
 
@@ -96,7 +96,7 @@ For each sampled finding, a deterministic keyword function read 11 lines of sour
 
 45.5% of furqan-lint's findings are not co-located with either bandit or the 30-rule ruff subset. The rate is stable across line windows: 46.8% at window=0, 45.5% at 2, 43.7% at 5.
 
-Per-package variation is wide: 18.0% (jinja2) to 92.1% (boto3), median 45.0%. Three packages -- sqlalchemy (3,857), django (1,355), and pandas (822) -- hold 54.7% of the not-co-located findings.
+Per-package variation is wide: 18.0% (jinja2) to 92.1% (boto3), median 40.6%. Three packages -- sqlalchemy (3,857), django (1,355), and pandas (988) -- hold 54.7% of the not-co-located findings.
 
 ### 3.2 Per-rule composition
 
@@ -111,13 +111,13 @@ Full table of all 33 rules with at least one not-co-located finding, sorted by c
 | SI-003 | 269 | 262 | 97.4% | Blanket # noqa |
 | MR-007 | 100 | 97 | 97.0% | try-except-continue in loop |
 | RC-001 | 85 | 78 | 91.8% | open() without close |
-| RC-004 | 73 | 69 | 94.5% | Temp file not cleaned up |
+| RC-004 | 73 | 69 | 94.5% | DB cursor without context manager |
 | TB-018 | 128 | 58 | 45.3% | SQL injection via f-string |
 | RC-003 | 53 | 53 | 100% | Socket/connection not closed |
 | MR-002 | 455 | 51 | 11.2% | Broad except without re-raise |
 | TB-004 | 52 | 51 | 98.1% | Mutable default argument |
 | SI-004 | 1,894 | 40 | 2.1% | TODO/FIXME comment |
-| RC-005 | 40 | 39 | 97.5% | DB cursor not closed |
+| RC-005 | 40 | 39 | 97.5% | Temp file without cleanup |
 | TB-026 | 125 | 36 | 28.8% | Insecure random |
 | TB-029 | 34 | 34 | 100% | C: sprintf buffer overflow |
 | RC-002 | 20 | 19 | 95.0% | Lock acquire without release |
@@ -126,8 +126,8 @@ Full table of all 33 rules with at least one not-co-located finding, sorted by c
 | TB-023 | 14 | 14 | 100% | Insecure hash (MD5/SHA1) |
 | TB-024 | 9 | 9 | 100% | Hardcoded secret |
 | MR-003 | 10 | 8 | 80.0% | Nested try without re-raise |
-| TB-033 | 4 | 4 | 100% | C: unchecked malloc |
-| TB-032 | 4 | 4 | 100% | C: buffer overflow |
+| TB-033 | 4 | 4 | 100% | C++: C-style cast |
+| TB-032 | 4 | 4 | 100% | C++: reinterpret_cast |
 | MR-001 | 29 | 3 | 10.3% | Bare except without re-raise |
 | TB-006 | 153 | 3 | 2.0% | Pickle/yaml deserialization |
 | TB-025 | 4 | 3 | 75.0% | Insecure SSL context |
@@ -144,11 +144,12 @@ Rules with 0% not-co-located: SI-006 (2,872 -- all co-located with B101), TB-020
 
 The keyword classifier assigned categories to 585 sampled findings. These are the raw sample proportions, **not** population estimates (the sampling is disproportionate):
 
-| Category | Sample count | Sample % | Stratum-weighted estimate |
+| Category | Sample count | % of 581 Q1-positive | Stratum-weighted estimate |
 |----------|------:|--:|---|
 | SAFETY | 205 | 35.3% | ~5.3% (~600 of 11,338) |
 | HEALTH | 333 | 57.3% | ~77.6% (~8,800 of 11,338) |
 | DESIGN | 43 | 7.4% | ~17.1% (~1,940 of 11,338) |
+| Q1-negative | 4 | (excluded) | -- |
 
 The sample overrepresents small TB/RC strata (sampled at 35-100%) relative to large SI strata (sampled at <1%). The stratum-weighted estimate applies each rule's sample rate to its population count. SAFETY is driven almost entirely by rule category (TB-* = SAFETY unconditionally), not instance-level context analysis.
 
@@ -166,7 +167,7 @@ The 11,338 not-co-located findings break into four groups by rule family:
 
 **MR-* (error handling):** 988 findings (8.7%). MR-005 (829 -- empty except) partially overlaps ruff BLE001/E722 and bandit B110; the 86% not-co-located rate for MR-005 reflects the remaining findings where bandit/ruff's narrower rules do not fire. MR-002 (51 -- broad except, 11.2% not-co-located) is substantially covered by ruff BLE001.
 
-**RC-* (resource lifecycle):** 258 findings (2.3%). RC-001 (open without close), RC-003 (connection not closed), RC-004 (temp file), RC-005 (cursor). ruff's SIM115 was not included in the selection and would increase overlap for RC-001. No bandit counterpart exists for any RC rule.
+**RC-* (resource lifecycle):** 258 findings (2.3%). RC-001 (open without close), RC-003 (connection not closed), RC-004 (cursor without context manager), RC-005 (temp file without cleanup). ruff's SIM115 was not included in the selection and would increase overlap for RC-001. No bandit counterpart exists for any RC rule.
 
 **TB-* (trust boundary):** 246 findings (2.2%). Mixed: 61 are non-Python (C adapter rules unique by construction), the remainder are small counts across 16 rules, most substantially covered by bandit (TB-005, TB-006, TB-017, TB-020, TB-021).
 
@@ -198,7 +199,7 @@ Excluding SI-001, the not-co-located pool is 5,855 findings (23.5% of total), do
 
 ## 5. Conclusion
 
-45.5% of furqan-lint's findings are not co-located with bandit or a 30-rule ruff subset at the same file and line. The largest component is SI-001 (Any annotation, 48.4% of not-co-located), which has a direct ruff counterpart and is not-co-located due to a scope difference. Excluding SI-001, 5,855 findings (23.5% of total) are not co-located, primarily from rules without known counterparts in the 30-rule selection: SI-005 (kwargs passthrough), SI-007 (hasattr masking), MR-005 (empty except), and RC-* (resource lifecycle).
+45.5% of furqan-lint's findings are not co-located with bandit or a 30-rule ruff subset (within 2 lines in the same file). The largest component is SI-001 (Any annotation, 48.4% of not-co-located), which has a direct ruff counterpart and is not-co-located due to a scope difference. Excluding SI-001, 5,855 findings (23.5% of total) are not co-located, primarily from rules without known counterparts in the 30-rule selection: SI-005 (kwargs passthrough), SI-007 (hasattr masking), MR-005 (empty except), and RC-* (resource lifecycle).
 
 Precision is not measured: the exploratory classifier cannot detect false positives for most rules. The stratum-weighted relevance estimate (~5.3% safety, ~77.6% health, ~17.1% design) is driven by rule-category assignment, not instance-level judgment, and should not be cited as a safety measurement.
 
@@ -216,7 +217,7 @@ Whether the not-co-located findings from rules without known counterparts repres
 
 ## Data availability
 
-All raw data: benchmark_v2.1.0.csv, raw_json/ (furqan-lint, 24,933), bandit_json/ (bandit, 29,959), ruff_json/ (ruff, 44,855), overlap/ (two-way and three-way decomposition CSVs), precision_v2/ (585 classified findings with source context and classifier source code), versions.json, rule_manifest.json. Tools: furqan-lint v2.1.0, bandit 1.9.4, ruff 0.16.9, Python 3.13.18.
+All raw data is in the repository under `furqan-lint/paper/`: raw_json/ (furqan-lint, 24,933 findings), bandit_json/ (bandit, 29,959), ruff_json/ (ruff, 44,855), overlap/ (two-way and three-way decomposition CSVs and summaries), precision_v2/ (585 classified findings with source context and classifier source code), benchmark_v2.1.0.csv, versions.json, rule_manifest.json. Scripts: benchmark.py, three_way_decomposition.py, precision_study_v2.py, run_ruff.py. Tools: furqan-lint v2.1.0, bandit 1.9.4, ruff 0.16.9, Python 3.13.18. Note: the scripts reference absolute paths from the original execution environment; adjust BASE and SITE_PACKAGES paths for local reproduction.
 
 The tool is open-source under Apache-2.0: https://github.com/BayyinahEnterprise/Kun-Fayakun
 
@@ -224,7 +225,7 @@ The tool is open-source under Apache-2.0: https://github.com/BayyinahEnterprise/
 
 ## References
 
-[1] B. S. Arfeen, "furqan-lint vs. bandit: A Finding-Count Comparison Across 25 Python Codebases," BayyinahEnterprise, 2026. Zenodo. https://doi.org/10.5281/zenodo.XXXXX
+[1] B. S. Arfeen, "furqan-lint vs. bandit: A Finding-Count Comparison Across 25 Python Codebases," BayyinahEnterprise, 2026. https://github.com/BayyinahEnterprise/Kun-Fayakun
 
 [2] PyCQA, "Bandit: Security linter for Python," v1.9.4, https://bandit.readthedocs.io/
 

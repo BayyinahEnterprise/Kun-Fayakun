@@ -1,0 +1,321 @@
+{
+  "furqan_lint_version": "v2.1.0",
+  "total_unique_rules": 50,
+  "python_rules": 42,
+  "active_by_default": 47,
+  "informational": [
+    "TB-002",
+    "TB-003",
+    "TB-001"
+  ],
+  "rules": [
+    {
+      "rule_id": "MR-001",
+      "language": "python",
+      "source": "marad.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "MR-002",
+      "language": "python",
+      "source": "marad.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "MR-003",
+      "language": "python",
+      "source": "marad.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "MR-005",
+      "language": "python",
+      "source": "marad.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "MR-007",
+      "language": "python",
+      "source": "marad.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "RC-001",
+      "language": "python",
+      "source": "ring_close.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "RC-002",
+      "language": "python",
+      "source": "ring_close.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "RC-003",
+      "language": "python",
+      "source": "ring_close.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "RC-004",
+      "language": "python",
+      "source": "ring_close.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "RC-005",
+      "language": "python",
+      "source": "ring_close.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "SI-001",
+      "language": "python",
+      "source": "scan_incomplete.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "SI-002",
+      "language": "python",
+      "source": "scan_incomplete.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "SI-003",
+      "language": "python",
+      "source": "scan_incomplete.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "SI-004",
+      "language": "python",
+      "source": "scan_incomplete.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "SI-005",
+      "language": "python",
+      "source": "scan_incomplete.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "SI-006",
+      "language": "python",
+      "source": "scan_incomplete.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "SI-007",
+      "language": "python",
+      "source": "scan_incomplete.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "SI-008",
+      "language": "cpp",
+      "source": "adapters/cpp_adapter.py",
+      "active_by_default": true,
+      "adapter_only": true
+    },
+    {
+      "rule_id": "SI-009",
+      "language": "ada",
+      "source": "adapters/ada_adapter.py",
+      "active_by_default": true,
+      "adapter_only": true
+    },
+    {
+      "rule_id": "SI-010",
+      "language": "ada",
+      "source": "adapters/ada_adapter.py",
+      "active_by_default": true,
+      "adapter_only": true
+    },
+    {
+      "rule_id": "SI-011",
+      "language": "ada",
+      "source": "adapters/ada_adapter.py",
+      "active_by_default": true,
+      "adapter_only": true
+    },
+    {
+      "rule_id": "TB-001",
+      "language": "python",
+      "source": "trust_boundary.py",
+      "active_by_default": false
+    },
+    {
+      "rule_id": "TB-002",
+      "language": "python",
+      "source": "trust_boundary.py",
+      "active_by_default": false
+    },
+    {
+      "rule_id": "TB-003",
+      "language": "python",
+      "source": "trust_boundary.py",
+      "active_by_default": false
+    },
+    {
+      "rule_id": "TB-004",
+      "language": "python",
+      "source": "trust_boundary.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-005",
+      "language": "python",
+      "source": "trust_boundary.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-006",
+      "language": "python",
+      "source": "trust_boundary.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-010",
+      "language": "python",
+      "source": "secrets.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-011",
+      "language": "python",
+      "source": "secrets.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-012",
+      "language": "python",
+      "source": "secrets.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-013",
+      "language": "python",
+      "source": "secrets.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-014",
+      "language": "python",
+      "source": "secrets.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-015",
+      "language": "python",
+      "source": "injection.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-016",
+      "language": "python",
+      "source": "injection.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-017",
+      "language": "python",
+      "source": "injection.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-018",
+      "language": "python",
+      "source": "injection.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-019",
+      "language": "python",
+      "source": "injection.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-020",
+      "language": "python",
+      "source": "injection.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-021",
+      "language": "python",
+      "source": "crypto.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-022",
+      "language": "python",
+      "source": "crypto.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-023",
+      "language": "python",
+      "source": "crypto.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-024",
+      "language": "python",
+      "source": "crypto.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-025",
+      "language": "python",
+      "source": "crypto.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-026",
+      "language": "python",
+      "source": "crypto.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-027",
+      "language": "python",
+      "source": "injection.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-028",
+      "language": "python",
+      "source": "injection.py",
+      "active_by_default": true
+    },
+    {
+      "rule_id": "TB-029",
+      "language": "c",
+      "source": "adapters/c_adapter.py",
+      "active_by_default": true,
+      "adapter_only": true
+    },
+    {
+      "rule_id": "TB-030",
+      "language": "c",
+      "source": "adapters/c_adapter.py",
+      "active_by_default": true,
+      "adapter_only": true
+    },
+    {
+      "rule_id": "TB-033",
+      "language": "cpp",
+      "source": "adapters/cpp_adapter.py",
+      "active_by_default": true,
+      "adapter_only": true
+    },
+    {
+      "rule_id": "TB-034",
+      "language": "ada",
+      "source": "adapters/ada_adapter.py",
+      "active_by_default": true,
+      "adapter_only": true
+    }
+  ]
+}

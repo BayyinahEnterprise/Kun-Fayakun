@@ -1,0 +1,266 @@
+{
+  "sample_size": 585,
+  "population": 11338,
+  "seed": 42,
+  "q1_claim_true": 581,
+  "q1_false_positive": 4,
+  "q1_precision_pct": 99.3,
+  "q1_wilson_95ci": [
+    99.3,
+    98.3,
+    99.7
+  ],
+  "q2_safety": 205,
+  "q2_health": 333,
+  "q2_design": 43,
+  "q2_safety_pct_of_tp": 35.3,
+  "q2_wilson_safety": [
+    35.3,
+    31.5,
+    39.3
+  ],
+  "per_rule_q1": {
+    "SI-001": {
+      "true": 50,
+      "fp": 0
+    },
+    "SI-005": {
+      "true": 50,
+      "fp": 0
+    },
+    "SI-007": {
+      "true": 50,
+      "fp": 0
+    },
+    "MR-005": {
+      "true": 50,
+      "fp": 0
+    },
+    "SI-003": {
+      "true": 50,
+      "fp": 0
+    },
+    "MR-007": {
+      "true": 20,
+      "fp": 0
+    },
+    "RC-001": {
+      "true": 17,
+      "fp": 3
+    },
+    "RC-004": {
+      "true": 20,
+      "fp": 0
+    },
+    "TB-018": {
+      "true": 19,
+      "fp": 1
+    },
+    "RC-003": {
+      "true": 20,
+      "fp": 0
+    },
+    "MR-002": {
+      "true": 20,
+      "fp": 0
+    },
+    "TB-004": {
+      "true": 20,
+      "fp": 0
+    },
+    "SI-004": {
+      "true": 20,
+      "fp": 0
+    },
+    "RC-005": {
+      "true": 20,
+      "fp": 0
+    },
+    "TB-026": {
+      "true": 20,
+      "fp": 0
+    },
+    "TB-029": {
+      "true": 20,
+      "fp": 0
+    },
+    "RC-002": {
+      "true": 19,
+      "fp": 0
+    },
+    "TB-030": {
+      "true": 19,
+      "fp": 0
+    },
+    "SI-002": {
+      "true": 18,
+      "fp": 0
+    },
+    "TB-023": {
+      "true": 14,
+      "fp": 0
+    },
+    "TB-024": {
+      "true": 9,
+      "fp": 0
+    },
+    "MR-003": {
+      "true": 8,
+      "fp": 0
+    },
+    "TB-033": {
+      "true": 4,
+      "fp": 0
+    },
+    "TB-032": {
+      "true": 4,
+      "fp": 0
+    },
+    "TB-025": {
+      "true": 3,
+      "fp": 0
+    },
+    "TB-006": {
+      "true": 3,
+      "fp": 0
+    },
+    "MR-001": {
+      "true": 3,
+      "fp": 0
+    },
+    "TB-027": {
+      "true": 3,
+      "fp": 0
+    },
+    "TB-011": {
+      "true": 2,
+      "fp": 0
+    },
+    "TB-014": {
+      "true": 2,
+      "fp": 0
+    },
+    "TB-010": {
+      "true": 2,
+      "fp": 0
+    },
+    "TB-017": {
+      "true": 1,
+      "fp": 0
+    },
+    "TB-005": {
+      "true": 1,
+      "fp": 0
+    }
+  },
+  "per_rule_q2": {
+    "SI-001": {
+      "HEALTH": 50
+    },
+    "SI-005": {
+      "DESIGN": 43,
+      "HEALTH": 6,
+      "SAFETY": 1
+    },
+    "SI-007": {
+      "HEALTH": 49,
+      "SAFETY": 1
+    },
+    "MR-005": {
+      "HEALTH": 42,
+      "SAFETY": 8
+    },
+    "SI-003": {
+      "HEALTH": 50
+    },
+    "MR-007": {
+      "HEALTH": 20
+    },
+    "RC-001": {
+      "HEALTH": 17
+    },
+    "RC-004": {
+      "SAFETY": 20
+    },
+    "TB-018": {
+      "SAFETY": 19
+    },
+    "RC-003": {
+      "SAFETY": 20
+    },
+    "MR-002": {
+      "HEALTH": 15,
+      "SAFETY": 5
+    },
+    "TB-004": {
+      "SAFETY": 20
+    },
+    "SI-004": {
+      "HEALTH": 20
+    },
+    "RC-005": {
+      "HEALTH": 19,
+      "SAFETY": 1
+    },
+    "TB-026": {
+      "SAFETY": 20
+    },
+    "TB-029": {
+      "SAFETY": 20
+    },
+    "RC-002": {
+      "HEALTH": 16,
+      "SAFETY": 3
+    },
+    "TB-030": {
+      "SAFETY": 19
+    },
+    "SI-002": {
+      "HEALTH": 18
+    },
+    "TB-023": {
+      "SAFETY": 14
+    },
+    "TB-024": {
+      "SAFETY": 9
+    },
+    "MR-003": {
+      "HEALTH": 8
+    },
+    "TB-033": {
+      "SAFETY": 4
+    },
+    "TB-032": {
+      "SAFETY": 4
+    },
+    "TB-025": {
+      "SAFETY": 3
+    },
+    "TB-006": {
+      "SAFETY": 3
+    },
+    "MR-001": {
+      "HEALTH": 3
+    },
+    "TB-027": {
+      "SAFETY": 3
+    },
+    "TB-011": {
+      "SAFETY": 2
+    },
+    "TB-014": {
+      "SAFETY": 2
+    },
+    "TB-010": {
+      "SAFETY": 2
+    },
+    "TB-017": {
+      "SAFETY": 1
+    },
+    "TB-005": {
+      "SAFETY": 1
+    }
+  },
+  "rater": "claude-opus-4.6 (automated context heuristic -- not blind manual review)",
+  "note": "Q1 uses AST/tree-sitter match as baseline (true by construction for most rules). FP detected only where surrounding context contradicts the rule's claim. Q2 uses keyword proximity as a proxy for manual review. Both should be verified by human raters blind to rule ID."
+}

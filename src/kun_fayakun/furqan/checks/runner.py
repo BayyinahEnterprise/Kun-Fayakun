@@ -1,6 +1,6 @@
 # Bismillah ir-Rahman ir-Rahim
 """
-Furqan-lint v2.1.0 runner -- coordinates structural honesty checks across languages.
+Furqan-lint v2.2.0 runner -- coordinates structural honesty checks across languages.
 
 This module is the heart of `kun furqan lint`. It:
 1. Loads config from .furqan.toml or pyproject.toml
@@ -29,6 +29,7 @@ from kun_fayakun.furqan.checks.scan_incomplete import check_scan_incomplete
 from kun_fayakun.furqan.checks.secrets import check_secrets
 from kun_fayakun.furqan.checks.injection import check_injection
 from kun_fayakun.furqan.checks.crypto import check_crypto
+from kun_fayakun.furqan.checks.cve_patterns import check_cve_patterns
 from kun_fayakun.furqan.checks.adapters.base import get_adapter, supported_extensions
 
 
@@ -75,6 +76,7 @@ def lint_source(source: str, path: str, config: Config | None = None) -> List[Fi
     findings.extend(check_secrets(tree, path))
     findings.extend(check_injection(tree, path))
     findings.extend(check_crypto(tree, path))
+    findings.extend(check_cve_patterns(tree, source, path))
 
     findings = config.filter_findings(findings)
 
@@ -240,7 +242,7 @@ def run(args: list[str]) -> int:
     if config.output_format == "text":
         print("Bismillah ir-Rahman ir-Rahim")
         print()
-        print("furqan-lint v2.1.0 -- structural honesty checks for Python, C, C++, Java, C#, and Ada/SPARK")
+        print("furqan-lint v2.2.0 -- structural honesty checks for Python, C, C++, Java, C#, and Ada/SPARK")
         print()
 
     all_findings: List[Finding] = []
@@ -315,7 +317,7 @@ def run(args: list[str]) -> int:
 
 
 def _print_usage() -> None:
-    print("furqan-lint v2.1.0 -- structural honesty checks")
+    print("furqan-lint v2.2.0 -- structural honesty checks")
     print()
     print("Usage:")
     print("  kun furqan lint [options] [path ...]")

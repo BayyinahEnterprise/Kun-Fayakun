@@ -10,9 +10,9 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / 'eess_prototype_v0324'))
-from Bismillah_HABL_Event_Store_v0324 import HABLJournal
-from Bismillah_Decision_Reducer_v0324 import DecisionReducer
-from Bismillah_Dispatch_Engine_v0324 import DispatchEngine, MockTarget, TargetContract, TargetCapability
+from kun_fayakun.eess.event_store import HABLJournal
+from kun_fayakun.eess.decision_reducer import DecisionReducer
+from kun_fayakun.eess.dispatch_engine import DispatchEngine, MockTarget, TargetContract, TargetCapability
 
 
 def valid_payload(suffix):

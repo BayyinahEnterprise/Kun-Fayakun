@@ -31,7 +31,7 @@ NON-AUTHORIZING PROTOTYPE.
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional
-from Bismillah_HABL_Event_Store_v0324 import HABLJournal, EventType, ALLOWED_ACTIONS
+from kun_fayakun.eess.event_store import HABLJournal, EventType, ALLOWED_ACTIONS
 
 
 class SafetyState(Enum):

@@ -3,7 +3,7 @@
 import sys,threading,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from Bismillah_HABL_Event_Store_v0324 import HABLJournal
+from kun_fayakun.eess.event_store import HABLJournal
 
 class P20Extended(unittest.TestCase):
     def _run_case(self, mode):

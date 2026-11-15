@@ -16,9 +16,9 @@ SRC = HERE / 'eess_prototype_v0324'
 if not SRC.is_dir():
     SRC = HERE
 sys.path.insert(0, str(SRC))
-from Bismillah_HABL_Event_Store_v0324 import HABLJournal, EventType
-from Bismillah_Decision_Reducer_v0324 import DecisionReducer
-from Bismillah_Dispatch_Engine_v0324 import (
+from kun_fayakun.eess.event_store import HABLJournal, EventType
+from kun_fayakun.eess.decision_reducer import DecisionReducer
+from kun_fayakun.eess.dispatch_engine import (
     DispatchEngine, MockTarget, TargetContract, TargetCapability,
 )
 

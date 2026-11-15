@@ -421,7 +421,7 @@ MUHKAM_CONSTANT = 7          # The revealed constant (67:3, 71:15, 65:12)
 TOTAL_HEAVENS = 7
 TOTAL_LAYERS = 49            # 7 x 7 -- muhkam squared
 LAYERS_PER_HEAVEN = 7        # One cycle of the revealed constant per heaven
-ENCODER_VERSION = "11.0.0"   # v11.0.0: Muhkam Architecture -- 7 heavens x 7 layers, Qur'anic text respected
+ENCODER_VERSION = "11.1.0"   # v11.1.0: audit/sanitizer repairs (see tests/fatima); v11.0.0: Muhkam Architecture -- 7 heavens x 7 layers
 
 # v10.7.0: Binary sealing mode. "sidecar" = witness file only (non-destructive).
 # "embed" = inject metadata into the binary (can invalidate PDF signatures).
@@ -843,10 +843,10 @@ TAWHID_FACTORS = {
 #  ZERO-WIDTH UNICODE STEGANOGRAPHY
 # ============================================================================
 
-ZW_ZERO = '​'      # ZERO WIDTH SPACE = bit 0
-ZW_ONE = '‌'        # ZERO WIDTH NON-JOINER = bit 1
-ZW_SEP = '‍'        # ZERO WIDTH JOINER = character separator
-ZW_BOUNDARY = '﻿'   # BYTE ORDER MARK = message boundary
+ZW_ZERO = '\u200b'      # ZERO WIDTH SPACE = bit 0
+ZW_ONE = '\u200c'        # ZERO WIDTH NON-JOINER = bit 1
+ZW_SEP = '\u200d'        # ZERO WIDTH JOINER = character separator
+ZW_BOUNDARY = '\ufeff'   # BYTE ORDER MARK = message boundary
 
 # ============================================================================
 #  FILE TYPE CLASSIFICATIONS
@@ -928,24 +928,24 @@ SIDECAR_ONLY_EXTENSIONS = {
 # CVE-2021-42574 "Trojan Source" demonstrated these can make source code
 # appear to say one thing while executing another.
 BIDI_OVERRIDES = {
-    '‏': 'RLM',     # Right-to-Left Mark
-    '‎': 'LRM',     # Left-to-Right Mark
-    '‪': 'LRE',     # Left-to-Right Embedding
-    '‫': 'RLE',     # Right-to-Left Embedding
-    '‬': 'PDF',     # Pop Directional Formatting
-    '‭': 'LRO',     # Left-to-Right Override
-    '‮': 'RLO',     # Right-to-Left Override
-    '⁦': 'LRI',     # Left-to-Right Isolate
-    '⁧': 'RLI',     # Right-to-Left Isolate
-    '⁨': 'FSI',     # First Strong Isolate
-    '⁩': 'PDI',     # Pop Directional Isolate
-    '؜': 'ALM',     # Arabic Letter Mark
+    '\u200f': 'RLM',     # Right-to-Left Mark
+    '\u200e': 'LRM',     # Left-to-Right Mark
+    '\u202a': 'LRE',     # Left-to-Right Embedding
+    '\u202b': 'RLE',     # Right-to-Left Embedding
+    '\u202c': 'PDF',     # Pop Directional Formatting
+    '\u202d': 'LRO',     # Left-to-Right Override
+    '\u202e': 'RLO',     # Right-to-Left Override
+    '\u2066': 'LRI',     # Left-to-Right Isolate
+    '\u2067': 'RLI',     # Right-to-Left Isolate
+    '\u2068': 'FSI',     # First Strong Isolate
+    '\u2069': 'PDI',     # Pop Directional Isolate
+    '\u061c': 'ALM',     # Arabic Letter Mark
 }
 
 # Dangerous overrides that FORCE directionality regardless of script
 # LRO (U+202D) and RLO (U+202E) are true overrides -- CVE-2021-42574 attack surface
 # LRE (U+202A) and RLE (U+202B) are embeddings (suggest, don't force) -- lower severity
-BIDI_DANGEROUS = {'‭', '‮'}  # LRO, RLO only
+BIDI_DANGEROUS = {'\u202d', '\u202e'}  # LRO, RLO only
 
 # Arabic Unicode ranges for directionality classification
 ARABIC_RANGES = [
@@ -1240,7 +1240,8 @@ def sanitize_for_terminal(text, strict=False):
     return ''.join(result), removed, diagnostics
 
 
-def sanitize_for_llm(text, strip_invisible=True):
+def sanitize_for_llm(text, strip_invisible=True, strip_unsealed_zero_width=True,
+                     strip_bidi_overrides=True):
     """Strip cognitive-channel sihr vectors from text for safe LLM consumption.
 
     Bismillah ir-Rahman ir-Rahim
@@ -1273,8 +1274,44 @@ def sanitize_for_llm(text, strip_invisible=True):
     tag_count = 0
     invisible_count = 0
 
+    # v11.1.0: the audit (SA-005, RI-003) reported zero-width characters
+    # outside any watermark and forced-direction overrides, but this
+    # function left both in place, so a file could audit as SUSPICIOUS and
+    # sanitize as NOMINAL. Both are now removed by default. Closed FATIMA
+    # watermark regions and characters a writing system requires are kept.
+    stray_zw = set()
+    sealed = set()
+    if ZW_BOUNDARY in text:
+        start = None
+        for j, c in enumerate(text):
+            if c == ZW_BOUNDARY:
+                if start is None:
+                    start = j
+                else:
+                    sealed.update(range(start, j + 1))
+                    start = None
+    if strip_unsealed_zero_width and any(
+            c in text for c in (ZW_ZERO, ZW_ONE, ZW_SEP, ZW_BOUNDARY)):
+        exempt = _zw_exempt_indices(text)
+        stray_zw = {
+            j for j, c in enumerate(text)
+            if c in (ZW_ZERO, ZW_ONE, ZW_SEP, ZW_BOUNDARY)
+            and j not in sealed and j not in exempt
+        }
+    stray_zw_count = 0
+    bidi_count = 0
+
     for i, ch in enumerate(text):
         cp = ord(ch)
+
+        if i in stray_zw:
+            stray_zw_count += 1
+            removed += 1
+            continue
+        if strip_bidi_overrides and ch in BIDI_DANGEROUS:
+            bidi_count += 1
+            removed += 1
+            continue
 
         # Unicode Tags block -- steganographic carrier
         if _is_unicode_tag(cp):
@@ -1300,7 +1337,10 @@ def sanitize_for_llm(text, strip_invisible=True):
             continue
 
         # Mid-stream BOM
-        if cp == 0xFEFF and i > 0:
+        # v11.1.0: a boundary of a closed watermark region is not a stray
+        # BOM. Before 11.1.0 this branch removed the encoder's own boundary
+        # markers and left the watermark body undelimited.
+        if cp == 0xFEFF and i > 0 and i not in sealed:
             removed += 1
             invisible_count += 1
             continue
@@ -1328,6 +1368,15 @@ def sanitize_for_llm(text, strip_invisible=True):
         diagnostics.append(
             "NAS_STRIP: {} invisible Unicode char(s) removed -- "
             "cognitive waswas vector".format(invisible_count))
+
+    if stray_zw_count:
+        diagnostics.append(
+            "NAS_STRIP: {} zero-width char(s) outside any watermark removed".format(
+                stray_zw_count))
+    if bidi_count:
+        diagnostics.append(
+            "NAS_STRIP: {} forced-direction override(s) removed -- "
+            "CVE-2021-42574 surface".format(bidi_count))
 
     return ''.join(result), removed, diagnostics
 
@@ -3098,7 +3147,7 @@ def compute_semantic_witness(content_bytes):
             }
 
     # Strip ZWC characters that may be present from prior sealing
-    zwc_chars = {'​', '‌', '‍', '﻿'}
+    zwc_chars = {'\u200b', '\u200c', '\u200d', '\ufeff'}
     text_clean = ''.join(c for c in text if c not in zwc_chars)
 
     # Skip if content is too short for meaningful semantic analysis
@@ -4133,7 +4182,7 @@ def _extract_document_features(content_bytes):
         return None
 
     # Strip ZWC
-    zwc_chars = {'​', '‌', '‍', '﻿'}
+    zwc_chars = {'\u200b', '\u200c', '\u200d', '\ufeff'}
     text_clean = ''.join(c for c in text if c not in zwc_chars)
 
     if len(text_clean.strip()) < 50:
@@ -9749,7 +9798,7 @@ def display_heavens_report(directory):
 
 def _strip_zwc(text):
     """Remove zero-width characters for comparison purposes."""
-    ZWC = {'​', '‌', '‍', '﻿'}
+    ZWC = {'\u200b', '\u200c', '\u200d', '\ufeff'}
     return ''.join(c for c in text if c not in ZWC)
 
 
@@ -9842,7 +9891,7 @@ def detect_zwc_degradation(content, filepath=None):
     Compares the density of zero-width characters against expected thresholds.
     Returns a dict with 'status', 'zwc_count', 'density', 'assessment'.
     """
-    ZWC_CHARS = {'​', '‌', '‍', '﻿'}
+    ZWC_CHARS = {'\u200b', '\u200c', '\u200d', '\ufeff'}
 
     total_chars = len(content)
     zwc_count = sum(1 for c in content if c in ZWC_CHARS)
@@ -9900,7 +9949,7 @@ def unseal_text_content(content):
     - Visible Bismillah markers removed
     - Blank lines from marker removal collapsed
     """
-    ZWC_CHARS = {'​', '‌', '‍', '﻿'}
+    ZWC_CHARS = {'\u200b', '\u200c', '\u200d', '\ufeff'}
 
     # Step 1: Remove all zero-width characters
     cleaned = ''.join(c for c in content if c not in ZWC_CHARS)
@@ -11215,7 +11264,7 @@ def embed_muraqabah_preamble(content, filepath, ext=None,
         # Insert preamble right after the opening Bismillah
         # Strip ZWC chars for detection (defensive: handles pre-encoded text)
         clean_line = line.lower().replace('-', '')
-        for zc in ('​', '‌', '‍', '﻿'):
+        for zc in ('\u200b', '\u200c', '\u200d', '\ufeff'):
             clean_line = clean_line.replace(zc, '')
         if (not preamble_inserted
                 and 'bismillah' in clean_line
@@ -11241,7 +11290,7 @@ def embed_muraqabah_preamble(content, filepath, ext=None,
         last_bismillah_idx = -1
         for i in range(len(final_lines) - 1, -1, -1):
             check_line = final_lines[i].lower().replace('-', '')
-            for zc in ('​', '‌', '‍', '﻿'):
+            for zc in ('\u200b', '\u200c', '\u200d', '\ufeff'):
                 check_line = check_line.replace(zc, '')
             if 'bismillah' in check_line:
                 last_bismillah_idx = i
@@ -12058,22 +12107,88 @@ def _zw_emoji_sequence(prev_ch, next_ch):
     return prev_ok and _zw_in_emoji_range(next_ch)
 
 
-def _is_heuristic_exempt_zero_width(content, i):
-    """v10.9.1: True if content[i] is exempted from SA-005 by the
-    documented heuristic above. Not a statement that it is harmless."""
+# v11.1.0: Arabic-script letters that never join to the letter after them.
+# A U+200C placed after one of these changes nothing on screen, so it is
+# not orthography and is not exempt.
+_ZW_RIGHT_JOINING = frozenset(
+    "\u0622\u0623\u0624\u0625\u0627\u0629\u062f\u0630\u0631\u0632\u0648"
+    "\u0671\u0672\u0673\u0675\u0676\u0677"
+    "\u0688\u0689\u068a\u068b\u068c\u068d\u068e\u068f\u0690"
+    "\u0691\u0692\u0693\u0694\u0695\u0696\u0697\u0698\u0699"
+    "\u06c0\u06c3\u06c4\u06c5\u06c6\u06c7\u06c8\u06c9\u06ca\u06cb\u06cd\u06cf"
+    "\u06d2\u06d3\u06d5"
+)
+_ZW_ARABIC_SCRIPTS = frozenset({"ARABIC", "SYRIAC", "NKO"})
+_ZW_INDIC_SCRIPTS = _ZW_JOINING_SCRIPTS - _ZW_ARABIC_SCRIPTS - {"MONGOLIAN"}
+# Share of letters that exempt-eligible characters may reach before the
+# exemption is withdrawn for the whole text (one hidden bit per letter gap
+# needs far more of them than any orthography uses).
+_ZW_JOINER_DENSITY_CAP = 0.12
+_ZW_WORD_BREAK_DENSITY_CAP = 0.45
+_ZW_DENSITY_MIN_COUNT = 8
+
+
+def _zw_exemption_rule(content, i):
+    """v11.1.0: which documented rule, if any, explains content[i]:
+    "joiner", "word_break", "emoji", "bom" or None. Density is applied
+    by _zw_exempt_indices. Not a statement that the character is harmless."""
     ch = content[i]
     if ch == ZW_BOUNDARY:
-        return i == 0
+        return "bom" if i == 0 else None
     if i == 0 or i + 1 >= len(content):
-        return False
+        return None
     prev_ch, next_ch = content[i - 1], content[i + 1]
     if ch in (ZW_ONE, ZW_SEP):  # U+200C ZWNJ, U+200D ZWJ
-        if _zw_same_script(prev_ch, next_ch, _ZW_JOINING_SCRIPTS):
-            return True
-        return ch == ZW_SEP and _zw_emoji_sequence(prev_ch, next_ch)
+        if ch == ZW_SEP and _zw_emoji_sequence(prev_ch, next_ch):
+            return "emoji"
+        script = _zw_script(prev_ch)
+        if script is None or script != _zw_script(next_ch):
+            return None
+        if script in _ZW_ARABIC_SCRIPTS:
+            # Only ZWNJ, only after a letter that would otherwise join.
+            if (ch == ZW_ONE and prev_ch not in _ZW_RIGHT_JOINING
+                    and unicodedata.category(prev_ch) == "Lo"):
+                return "joiner"
+            return None
+        if script in _ZW_INDIC_SCRIPTS:
+            # Orthographic use sits against a virama (combining class 9).
+            if unicodedata.combining(prev_ch) == 9 or unicodedata.combining(next_ch) == 9:
+                return "joiner"
+            return None
+        return "joiner" if script in _ZW_JOINING_SCRIPTS else None
     if ch == ZW_ZERO:  # U+200B ZWSP
-        return _zw_same_script(prev_ch, next_ch, _ZW_NO_SPACE_SCRIPTS)
-    return False
+        if _zw_same_script(prev_ch, next_ch, _ZW_NO_SPACE_SCRIPTS):
+            return "word_break"
+    return None
+
+
+def _zw_exempt_indices(content):
+    """v11.1.0: indices of zero-width characters exempted from SA-005.
+    Unlike the per-character test in 10.9.x, this withdraws the exemption
+    for a whole class when its density exceeds what orthography uses."""
+    by_rule = {}
+    for i, ch in enumerate(content):
+        if ch in (ZW_ZERO, ZW_ONE, ZW_SEP, ZW_BOUNDARY):
+            rule = _zw_exemption_rule(content, i)
+            if rule:
+                by_rule.setdefault(rule, []).append(i)
+    if not by_rule:
+        return frozenset()
+    letters = sum(1 for c in content if unicodedata.category(c) in ("Lo", "Lm"))
+    exempt = set(by_rule.get("emoji", [])) | set(by_rule.get("bom", []))
+    for rule, cap in (("joiner", _ZW_JOINER_DENSITY_CAP),
+                      ("word_break", _ZW_WORD_BREAK_DENSITY_CAP)):
+        hits = by_rule.get(rule, [])
+        if len(hits) >= _ZW_DENSITY_MIN_COUNT and letters and len(hits) / letters > cap:
+            continue
+        exempt.update(hits)
+    return frozenset(exempt)
+
+
+def _is_heuristic_exempt_zero_width(content, i):
+    """v10.9.1, guarded in v11.1.0: True if content[i] is exempted from
+    SA-005 by the documented heuristic. Not a statement that it is harmless."""
+    return i in _zw_exempt_indices(content)
 
 
 # v10.9.3 (N4): protocols whose ZWC payloads the Encoder itself writes
@@ -12213,6 +12328,7 @@ def _audit_steganographic(content, filepath=None):
     # _is_heuristic_exempt_zero_width); those are counted, not hidden.
     stray_zwc_positions = []
     heuristic_exempt_zero_width = 0
+    _exempt_zw = _zw_exempt_indices(content)
     region_iter = iter(zwc_regions)
     current_region = next(region_iter, None)
     for i, ch in enumerate(content):
@@ -12222,7 +12338,7 @@ def _audit_steganographic(content, filepath=None):
             continue
         if current_region is not None and current_region[0] <= i <= current_region[1]:
             continue
-        if _is_heuristic_exempt_zero_width(content, i):
+        if i in _exempt_zw:
             heuristic_exempt_zero_width += 1
             continue
         stray_zwc_positions.append(i)
@@ -12318,26 +12434,72 @@ def _audit_steganographic(content, filepath=None):
         (0x0415, 0x0045): ('Cyrillic Ie', 'Latin E'),
     }
 
-    # Simplified check: flag files with both Latin and Cyrillic (trojan source)
-    has_latin = False
-    has_cyrillic = False
-    for ch in content[:10000]:  # Sample first 10K chars
-        cp = ord(ch)
-        if 0x41 <= cp <= 0x7A:
-            has_latin = True
-        if 0x0400 <= cp <= 0x04FF:
-            has_cyrillic = True
-
-    if has_latin and has_cyrillic:
+    # v11.1.0: word-level test. Before 11.1.0 any file holding both Latin
+    # and Cyrillic letters was flagged, which describes every bilingual
+    # document. A word is a spoof when it mixes Latin letters with
+    # Cyrillic lookalikes; a word written wholly in Cyrillic is a word.
+    _cyr_lookalikes = frozenset(
+        "\u0430\u0435\u043e\u0440\u0441\u0443\u0445\u0456\u0458\u0455"
+        "\u0410\u0412\u0415\u041a\u041c\u041d\u041e\u0420\u0421\u0422\u0425")
+    mixed_words = []
+    for word in content[:200000].split():
+        if any(c in _cyr_lookalikes for c in word) and any(
+                ("a" <= c <= "z") or ("A" <= c <= "Z") for c in word):
+            mixed_words.append(word)
+    if mixed_words:
         findings.append({
             "severity": "HIGH",
             "code": "SA-004",
-            "description": "Mixed Latin and Cyrillic script -- trojan source attack surface",
-            "detail": "File contains both Latin and Cyrillic characters. "
-                      "Cyrillic look-alikes can hide malicious identifiers "
-                      "(CVE-2021-42574 related).",
+            "description": "Mixed-script word(s) -- {} word(s) combine Latin letters "
+                           "with Cyrillic lookalikes".format(len(mixed_words)),
+            "detail": "Examples (escaped): {}".format(
+                ", ".join(ascii(w[:40]) for w in mixed_words[:5])),
         })
         contamination_score += 25
+
+    # --- Check 5 (v11.1.0): Terminal escape sequences and control characters ---
+    # sanitize_for_terminal() has stripped these since v10.4.0; the audit
+    # did not report them, so audit and sanitizer disagreed about the same file.
+    ansi_count = len(re.findall(
+        r"(?:\x1b\[|\x9b)[0-9;:?<=>]*[@-~]|\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)|\x1b[@-Z\\-_]",
+        content))
+    control_count = sum(
+        1 for ch in content
+        if ord(ch) in DANGEROUS_C0_CONTROLS or ord(ch) in DANGEROUS_C1_CONTROLS)
+    if ansi_count or control_count:
+        findings.append({
+            "severity": "HIGH",
+            "code": "SA-008",
+            "description": "Terminal escape sequences or control characters -- "
+                           "{} sequence(s), {} control character(s)".format(
+                ansi_count, control_count),
+            "detail": "Shown in a terminal these can rewrite or hide output. "
+                      "sanitize_for_terminal() removes them.",
+        })
+        contamination_score += 25
+
+    # --- Check 6 (v11.1.0): Variation-selector runs ---
+    # One selector after its base character is ordinary. A run of two or
+    # more selects nothing and can carry one byte per character.
+    vs_total, vs_run = 0, 0
+    for ch in content + " ":
+        cp = ord(ch)
+        if 0xFE00 <= cp <= 0xFE0F or 0xE0100 <= cp <= 0xE01EF:
+            vs_run += 1
+        else:
+            if vs_run >= 2:
+                vs_total += vs_run
+            vs_run = 0
+    if vs_total:
+        findings.append({
+            "severity": "CRITICAL" if vs_total >= 8 else "HIGH",
+            "code": "SA-009",
+            "description": "Variation-selector run(s) -- {} selector(s) in runs of "
+                           "two or more".format(vs_total),
+            "detail": "A run of variation selectors renders as nothing and can "
+                      "carry a hidden byte per character.",
+        })
+        contamination_score += 40 if vs_total >= 8 else 20
 
     return {
         "status": "CLEAN" if contamination_score == 0 else

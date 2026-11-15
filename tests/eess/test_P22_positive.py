@@ -4,7 +4,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent / 'eess_prototype_v0324'))
-from Bismillah_HABL_Event_Store_v0324 import HABLJournal
+from kun_fayakun.eess.event_store import HABLJournal
 
 def p(tag, metadata):
     return dict(claim_id='CLAIM-'+tag, action='SEND',target='TARGET-'+tag,

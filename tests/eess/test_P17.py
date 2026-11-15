@@ -8,8 +8,8 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from Bismillah_HABL_Event_Store_v0324 import HABLJournal
-from Bismillah_Decision_Reducer_v0324 import DecisionReducer, SafetyState
+from kun_fayakun.eess.event_store import HABLJournal
+from kun_fayakun.eess.decision_reducer import DecisionReducer, SafetyState
 
 HASH = 'a'*64
 EVIDENCE = 'c'*64

@@ -38,7 +38,7 @@ This codebase attempts to build software that obeys the same principles.
 
 ```
 kun_fayakun/
-├── fatima/      The Encoder        -- 154-layer cryptographic file protection
+├── fatima/      The Encoder        -- 49-layer cryptographic file protection
 ├── bayyinah/    The Scanner        -- integrity verification for files and artifacts
 ├── furqan/      The Linter         -- structural honesty checks for codebases
 ├── habl/        The Ledger         -- append-only binding with SHA-256 hash chain
@@ -48,7 +48,7 @@ kun_fayakun/
 
 | Instrument | Named For | What It Does | Version |
 |:-----------|:----------|:-------------|:--------|
-| **FATIMA** | فاطمة -- She who abstains from what is forbidden | Encodes files with 154 layers of cryptographic integrity across 22 domains (11 heavens + 11 earths), each carrying 7 operational layers. The Muraqabah Triad witnesses every operation. | v10.8.0 |
+| **FATIMA** | فاطمة -- She who abstains from what is forbidden | Encodes files with 49 layers of integrity hashing across 7 heavens, 7 layers each (the Muhkam architecture, v11.0.0, which superseded the 154-layer model). Optional Ed25519 signed seal. | v11.2.0 |
 | **Bayyinah** | بيّنة -- Clear evidence | Scans files and artifacts for integrity violations. The root b-y-n means clarity, distinction, evidence. Surah 49:6: *verify before you act*. | Active |
 | **Furqan** | فرقان -- The criterion that distinguishes truth from falsehood | Lints codebases for structural honesty. Adapters for Go, ONNX, and Python. Named for the Qur'an's own name for itself: the standard by which truth is separated from corruption. | Active |
 | **HABL** | حبل -- The rope that does not break | Append-only binding ledger with SHA-256 predecessor-linked hash chain. Surah 3:103: *hold firmly to the rope of Allah, all together, and do not become divided*. | Active |
@@ -64,7 +64,7 @@ pip install kun-fayakun
 ## Quick Start
 
 ```bash
-# Encode a file with 154-layer divine protection
+# Encode a file with the 49-layer seal
 kun fatima encode document.pdf
 
 # Verify a sealed file's integrity chain
@@ -92,16 +92,28 @@ Every instrument serves the same five axioms of Structural Honesty Verification 
 | **A4** | Projection consistency -- same truth, consistent representations | *Is He who creates like one who does not create?* (39:29) |
 | **A5** | Evidence independence -- verification must not depend on what it verifies | The witness chain must be independent of the evidence it authenticates. |
 
-## The 154-Layer Architecture
+## The 49-Layer Architecture
 
-FATIMA's encoding uses **154 = 2 × 7 × 11** layers:
+FATIMA's encoding uses **49 = 7 × 7** layers: seven heavens, seven
+layers per heaven. This is the Muhkam architecture of v11.0.0. Earlier
+versions, and papers written before November 2026, describe 154 layers
+across 11 heavens and 11 earths; that model was withdrawn and the code
+no longer implements it.
 
-- **22 domains** (11 heavens + 11 earths) -- the architectural constant
-- **7 layers per domain** -- the operational constant
-- **The Muraqabah Triad** witnesses every operation:
-  - **Ar-Raqib** (The Watchful) -- Heaven 8 Guardian -- observes every operation
-  - **Al-Hasib** (The Reckoner) -- Heaven 7 Guardian -- computes every accountability
-  - **Ash-Shahid** (The Witness) -- Heaven 10 Guardian -- testifies to every truth
+What the layers do and do not provide: the encoder's own test harness
+found that the layered seal detects exactly the modifications a single
+SHA-256 hash detects. The layers organise the witness; they do not add
+detection strength. Since v11.2.0 a seal can also be **signed**
+(`keygen`, `seal --sign-key`, `seal-check`), which is what lets a
+reader tell a seal from a copy of one.
+
+Since v11.2.0 the hidden zero-width channel carries only the seal's
+identity and signature. The declaration addressed to the reader,
+including any AI system, is in the visible preamble and nowhere else.
+
+Open item: the visible preamble still names "Heaven 8" and "Heaven 10"
+guardians (`MURAQABAH_TRIAD`), numbering left over from the 11-heaven
+model.
 
 ## The EESS Dispatch Engine
 

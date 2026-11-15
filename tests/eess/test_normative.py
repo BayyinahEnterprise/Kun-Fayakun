@@ -11,7 +11,15 @@ import hashlib
 import json
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from Bismillah_Reference_Verifier_v0_13 import verify_pipeline
+import pytest
+
+# The reference verifier (Bismillah_Reference_Verifier_v0_13.py) has not been
+# added to this repository. Until it is, this module skips with that reason
+# instead of failing to collect.
+verify_pipeline = pytest.importorskip(
+    "Bismillah_Reference_Verifier_v0_13",
+    reason="reference verifier v0.13 is not in the repository",
+).verify_pipeline
 
 SCHEMA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                            "Bismillah_Evidence_Receipt_v0_3_1_DRAFT.schema.json")

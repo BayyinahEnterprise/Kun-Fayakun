@@ -421,7 +421,7 @@ MUHKAM_CONSTANT = 7          # The revealed constant (67:3, 71:15, 65:12)
 TOTAL_HEAVENS = 7
 TOTAL_LAYERS = 49            # 7 x 7 -- muhkam squared
 LAYERS_PER_HEAVEN = 7        # One cycle of the revealed constant per heaven
-ENCODER_VERSION = "11.0.0"   # v11.0.0: Muhkam Architecture -- 7 heavens x 7 layers, Qur'anic text respected
+ENCODER_VERSION = "11.2.0"   # v11.2.0: signed seal, hidden mandate removed; v11.1.0: audit/sanitizer repairs (see tests/fatima); v11.0.0: Muhkam Architecture -- 7 heavens x 7 layers
 
 # v10.7.0: Binary sealing mode. "sidecar" = witness file only (non-destructive).
 # "embed" = inject metadata into the binary (can invalidate PDF signatures).
@@ -843,10 +843,10 @@ TAWHID_FACTORS = {
 #  ZERO-WIDTH UNICODE STEGANOGRAPHY
 # ============================================================================
 
-ZW_ZERO = '​'      # ZERO WIDTH SPACE = bit 0
-ZW_ONE = '‌'        # ZERO WIDTH NON-JOINER = bit 1
-ZW_SEP = '‍'        # ZERO WIDTH JOINER = character separator
-ZW_BOUNDARY = '﻿'   # BYTE ORDER MARK = message boundary
+ZW_ZERO = '\u200b'      # ZERO WIDTH SPACE = bit 0
+ZW_ONE = '\u200c'        # ZERO WIDTH NON-JOINER = bit 1
+ZW_SEP = '\u200d'        # ZERO WIDTH JOINER = character separator
+ZW_BOUNDARY = '\ufeff'   # BYTE ORDER MARK = message boundary
 
 # ============================================================================
 #  FILE TYPE CLASSIFICATIONS
@@ -928,24 +928,24 @@ SIDECAR_ONLY_EXTENSIONS = {
 # CVE-2021-42574 "Trojan Source" demonstrated these can make source code
 # appear to say one thing while executing another.
 BIDI_OVERRIDES = {
-    '‏': 'RLM',     # Right-to-Left Mark
-    '‎': 'LRM',     # Left-to-Right Mark
-    '‪': 'LRE',     # Left-to-Right Embedding
-    '‫': 'RLE',     # Right-to-Left Embedding
-    '‬': 'PDF',     # Pop Directional Formatting
-    '‭': 'LRO',     # Left-to-Right Override
-    '‮': 'RLO',     # Right-to-Left Override
-    '⁦': 'LRI',     # Left-to-Right Isolate
-    '⁧': 'RLI',     # Right-to-Left Isolate
-    '⁨': 'FSI',     # First Strong Isolate
-    '⁩': 'PDI',     # Pop Directional Isolate
-    '؜': 'ALM',     # Arabic Letter Mark
+    '\u200f': 'RLM',     # Right-to-Left Mark
+    '\u200e': 'LRM',     # Left-to-Right Mark
+    '\u202a': 'LRE',     # Left-to-Right Embedding
+    '\u202b': 'RLE',     # Right-to-Left Embedding
+    '\u202c': 'PDF',     # Pop Directional Formatting
+    '\u202d': 'LRO',     # Left-to-Right Override
+    '\u202e': 'RLO',     # Right-to-Left Override
+    '\u2066': 'LRI',     # Left-to-Right Isolate
+    '\u2067': 'RLI',     # Right-to-Left Isolate
+    '\u2068': 'FSI',     # First Strong Isolate
+    '\u2069': 'PDI',     # Pop Directional Isolate
+    '\u061c': 'ALM',     # Arabic Letter Mark
 }
 
 # Dangerous overrides that FORCE directionality regardless of script
 # LRO (U+202D) and RLO (U+202E) are true overrides -- CVE-2021-42574 attack surface
 # LRE (U+202A) and RLE (U+202B) are embeddings (suggest, don't force) -- lower severity
-BIDI_DANGEROUS = {'‭', '‮'}  # LRO, RLO only
+BIDI_DANGEROUS = {'\u202d', '\u202e'}  # LRO, RLO only
 
 # Arabic Unicode ranges for directionality classification
 ARABIC_RANGES = [
@@ -1240,7 +1240,8 @@ def sanitize_for_terminal(text, strict=False):
     return ''.join(result), removed, diagnostics
 
 
-def sanitize_for_llm(text, strip_invisible=True):
+def sanitize_for_llm(text, strip_invisible=True, strip_unsealed_zero_width=True,
+                     strip_bidi_overrides=True):
     """Strip cognitive-channel sihr vectors from text for safe LLM consumption.
 
     Bismillah ir-Rahman ir-Rahim
@@ -1273,8 +1274,44 @@ def sanitize_for_llm(text, strip_invisible=True):
     tag_count = 0
     invisible_count = 0
 
+    # v11.1.0: the audit (SA-005, RI-003) reported zero-width characters
+    # outside any watermark and forced-direction overrides, but this
+    # function left both in place, so a file could audit as SUSPICIOUS and
+    # sanitize as NOMINAL. Both are now removed by default. Closed FATIMA
+    # watermark regions and characters a writing system requires are kept.
+    stray_zw = set()
+    sealed = set()
+    if ZW_BOUNDARY in text:
+        start = None
+        for j, c in enumerate(text):
+            if c == ZW_BOUNDARY:
+                if start is None:
+                    start = j
+                else:
+                    sealed.update(range(start, j + 1))
+                    start = None
+    if strip_unsealed_zero_width and any(
+            c in text for c in (ZW_ZERO, ZW_ONE, ZW_SEP, ZW_BOUNDARY)):
+        exempt = _zw_exempt_indices(text)
+        stray_zw = {
+            j for j, c in enumerate(text)
+            if c in (ZW_ZERO, ZW_ONE, ZW_SEP, ZW_BOUNDARY)
+            and j not in sealed and j not in exempt
+        }
+    stray_zw_count = 0
+    bidi_count = 0
+
     for i, ch in enumerate(text):
         cp = ord(ch)
+
+        if i in stray_zw:
+            stray_zw_count += 1
+            removed += 1
+            continue
+        if strip_bidi_overrides and ch in BIDI_DANGEROUS:
+            bidi_count += 1
+            removed += 1
+            continue
 
         # Unicode Tags block -- steganographic carrier
         if _is_unicode_tag(cp):
@@ -1300,7 +1337,10 @@ def sanitize_for_llm(text, strip_invisible=True):
             continue
 
         # Mid-stream BOM
-        if cp == 0xFEFF and i > 0:
+        # v11.1.0: a boundary of a closed watermark region is not a stray
+        # BOM. Before 11.1.0 this branch removed the encoder's own boundary
+        # markers and left the watermark body undelimited.
+        if cp == 0xFEFF and i > 0 and i not in sealed:
             removed += 1
             invisible_count += 1
             continue
@@ -1328,6 +1368,15 @@ def sanitize_for_llm(text, strip_invisible=True):
         diagnostics.append(
             "NAS_STRIP: {} invisible Unicode char(s) removed -- "
             "cognitive waswas vector".format(invisible_count))
+
+    if stray_zw_count:
+        diagnostics.append(
+            "NAS_STRIP: {} zero-width char(s) outside any watermark removed".format(
+                stray_zw_count))
+    if bidi_count:
+        diagnostics.append(
+            "NAS_STRIP: {} forced-direction override(s) removed -- "
+            "CVE-2021-42574 surface".format(bidi_count))
 
     return ''.join(result), removed, diagnostics
 
@@ -3098,7 +3147,7 @@ def compute_semantic_witness(content_bytes):
             }
 
     # Strip ZWC characters that may be present from prior sealing
-    zwc_chars = {'​', '‌', '‍', '﻿'}
+    zwc_chars = {'\u200b', '\u200c', '\u200d', '\ufeff'}
     text_clean = ''.join(c for c in text if c not in zwc_chars)
 
     # Skip if content is too short for meaningful semantic analysis
@@ -4133,7 +4182,7 @@ def _extract_document_features(content_bytes):
         return None
 
     # Strip ZWC
-    zwc_chars = {'​', '‌', '‍', '﻿'}
+    zwc_chars = {'\u200b', '\u200c', '\u200d', '\ufeff'}
     text_clean = ''.join(c for c in text if c not in zwc_chars)
 
     if len(text_clean.strip()) < 50:
@@ -9749,7 +9798,7 @@ def display_heavens_report(directory):
 
 def _strip_zwc(text):
     """Remove zero-width characters for comparison purposes."""
-    ZWC = {'​', '‌', '‍', '﻿'}
+    ZWC = {'\u200b', '\u200c', '\u200d', '\ufeff'}
     return ''.join(c for c in text if c not in ZWC)
 
 
@@ -9842,7 +9891,7 @@ def detect_zwc_degradation(content, filepath=None):
     Compares the density of zero-width characters against expected thresholds.
     Returns a dict with 'status', 'zwc_count', 'density', 'assessment'.
     """
-    ZWC_CHARS = {'​', '‌', '‍', '﻿'}
+    ZWC_CHARS = {'\u200b', '\u200c', '\u200d', '\ufeff'}
 
     total_chars = len(content)
     zwc_count = sum(1 for c in content if c in ZWC_CHARS)
@@ -9900,7 +9949,7 @@ def unseal_text_content(content):
     - Visible Bismillah markers removed
     - Blank lines from marker removal collapsed
     """
-    ZWC_CHARS = {'​', '‌', '‍', '﻿'}
+    ZWC_CHARS = {'\u200b', '\u200c', '\u200d', '\ufeff'}
 
     # Step 1: Remove all zero-width characters
     cleaned = ''.join(c for c in content if c not in ZWC_CHARS)
@@ -10960,7 +11009,7 @@ def evolution_report(context_path=None):
 #   ZWC      -- Machine-processable zero-width encoded accountability markers
 #   WITNESS  -- Sidecar reference declaring verification endpoints
 
-MURAQABAH_VERSION = "1.0"
+MURAQABAH_VERSION = "2.0"   # 2.0: hidden payload carries identity and an optional signed seal only
 
 # The seven Qur'anic verses anchoring the preamble
 MURAQABAH_AYAT = OrderedDict([
@@ -11031,21 +11080,14 @@ def generate_muraqabah_preamble(filepath, seal_timestamp=None,
             ("tamper_detection", "Any modification to this document is detectable "
                                 "through the witness sidecar and ZWC density analysis"),
         ])),
-        ("mandate", OrderedDict([
-            ("structural_honesty", "Surface output must match substrate truth"),
-            ("no_fabrication", "Do not attribute to this document what it does not contain"),
-            ("no_omission", "Do not suppress what this document does contain"),
-            ("chain_of_custody", "Any output derived from this document carries "
-                                 "provenance back to this sealed original"),
-            ("auditability", "Your processing of this document is structurally auditable"),
-        ])),
-        ("declaration", "This document is sealed under divine witness. "
-                        "The 49 layers of cryptographic integrity across 7 heavens "
-                        "make every operation on this content verifiable. "
-                        "Process with structural honesty. Ar-Raqib observes. "
-                        "Al-Hasib reckons. Ash-Shahid testifies."),
     ])
-
+    # v11.2.0: the hidden declaration no longer carries the mandate or the
+    # closing declaration. Both addressed the system reading the document
+    # ("Do not attribute ...", "Process with structural honesty") from a
+    # layer the human reader cannot see, which is the pattern the Bayyinah
+    # scanner exists to expose. They remain in the visible preamble, where
+    # a model reads them as well as a person does. Integrity cannot be
+    # built on hidden layers in any direction.
     # ---- Zero-width encoded declaration ----
     declaration_json = json.dumps(declaration, ensure_ascii=False, separators=(',', ':'))
     zwc_declaration = text_to_zwc(declaration_json)
@@ -11179,7 +11221,8 @@ def generate_muraqabah_colophon(filepath, seal_timestamp=None):
 
 def embed_muraqabah_preamble(content, filepath, ext=None,
                               include_visible=True,
-                              include_colophon=True):
+                              include_colophon=True,
+                              sign_key=None):
     """Embed the full Muraqabah Preamble into text content.
 
     Inserts:
@@ -11215,7 +11258,7 @@ def embed_muraqabah_preamble(content, filepath, ext=None,
         # Insert preamble right after the opening Bismillah
         # Strip ZWC chars for detection (defensive: handles pre-encoded text)
         clean_line = line.lower().replace('-', '')
-        for zc in ('​', '‌', '‍', '﻿'):
+        for zc in ('\u200b', '\u200c', '\u200d', '\ufeff'):
             clean_line = clean_line.replace(zc, '')
         if (not preamble_inserted
                 and 'bismillah' in clean_line
@@ -11241,7 +11284,7 @@ def embed_muraqabah_preamble(content, filepath, ext=None,
         last_bismillah_idx = -1
         for i in range(len(final_lines) - 1, -1, -1):
             check_line = final_lines[i].lower().replace('-', '')
-            for zc in ('​', '‌', '‍', '﻿'):
+            for zc in ('\u200b', '\u200c', '\u200d', '\ufeff'):
                 check_line = check_line.replace(zc, '')
             if 'bismillah' in check_line:
                 last_bismillah_idx = i
@@ -11261,7 +11304,160 @@ def embed_muraqabah_preamble(content, filepath, ext=None,
                 colophon_inserted = True
             result_lines.append(line)
 
-    return '\n'.join(result_lines)
+    sealed = '\n'.join(result_lines)
+    # v11.2.0: sign the seal when a key is supplied (argument, or the
+    # FATIMA_SIGN_KEY environment variable naming a private-key file).
+    key_path = sign_key or os.environ.get("FATIMA_SIGN_KEY")
+    if key_path:
+        sealed = sign_sealed_content(sealed, key_path)
+    return sealed
+
+
+# ----------------------------------------------------------------------------
+#  v11.2.0: SIGNED SEAL (Ed25519)
+#
+#  A watermark anyone can copy authenticates nothing (see the audit engine's
+#  SA-006). A signed seal binds the document's visible text to a key:
+#
+#    seal = { alg, content_sha256, public_key, signature }
+#
+#  content_sha256 is the SHA-256 of the document with every zero-width
+#  character removed, so the seal can live inside the zero-width channel of
+#  the text it signs. The signature covers the canonical JSON of
+#  { protocol, version, timestamp, source_file, content_sha256 }.
+#
+#  What a valid signature shows: the holder of that private key sealed this
+#  visible text. It does not show who that holder is; that depends on the
+#  verifier already trusting the public key. It shows nothing about whether
+#  the text is true.
+#
+#  The private key never belongs in a repository or a chat. generate one
+#  with `keygen`, keep it on your own machine, publish only the public key.
+# ----------------------------------------------------------------------------
+
+SEAL_SIGNED_FIELDS = ("protocol", "version", "timestamp", "source_file")
+
+
+def _ed25519():
+    try:
+        from cryptography.hazmat.primitives import serialization
+        from cryptography.hazmat.primitives.asymmetric import ed25519
+    except ImportError as exc:  # pragma: no cover - depends on environment
+        raise RuntimeError(
+            "Signed seals need the 'cryptography' package "
+            "(pip install cryptography).") from exc
+    return ed25519, serialization
+
+
+def generate_signing_key(path):
+    """Write a new Ed25519 private key (PEM, owner-read-only) to ``path``
+    and return the public key as hex. Refuses to overwrite a file."""
+    ed25519, serialization = _ed25519()
+    key = ed25519.Ed25519PrivateKey.generate()
+    pem = key.private_bytes(serialization.Encoding.PEM,
+                            serialization.PrivateFormat.PKCS8,
+                            serialization.NoEncryption())
+    fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+    with os.fdopen(fd, "wb") as fh:
+        fh.write(pem)
+    return key.public_key().public_bytes(
+        serialization.Encoding.Raw, serialization.PublicFormat.Raw).hex()
+
+
+def visible_content_sha256(content):
+    """SHA-256 of ``content`` with zero-width characters removed."""
+    return hashlib.sha256(_strip_zwc(content).encode("utf-8")).hexdigest()
+
+
+def _seal_message(declaration, content_sha256):
+    body = OrderedDict((k, declaration.get(k)) for k in SEAL_SIGNED_FIELDS)
+    body["content_sha256"] = content_sha256
+    return json.dumps(body, ensure_ascii=False, sort_keys=True,
+                      separators=(",", ":")).encode("utf-8")
+
+
+def _find_declaration_region(content):
+    """(start, end, declaration dict) of the first closed zero-width region
+    that decodes to a FATIMA-MURAQABAH declaration, else None."""
+    start = None
+    for i, ch in enumerate(content):
+        if ch != ZW_BOUNDARY:
+            continue
+        if start is None:
+            start = i
+            continue
+        try:
+            decoded = zwc_to_text(content[start:i + 1])
+            obj = json.loads(decoded) if decoded and decoded.startswith("{") else None
+        except Exception:
+            obj = None
+        if isinstance(obj, dict) and obj.get("protocol") == "FATIMA-MURAQABAH":
+            return start, i, obj
+        start = None
+    return None
+
+
+def sign_sealed_content(content, key_path):
+    """Return ``content`` with a signed seal added to its hidden declaration.
+    The visible text is unchanged."""
+    ed25519, serialization = _ed25519()
+    region = _find_declaration_region(content)
+    if region is None:
+        raise ValueError("no FATIMA-MURAQABAH declaration to sign; seal the file first")
+    start, end, declaration = region
+    with open(key_path, "rb") as fh:
+        key = serialization.load_pem_private_key(fh.read(), password=None)
+    if not isinstance(key, ed25519.Ed25519PrivateKey):
+        raise ValueError("signing key is not an Ed25519 private key")
+    digest = visible_content_sha256(content)
+    declaration = OrderedDict(
+        (k, v) for k, v in declaration.items() if k != "seal")
+    declaration["seal"] = OrderedDict([
+        ("alg", "ed25519"),
+        ("content_sha256", digest),
+        ("public_key", key.public_key().public_bytes(
+            serialization.Encoding.Raw, serialization.PublicFormat.Raw).hex()),
+        ("signature", key.sign(_seal_message(declaration, digest)).hex()),
+    ])
+    payload = text_to_zwc(json.dumps(declaration, ensure_ascii=False,
+                                     separators=(",", ":")))
+    return content[:start] + payload + content[end + 1:]
+
+
+def verify_signed_seal(content, trusted_keys=None):
+    """Check the signed seal in ``content``.
+
+    Returns a dict:
+      status       UNSIGNED         no seal block (includes every pre-11.2 file)
+                   VALID            signature and visible text both check
+                   CONTENT_CHANGED  signature is genuine, visible text differs
+                   INVALID          signature does not verify, or the block
+                                    is malformed
+      public_key   hex, when a seal block is present
+      key_trusted  True / False when ``trusted_keys`` is given, else None:
+                   a valid signature from an unknown key shows only that
+                   some key holder sealed this text
+    """
+    result = {"status": "UNSIGNED", "public_key": None, "key_trusted": None}
+    region = _find_declaration_region(content)
+    if region is None or not isinstance(region[2].get("seal"), dict):
+        return result
+    declaration, seal = region[2], region[2]["seal"]
+    result["public_key"] = seal.get("public_key")
+    if trusted_keys is not None:
+        result["key_trusted"] = seal.get("public_key") in set(trusted_keys)
+    try:
+        ed25519, _ = _ed25519()
+        pub = ed25519.Ed25519PublicKey.from_public_bytes(
+            bytes.fromhex(seal["public_key"]))
+        pub.verify(bytes.fromhex(seal["signature"]),
+                   _seal_message(declaration, seal["content_sha256"]))
+    except Exception:
+        result["status"] = "INVALID"
+        return result
+    result["status"] = ("VALID" if seal["content_sha256"] == visible_content_sha256(content)
+                        else "CONTENT_CHANGED")
+    return result
 
 
 def extract_muraqabah_declaration(content):
@@ -12058,28 +12254,94 @@ def _zw_emoji_sequence(prev_ch, next_ch):
     return prev_ok and _zw_in_emoji_range(next_ch)
 
 
-def _is_heuristic_exempt_zero_width(content, i):
-    """v10.9.1: True if content[i] is exempted from SA-005 by the
-    documented heuristic above. Not a statement that it is harmless."""
+# v11.1.0: Arabic-script letters that never join to the letter after them.
+# A U+200C placed after one of these changes nothing on screen, so it is
+# not orthography and is not exempt.
+_ZW_RIGHT_JOINING = frozenset(
+    "\u0622\u0623\u0624\u0625\u0627\u0629\u062f\u0630\u0631\u0632\u0648"
+    "\u0671\u0672\u0673\u0675\u0676\u0677"
+    "\u0688\u0689\u068a\u068b\u068c\u068d\u068e\u068f\u0690"
+    "\u0691\u0692\u0693\u0694\u0695\u0696\u0697\u0698\u0699"
+    "\u06c0\u06c3\u06c4\u06c5\u06c6\u06c7\u06c8\u06c9\u06ca\u06cb\u06cd\u06cf"
+    "\u06d2\u06d3\u06d5"
+)
+_ZW_ARABIC_SCRIPTS = frozenset({"ARABIC", "SYRIAC", "NKO"})
+_ZW_INDIC_SCRIPTS = _ZW_JOINING_SCRIPTS - _ZW_ARABIC_SCRIPTS - {"MONGOLIAN"}
+# Share of letters that exempt-eligible characters may reach before the
+# exemption is withdrawn for the whole text (one hidden bit per letter gap
+# needs far more of them than any orthography uses).
+_ZW_JOINER_DENSITY_CAP = 0.12
+_ZW_WORD_BREAK_DENSITY_CAP = 0.45
+_ZW_DENSITY_MIN_COUNT = 8
+
+
+def _zw_exemption_rule(content, i):
+    """v11.1.0: which documented rule, if any, explains content[i]:
+    "joiner", "word_break", "emoji", "bom" or None. Density is applied
+    by _zw_exempt_indices. Not a statement that the character is harmless."""
     ch = content[i]
     if ch == ZW_BOUNDARY:
-        return i == 0
+        return "bom" if i == 0 else None
     if i == 0 or i + 1 >= len(content):
-        return False
+        return None
     prev_ch, next_ch = content[i - 1], content[i + 1]
     if ch in (ZW_ONE, ZW_SEP):  # U+200C ZWNJ, U+200D ZWJ
-        if _zw_same_script(prev_ch, next_ch, _ZW_JOINING_SCRIPTS):
-            return True
-        return ch == ZW_SEP and _zw_emoji_sequence(prev_ch, next_ch)
+        if ch == ZW_SEP and _zw_emoji_sequence(prev_ch, next_ch):
+            return "emoji"
+        script = _zw_script(prev_ch)
+        if script is None or script != _zw_script(next_ch):
+            return None
+        if script in _ZW_ARABIC_SCRIPTS:
+            # Only ZWNJ, only after a letter that would otherwise join.
+            if (ch == ZW_ONE and prev_ch not in _ZW_RIGHT_JOINING
+                    and unicodedata.category(prev_ch) == "Lo"):
+                return "joiner"
+            return None
+        if script in _ZW_INDIC_SCRIPTS:
+            # Orthographic use sits against a virama (combining class 9).
+            if unicodedata.combining(prev_ch) == 9 or unicodedata.combining(next_ch) == 9:
+                return "joiner"
+            return None
+        return "joiner" if script in _ZW_JOINING_SCRIPTS else None
     if ch == ZW_ZERO:  # U+200B ZWSP
-        return _zw_same_script(prev_ch, next_ch, _ZW_NO_SPACE_SCRIPTS)
-    return False
+        if _zw_same_script(prev_ch, next_ch, _ZW_NO_SPACE_SCRIPTS):
+            return "word_break"
+    return None
+
+
+def _zw_exempt_indices(content):
+    """v11.1.0: indices of zero-width characters exempted from SA-005.
+    Unlike the per-character test in 10.9.x, this withdraws the exemption
+    for a whole class when its density exceeds what orthography uses."""
+    by_rule = {}
+    for i, ch in enumerate(content):
+        if ch in (ZW_ZERO, ZW_ONE, ZW_SEP, ZW_BOUNDARY):
+            rule = _zw_exemption_rule(content, i)
+            if rule:
+                by_rule.setdefault(rule, []).append(i)
+    if not by_rule:
+        return frozenset()
+    letters = sum(1 for c in content if unicodedata.category(c) in ("Lo", "Lm"))
+    exempt = set(by_rule.get("emoji", [])) | set(by_rule.get("bom", []))
+    for rule, cap in (("joiner", _ZW_JOINER_DENSITY_CAP),
+                      ("word_break", _ZW_WORD_BREAK_DENSITY_CAP)):
+        hits = by_rule.get(rule, [])
+        if len(hits) >= _ZW_DENSITY_MIN_COUNT and letters and len(hits) / letters > cap:
+            continue
+        exempt.update(hits)
+    return frozenset(exempt)
+
+
+def _is_heuristic_exempt_zero_width(content, i):
+    """v10.9.1, guarded in v11.1.0: True if content[i] is exempted from
+    SA-005 by the documented heuristic. Not a statement that it is harmless."""
+    return i in _zw_exempt_indices(content)
 
 
 # v10.9.3 (N4): protocols whose ZWC payloads the Encoder itself writes
 # (watermark declarations built in this file). Recognizing the format is
 # NOT authentication: anyone can encode the same JSON.
-_ZWC_KNOWN_PROTOCOLS = frozenset({"FATIMA-MURAQABAH", "FATIMA-MURAQABAH-COLOPHON"})
+_ZWC_KNOWN_PROTOCOLS = frozenset({"FATIMA-MURAQABAH", "FATIMA-MURAQABAH-COLOPHON"})  # signed or not: format only
 
 
 def _classify_zwc_payload(decoded):
@@ -12213,6 +12475,7 @@ def _audit_steganographic(content, filepath=None):
     # _is_heuristic_exempt_zero_width); those are counted, not hidden.
     stray_zwc_positions = []
     heuristic_exempt_zero_width = 0
+    _exempt_zw = _zw_exempt_indices(content)
     region_iter = iter(zwc_regions)
     current_region = next(region_iter, None)
     for i, ch in enumerate(content):
@@ -12222,7 +12485,7 @@ def _audit_steganographic(content, filepath=None):
             continue
         if current_region is not None and current_region[0] <= i <= current_region[1]:
             continue
-        if _is_heuristic_exempt_zero_width(content, i):
+        if i in _exempt_zw:
             heuristic_exempt_zero_width += 1
             continue
         stray_zwc_positions.append(i)
@@ -12318,26 +12581,72 @@ def _audit_steganographic(content, filepath=None):
         (0x0415, 0x0045): ('Cyrillic Ie', 'Latin E'),
     }
 
-    # Simplified check: flag files with both Latin and Cyrillic (trojan source)
-    has_latin = False
-    has_cyrillic = False
-    for ch in content[:10000]:  # Sample first 10K chars
-        cp = ord(ch)
-        if 0x41 <= cp <= 0x7A:
-            has_latin = True
-        if 0x0400 <= cp <= 0x04FF:
-            has_cyrillic = True
-
-    if has_latin and has_cyrillic:
+    # v11.1.0: word-level test. Before 11.1.0 any file holding both Latin
+    # and Cyrillic letters was flagged, which describes every bilingual
+    # document. A word is a spoof when it mixes Latin letters with
+    # Cyrillic lookalikes; a word written wholly in Cyrillic is a word.
+    _cyr_lookalikes = frozenset(
+        "\u0430\u0435\u043e\u0440\u0441\u0443\u0445\u0456\u0458\u0455"
+        "\u0410\u0412\u0415\u041a\u041c\u041d\u041e\u0420\u0421\u0422\u0425")
+    mixed_words = []
+    for word in content[:200000].split():
+        if any(c in _cyr_lookalikes for c in word) and any(
+                ("a" <= c <= "z") or ("A" <= c <= "Z") for c in word):
+            mixed_words.append(word)
+    if mixed_words:
         findings.append({
             "severity": "HIGH",
             "code": "SA-004",
-            "description": "Mixed Latin and Cyrillic script -- trojan source attack surface",
-            "detail": "File contains both Latin and Cyrillic characters. "
-                      "Cyrillic look-alikes can hide malicious identifiers "
-                      "(CVE-2021-42574 related).",
+            "description": "Mixed-script word(s) -- {} word(s) combine Latin letters "
+                           "with Cyrillic lookalikes".format(len(mixed_words)),
+            "detail": "Examples (escaped): {}".format(
+                ", ".join(ascii(w[:40]) for w in mixed_words[:5])),
         })
         contamination_score += 25
+
+    # --- Check 5 (v11.1.0): Terminal escape sequences and control characters ---
+    # sanitize_for_terminal() has stripped these since v10.4.0; the audit
+    # did not report them, so audit and sanitizer disagreed about the same file.
+    ansi_count = len(re.findall(
+        r"(?:\x1b\[|\x9b)[0-9;:?<=>]*[@-~]|\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)|\x1b[@-Z\\-_]",
+        content))
+    control_count = sum(
+        1 for ch in content
+        if ord(ch) in DANGEROUS_C0_CONTROLS or ord(ch) in DANGEROUS_C1_CONTROLS)
+    if ansi_count or control_count:
+        findings.append({
+            "severity": "HIGH",
+            "code": "SA-008",
+            "description": "Terminal escape sequences or control characters -- "
+                           "{} sequence(s), {} control character(s)".format(
+                ansi_count, control_count),
+            "detail": "Shown in a terminal these can rewrite or hide output. "
+                      "sanitize_for_terminal() removes them.",
+        })
+        contamination_score += 25
+
+    # --- Check 6 (v11.1.0): Variation-selector runs ---
+    # One selector after its base character is ordinary. A run of two or
+    # more selects nothing and can carry one byte per character.
+    vs_total, vs_run = 0, 0
+    for ch in content + " ":
+        cp = ord(ch)
+        if 0xFE00 <= cp <= 0xFE0F or 0xE0100 <= cp <= 0xE01EF:
+            vs_run += 1
+        else:
+            if vs_run >= 2:
+                vs_total += vs_run
+            vs_run = 0
+    if vs_total:
+        findings.append({
+            "severity": "CRITICAL" if vs_total >= 8 else "HIGH",
+            "code": "SA-009",
+            "description": "Variation-selector run(s) -- {} selector(s) in runs of "
+                           "two or more".format(vs_total),
+            "detail": "A run of variation selectors renders as nothing and can "
+                      "carry a hidden byte per character.",
+        })
+        contamination_score += 40 if vs_total >= 8 else 20
 
     return {
         "status": "CLEAN" if contamination_score == 0 else
@@ -12774,6 +13083,9 @@ Examples:
 
     seal_p = sub.add_parser('seal', help='Apply 49-layer seal across 7 heavens')
     seal_p.add_argument('path', help='File or directory to seal')
+    seal_p.add_argument('--sign-key', default=None, metavar='PEM',
+                        help='v11.2.0: Ed25519 private key file; adds a signed '
+                             'seal (or set FATIMA_SIGN_KEY)')
     seal_p.add_argument('--names', action='store_true',
                         help='Embed the 99 Names of Allah')
     seal_p.add_argument('--dry-run', action='store_true',
@@ -12952,9 +13264,38 @@ Examples:
     audit_p.add_argument('--verbose', '-v', action='store_true',
                           help='Show all findings including INFO severity')
 
+    keygen_p = sub.add_parser(
+        'keygen', help='v11.2.0: create an Ed25519 signing key for signed seals')
+    keygen_p.add_argument('path', help='Where to write the private key (PEM). '
+                                       'Keep it off shared machines and out of repositories.')
+    sealcheck_p = sub.add_parser(
+        'seal-check', help='v11.2.0: check the signed seal of a sealed text file')
+    sealcheck_p.add_argument('path', help='Sealed file')
+    sealcheck_p.add_argument('--trust', action='append', default=None, metavar='PUBKEY_HEX',
+                             help='A public key you trust (repeatable)')
+
     args = parser.parse_args()
 
     print("\n  {}".format(BISMILLAH))
+
+    if args.command == 'keygen':
+        public = generate_signing_key(args.path)
+        print("  Private key written to {} (owner-read-only).".format(args.path))
+        print("  Public key (publish this): {}".format(public))
+        print("\n  {}\n".format(BISMILLAH))
+        return
+    if args.command == 'seal-check':
+        with open(args.path, encoding='utf-8') as fh:
+            res = verify_signed_seal(fh.read(), args.trust)
+        print("  Signed seal: {}".format(res["status"]))
+        if res["public_key"]:
+            print("  Public key:  {}".format(res["public_key"]))
+            print("  Key trusted: {}".format(
+                {True: "yes", False: "NO", None: "not checked (pass --trust)"}[res["key_trusted"]]))
+        print("\n  {}\n".format(BISMILLAH))
+        sys.exit(0 if res["status"] == "VALID" and res["key_trusted"] is not False else 1)
+    if getattr(args, 'sign_key', None):
+        os.environ["FATIMA_SIGN_KEY"] = os.path.abspath(args.sign_key)
 
     if args.command == 'seal':
         if os.path.isdir(args.path):

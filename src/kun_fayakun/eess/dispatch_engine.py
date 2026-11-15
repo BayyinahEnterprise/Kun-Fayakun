@@ -39,8 +39,8 @@ import uuid
 from dataclasses import dataclass
 from typing import Optional
 
-from Bismillah_HABL_Event_Store_v0324 import HABLJournal, EventType, HABLEvent, VALID_CAPABILITIES, ALLOWED_ACTIONS
-from Bismillah_Decision_Reducer_v0324 import DecisionReducer, SafetyState
+from kun_fayakun.eess.event_store import HABLJournal, EventType, HABLEvent, VALID_CAPABILITIES, ALLOWED_ACTIONS
+from kun_fayakun.eess.decision_reducer import DecisionReducer, SafetyState
 
 # C-32/C-33: ALLOWED_ACTIONS now imported from the event store (shared constant).
 # P11-R4-F01/P13-F01: Previously defined only here. Now enforced at journal boundary.

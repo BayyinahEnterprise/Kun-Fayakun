@@ -50,11 +50,11 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from Bismillah_HABL_Event_Store_v0324 import (
+from kun_fayakun.eess.event_store import (
     HABLJournal, EventType, HABLEvent, VALID_CAPABILITIES, VALID_CLOSE_REASONS)
-from Bismillah_Decision_Reducer_v0324 import (
+from kun_fayakun.eess.decision_reducer import (
     DecisionReducer, SafetyState, BusinessEffect, AttemptState)
-from Bismillah_Dispatch_Engine_v0324 import (
+from kun_fayakun.eess.dispatch_engine import (
     DispatchEngine, MockTarget, TargetContract, TargetCapability, DispatchResult)
 
 

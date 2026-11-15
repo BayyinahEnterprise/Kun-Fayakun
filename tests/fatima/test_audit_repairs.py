@@ -92,3 +92,58 @@ def test_old_behaviour_is_available_explicitly() -> None:
     text = f"ad{ZWNJ}min"
     kept, removed, _ = enc.sanitize_for_llm(text, strip_unsealed_zero_width=False)
     assert kept == text and removed == 0
+
+
+# ---- v11.2.0: signed seal; hidden mandate removed ------------------------
+
+import json  # noqa: E402
+
+import pytest  # noqa: E402
+
+SEALABLE = ("Bismillah ir-Rahman ir-Rahim\n\n# Note\n\nA short document to seal.\n\n"
+            "Bismillah ir-Rahman ir-Rahim\n")
+
+
+def _hidden_declaration(content: str) -> dict:
+    return enc.extract_muraqabah_declaration(content)
+
+
+def test_hidden_declaration_carries_no_instruction_to_the_reader() -> None:
+    sealed = enc.embed_muraqabah_preamble(SEALABLE, "note.md")
+    hidden = _hidden_declaration(sealed)
+    assert "mandate" not in hidden and "declaration" not in hidden
+    text = json.dumps(hidden).lower()
+    for phrase in ("do not", "process with", "your processing"):
+        assert phrase not in text
+    # The mandate is still stated, in the open.
+    assert "Structural Honesty Mandate" in enc._strip_zwc(sealed)
+
+
+def test_signed_seal_round_trip(tmp_path) -> None:
+    pytest.importorskip("cryptography")
+    key = tmp_path / "k.pem"
+    public = enc.generate_signing_key(str(key))
+    assert oct(key.stat().st_mode)[-3:] == "600"
+    with pytest.raises(FileExistsError):
+        enc.generate_signing_key(str(key))
+    sealed = enc.embed_muraqabah_preamble(SEALABLE, "note.md", sign_key=str(key))
+    res = enc.verify_signed_seal(sealed, [public])
+    assert res == {"status": "VALID", "public_key": public, "key_trusted": True}
+    assert enc.verify_signed_seal(sealed, ["00" * 32])["key_trusted"] is False
+    assert enc.verify_signed_seal(sealed)["key_trusted"] is None
+
+
+def test_signed_seal_detects_change_and_forgery(tmp_path) -> None:
+    pytest.importorskip("cryptography")
+    key, other = tmp_path / "k.pem", tmp_path / "o.pem"
+    enc.generate_signing_key(str(key))
+    enc.generate_signing_key(str(other))
+    sealed = enc.embed_muraqabah_preamble(SEALABLE, "note.md", sign_key=str(key))
+    assert enc.verify_signed_seal(sealed.replace("short", "long"))["status"] == "CONTENT_CHANGED"
+    # A seal block copied onto different text does not verify as VALID.
+    start, end, decl = enc._find_declaration_region(sealed)
+    forged_decl = dict(decl)
+    forged_decl["seal"] = dict(decl["seal"], content_sha256="0" * 64)
+    forged = sealed[:start] + enc.text_to_zwc(json.dumps(forged_decl)) + sealed[end + 1:]
+    assert enc.verify_signed_seal(forged)["status"] == "INVALID"
+    assert enc.verify_signed_seal(enc.embed_muraqabah_preamble(SEALABLE, "n.md"))["status"] == "UNSIGNED"

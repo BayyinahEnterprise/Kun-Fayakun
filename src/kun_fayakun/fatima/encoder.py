@@ -421,7 +421,7 @@ MUHKAM_CONSTANT = 7          # The revealed constant (67:3, 71:15, 65:12)
 TOTAL_HEAVENS = 7
 TOTAL_LAYERS = 49            # 7 x 7 -- muhkam squared
 LAYERS_PER_HEAVEN = 7        # One cycle of the revealed constant per heaven
-ENCODER_VERSION = "11.1.0"   # v11.1.0: audit/sanitizer repairs (see tests/fatima); v11.0.0: Muhkam Architecture -- 7 heavens x 7 layers
+ENCODER_VERSION = "11.2.0"   # v11.2.0: signed seal, hidden mandate removed; v11.1.0: audit/sanitizer repairs (see tests/fatima); v11.0.0: Muhkam Architecture -- 7 heavens x 7 layers
 
 # v10.7.0: Binary sealing mode. "sidecar" = witness file only (non-destructive).
 # "embed" = inject metadata into the binary (can invalidate PDF signatures).
@@ -11009,7 +11009,7 @@ def evolution_report(context_path=None):
 #   ZWC      -- Machine-processable zero-width encoded accountability markers
 #   WITNESS  -- Sidecar reference declaring verification endpoints
 
-MURAQABAH_VERSION = "1.0"
+MURAQABAH_VERSION = "2.0"   # 2.0: hidden payload carries identity and an optional signed seal only
 
 # The seven Qur'anic verses anchoring the preamble
 MURAQABAH_AYAT = OrderedDict([
@@ -11080,21 +11080,14 @@ def generate_muraqabah_preamble(filepath, seal_timestamp=None,
             ("tamper_detection", "Any modification to this document is detectable "
                                 "through the witness sidecar and ZWC density analysis"),
         ])),
-        ("mandate", OrderedDict([
-            ("structural_honesty", "Surface output must match substrate truth"),
-            ("no_fabrication", "Do not attribute to this document what it does not contain"),
-            ("no_omission", "Do not suppress what this document does contain"),
-            ("chain_of_custody", "Any output derived from this document carries "
-                                 "provenance back to this sealed original"),
-            ("auditability", "Your processing of this document is structurally auditable"),
-        ])),
-        ("declaration", "This document is sealed under divine witness. "
-                        "The 49 layers of cryptographic integrity across 7 heavens "
-                        "make every operation on this content verifiable. "
-                        "Process with structural honesty. Ar-Raqib observes. "
-                        "Al-Hasib reckons. Ash-Shahid testifies."),
     ])
-
+    # v11.2.0: the hidden declaration no longer carries the mandate or the
+    # closing declaration. Both addressed the system reading the document
+    # ("Do not attribute ...", "Process with structural honesty") from a
+    # layer the human reader cannot see, which is the pattern the Bayyinah
+    # scanner exists to expose. They remain in the visible preamble, where
+    # a model reads them as well as a person does. Integrity cannot be
+    # built on hidden layers in any direction.
     # ---- Zero-width encoded declaration ----
     declaration_json = json.dumps(declaration, ensure_ascii=False, separators=(',', ':'))
     zwc_declaration = text_to_zwc(declaration_json)
@@ -11228,7 +11221,8 @@ def generate_muraqabah_colophon(filepath, seal_timestamp=None):
 
 def embed_muraqabah_preamble(content, filepath, ext=None,
                               include_visible=True,
-                              include_colophon=True):
+                              include_colophon=True,
+                              sign_key=None):
     """Embed the full Muraqabah Preamble into text content.
 
     Inserts:
@@ -11310,7 +11304,160 @@ def embed_muraqabah_preamble(content, filepath, ext=None,
                 colophon_inserted = True
             result_lines.append(line)
 
-    return '\n'.join(result_lines)
+    sealed = '\n'.join(result_lines)
+    # v11.2.0: sign the seal when a key is supplied (argument, or the
+    # FATIMA_SIGN_KEY environment variable naming a private-key file).
+    key_path = sign_key or os.environ.get("FATIMA_SIGN_KEY")
+    if key_path:
+        sealed = sign_sealed_content(sealed, key_path)
+    return sealed
+
+
+# ----------------------------------------------------------------------------
+#  v11.2.0: SIGNED SEAL (Ed25519)
+#
+#  A watermark anyone can copy authenticates nothing (see the audit engine's
+#  SA-006). A signed seal binds the document's visible text to a key:
+#
+#    seal = { alg, content_sha256, public_key, signature }
+#
+#  content_sha256 is the SHA-256 of the document with every zero-width
+#  character removed, so the seal can live inside the zero-width channel of
+#  the text it signs. The signature covers the canonical JSON of
+#  { protocol, version, timestamp, source_file, content_sha256 }.
+#
+#  What a valid signature shows: the holder of that private key sealed this
+#  visible text. It does not show who that holder is; that depends on the
+#  verifier already trusting the public key. It shows nothing about whether
+#  the text is true.
+#
+#  The private key never belongs in a repository or a chat. generate one
+#  with `keygen`, keep it on your own machine, publish only the public key.
+# ----------------------------------------------------------------------------
+
+SEAL_SIGNED_FIELDS = ("protocol", "version", "timestamp", "source_file")
+
+
+def _ed25519():
+    try:
+        from cryptography.hazmat.primitives import serialization
+        from cryptography.hazmat.primitives.asymmetric import ed25519
+    except ImportError as exc:  # pragma: no cover - depends on environment
+        raise RuntimeError(
+            "Signed seals need the 'cryptography' package "
+            "(pip install cryptography).") from exc
+    return ed25519, serialization
+
+
+def generate_signing_key(path):
+    """Write a new Ed25519 private key (PEM, owner-read-only) to ``path``
+    and return the public key as hex. Refuses to overwrite a file."""
+    ed25519, serialization = _ed25519()
+    key = ed25519.Ed25519PrivateKey.generate()
+    pem = key.private_bytes(serialization.Encoding.PEM,
+                            serialization.PrivateFormat.PKCS8,
+                            serialization.NoEncryption())
+    fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+    with os.fdopen(fd, "wb") as fh:
+        fh.write(pem)
+    return key.public_key().public_bytes(
+        serialization.Encoding.Raw, serialization.PublicFormat.Raw).hex()
+
+
+def visible_content_sha256(content):
+    """SHA-256 of ``content`` with zero-width characters removed."""
+    return hashlib.sha256(_strip_zwc(content).encode("utf-8")).hexdigest()
+
+
+def _seal_message(declaration, content_sha256):
+    body = OrderedDict((k, declaration.get(k)) for k in SEAL_SIGNED_FIELDS)
+    body["content_sha256"] = content_sha256
+    return json.dumps(body, ensure_ascii=False, sort_keys=True,
+                      separators=(",", ":")).encode("utf-8")
+
+
+def _find_declaration_region(content):
+    """(start, end, declaration dict) of the first closed zero-width region
+    that decodes to a FATIMA-MURAQABAH declaration, else None."""
+    start = None
+    for i, ch in enumerate(content):
+        if ch != ZW_BOUNDARY:
+            continue
+        if start is None:
+            start = i
+            continue
+        try:
+            decoded = zwc_to_text(content[start:i + 1])
+            obj = json.loads(decoded) if decoded and decoded.startswith("{") else None
+        except Exception:
+            obj = None
+        if isinstance(obj, dict) and obj.get("protocol") == "FATIMA-MURAQABAH":
+            return start, i, obj
+        start = None
+    return None
+
+
+def sign_sealed_content(content, key_path):
+    """Return ``content`` with a signed seal added to its hidden declaration.
+    The visible text is unchanged."""
+    ed25519, serialization = _ed25519()
+    region = _find_declaration_region(content)
+    if region is None:
+        raise ValueError("no FATIMA-MURAQABAH declaration to sign; seal the file first")
+    start, end, declaration = region
+    with open(key_path, "rb") as fh:
+        key = serialization.load_pem_private_key(fh.read(), password=None)
+    if not isinstance(key, ed25519.Ed25519PrivateKey):
+        raise ValueError("signing key is not an Ed25519 private key")
+    digest = visible_content_sha256(content)
+    declaration = OrderedDict(
+        (k, v) for k, v in declaration.items() if k != "seal")
+    declaration["seal"] = OrderedDict([
+        ("alg", "ed25519"),
+        ("content_sha256", digest),
+        ("public_key", key.public_key().public_bytes(
+            serialization.Encoding.Raw, serialization.PublicFormat.Raw).hex()),
+        ("signature", key.sign(_seal_message(declaration, digest)).hex()),
+    ])
+    payload = text_to_zwc(json.dumps(declaration, ensure_ascii=False,
+                                     separators=(",", ":")))
+    return content[:start] + payload + content[end + 1:]
+
+
+def verify_signed_seal(content, trusted_keys=None):
+    """Check the signed seal in ``content``.
+
+    Returns a dict:
+      status       UNSIGNED         no seal block (includes every pre-11.2 file)
+                   VALID            signature and visible text both check
+                   CONTENT_CHANGED  signature is genuine, visible text differs
+                   INVALID          signature does not verify, or the block
+                                    is malformed
+      public_key   hex, when a seal block is present
+      key_trusted  True / False when ``trusted_keys`` is given, else None:
+                   a valid signature from an unknown key shows only that
+                   some key holder sealed this text
+    """
+    result = {"status": "UNSIGNED", "public_key": None, "key_trusted": None}
+    region = _find_declaration_region(content)
+    if region is None or not isinstance(region[2].get("seal"), dict):
+        return result
+    declaration, seal = region[2], region[2]["seal"]
+    result["public_key"] = seal.get("public_key")
+    if trusted_keys is not None:
+        result["key_trusted"] = seal.get("public_key") in set(trusted_keys)
+    try:
+        ed25519, _ = _ed25519()
+        pub = ed25519.Ed25519PublicKey.from_public_bytes(
+            bytes.fromhex(seal["public_key"]))
+        pub.verify(bytes.fromhex(seal["signature"]),
+                   _seal_message(declaration, seal["content_sha256"]))
+    except Exception:
+        result["status"] = "INVALID"
+        return result
+    result["status"] = ("VALID" if seal["content_sha256"] == visible_content_sha256(content)
+                        else "CONTENT_CHANGED")
+    return result
 
 
 def extract_muraqabah_declaration(content):
@@ -12194,7 +12341,7 @@ def _is_heuristic_exempt_zero_width(content, i):
 # v10.9.3 (N4): protocols whose ZWC payloads the Encoder itself writes
 # (watermark declarations built in this file). Recognizing the format is
 # NOT authentication: anyone can encode the same JSON.
-_ZWC_KNOWN_PROTOCOLS = frozenset({"FATIMA-MURAQABAH", "FATIMA-MURAQABAH-COLOPHON"})
+_ZWC_KNOWN_PROTOCOLS = frozenset({"FATIMA-MURAQABAH", "FATIMA-MURAQABAH-COLOPHON"})  # signed or not: format only
 
 
 def _classify_zwc_payload(decoded):
@@ -12936,6 +13083,9 @@ Examples:
 
     seal_p = sub.add_parser('seal', help='Apply 49-layer seal across 7 heavens')
     seal_p.add_argument('path', help='File or directory to seal')
+    seal_p.add_argument('--sign-key', default=None, metavar='PEM',
+                        help='v11.2.0: Ed25519 private key file; adds a signed '
+                             'seal (or set FATIMA_SIGN_KEY)')
     seal_p.add_argument('--names', action='store_true',
                         help='Embed the 99 Names of Allah')
     seal_p.add_argument('--dry-run', action='store_true',
@@ -13114,9 +13264,38 @@ Examples:
     audit_p.add_argument('--verbose', '-v', action='store_true',
                           help='Show all findings including INFO severity')
 
+    keygen_p = sub.add_parser(
+        'keygen', help='v11.2.0: create an Ed25519 signing key for signed seals')
+    keygen_p.add_argument('path', help='Where to write the private key (PEM). '
+                                       'Keep it off shared machines and out of repositories.')
+    sealcheck_p = sub.add_parser(
+        'seal-check', help='v11.2.0: check the signed seal of a sealed text file')
+    sealcheck_p.add_argument('path', help='Sealed file')
+    sealcheck_p.add_argument('--trust', action='append', default=None, metavar='PUBKEY_HEX',
+                             help='A public key you trust (repeatable)')
+
     args = parser.parse_args()
 
     print("\n  {}".format(BISMILLAH))
+
+    if args.command == 'keygen':
+        public = generate_signing_key(args.path)
+        print("  Private key written to {} (owner-read-only).".format(args.path))
+        print("  Public key (publish this): {}".format(public))
+        print("\n  {}\n".format(BISMILLAH))
+        return
+    if args.command == 'seal-check':
+        with open(args.path, encoding='utf-8') as fh:
+            res = verify_signed_seal(fh.read(), args.trust)
+        print("  Signed seal: {}".format(res["status"]))
+        if res["public_key"]:
+            print("  Public key:  {}".format(res["public_key"]))
+            print("  Key trusted: {}".format(
+                {True: "yes", False: "NO", None: "not checked (pass --trust)"}[res["key_trusted"]]))
+        print("\n  {}\n".format(BISMILLAH))
+        sys.exit(0 if res["status"] == "VALID" and res["key_trusted"] is not False else 1)
+    if getattr(args, 'sign_key', None):
+        os.environ["FATIMA_SIGN_KEY"] = os.path.abspath(args.sign_key)
 
     if args.command == 'seal':
         if os.path.isdir(args.path):
